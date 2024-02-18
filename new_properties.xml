@@ -5227,6 +5227,26 @@ If needed: which sub menu this item belongs to
 If needed: the button id this item corresponds to
 </HELP>
   </PROPERTY>
+  <PROPERTY Name="Item Submenu Parent ID" ID="0x8a2602ca" Type="Uint32" Default="0x00000000" ShowAsHex="Y">
+    <HELP>
+For use with Submenus DLL: the button ID that opens the submenu this item belongs to
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Item Button Class" ID="0x8a2602cc" Type="Uint32" Default="0x00000001" ShowAsHex="Y">
+    <HELP>
+For use with Submenus DLL: classifier that determines the function of this item
+</HELP>
+    <OPTION Value="0x0000" Name="Disabled">
+    </OPTION>
+    <OPTION Value="0x0001" Name="Submenu Button">
+    </OPTION>
+    <OPTION Value="0x0002" Name="Network Item in Submenu">
+    </OPTION>
+    <OPTION Value="0x0004" Name="Flora Item in Submenu">
+    </OPTION>
+    <OPTION Value="0x0008" Name="Building unhidden in Submenu">
+    </OPTION>
+  </PROPERTY>
   <PROPERTY Name="Port Type Exemplar IDs" ID="0x8a270fc3" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
 List of instance IDs for exemplars containing the properties for each distinct airport/seaport type
@@ -7340,6 +7360,17 @@ List of groups this occupant belongs to.
     <HELP>
 GUID of the sound to play when the occupant is clicked on with query tool
 </HELP>
+  </PROPERTY>
+  <PROPERTY Name="Building Submenus" ID="0xaa1dd399" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
+    <HELP>
+For use with Submenus DLL: the Button IDs of the submenus this building appears in if the DLL is loaded
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Exemplar Patch Targets" ID="0x0062e78a" Type="Uint32" Count="-1" Default="0x00000000 0x00000000" ShowAsHex="Y">
+    <HELP>
+For use with Submenus DLL: list of Exemplar files this patch applies to. The other properties of this Cohort file are injected into every Exemplar on this list.
+</HELP>
+    <FORMATHELP>An even number of IDs of the form Group ID 1, Instance ID 1, Group ID 2, Instance ID 2,...</FORMATHELP>
   </PROPERTY>
   <PROPERTY Name="Garbage service cost per unit of garbage" ID="0xaa1f8ab7" Type="Float32" Default="0.100" ShowAsHex="Y">
     <HELP>
