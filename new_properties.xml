@@ -13317,6 +13317,132 @@ This selection will filter the display to only show eyecandy landmarks.
 </PROPERTIES>
 </CATEGORY>
 
+<CATEGORY Name="Landmark with Residents (Growify)" ID="0x3c8fbc7c" ParentID="0x2c8fbc6c">
+<HELP>
+This selection will filter the display to only show functional landmarks.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0x27812834"/>
+ <NOT ID="0xaa1dd396" Value="0x1302"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0x8a1c3e72" Eval="Worth"/> <!--Worth-->
+ <PROPERTY ID="0x099AFACD" Eval="Worth"/> <!--Bulldoze cost-->
+ <PROPERTY ID="0x499AFA38" Eval="Worth/10."/> <!--construction time-->
+ <PROPERTY ID="0xE91A0B5F" Eval="int(BiasedBC*BuildingValueFactor)"/><!--building value-->
+ <PROPERTY ID="0x27812851" Eval="max(1,int( BiasedBC*AirPollutionFactor)),max(1,int( BiasedBC*WaterPollutionFactor)),max(4,int( BiasedBC*GarbagePollutionFactor)),0"/><!--pollution at center-->
+ <PROPERTY ID="0x27812854" Eval="int(1+BiasedBC*PowerConsumedFactor)"/><!--Power Consumed-->
+ <PROPERTY ID="0xC8ED2D84" Eval="int(WaterConsumedConstant+BiasedBC*WaterConsumedFactor)"/><!--Water Consumed-->
+ <PROPERTY ID="0x49beda31" Eval="Test(LessThan(Volume,619), 0x01, Test(LessThan(Volume,3068), 0x02, Test(LessThan(Volume,18869), 0x03, Test(LessThan(Volume,326987), 0x04, 0x05 ))))"/>    <!--MaxFireStage-->
+ <PROPERTY ID="0x49CAC341" Eval="int(Worth*BuildingValueFactor)*2."/><!--Plop Cost-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Landmark With R$ Residents" ID="0x3c8f556c" ParentID="0x3c8fbc7c">
+<HELP>
+This selection will filter the display to only show Residential Low Wealth landmarks.  To create a Residential Low Wealth landmark drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x00011010"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="BaseCapacity" value ="round( 3 + BiasedVol/(3*12.42) )"/>
+ <eval name="CapacityR2" value ="round( 3 + BiasedVol/(3*22.5) )"/>
+ <eval name="CapacityR3" value ="round( 3 + BiasedVol/(3*51.5) )"/>
+ <eval name="BiasedBC" value ="int( round( min( 5000., BaseCapacity ) * max( 1., sqrt( BaseCapacity/5000. ) ) ) )"/>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
+ <eval name="BuildingValueFactor" value="13.590000"/>
+ <eval name="AirPollutionFactor" value="0.005"/>
+ <eval name="WaterPollutionFactor" value="0.002"/>
+ <eval name="GarbagePollutionFactor" value="0.003"/>
+ <eval name="PowerConsumedFactor" value="0.0041999"/>
+ <eval name="WaterConsumedFactor" value="0.01"/>
+ <eval name="WaterConsumedConstant" value="1.0"/>
+ <PROPERTY ID="0x2a499f85" Eval="QueryForResidential"/> <!--Query Examplar -->
+ <PROPERTY ID="0xaa1dd397" Set="0x6A63BBA2"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0xaa905ab9" Set="0x0a8916c8"/> <!--SFx:Query Sound decayed-->
+ <PROPERTY ID="0x27812833" Value="0x01"/>       <!--Purpose-->
+ <PROPERTY ID="0x0a902434" Set="0x4a890f5b"/> <!--SFx:Query Sound abandoned-->
+ <PROPERTY ID="0x27812832" Value="0x01"/>       <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00001010"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x0000150A,0x00011010"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity"/> <!--Capacity Satisfied-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x93DADFE9"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Landmark With R$$ Residents" ID="0x3c8f566c" ParentID="0x3c8fbc7c">
+<HELP>
+This selection will filter the display to only show Residential Medium Wealth landmarks.  To create a Residential Medium Wealth landmark drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x00011020"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="BaseCapacity" value ="round( 3 + BiasedVol/(3*12.42) )"/>
+ <eval name="CapacityR2" value ="round( 3 + BiasedVol/(3*22.5) )"/>
+ <eval name="CapacityR3" value ="round( 3 + BiasedVol/(3*51.5) )"/>
+ <eval name="BiasedBC" value ="int( round( min( 5000., BaseCapacity ) * max( 1., sqrt( BaseCapacity/5000. ) ) ) )"/>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
+ <eval name="BuildingValueFactor" value="14.43"/>
+ <eval name="AirPollutionFactor" value="0.006*7./9."/>
+ <eval name="WaterPollutionFactor" value="0.003*7./9."/>
+ <eval name="GarbagePollutionFactor" value="0.003*7./9."/>
+ <eval name="PowerConsumedFactor" value="0.0074999"/>
+ <eval name="WaterConsumedFactor" value="0.02"/>
+ <eval name="WaterConsumedConstant" value="2.0"/>
+ <PROPERTY ID="0x2a499f85" Eval="QueryForResidential"/> <!--Query Examplar -->
+ <PROPERTY ID="0xaa1dd397" Set="0x6A63BBA2"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0xaa905ab9" Set="0x0a8916c8"/> <!--SFx:Query Sound decayed-->
+ <PROPERTY ID="0x27812833" Value="0x01"/>       <!--Purpose-->
+ <PROPERTY ID="0x0a902434" Set="0x4a890f5b"/> <!--SFx:Query Sound abandoned-->
+ <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x0000150A,0x00011020"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2"/> <!--Capacity Satisfied-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x984E5034"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Landmark With R$$$ Residents" ID="0x3c8f576c" ParentID="0x3c8fbc7c">
+<HELP>
+This selection will filter the display to only show Residential High Wealth landmarks.  To create a Residential High Wealth landmark drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x00011030"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="BaseCapacity" value ="round( 3 + BiasedVol/(3*12.42) )"/>
+ <eval name="CapacityR2" value ="round( 3 + BiasedVol/(3*22.5) )"/>
+ <eval name="CapacityR3" value ="round( 3 + BiasedVol/(3*51.5) )"/>
+ <eval name="BiasedBC" value ="int( round( min( 5000., BaseCapacity ) * max( 1., sqrt( BaseCapacity/5000. ) ) ) )"/>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
+ <eval name="BuildingValueFactor" value="15.27"/>
+ <eval name="AirPollutionFactor" value="0.006*3./5."/>
+ <eval name="WaterPollutionFactor" value="0.002*3./5."/>
+ <eval name="GarbagePollutionFactor" value="0.002*3./5."/>
+ <eval name="PowerConsumedFactor" value="0.0304000"/>
+ <eval name="WaterConsumedFactor" value="0.04"/>
+ <eval name="WaterConsumedConstant" value="4.0"/>
+ <PROPERTY ID="0x2a499f85" Eval="QueryForResidential"/> <!--Query Examplar -->
+ <PROPERTY ID="0xaa1dd397" Set="0x6A63BBA2"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0xaa905ab9" Set="0x0a8916c8"/> <!--SFx:Query Sound decayed-->
+ <PROPERTY ID="0x27812833" Value="0x01"/>       <!--Purpose-->
+ <PROPERTY ID="0x0a902434" Set="0x4a890f5b"/> <!--SFx:Query Sound abandoned-->
+ <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020,0x00001030"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x0000150A,0x00011030"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2,0x00001030,CapacityR3"/> <!--Capacity Satisfied-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x9F83F133"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES>
+</CATEGORY>
+
 <CATEGORY Name="Landmark with Jobs" ID="0x3c8fbc6c" ParentID="0x2c8fbc6c">
 <HELP>
 This selection will filter the display to only show functional landmarks.
