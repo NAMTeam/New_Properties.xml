@@ -5571,7 +5571,7 @@ Factor applied to the budget item expense based on the total residential populat
 Factor applied to the budget item expense based on the residential wealth group populations. The format is a group of 7 Sint64 values representing the line item id followed by the numerators and denominators for the low, medium, and high wealth group factors.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Budget Custom Line Item Variable Expense/Income: Tourism" ID="0x9EE12414" Type="Sint64" ShowAsHex="Y">
+  <PROPERTY Name="Budget Custom Line Item Variable Expense/Income: Tourism" ID="0x9EE12412" Type="Sint64" ShowAsHex="Y">
     <HELP>
 Factor applied to the budget item expense/income based on an algorithm that approximates local/regional tourism. The format is a group of 4 Sint64 fields representing the line number id followed by a numerator and denominator for the national and international tourism factor and a Sint64 geopolitical factor.
 </HELP>
