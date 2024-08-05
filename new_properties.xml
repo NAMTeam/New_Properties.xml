@@ -5548,25 +5548,34 @@ How many travellers it takes to yield a bus automata
 Types of occupants
 </HELP>
   </PROPERTY>
-  
+  <PROPERTY Name="Budget: Custom Department Name Key" ID="0x4252085F" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+Specifies the name key for a custom budget department. The format is a group of 3 Uint32 values, consisting of the department id followed by the group and instance ids of the LTEXT file.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Budget: Custom Department Budget Group" ID="0x90222B81" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+Controls which budget window the custom budget department is grouped under. The format is a group of 2 Uint32 values, consisting of the department id followed by the budget group id.
+</HELP>
   <PROPERTY Name="Budget: Custom Line Item Cost Algorithm" ID="0x9EE1240F" Type="Uint32" ShowAsHex="Y">
     <HELP>
 The cost algorithm that is used for the line item. The format is a group of 2 UInt32 values, consisting of the line item id followed by the algorithm id.
 </HELP>
-<PROPERTY Name="Budget Custom Line Item Variable Expense/Income: Res. Total Pop." ID="0x9EE12410" Type="Sint64" ShowAsHex="Y">
+  <PROPERTY Name="Budget Custom Line Item Variable Expense/Income: Res. Total Pop." ID="0x9EE12410" Type="Sint64" ShowAsHex="Y">
     <HELP>
-	Factor applied to the budget item expense based on the total residential population. The format is a group of 3 Sint64 values representing the line item id followed by the numerator and denominator for the total residential population factor.
+Factor applied to the budget item expense based on the total residential population. The format is a group of 3 Sint64 values representing the line item id followed by the numerator and denominator for the total residential population factor.
 </HELP>
   </PROPERTY>
   <PROPERTY Name="Budget Custom Line Item Variable Expense/Income: Res. Wealth Group Pop." ID="0x9EE12411" Type="Sint64" ShowAsHex="Y">
     <HELP>
-  actor applied to the budget item expense based on the residential wealth group populations. The format is a group of 7 Sint64 values representing the line item id followed by the numerators and denominators for the low, medium, and high wealth group factors.
-  </HELP>
+Factor applied to the budget item expense based on the residential wealth group populations. The format is a group of 7 Sint64 values representing the line item id followed by the numerators and denominators for the low, medium, and high wealth group factors.
+</HELP>
+  </PROPERTY>
   <PROPERTY Name="Budget Custom Line Item Variable Expense/Income: Tourism" ID="0x9EE12414" Type="Sint64" ShowAsHex="Y">
     <HELP>
 Factor applied to the budget item expense/income based on an algorithm that approximates local/regional tourism. The format is a group of 4 Sint64 fields representing the line number id followed by a numerator and denominator for the national and international tourism factor and a Sint64 geopolitical factor.
 </HELP>
-  </PROPERTY> 
+  </PROPERTY>
   <PROPERTY Name="mnWeeksForCompleteTemperatureSimulation" ID="0xa7607d70" Type="Sint32" Default="1" ShowAsHex="Y">
     <HELP>
 mnWeeksForCompleteTemperatureSimulation
