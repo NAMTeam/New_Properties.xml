@@ -5224,7 +5224,7 @@ Resource instance ID of Menu Icon for this item
 Controls position in menu.  Items with lower numbers appear on or near the top of the menu, items with higher numbers are placed lower on the menu.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Item Submenu" ID="0x8a2602ba" Type="Uint32" Default="0x00000000" ShowAsHex="Y">
+ <PROPERTY Name="Item Submenu" ID="0x8a2602ba" Type="Uint32" Default="0x00000000" ShowAsHex="Y">
     <HELP>
 If needed: which sub menu this item belongs to
 </HELP>
@@ -5233,6 +5233,24 @@ If needed: which sub menu this item belongs to
     <HELP>
 If needed: the button id this item corresponds to
 </HELP>
+  </PROPERTY>
+  <PROPERTY Name="Item Submenu Parent ID" ID="0x8a2602ca" Type="Uint32" Default="0x00000000" ShowAsHex="Y">
+    <HELP>
+For use with Submenus DLL: the button ID that opens the submenu this item belongs to
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Item Button Class" ID="0x8a2602cc" Type="Uint32" Default="0x00000001" ShowAsHex="Y">
+    <HELP>
+For use with Submenus DLL: classifier that determines the function of this item
+</HELP>
+    <OPTION Value="0x0000" Name="Disabled">
+    </OPTION>
+    <OPTION Value="0x0001" Name="Submenu Button">
+    </OPTION>
+    <OPTION Value="0x0002" Name="Network Item in Submenu">
+    </OPTION>
+    <OPTION Value="0x0004" Name="Flora Item in Submenu">
+    </OPTION>
   </PROPERTY>
   <PROPERTY Name="Port Type Exemplar IDs" ID="0x8a270fc3" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
@@ -6740,15 +6758,19 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00100" Name="SG: Sainsbury Local">
     </OPTION>
-    <OPTION Value="0xB5C00101" Name="SG: Sainsbury Local">
+    <OPTION Value="0xB5C00101" Name="SG: Sainsbury">
     </OPTION>
-    <OPTION Value="0xB5C00102" Name="SG: Sainsbury Local">
+    <OPTION Value="0xB5C00102" Name="SG: Sainsbury Sav-a-Center">
+    </OPTION>
+	<OPTION Value="0xB5C0010A" Name="SG: Water Towers">
     </OPTION>
     <OPTION Value="0xB5C00110" Name="SG: Fuddruckers">
     </OPTION>
     <OPTION Value="0xB5C00111" Name="SG: Ruby Tuesday">
     </OPTION>
     <OPTION Value="0xB5C00112" Name="SG: Capt Jacks Seafood">
+    </OPTION>
+	<OPTION Value="0xB5C00120" Name="SG: GooberGen Labs">
     </OPTION>
     <OPTION Value="0xB5C00150" Name="SG: Homes">
     </OPTION>
@@ -6760,6 +6782,8 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00154" Name="SG: Hotels">
     </OPTION>
+	<OPTION Value="0xB5C00155" Name="SG: Mining">
+    </OPTION>
     <OPTION Value="0xB5C00156" Name="SG: Restaurants">
     </OPTION>
     <OPTION Value="0xB5C00157" Name="SG: Entertainment">
@@ -6769,6 +6793,8 @@ List of groups this occupant belongs to.
     <OPTION Value="0xB5C00159" Name="SG: Un-Defined">
     </OPTION>
     <OPTION Value="0xB5C0015A" Name="SG: Industrial">
+    </OPTION>
+	<OPTION Value="0xB5C0015C" Name="SG: Unknown">
     </OPTION>
     <OPTION Value="0xB5C00160" Name="SG: Magical Fruit Bean Farms">
     </OPTION>
@@ -6792,6 +6818,10 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C0016A" Name="SG: Cattle Farm">
     </OPTION>
+	<OPTION Value="0xB5C0016B" Name="SG: Oral Fixations">
+    </OPTION>
+	<OPTION Value="0xB5C0016C" Name="SG: Fukitol Industries">
+    </OPTION>
     <OPTION Value="0xB5C00175" Name="SG: Dennys Restaurant">
     </OPTION>
     <OPTION Value="0xB5C00176" Name="SG: Kellys Escort">
@@ -6800,7 +6830,15 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C0017B" Name="SG: Props, Play Gyms">
     </OPTION>
+	<OPTION Value="0xB5C0017C" Name="SG: Hardun Industries">
+    </OPTION>
+	<OPTION Value="0xB5C0017D" Name="SG: Simply Pets">
+    </OPTION>
+	<OPTION Value="0xB5C0017E" Name="SG: Dentist">
+    </OPTION>
     <OPTION Value="0xB5C00180" Name="SG: NIMBY">
+    </OPTION>
+	<OPTION Value="0xB5C00184" Name="SG: Ditch Lots">
     </OPTION>
     <OPTION Value="0xB5C00185" Name="SG: Waterway">
     </OPTION>
@@ -6822,13 +6860,29 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00206" Name="DW: Raised Parks">
     </OPTION>
-    <OPTION Value="0xB5C00207" Name="DW: Undefined">
+    <OPTION Value="0xB5C00207" Name="DW: Raised Parks Transit">
+    </OPTION>
+	<OPTION Value="0xB5C00208" Name="DW: Road-Top Bus">
+    </OPTION>
+	<OPTION Value="0xB5C00209" Name="DW: Road-Top Subway">
+    </OPTION>
+	<OPTION Value="0xB5C00300" Name="CNUT: Logging Mill">
+    </OPTION>
+    <OPTION Value="0xB5C00301" Name="CNUT: Logging Mill">
+    </OPTION>
+    <OPTION Value="0xB5C00302" Name="CNUT: Dragoon Industries">
     </OPTION>
     <OPTION Value="0xB5C003A0" Name="JBS: General">
     </OPTION>
     <OPTION Value="0xB5C003A1" Name="JBS: Small Town USA">
     </OPTION>
     <OPTION Value="0xB5C003A2" Name="JBS: SHUR Project">
+	</OPTION>
+    <OPTION Value="0xB5C003B0" Name="JBS: JB University of Clayhurst">
+    </OPTION>
+    <OPTION Value="0xB5C003B1" Name="JBS: JB University of Clayhurst">
+    </OPTION>
+    <OPTION Value="0xB5C003B2" Name="JBS: JB University of Clayhurst">
     </OPTION>
     <OPTION Value="0xB5C00400" Name="BLS: Indoor Nursery Farms">
     </OPTION>
@@ -6837,6 +6891,30 @@ List of groups this occupant belongs to.
     <OPTION Value="0xB5C00402" Name="BLS: Lime Tree Fields">
     </OPTION>
     <OPTION Value="0xB5C00403" Name="BLS: Lemon Tree Fields">
+    </OPTION>
+	<OPTION Value="0xB5C00410" Name="MBEAR: Rewards">
+    </OPTION>
+	<OPTION Value="0xB5C00411" Name="MBEAR: Residentials">
+    </OPTION>
+	<OPTION Value="0xB5C00412" Name="MBEAR: Commercials">
+    </OPTION>
+	<OPTION Value="0xB5C00413" Name="BMD: Olive Farms ">
+    </OPTION>
+	<OPTION Value="0xB5C00414" Name="BMD: Vineyards">
+    </OPTION>
+	<OPTION Value="0xB5C00415" Name="BMD: Lavender Farms">
+    </OPTION>
+	<OPTION Value="0xB5C00416" Name="BMD: Wheat Farms">
+    </OPTION>
+	<OPTION Value="0xB5C00417" Name="BMD: Fruit Farms">
+    </OPTION>
+	<OPTION Value="0xB5C00418" Name="BMD: Vegetable Farms">
+    </OPTION>
+	<OPTION Value="0xB5C00419" Name="BMD: Dairy Farms">
+    </OPTION>
+	<OPTION Value="0xB5C00420" Name="BRT: BRT Creation">
+    </OPTION>
+	<OPTION Value="0xB5C00421" Name="BRT: Mining">
     </OPTION>
     <OPTION Value="0xB5C004A0" Name="BLS: Flower Farms">
     </OPTION>
@@ -7033,6 +7111,8 @@ List of groups this occupant belongs to.
     <OPTION Value="0xB5C00B04" Name="BTE: Res. Low Wealth">
     </OPTION>
     <OPTION Value="0xB5C00B05" Name="BTE: Res. W2W">
+    </OPTION>
+	<OPTION Value="0xB5C00B5C" Name="BTE: BSC General">
     </OPTION>
     <OPTION Value="0xB5C00BA8" Name="CAM: R$ CAMeLot">
     </OPTION>
@@ -7250,6 +7330,36 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00DDF" Name="BTE: Religious">
     </OPTION>
+	<OPTION Value="0xB5C00DE0" Name="BTE: SNM Small Barracks/Offices">
+    </OPTION>
+	<OPTION Value="0xB5C00DE1" Name="BTE: SNM Medium Barracks/Offices">
+    </OPTION>
+	<OPTION Value="0xB5C00DE2" Name="BTE: SNM Large Barracks/Offices">
+    </OPTION>
+	<OPTION Value="0xB5C00DE3" Name="BTE: SNM Small Education">
+    </OPTION>
+	<OPTION Value="0xB5C00DE4" Name="BTE: SNM Medium Education">
+    </OPTION>
+	<OPTION Value="0xB5C00DE5" Name="BTE: SNM Large Education">
+    </OPTION>
+	<OPTION Value="0xB5C00DE6" Name="BTE: SNM Small Security">
+    </OPTION>
+	<OPTION Value="0xB5C00DE7" Name="BTE: SNM Medium Security">
+    </OPTION>
+	<OPTION Value="0xB5C00DE8" Name="BTE: SNM Large Security">
+    </OPTION>
+	<OPTION Value="0xB5C00DE9" Name="BTE: SNM Small Small Health">
+    </OPTION>
+	<OPTION Value="0xB5C00DEA" Name="BTE: SNM Small Medium Health">
+    </OPTION>
+	<OPTION Value="0xB5C00DEB" Name="BTE: SNM Small Transport">
+    </OPTION>
+	<OPTION Value="0xB5C00DEC" Name="BTE: SNM Medium Transport">
+    </OPTION>
+	<OPTION Value="0xB5C00DED" Name="BTE: SNM Large Transport">
+    </OPTION>
+	<OPTION Value="0xB5C00DEE" Name="BTE: SNM Utilities">
+    </OPTION>
     <OPTION Value="0xB5C00DF0" Name="BTE: Transit - Ped">
     </OPTION>
     <OPTION Value="0xB5C00DF1" Name="BTE: Transit - Car">
@@ -7266,7 +7376,11 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00DF7" Name="BTE: Transit - Monorail">
     </OPTION>
-    <OPTION Value="0xB5C00DF8" Name="BTE: Utility - Water">
+    <OPTION Value="0xB5C00DF8" Name="BTE: Transit - Water">
+    </OPTION>
+	<OPTION Value="0xB5C00DF9" Name="BTE: Transit - Ground Light Rail">
+    </OPTION>
+	<OPTION Value="0xB5C00DFA" Name="BTE: Transit - Hybrid Railway">
     </OPTION>
     <OPTION Value="0xB5C00E01" Name="BTE: Ind - Dirty">
     </OPTION>
@@ -7370,7 +7484,13 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00F0A" Name="SFBT: Hamburg W2W">
     </OPTION>
+	<OPTION Value="0xB5C00F0B" Name="SFBT: Paris W2W">
+    </OPTION>
+	<OPTION Value="0xB5C00F0F" Name="SFBT: Funkturm Frohnau">
+    </OPTION>
     <OPTION Value="0xB5C00F5F" Name="BTE: SFBT Building">
+    </OPTION>
+	<OPTION Value="0xB5C32500" Name="BTE: BSC-Mattb325">
     </OPTION>
   </PROPERTY>
   <PROPERTY Name="SFX:Query Sound" ID="0xaa1dd397" Type="Uint32" Default="0x00000000" ShowAsHex="Y">
@@ -7378,10 +7498,100 @@ List of groups this occupant belongs to.
 GUID of the sound to play when the occupant is clicked on with query tool
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Building Submenus" ID="0xaa1dd399" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
+   <PROPERTY Name="Building Submenus" ID="0xaa1dd399" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
 For use with Submenus DLL: the Button IDs of the submenus this building appears in if the DLL is loaded
 </HELP>
+<HELP>SubMenuROOTHighway</HELP>
+	<OPTION Value="0x83E040BB" Name="Signage">
+    </OPTION>
+<HELP>SubMenuROOTRail</HELP>
+	<OPTION Value="0x35380C75" Name="Passenger Rail Stations">
+    </OPTION>
+	<OPTION Value="0x3A1D9854" Name="Monorail Stations">
+    </OPTION>
+	<OPTION Value="0x2B294CC2" Name="Hybrid Rail Stations">
+    </OPTION>
+	<OPTION Value="0x3557F0A1" Name="Freight Rail Stations">
+    </OPTION>
+	<OPTION Value="0x39BA25C7" Name="Yards-Sidings-Spurs">
+    </OPTION>
+<HELP>SubMenuROOTMiscTransit</HELP>
+	<OPTION Value="0x1FDDE184" Name="Bus Stations">
+    </OPTION>
+	<OPTION Value="0x231A97D3" Name="Subway Stations">
+    </OPTION>
+	<OPTION Value="0x244F77E1" Name="El-Rail Stations">
+    </OPTION>
+	<OPTION Value="0x26B51B28" Name="GLR Stations">
+    </OPTION>
+	<OPTION Value="0x322C7959" Name="Multi-Modal Stations">
+    </OPTION>
+	<OPTION Value="0x217B6C35" Name="Parking Lots">
+    </OPTION>
+<HELP>SubMenuROOTWaterTransit</HELP>
+	<OPTION Value="0x07047B22" Name="Seaports and Ferry Terminals">
+    </OPTION>
+	<OPTION Value="0x03C6629C" Name="Canals">
+    </OPTION>
+	<OPTION Value="0x1CD18678" Name="Seawalls">
+    </OPTION>
+	<OPTION Value="0x84D42CD6" Name="Waterfront">
+    </OPTION>
+<HELP>SubMenuROOTPowerUtility</HELP>
+	<OPTION Value="0x4B465151" Name="Dirty Energy">
+    </OPTION>
+	<OPTION Value="0xCDE0316B" Name="Clean Energy">
+    </OPTION>
+	<OPTION Value="0xD013F32D" Name="Miscellaneous Power Utilities">
+    </OPTION>
+<HELP>SubMenuROOTCivicPolice</HELP>
+	<OPTION Value="0x65D88585" Name="Small Police">
+    </OPTION>
+	<OPTION Value="0x7D6DC8BC" Name="Large Police">
+    </OPTION>
+	<OPTION Value="0x8157CA0E" Name="Deluxe Police">
+    </OPTION>
+	<OPTION Value="0x8BA49621" Name="Military">
+    </OPTION>
+<HELP>SubMenuROOTCivicEducation</HELP>
+	<OPTION Value="0x9FE5C428" Name="Elementary Schools">
+    </OPTION>
+	<OPTION Value="0xA08063D0" Name="High Schools and Private Schools">
+    </OPTION>
+	<OPTION Value="0xAC706063" Name="Colleges and Universities">
+    </OPTION>
+	<OPTION Value="0xAEDD9FAA" Name="Libraries and Museums and Miscellaneous">
+    </OPTION>
+<HELP>SubMenuROOTCivicHealth</HELP>
+	<OPTION Value="0xB1F7AC5B" Name="Small Health">
+    </OPTION>
+	<OPTION Value="0xB7B594D6" Name="Medium Health">
+    </OPTION>
+	<OPTION Value="0xBC251B69" Name="Large Health">
+    </OPTION>
+<HELP>SubMenuROOTLandmarks</HELP>
+	<OPTION Value="0x9FAF7A3B" Name="Government Buildings">
+    </OPTION>
+	<OPTION Value="0x26EB3057" Name="Churches and Cemeteries">
+    </OPTION>
+	<OPTION Value="0xBE9FDA0C" Name="Entertainment">
+    </OPTION>
+<HELP>SubMenuROOTPark</HELP>	
+	<OPTION Value="0x00001005" Name="Civic">
+    </OPTION>
+	<OPTION Value="0xbf776d40" Name="Green Spaces">
+	</OPTION>
+	<OPTION Value="0xEB75882C" Name="Plazas">
+    </OPTION>
+	<OPTION Value="0xce21dbeb" Name="Sports Grounds">
+    </OPTION>
+	<OPTION Value="0xDEFFD960" Name="Paths and Modular Parks">
+    </OPTION>
+	<OPTION Value="0xBB531946" Name="Embankments and Retaining Walls">
+    </OPTION>
+	<OPTION Value="0xF034265C" Name="Fillers">
+    </OPTION>
   </PROPERTY>
   <PROPERTY Name="ExtendedPowerType" ID="0x713c8912" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
@@ -10041,22 +10251,22 @@ This selection will filter the display to only show Other School plug-ins. To cr
  <NEEDED ID="0xaa1dd396" Value="0x151B"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSOpera,50*int(1+Volume/40000.))"/>
- <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
+ <eval name="Students" value="max(SCCSOpera,50*int(1+Volume/94.789))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/300.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*2./8.)"/>
- <eval name="Radius" value="40*int(135+0.75*Students**0.4)"/>
- <eval name="MCost" value="10*int(13+0.035*Students**0.9)"/>
- <eval name="PCost" value="1000*int(20+0.020*Students**1.1)"/>
- <eval name="BCost" value="20*int(15+0.025*Students**1.1)"/>
+ <eval name="Radius" value="32.584*int(135+0.75*Students**0.4)"/>
+ <eval name="MCost" value="20.835*int(13+0.035*Students**0.9)"/>
+ <eval name="PCost" value="48.711*int(20+0.020*Students**1.1)"/>
+ <eval name="BCost" value="0.8765*int(15+0.025*Students**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x03"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="QueryForOpera"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x4A4C132E" Set="0x2A8B7DB4"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForOpera"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="1.00000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="2.40000000"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x0000151B,0x00001900,0x00001903,0x00001909"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0xEA55BC61"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xAA60E745" Value="-100.000000,13.000000,100.000000,0.000000"/><!--Goofy Stat Response Curve-->
@@ -11736,7 +11946,7 @@ This selection will filter the display to only show Subway plug-ins.  To create 
  <PROPERTY ID="0xAA1DD396" Set="0x00001003,0x00001302,0x00001A04,0x0000130A"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x0A55BAEB"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xE90E25A1" Value="0x81,0xF0,0x00,0x00,0x81,0xF0,0x00,0x06,0x82,0xF0,0x06,0x00,0x82,0xF0,0x00,0x00,0x82,0xF0,0x00,0x06"/><!--Transit Switch Point-->
- <PROPERTY ID="0xE90E25A2" Value="0.0666667"/><!--Transit Switch Entry Cost-->
+ <PROPERTY ID="0xE90E25A2" Value="0.00952381"/><!--Transit Switch Entry Cost-->
  <PROPERTY ID="0xE90E25A3" Eval="TSCap"/><!--Transit Switch Traffic Capacity-->
  <PROPERTY ID="0xEA54D283" Value="0xC921CEEB"/><!--Budget Item: Department-->
  <PROPERTY ID="0xEA54D284" Value="0x00000001"/><!--Budget Item: Line-->
