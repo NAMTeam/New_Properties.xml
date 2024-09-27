@@ -7326,6 +7326,8 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00DDD" Name="BTE: Culture">
     </OPTION>
+    <OPTION Value="0xD02C802E" Name="BTE: Ind. W2W">
+    </OPTION>	
     <OPTION Value="0xB5C00DDE" Name="BTE: W2W General">
     </OPTION>
     <OPTION Value="0xB5C00DDF" Name="BTE: Religious">
@@ -9490,8 +9492,34 @@ This selection will filter the display to only show Residential Low Wealth plug-
  <eval name="WaterConsumedConstant" value="1.0"/>
  <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011010,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011010,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0x2c8fbb95"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(R $) Low Wealth W2W" ID="0xf6a23754" ParentID="0x0c8fbb86">
+<HELP>
+This selection will filter the display to only show Residential Low Wealth W2W plug-ins.  To create a Residential Low Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x11010"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
+ <eval name="BuildingValueFactor" value="13.590000"/>
+ <eval name="AirPollutionFactor" value="0.005"/>
+ <eval name="WaterPollutionFactor" value="0.002"/>
+ <eval name="GarbagePollutionFactor" value="0.003"/>
+ <eval name="PowerConsumedFactor" value="0.0041999"/>
+ <eval name="WaterConsumedFactor" value="0.01"/>
+ <eval name="WaterConsumedConstant" value="1.0"/>
+ <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00001010"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011010,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0xf6a23754"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity"/> <!--Capacity Satisfied-->
@@ -9516,8 +9544,34 @@ This selection will filter the display to only show Residential Medium Wealth pl
  <eval name="WaterConsumedConstant" value="2.0"/>
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011020,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011020,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0x6C8FBBA5"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(R $$) Medium Wealth W2W" ID="0xce253a47" ParentID="0x0c8fbb86">
+<HELP>
+This selection will filter the display to only show Residential Medium Wealth W2W plug-ins.  To create a Residential Medium Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x11020"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
+ <eval name="BuildingValueFactor" value="14.43"/>
+ <eval name="AirPollutionFactor" value="0.006*7./9."/>
+ <eval name="WaterPollutionFactor" value="0.003*7./9."/>
+ <eval name="GarbagePollutionFactor" value="0.003*7./9."/>
+ <eval name="PowerConsumedFactor" value="0.0074999"/>
+ <eval name="WaterConsumedFactor" value="0.02"/>
+ <eval name="WaterConsumedConstant" value="2.0"/>
+ <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011020,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0xce253a47"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2"/> <!--Capacity Satisfied-->
@@ -9542,8 +9596,34 @@ This selection will filter the display to only show Residential High Wealth plug
  <eval name="WaterConsumedConstant" value="4.0"/>
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020,0x00001030"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0x0c8fbbae"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2,0x00001030,CapacityR3"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(R $$$) High Wealth W2W" ID="0x4ec7d949" ParentID="0x0c8fbb86">
+<HELP>
+This selection will filter the display to only show Residential High Wealth W2W plug-ins.  To create a Residential High Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x11030"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
+ <eval name="BuildingValueFactor" value="15.27"/>
+ <eval name="AirPollutionFactor" value="0.006*3./5."/>
+ <eval name="WaterPollutionFactor" value="0.002*3./5."/>
+ <eval name="GarbagePollutionFactor" value="0.002*3./5."/>
+ <eval name="PowerConsumedFactor" value="0.0304000"/>
+ <eval name="WaterConsumedFactor" value="0.04"/>
+ <eval name="WaterConsumedConstant" value="4.0"/>
+ <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020,0x00001030"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0x4ec7d949"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2,0x00001030,CapacityR3"/> <!--Capacity Satisfied-->
@@ -9586,8 +9666,34 @@ This selection will filter the display to only show Commercial Service Low Wealt
  <eval name="WaterConsumedConstant" value="2.0"/>
  <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013110,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013110,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0x8C8FBBCC"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(CS $) Low Wealth W2W" ID="0xbcd2c7e1" ParentID="0xac8fbbbb">
+<HELP>
+This selection will filter the display to only show Commercial Service Low Wealth W2W plug-ins.  To create a Commercial Service Low Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x13110"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
+ <eval name="BuildingValueFactor" value="7.659996"/>
+ <eval name="AirPollutionFactor" value="0.01"/>
+ <eval name="WaterPollutionFactor" value="0.005"/>
+ <eval name="GarbagePollutionFactor" value="0.03"/>
+ <eval name="PowerConsumedFactor" value="0.019999"/>
+ <eval name="WaterConsumedFactor" value="0.20"/>
+ <eval name="WaterConsumedConstant" value="2.0"/>
+ <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00003110"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013110,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0xbcd2c7e1"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity"/> <!--Capacity Satisfied-->
@@ -9596,7 +9702,7 @@ This selection will filter the display to only show Commercial Service Low Wealt
 
 <CATEGORY Name="(CS $$) Medium Wealth" ID="0x0c8fbbdc" ParentID="0xac8fbbbb">
 <HELP>
-This selection will filter the display to only show Commercial Service Medium Wealth plug-ins.  To create a Commercial Service Medium Wealth plug-in drag a model to this category.
+This selection will filter the display to only show Commercial Service Medium Wealth W2W plug-ins.  To create a Commercial Service Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
  <NEEDED ID="0xaa1dd396" Value="0x13120"/>
@@ -9612,8 +9718,34 @@ This selection will filter the display to only show Commercial Service Medium We
  <eval name="WaterConsumedConstant" value="4.0"/>
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013120,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013120,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0x0c8fbbdc"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(CS $$) Medium Wealth W2W" ID="0x539f3c1d" ParentID="0xac8fbbbb">
+<HELP>
+This selection will filter the display to only show Commercial Service Medium Wealth W2W plug-ins.  To create a Commercial Service Medium Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x13120"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
+ <eval name="BuildingValueFactor" value="8.579998"/>
+ <eval name="AirPollutionFactor" value="0.015*5./8."/>
+ <eval name="WaterPollutionFactor" value="0.01*5./8."/>
+ <eval name="GarbagePollutionFactor" value="0.02*5./8."/>
+ <eval name="PowerConsumedFactor" value="0.019999"/>
+ <eval name="WaterConsumedFactor" value="0.24"/>
+ <eval name="WaterConsumedConstant" value="4.0"/>
+ <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013120,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0x539f3c1d"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2"/> <!--Capacity Satisfied-->
@@ -9638,8 +9770,34 @@ This selection will filter the display to only show Commercial Service High Weal
  <eval name="WaterConsumedConstant" value="6.0"/>
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120,0x0003130"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013130,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013130,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0xac8fbbeb"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2,0x00003130,CapacityC3"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(CS $$$) High Wealth W2W" ID="0x3b3f3641" ParentID="0xac8fbbbb">
+<HELP>
+This selection will filter the display to only show Commercial Service High Wealth W2W plug-ins.  To create a Commercial Service High Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x13130"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
+ <eval name="BuildingValueFactor" value="9.72"/>
+ <eval name="AirPollutionFactor" value="0.015*9./20."/>
+ <eval name="WaterPollutionFactor" value="0.01*9./20."/>
+ <eval name="GarbagePollutionFactor" value="0.02*9./20."/>
+ <eval name="PowerConsumedFactor" value="0.028000"/>
+ <eval name="WaterConsumedFactor" value="0.25"/>
+ <eval name="WaterConsumedConstant" value="6.0"/>
+ <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120,0x0003130"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013130,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0x3b3f3641"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2,0x00003130,CapacityC3"/> <!--Capacity Satisfied-->
@@ -9681,8 +9839,34 @@ This selection will filter the display to only show Commercial Office Medium Wea
  <eval name="WaterConsumedConstant" value="10.0"/>
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003320"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013320,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013320,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0x6c8fbbf5"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(CO $$) Medium Wealth W2W" ID="0x452925b6" ParentID="0xccaa4cce">
+<HELP>
+This selection will filter the display to only show Commercial Office Medium Wealth W2W plug-ins.  To create a Commercial Office Medium Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x13320"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0999997)"/>
+ <eval name="BuildingValueFactor" value="6.989995"/>
+ <eval name="AirPollutionFactor" value="0.004"/>
+ <eval name="WaterPollutionFactor" value="0.004"/>
+ <eval name="GarbagePollutionFactor" value="0.002"/>
+ <eval name="PowerConsumedFactor" value="0.019999"/>
+ <eval name="WaterConsumedFactor" value="0.20"/>
+ <eval name="WaterConsumedConstant" value="10.0"/>
+ <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00003320"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013320,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0x452925b6"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity"/> <!--Capacity Satisfied-->
@@ -9707,8 +9891,34 @@ This selection will filter the display to only show Commercial Office High Wealt
  <eval name="WaterConsumedConstant" value="15.0"/>
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003320,0x00003330"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013330,0x00002000,0x00002001,0x00002002,0x00002003,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013330,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0x2C8F8746" Value="0xcc8fbc01"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity,0x00003330,CapacityC3"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(CO $$$) High Wealth W2W" ID="0x8840bc41" ParentID="0xccaa4cce">
+<HELP>
+This selection will filter the display to only show Commercial Office High Wealth W2W plug-ins.  To create a Commercial Office High Wealth W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x13330"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
+ <eval name="BuildingValueFactor" value="7.82"/>
+ <eval name="AirPollutionFactor" value="0.005*17./20."/>
+ <eval name="WaterPollutionFactor" value="0.005*17./20."/>
+ <eval name="GarbagePollutionFactor" value="0.002*17./20."/>
+ <eval name="PowerConsumedFactor" value="0.028000"/>
+ <eval name="WaterConsumedFactor" value="0.30"/>
+ <eval name="WaterConsumedConstant" value="15.0"/>
+ <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00003320,0x00003330"/>        <!--Occupant Types-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013330,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x2C8F8746" Value="0x8840bc41"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity,0x00003330,CapacityC3"/> <!--Capacity Satisfied-->
@@ -9753,7 +9963,37 @@ This selection will filter the display to only show Agricultrual plug-ins.  To c
  <PROPERTY ID="0x29244db5" Value="50"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004100,BaseCapacity"/> <!--Capacity Satisfied-->
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002"/> <!--OccupantGroups-->
+ <PROPERTY ID="0x29B55F73" Value="0x00024100,0x2A6E4309,0x2A6E431D,0xAA6E4328,0x6A6E4332,0xEA6E4721,0xEA6E4722"/> <!--Field lots-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-a) Agricultural Industry W2W" ID="0xc035b844" ParentID="0x8c8fbc0b">
+<HELP>
+This selection will filter the display to only show Agricultrual W2W plug-ins.  To create an Agricultural W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x14100"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int( 30. +10./3.*Height*3.0)"/>
+ <eval name="flooragePerWorker" value ="250"/>
+ <eval name="BuildingValueFactor" value="154.830001"/>
+ <eval name="AirPollutionFactor" value="0.125"/>
+ <eval name="WaterPollutionFactor" value="0.25"/>
+ <eval name="GarbagePollutionFactor" value="0.2"/>
+ <eval name="PowerConsumedFactor" value="0.400000"/>
+ <eval name="WaterConsumedFactor" value="5.000000"/>
+ <eval name="BiasedBC" value ="int( round( min( 50., BaseCapacity ) * max( 1., sqrt( BaseCapacity/50. ) ) ) )"/>
+ <PROPERTY ID="0xaa1dd397" Set="0xAA8A4B05"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0x27812833" Value="0x05"/>       <!--Purpose-->
+ <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00004100"/>        <!--Occupant Types-->
+ <PROPERTY ID="0x2C8F8746" Value="0xc035b844"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="50"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00004100,BaseCapacity"/> <!--Capacity Satisfied-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
  <PROPERTY ID="0x29B55F73" Value="0x00024100,0x2A6E4309,0x2A6E431D,0xAA6E4328,0x6A6E4332,0xEA6E4721,0xEA6E4722"/> <!--Field lots-->
 </PROPERTIES>
 </CATEGORY>
@@ -9795,7 +10035,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
 </FILTERS>
 <PROPERTIES>
  <eval name="flooragePerWorker" value ="60"/>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003000,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003000"/> <!--OccupantGroups-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -9807,7 +10047,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
  <NEEDED ID="0xaa1dd396" Value="0x3001"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="40"/>
 </PROPERTIES>
 </CATEGORY>
@@ -9820,7 +10060,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
  <NEEDED ID="0xaa1dd396" Value="0x3002"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="20"/>
 </PROPERTIES>
 </CATEGORY>
@@ -9861,7 +10101,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
  <NEEDED ID="0xaa1dd396" Value="0x3000"/>
 </FILTERS>
 <PROPERTIES>
-<PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000,0xD02C802E"/> <!--OccupantGroups-->
+<PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="30"/>
  </PROPERTIES>
 </CATEGORY>
@@ -9874,7 +10114,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
  <NEEDED ID="0xaa1dd396" Value="0x3001"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="60"/>
 </PROPERTIES>
 </CATEGORY>
@@ -9887,7 +10127,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
  <NEEDED ID="0xaa1dd396" Value="0x3002"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="30"/>
 </PROPERTIES>
 </CATEGORY>
@@ -9928,7 +10168,7 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
  <NEEDED ID="0xaa1dd396" Value="0x3000"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="25"/>
 </PROPERTIES>
 </CATEGORY>
@@ -9941,7 +10181,7 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
  <NEEDED ID="0xaa1dd396" Value="0x3001"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001,0xD02C802E"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="40"/>
 </PROPERTIES>
 </CATEGORY>
@@ -9954,7 +10194,208 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
  <NEEDED ID="0xaa1dd396" Value="0x3002"/>
 </FILTERS>
 <PROPERTIES>
-<PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002,0xD02C802E"/> <!--OccupantGroups-->
+<PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="25"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-d) Dirty Industry W2W" ID="0x4b2d4f0b" ParentID="0x8c8fbc0b">
+<HELP>
+This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x14200"/>
+ <NEEDED ID="0xaa1dd396" Value="0x1002"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.299998)"/>
+ <eval name="BuildingValueFactor" value="7.4"/>
+ <eval name="AirPollutionFactor" value="0.1"/>
+ <eval name="WaterPollutionFactor" value="0.06"/>
+ <eval name="GarbagePollutionFactor" value="0.012"/>
+ <eval name="PowerConsumedFactor" value="0.3"/>
+ <eval name="WaterConsumedFactor" value=".85"/>
+ <eval name="BiasedBC" value ="int( round( min( 500., BaseCapacity ) * max( 1., sqrt( BaseCapacity/500. ) ) ) )"/>
+ <PROPERTY ID="0xaa1dd397" Set="0xEA55BAAB"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0x27812833" Value="0x06"/>       <!--Purpose-->
+ <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00004200"/>        <!--Occupant Types-->
+ <PROPERTY ID="0x2C8F8746" Value="0x4b2d4f0b"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="80"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="16,20,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00004200,BaseCapacity"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-d) Dirty Industry Anchor W2W" ID="0x4a660cb7" ParentID="0x4b2d4f0b">
+<HELP>
+This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3000"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="flooragePerWorker" value ="60"/>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-d) Dirty Industry Mechanical W2W" ID="0xfe8aa4b0" ParentID="0x4b2d4f0b">
+<HELP>
+This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3001"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="40"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-d) Dirty Industry Out W2W" ID="0xc756a3b4" ParentID="0x4b2d4f0b">
+<HELP>
+This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3002"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="20"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-m) Manufacturing Industry W2W" ID="0xee28b711" ParentID="0x8c8fbc0b">
+<HELP>
+This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x14300"/>
+ <NEEDED ID="0xaa1dd396" Value="0x1002"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.599997)"/>
+ <eval name="BuildingValueFactor" value="7.63"/>
+ <eval name="AirPollutionFactor" value="0.06"/>
+ <eval name="WaterPollutionFactor" value="0.04"/>
+ <eval name="GarbagePollutionFactor" value="0.01"/>
+ <eval name="PowerConsumedFactor" value="0.06"/>
+ <eval name="WaterConsumedFactor" value=".9"/>
+ <eval name="BiasedBC" value ="int( round( min( 500., BaseCapacity ) * max( 1., sqrt( BaseCapacity/500. ) ) ) )"/>
+ <PROPERTY ID="0xaa1dd397" Set="0xEA55BAAB"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0x27812833" Value="0x07"/>       <!--Purpose-->
+ <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00004300"/>        <!--Occupant Types-->
+ <PROPERTY ID="0x2C8F8746" Value="0xee28b711"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="70"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="9,13,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00004300,BaseCapacity"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-m) Manufacturing Industry Anchor W2W" ID="0x1f3f257c" ParentID="0xee28b711">
+<HELP>
+This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3000"/>
+</FILTERS>
+<PROPERTIES>
+<PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="30"/>
+ </PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-m) Manufacturing Industry Mechanical W2W" ID="0x784293ff" ParentID="0xee28b711">
+<HELP>
+This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3001"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="60"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-m) Manufacturing Industry Out" ID="0x6c7e983e" ParentID="0xee28b711">
+<HELP>
+This selection will filter the display to only show Manufacturing Industry plug-ins.  To create a Manufacturing Industry plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3002"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="30"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-ht) High-Tech Industry W2W" ID="0x3b238bc0" ParentID="0x8c8fbc0b">
+<HELP>
+This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x14400"/>
+ <NEEDED ID="0xaa1dd396" Value="0x1002"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.900000)"/>
+ <eval name="BuildingValueFactor" value="7.86"/>
+ <eval name="AirPollutionFactor" value="0.025"/>
+ <eval name="WaterPollutionFactor" value="0.01"/>
+ <eval name="GarbagePollutionFactor" value="0.008"/>
+ <eval name="PowerConsumedFactor" value="0.18"/>
+ <eval name="WaterConsumedFactor" value="0.17"/>
+ <eval name="BiasedBC" value ="int( round( min( 500., BaseCapacity ) * max( 1., sqrt( BaseCapacity/500. ) ) ) )"/>
+ <PROPERTY ID="0xaa1dd397" Set="0xEA55BAAB"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0x27812833" Value="0x08"/>       <!--Purpose-->
+ <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
+ <PROPERTY ID="0x8cb3511f" Value="0x00004400"/>        <!--Occupant Types-->
+ <PROPERTY ID="0x2C8F8746" Value="0x3b238bc0"/>  <!--Examplar Category-->
+ <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
+ <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x27812834" Eval="0x00004400,BaseCapacity"/> <!--Capacity Satisfied-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-ht) High-Tech Industry Anchor W2W" ID="0x0e831b5d" ParentID="0x3b238bc0">
+<HELP>
+This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3000"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="25"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-ht) High-Tech Industry Mechanical W2W" ID="0x164da4e7" ParentID="0x3b238bc0">
+<HELP>
+This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3001"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
+ <eval name="flooragePerWorker" value ="40"/>
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="(I-ht) High-Tech Industry Out W2W" ID="0x2018d8e0" ParentID="0x3b238bc0">
+<HELP>
+This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x3002"/>
+</FILTERS>
+<PROPERTIES>
+<PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
  <eval name="flooragePerWorker" value ="25"/>
 </PROPERTIES>
 </CATEGORY>
