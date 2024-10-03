@@ -7410,6 +7410,22 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00E19" Name="BTE: Ind - Engineering">
     </OPTION>
+    <OPTION Value="0x3CDB7AB9" Name="AMP: Park Entrance - Administration">
+    </OPTION>
+    <OPTION Value="0x90AB05B8" Name="AMP: Transport Rides">
+    </OPTION>
+    <OPTION Value="0x9E838AE6" Name="AMP: Gentle Rides">
+    </OPTION>
+    <OPTION Value="0x23F67A38" Name="AMP: Roller Coasters">
+    </OPTION>
+    <OPTION Value="0x67FFD436" Name="AMP: Thrill Rides">
+    </OPTION>
+    <OPTION Value="0x03E5B341" Name="AMP: Water Rides">
+    </OPTION>
+    <OPTION Value="0xEE8802E6" Name="AMP: Shops - Stalls">
+    </OPTION>
+    <OPTION Value="0x7519C219" Name="AMP: Scenery">
+    </OPTION>
     <OPTION Value="0xB5C00EA8" Name="CAM: ID CAMeLot">
     </OPTION>
     <OPTION Value="0xB5C00EA9" Name="CAM: ID Stage 4">
