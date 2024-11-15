@@ -11721,7 +11721,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Hydroelectric" ID="0x5f860f04" ParentID="0x4cb23866">
+<CATEGORY Name="Hydroelectric" ID="0x0019f0ed" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="3"/>
 </FILTERS>
@@ -11752,7 +11752,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Geothermal" ID="0x5f860f05" ParentID="0x4cb23866">
+<CATEGORY Name="Geothermal" ID="0xa8b37eb4" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="3"/>
 </FILTERS>
@@ -11814,7 +11814,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Microwave" ID="0x5f860f03" ParentID="0x4cb23866">
+<CATEGORY Name="Microwave" ID="0xa6418c2b" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="4"/>
 </FILTERS>
@@ -11877,7 +11877,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Tidal and Wave" ID="0x5f860f02" ParentID="0x4cb23866">
+<CATEGORY Name="Tidal and Wave" ID="0xe62a390b" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="9"/>
 </FILTERS>
