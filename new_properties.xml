@@ -14651,7 +14651,7 @@ This selection will filter the display to only show Courthouse plug-ins.  To cre
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x27812851" Eval="int(1+Volume/50000.0),int(1+Volume/100000.0),int(4+Volume/4000.0),0"/><!--Pollution at center-->
  <PROPERTY ID="0x29244db5" Value="36"/> <!--Flammability-->
- <PROPERTY ID="0x2a499f85" Eval="0xAA8B9755"/> <!--Query Examplar -->
+ <PROPERTY ID="0x2a499f85" Eval="0x9B868F68"/> <!--Query Examplar -->
  <PROPERTY ID="0x49CAC341" Eval="10000+1000*int(Volume/3000.0)"/><!--Plop Cost-->
  <PROPERTY ID="0x68ee9764" Value="2,3,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x8a2602b9" Eval="0x01D6"/><!-- Item Order -->
