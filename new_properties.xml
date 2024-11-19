@@ -10638,7 +10638,7 @@ This selection will filter the display to only show High School plug-ins. To cre
  <PROPERTY ID="0x0A36AFA2" Value="0x0A376642"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForSchool"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x2A499F85" Eval="0xCA8B8564"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x4A4C132E" Set="0x8A8B7DD1"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x4AA60EBC" Eval="Students"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="2.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
@@ -10789,7 +10789,7 @@ This selection will filter the display to only show Other School plug-ins. To cr
  <eval name="BCost" value="0.8765*int(15+0.025*Students**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x03"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForOpera"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x2A499F85" Eval="0x12121201"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x4A4C132E" Set="0x2A8B7DB4"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForOpera"/><!-- Item Order -->
@@ -11471,7 +11471,7 @@ This selection will filter the display to only show Police Station plug-ins.  To
  <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
  <PROPERTY ID="0x27812852" Set="0x00000001"/><!--Power Generated-->
  <PROPERTY ID="0x29244DB5" Eval="0x24"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForPolice"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x2A499F85" Eval="0x2A554F6D"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x48D71ED0" Eval="CntrSt"/><!--Police Station, Center Strength-->
  <PROPERTY ID="0x48D71ED1" Eval="ExtrSt"/><!--Police Station, Exterior Strength-->
  <PROPERTY ID="0x48D71ED2" Eval="Radius"/><!--Police Station, Radius-->
