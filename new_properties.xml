@@ -6360,6 +6360,8 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0x1941" Name="Building: Marina">
     </OPTION>
+	<OPTION Value="0x1942" Name="Building: PoliceCarMaker">
+    </OPTION>
     <OPTION Value="0x1A00" Name="Building: Strikable Fire">
     </OPTION>
     <OPTION Value="0x1A01" Name="Building: Strikable Police">
@@ -11305,7 +11307,7 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForClinic"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE3BD" Value="0.00000000,8.00000000,100.00000000,8.00000000"/><!--Hospital Effectiveness vs. Average Age-->
- <PROPERTY ID="0xAA1DD396" Eval="0x00001005,0x00001507,0x00001A02,0x00001513"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Eval="0x00001005,0x00001507,0x00001A02,0x00001513,0x00001904"/><!--OccupantGroups-->
  <PROPERTY ID="0xC9299659" Value="11.52000046"/><!--Hospital HQ boost-->
  <PROPERTY ID="0xAA1DD399" Eval="0xB1F7AC5B"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
@@ -11328,7 +11330,7 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHospital"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE3BD" Value="0.00000000,8.00000000,100.00000000,8.00000000"/><!--Hospital Effectiveness vs. Average Age-->
- <PROPERTY ID="0xAA1DD396" Eval="0x00001005,0x00001507,0x00001A02,0x00001513,0x0000151A"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Eval="0x00001005,0x00001507,0x00001A02,0x00001513,0x00001904,0x0000151A"/><!--OccupantGroups-->
  <PROPERTY ID="0xC9299659" Value="11.52000046"/><!--Hospital HQ boost-->
  <PROPERTY ID="0xAA1DD399" Eval="0xB7B594D6"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
