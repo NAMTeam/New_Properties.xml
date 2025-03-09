@@ -11,3 +11,11 @@ The file contains all the algorithms used to calculate building statistics (Resi
 The file contains all the Occupant Groups that Maxis and BSC Team have developed allowing for better lot management. 
 
 Because of the uniqueness of the file, new properties can be generated that the game can read using Mod DLLs and it also allows the identification of the IIDs of the prorpieties that can be used for any LUA codes to be used in the game.
+
+## Installation
+
+The file must be installed by following precise instructions according to the program it is to read
+
+### PIM-X
+
+New_Properties.xml should be installed in the PIM-X installation folder `C:\Program Files (x86)\SC4PIM` replacing the original file. 
