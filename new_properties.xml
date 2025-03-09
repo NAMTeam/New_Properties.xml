@@ -10575,7 +10575,7 @@ This selection will filter the display to only show Elementary school plug-ins. 
  <NEEDED ID="0xaa1dd396" Value="0x150F"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSElementary,50*int(1+Volume/750.))"/>
+ <eval name="Students" value="max(SCCSElementary,200*int(1+Volume/750.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
@@ -10618,7 +10618,7 @@ This selection will filter the display to only show High School plug-ins. To cre
  <NEEDED ID="0xaa1dd396" Value="0x1510"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSHighSchool,50*int(1+Volume/1500.))"/>
+ <eval name="Students" value="max(SCCSHighSchool,200*int(1+Volume/1500.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
@@ -10661,7 +10661,7 @@ This selection will filter the display to only show High School plug-ins. To cre
  <NEEDED ID="0xaa1dd396" Value="0x1514"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSPrivate,50*int(1+Volume/1500.))"/>
+ <eval name="Students" value="max(SCCSPrivate,200*int(1+Volume/1500.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
@@ -10703,7 +10703,7 @@ This selection will filter the display to only show Library plug-ins. To create 
  <NEEDED ID="0xaa1dd396" Value="0x1505"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSLibrary,5000*int(2+Volume/750.))"/>
+ <eval name="Students" value="max(SCCSLibrary,20000*int(2+Volume/750.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/3000.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./10.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*7./10.)"/>
@@ -10740,7 +10740,7 @@ This selection will filter the display to only show College plug-ins. To create 
  <NEEDED ID="0xaa1dd396" Value="0x1504"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSCollege,50*int(40+Volume/750.))"/>
+ <eval name="Students" value="max(SCCSCollege,200*int(40+Volume/750.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./9.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./9.)"/>
@@ -10777,7 +10777,7 @@ This selection will filter the display to only show Museum plug-ins. To create a
  <NEEDED ID="0xaa1dd396" Value="0x1506"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSMuseum,100*int(1+Volume**1.5/50000.))"/>
+ <eval name="Students" value="max(SCCSMuseum,400*int(1+Volume**1.5/50000.))"/>
  <eval name="CatalogC" value="5*int(sqrt(Students)/5.)"/>
  <eval name="CivicJobs" value="CatalogC"/>
  <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
@@ -10815,7 +10815,7 @@ This selection will filter the display to only show Other School plug-ins. To cr
  <NEEDED ID="0xaa1dd396" Value="0x151B"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSOpera,50*int(1+Volume/94.789))"/>
+ <eval name="Students" value="max(SCCSOpera,200*int(1+Volume/94.789))"/>
  <eval name="CivicJobs" value="int(ceil(Students/300.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
@@ -11332,8 +11332,8 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NOT ID="0xaa1dd396" Value="0x151C"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(50*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="8*int(1+4.*Patients**0.4)"/>
+ <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
  <eval name="MCost" value="100*int(1+0.0075*Patients**0.9)"/>
  <eval name="TCost" value="100*int(1+0.00125*Patients**0.9)"/>
  <eval name="CCost" value="TCost+MCost"/>
@@ -11355,8 +11355,8 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NOT ID="0xaa1dd396" Value="0x151C"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(50*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="8*int(1+4.*Patients**0.4)"/>
+ <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
  <eval name="MCost" value="100*int(1+0.0075*Patients**0.9)"/>
  <eval name="TCost" value="100*int(1+0.00125*Patients**0.9)"/>
  <eval name="CCost" value="TCost+MCost"/>
@@ -11377,8 +11377,8 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NEEDED ID="0xea54d283" Value="0xAA538CB3"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(625*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="40*int(30+0.25*Patients**0.4)"/>
+ <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="80*int(30+0.25*Patients**0.4)"/>
  <eval name="MCost" value="50*int(1+0.0009*Patients**0.9)"/>
  <eval name="TCost" value="50*int(1+0.0015*Patients**0.9)"/>
  <eval name="CCost" value="TCost+MCost"/>
@@ -11398,8 +11398,8 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NEEDED ID="0xaa1dd396" Value="0x151C"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(625*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="5800"/>
+ <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="11600"/>
  <eval name="MCost" value="10*int(1+0.0009*Patients**0.9)"/>
  <eval name="BCost" value="25*int(2.5+0.006*Patients**0.9)"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForDisease"/><!--Query exemplar GUID-->
@@ -11427,9 +11427,9 @@ This selection will filter the display to only show Fire Station plug-ins.  To c
  <eval name="Jobs1" value="5+int(Volume/1500.)"/>
  <eval name="Jobs2" value="0+int(Volume/3000.)"/>
  <eval name="Jobs3" value="0+int(Volume/25000.)"/>
- <eval name="Radius" value="16*int((160+3.0*sqrt(2.*Volume))/16.0)"/>
- <eval name="CntrSt" value="min(5*int((100+sqrt(2.*Volume))/5.0),255)"/>
- <eval name="ExtrSt" value="min(5*int((50+0.1*sqrt(2.*Volume))/5.0),100)"/>
+ <eval name="Radius" value="64*int((160+3.0*sqrt(2.*Volume))/16.0)"/>
+ <eval name="CntrSt" value="min(20*int((100+sqrt(2.*Volume))/5.0),255)"/>
+ <eval name="ExtrSt" value="min(20*int((50+0.1*sqrt(2.*Volume))/5.0),100)"/>
  <eval name="Dispat" value="int(1+0.01*sqrt(2.*Volume))"/>
  <eval name="MCost" value="10*int(6+0.030*Volume**0.65)"/>
  <eval name="PCost" value="10*int(8+0.065*Volume**0.7)"/>
@@ -11489,12 +11489,12 @@ This selection will filter the display to only show Police Station plug-ins.  To
  <eval name="Jobs1" value="5+int(Volume/500.)"/>
  <eval name="Jobs2" value="2+int(Volume/5000.)"/>
  <eval name="Jobs3" value="0+int(Volume/25000.)"/>
- <eval name="Radius" value="16*int((160+1.5*(2.*Volume)**0.55)/16.0)"/>
+ <eval name="Radius" value="64*int((160+1.5*(2.*Volume)**0.55)/16.0)"/>
  <eval name="CntrSt" value="5*int((100+0.7*(2.*Volume)**0.55)/5.0)"/>
  <eval name="ExtrSt" value="min(5*int(0.1*(2.*Volume)**0.55/5.0),50)"/>
  <eval name="Dispat" value="int(0.025*sqrt(2.*Volume))"/>
  <eval name="DispRa" value="8*int((48+0.25*sqrt(2.*Volume))/8.0)"/>
- <eval name="Inmate" value="10*int(0.2*(2.*Volume)**0.55/10.0)"/>
+ <eval name="Inmate" value="40*int(0.2*(2.*Volume)**0.55/10.0)"/>
  <eval name="MCost" value="10*int(3+0.025*Volume**0.65)"/>
  <eval name="PCost" value="10*int(6+0.006*Volume**0.9)"/>
  <eval name="BCost" value="10*int(1+0.005*Volume**0.65)"/>
@@ -11542,7 +11542,7 @@ This selection will filter the display to only show Jail plug-ins.  To create a 
  <eval name="Jobs1" value="5+int(Volume/1000.)"/>
  <eval name="Jobs2" value="2+int(Volume/5000.)"/>
  <eval name="Jobs3" value="0+int(Volume/25000.)"/>
- <eval name="Inmate" value="10*int((10+0.05*Volume)/10.0)"/>
+ <eval name="Inmate" value="40*int((10+0.05*Volume)/10.0)"/>
  <eval name="MCost" value="10*int(1+0.001*Volume)"/>
  <eval name="PCost" value="50*int(5+0.001*Volume)"/>
  <eval name="BCost" value="10*int(1+0.0005*Volume)"/>
@@ -11613,7 +11613,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/40."/>
  <eval name="GarbagePollutionFactor" value="1/240."/>
  <eval name="WaterConsumedFactor" value="1/120."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x4A4C43E5"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000001"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
@@ -11633,7 +11632,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <NEEDED ID="0x27812853" Value="2"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+1.65*Volume/100.)"/>
+ <eval name="PowerOutput" value="100*int(1+1.70*Volume/100.)"/>
  <eval name="PCost" value="500*int(2.00*PowerOutput/500.)"/>
  <eval name="MCost" value="50*int(0.200*PowerOutput/50.)"/>
  <eval name="BCost" value="10*int(0.090*PowerOutput/10.)"/>
@@ -11645,7 +11644,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/6000."/>
  <eval name="GarbagePollutionFactor" value="1/4500."/>
  <eval name="WaterConsumedFactor" value="1/38."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x8A890D15"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000002"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
@@ -11663,7 +11661,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <NEEDED ID="0x27812853" Value="3"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
+ <eval name="PowerOutput" value="100*int(1+0.060*Volume/100.)"/>
  <eval name="PCost" value="500*int(3.00*PowerOutput/500.)"/>
  <eval name="MCost" value="50*int(0.130*PowerOutput/50.)"/>
  <eval name="BCost" value="10*int(0.140*PowerOutput/10.)"/>
@@ -11675,7 +11673,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/45."/>
  <eval name="GarbagePollutionFactor" value="1/150."/>
  <eval name="WaterConsumedFactor" value="1/150."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
@@ -11707,7 +11704,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/350."/>
  <eval name="GarbagePollutionFactor" value="1/1000."/>
  <eval name="WaterConsumedFactor" value="1/18."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000005"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
@@ -11743,7 +11739,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/85."/>
  <eval name="GarbagePollutionFactor" value="1/350."/>
  <eval name="WaterConsumedFactor" value="1/280."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000006"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
@@ -11755,6 +11750,37 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
  <PROPERTY ID="0xAA1DD399" Eval="0xDAC7A95E"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x45dea4f8"/><!--Extended Power Type--> 
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Biomass" ID="0xc6522034" ParentID="0x4cb23866">
+<FILTERS>
+ <NEEDED ID="0x27812853" Value="6"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="PowerOutput" value="100*int(1+0.035*Volume/100.)"/>
+ <eval name="PCost" value="500*int(2.50*PowerOutput/500.)"/>
+ <eval name="MCost" value="50*int(0.080*PowerOutput/50.)"/>
+ <eval name="BCost" value="10*int(0.110*PowerOutput/10.)"/>
+ <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+ <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+ <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+ <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+ <eval name="AirPollutionFactor" value="1/45."/>
+ <eval name="WaterPollutionFactor" value="1/85."/>
+ <eval name="GarbagePollutionFactor" value="1/350."/>
+ <eval name="WaterConsumedFactor" value="1/280."/>
+ <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
+ <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
+ <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+ <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+ <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
+ <PROPERTY ID="0x4A4C132E" Set="0xCA4C4395"/><!--SFX:Activate Sound-->
+ <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+ <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
+ <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+ <PROPERTY ID="0xAA1DD399" Eval="0xD51F1DFB"/><!--OccupantGroups for SubMenu-->
+ <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -11775,7 +11801,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/85."/>
  <eval name="GarbagePollutionFactor" value="1/350."/>
  <eval name="WaterConsumedFactor" value="1/280."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
@@ -11806,7 +11831,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/85."/>
  <eval name="GarbagePollutionFactor" value="1/350."/>
  <eval name="WaterConsumedFactor" value="1/280."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
@@ -11837,7 +11861,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/1000."/>
  <eval name="GarbagePollutionFactor" value="1/450."/>
  <eval name="WaterConsumedFactor" value="1/1000."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x8A4C4443"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000007"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
@@ -11868,7 +11891,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/1000."/>
  <eval name="GarbagePollutionFactor" value="1/450."/>
  <eval name="WaterConsumedFactor" value="1/1000."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x8A4C4443"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000004"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
@@ -11898,7 +11920,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="0"/>
  <eval name="GarbagePollutionFactor" value="0"/>
  <eval name="WaterConsumedFactor" value="0"/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
  <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
@@ -11931,7 +11952,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="0"/>
  <eval name="GarbagePollutionFactor" value="0"/>
  <eval name="WaterConsumedFactor" value="0"/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
  <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
@@ -11963,7 +11983,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterPollutionFactor" value="1/350."/>
  <eval name="GarbagePollutionFactor" value="1/1000."/>
  <eval name="WaterConsumedFactor" value="1/18."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x0000000A"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x14"/><!--Flammability-->
@@ -11997,7 +12016,6 @@ This selection will filter the display to only show Waste to Energy plug-ins.  T
  <eval name="WaterPollutionFactor" value="1/25."/>
  <eval name="GarbagePollutionFactor" value="0"/>
  <eval name="WaterConsumedFactor" value="1/5."/>
- <eval name="MHWRating" value="PowerOutput+0"/><!--MHW-->
  <PROPERTY ID="0x0A4C13CB" Set="0xEA4C448D"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812853" Eval="0x00000008"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x60"/><!--Flammability-->
