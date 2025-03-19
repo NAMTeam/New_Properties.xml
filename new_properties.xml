@@ -7555,8 +7555,26 @@ List of groups this occupant belongs to.
     </OPTION>
 	<OPTION Value="0xC78E0054" Name="AMPS: Wind">
     </OPTION>
+	<OPTION Value="0xB075C142" Name="AMPS: Generators">
+    </OPTION>
 	<OPTION Value="0x7AB34F1B" Name="AMPS: Auxiliary">
     </OPTION>
+	<OPTION Value="0x861A7248" Name="AMPS: Power Storage">
+    </OPTION>
+	<OPTION Value="0xED378A8E" Name="AMPS: Transmission Station">
+    </OPTION>
+	<OPTION Value="0x215395E9" Name="AMPS: Distribution Substation">
+    </OPTION>
+	<OPTION Value="0xD45142D1" Name="AMPS: High Voltage Power Line ">
+    </OPTION>
+	<OPTION Value="0x4E1F2B7B" Name="AMPS: Medium Voltage Power Line ">
+    </OPTION>
+	<OPTION Value="0x38730189" Name="AMPS: Low Voltage Power Line ">
+    </OPTION>
+	<OPTION Value="0x7292f7FA" Name="AMPS: Power Line">
+    </OPTION>	
+	<OPTION Value="0x0ABF5A84" Name="AMPS: Transformer">
+    </OPTION>		
 	<OPTION Value="0xB2718077" Name="AMPS: Power Eye-Candy">
     </OPTION>
 	<OPTION Value="0x0C56201B" Name="AGM: Landfill">
