@@ -9631,7 +9631,7 @@ This selection will filter the display to only show Residential Low Wealth plug-
  <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011010,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x2c8fbb95"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
@@ -9659,7 +9659,7 @@ This selection will filter the display to only show Residential Low Wealth W2W p
  <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011010,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0xf6a23754"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
@@ -9687,7 +9687,7 @@ This selection will filter the display to only show Residential Medium Wealth pl
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011020,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x6C8FBBA5"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
@@ -9715,7 +9715,7 @@ This selection will filter the display to only show Residential Medium Wealth W2
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011020,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0xce253a47"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
@@ -9743,7 +9743,7 @@ This selection will filter the display to only show Residential High Wealth plug
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020,0x00001030"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x0c8fbbae"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
@@ -9771,7 +9771,7 @@ This selection will filter the display to only show Residential High Wealth W2W 
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020,0x00001030"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x4ec7d949"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
@@ -9817,7 +9817,7 @@ This selection will filter the display to only show Commercial Service Low Wealt
  <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013110,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x8C8FBBCC"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
@@ -9845,7 +9845,7 @@ This selection will filter the display to only show Commercial Service Low Wealt
  <PROPERTY ID="0x27812832" Value="0x01"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013110,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0xbcd2c7e1"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="45"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
@@ -9873,7 +9873,7 @@ This selection will filter the display to only show Commercial Service Medium We
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013120,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x0c8fbbdc"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
@@ -9901,7 +9901,7 @@ This selection will filter the display to only show Commercial Service Medium We
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013120,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x539f3c1d"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
@@ -9929,7 +9929,7 @@ This selection will filter the display to only show Commercial Service High Weal
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120,0x0003130"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013130,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0xac8fbbeb"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
@@ -9957,7 +9957,7 @@ This selection will filter the display to only show Commercial Service High Weal
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003110,0x0003120,0x0003130"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013130,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x3b3f3641"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
@@ -10002,7 +10002,7 @@ This selection will filter the display to only show Commercial Office Medium Wea
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003320"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013320,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x6c8fbbf5"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
@@ -10030,7 +10030,7 @@ This selection will filter the display to only show Commercial Office Medium Wea
  <PROPERTY ID="0x27812832" Value="0x02"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003320"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013320,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x452925b6"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="40"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
@@ -10058,7 +10058,7 @@ This selection will filter the display to only show Commercial Office High Wealt
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003320,0x00003330"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013330,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0xcc8fbc01"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
@@ -10086,7 +10086,7 @@ This selection will filter the display to only show Commercial Office High Wealt
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00003320,0x00003330"/>        <!--Occupant Types-->
  <PROPERTY ID="0xaa1dd396" Set="0x00001001,0x00013330,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00A05"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x8840bc41"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
@@ -10134,7 +10134,7 @@ This selection will filter the display to only show Agricultrual plug-ins.  To c
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004100,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
  <PROPERTY ID="0x29B55F73" Value="0x00024100,0x2A6E4309,0x2A6E431D,0xAA6E4328,0x6A6E4332,0xEA6E4721,0xEA6E4722"/> <!--Field lots-->
 </PROPERTIES>
@@ -10166,7 +10166,7 @@ This selection will filter the display to only show Agricultrual W2W plug-ins.  
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004100,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
  <PROPERTY ID="0x29B55F73" Value="0x00024100,0x2A6E4309,0x2A6E431D,0xAA6E4328,0x6A6E4332,0xEA6E4721,0xEA6E4722"/> <!--Field lots-->
 </PROPERTIES>
@@ -10211,7 +10211,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
 <PROPERTIES>
  <eval name="flooragePerWorker" value ="60"/>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003000"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10224,7 +10224,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="40"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10238,7 +10238,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="20"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10281,7 +10281,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="30"/>
  </PROPERTIES>
 </CATEGORY>
@@ -10295,7 +10295,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="60"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10309,7 +10309,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="30"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10352,7 +10352,7 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="25"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10366,7 +10366,7 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="40"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10380,7 +10380,7 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="25"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10424,7 +10424,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 <PROPERTIES>
  <eval name="flooragePerWorker" value ="60"/>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10437,7 +10437,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="40"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10451,7 +10451,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="20"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10494,7 +10494,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="30"/>
  </PROPERTIES>
 </CATEGORY>
@@ -10508,7 +10508,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="60"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10522,7 +10522,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="30"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10565,7 +10565,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="25"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10579,7 +10579,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="40"/>
 </PROPERTIES>
 </CATEGORY>
@@ -10593,7 +10593,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
- <PROPERTY ID="0xaa1dd400" Set="0x00002004"/> <!--Building Styles-->
+ <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <eval name="flooragePerWorker" value ="25"/>
 </PROPERTIES>
 </CATEGORY>
@@ -11732,6 +11732,39 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </PROPERTIES>
 </CATEGORY>
 
+<CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
+<FILTERS>
+ <NEEDED ID="0x27812853" Value="3"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="PowerOutput" value="100*int(1+0.010*Volume/100.)"/>
+ <eval name="PCost" value="500*int(3.00*PowerOutput/500.)"/>
+ <eval name="MCost" value="50*int(0.130*PowerOutput/50.)"/>
+ <eval name="BCost" value="10*int(0.140*PowerOutput/10.)"/>
+ <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
+ <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+ <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+ <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+ <eval name="AirPollutionFactor" value="1/50."/>
+ <eval name="WaterPollutionFactor" value="1/45."/>
+ <eval name="GarbagePollutionFactor" value="1/150."/>
+ <eval name="WaterConsumedFactor" value="1/150."/>
+ <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
+ <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
+ <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+ <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+ <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
+ <PROPERTY ID="0x4A4C132E" Set="0x5F860F09"/><!--SFX:Activate Sound-->
+ <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+ <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
+ <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x4B465151"/><!--OccupantGroups for SubMenu-->
+ <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
+</PROPERTIES>
+</CATEGORY>
+
+
 <CATEGORY Name="Natural Gas" ID="0x4cb53873" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="3"/>
@@ -11853,7 +11886,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
  <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
  <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0xCA4C4395"/><!--SFX:Activate Sound-->
+ <PROPERTY ID="0x4A4C132E" Set="0x0x5F860F08"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
@@ -12544,6 +12577,39 @@ This selection will filter the display to only show Treatment plug-ins.  To crea
  <PROPERTY ID="0xAA1DD397" Set="0x4A5B146D"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xAA5832F3" Eval="0x00000000,-10*(10+int(sqrt(WaterOutput)/10.0)),0x00000000,0x00000000"/><!--Pollution at outer edge of circle -->
  <PROPERTY ID="0xC8EBD131" Value="0x00000000"/><!--Water Treatment monthly capacity-->
+ <PROPERTY ID="0xC8ED2D84" Eval="10*int(1+WaterOutput/2000.)"/><!--Water Consumed-->
+ <PROPERTY ID="0xCA19D7CA" Set="0x8A55B1A2"/><!--SFX:Ambience Good Sound-->
+ <PROPERTY ID="0xEA1CF220" Value="0.00111100"/><!--Age degradation rate-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x00000000"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Sewage Sanitizer" ID="0x64673b59" ParentID="0x6c8fbc50">
+<HELP>
+This selection will filter the display to only show Sanitizer plug-ins.  To create a Sanitizer plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Uw3x5_WaterPurificationPlant.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xaa1dd396" Value="0x1402"/>
+</FILTERS>
+<PROPERTIES>
+ <eval name="WaterOutput" value="100*int(1+1.5*Volume/100.)"/>
+ <eval name="CivicJobs" value="int(Volume/150.)"/>
+ <PROPERTY ID="0x099AFACD" Eval="10*int(1+0.06*WaterOutput/10)"/><!--Bulldoze Cost-->
+ <PROPERTY ID="0x0A4C13CB" Set="0x2A55B192"/><!--SFX:Ambience Decayed Sound-->
+ <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
+ <PROPERTY ID="0x27812851" Eval="int(WaterOutput/20000.0),-10*(15+int(sqrt(WaterOutput)/10.0)),0x00000000,0x00000000"/><!--Pollution at center-->
+ <PROPERTY ID="0x27812854" Eval="int(1+WaterOutput/400.)"/><!--Power Consumed-->
+ <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
+ <PROPERTY ID="0x2A499F85" Eval="QueryForTreatment"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x48F23A7E" Value="0x02"/><!--Water Source-->
+ <PROPERTY ID="0x49CAC341" Eval="50*int(0.7*WaterOutput/50.0)"/><!--Plop Cost-->
+ <PROPERTY ID="0x4A4C132E" Set="0x2A55B1B1"/><!--SFX:Activate Sound-->
+ <PROPERTY ID="0x68EE9764" Eval="int(sqrt(CivicJobs)),2*int(sqrt(WaterOutput)/2.),0.00000000,0.00000000"/><!--Pollution radii-->
+ <PROPERTY ID="0x88FCD877" Set="0x2A711000"/><!--Building foundation-->
+ <PROPERTY ID="0x8A2602B9" Set="0x05"/><!-- Item Order -->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001401,0x00001402,0x16A71A32,0x280C60E3"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD397" Set="0x5F860F07"/><!--SFX:Query Sound-->
+ <PROPERTY ID="0xAA5832F3" Eval="0x00000000,-10*(10+int(sqrt(WaterOutput)/10.0)),0x00000000,0x00000000"/><!--Pollution at outer edge of circle -->
  <PROPERTY ID="0xC8ED2D84" Eval="10*int(1+WaterOutput/2000.)"/><!--Water Consumed-->
  <PROPERTY ID="0xCA19D7CA" Set="0x8A55B1A2"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Value="0.00111100"/><!--Age degradation rate-->
@@ -15081,7 +15147,7 @@ This selection will filter the display to only show Casino plug-ins.  To create 
  <PROPERTY ID="0x27812851" Eval="int(1+Volume/100000.0),int(1+Volume/100000.0),int(4+Volume/10000.0),0"/><!--Pollution at center-->
  <PROPERTY ID="0x29244db5" Value="42"/> <!--Flammability-->
  <PROPERTY ID="0x2a499f85" Eval="0xAA8B999E"/> <!--Query Examplar -->
- <PROPERTY ID="0x4a4c132e" Set="0xCA55AA1C"/> <!--SFX:Activate Sound-->
+ <PROPERTY ID="0x4a4c132e" Set="0x5F860F06"/> <!--SFX:Activate Sound-->
  <PROPERTY ID="0x68ee9764" Value="4,5,2,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x8a2602b9" Eval="0x0032"/><!-- Item Order -->
  <PROPERTY ID="0xaa1dd396" Set="0x0000150B,0x00001900,0x00001903,0x00001940"/> <!--OccupantGroups-->
@@ -15092,6 +15158,11 @@ This selection will filter the display to only show Casino plug-ins.  To create 
  <PROPERTY ID="0xca5b9305" Eval="-7,440"/><!--Mayor rating effect-->
  <PROPERTY ID="0xca5b9306" Eval="int(2+int(Volume/6000.0)),128"/><!--Crime Effect-->
  <PROPERTY ID="0xea54d286" Eval="120+10*int(Volume/10000.0)"/> <!--Budget Item: Cost-->
+ <PROPERTY ID="0x90222B81" Value="0xEC00EA36,0x0A5A72D1"/><!--Budget: Custom Department Budget Group-->
+ <PROPERTY ID="0x4252085F" Value="0x790651AD,0x26350A44,0x030F0A4F,0x790651AD,0x26350A44,0x030F0A4F"/><!--Budget: Custom Department Name Key-->
+ <PROPERTY ID="0x9EE1240F" Value="0x6EB01C57,0x00000000,0x6EB01C58,0x00000003"/><!--Budget: Custom Line Item Cost Algorithm-->
+ <PROPERTY ID="0x9EE12412" Value="0x6EB01C57,0x00000000,0x6EB01C58,0x00000003"/><!--Budget Custom Line Item Variable Expense/Income: Tourism-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x954E20FE"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
 </CATEGORY>
 
