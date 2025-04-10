@@ -11886,7 +11886,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
  <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
  <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0x0x5F860F08"/><!--SFX:Activate Sound-->
+ <PROPERTY ID="0x4A4C132E" Set="0x5F860F08"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
