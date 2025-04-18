@@ -5256,7 +5256,7 @@ List of instance IDs for exemplars containing the properties for each distinct a
     <HELP>
 For use with More Building Styles DLL: Allows additional building styles to be inserted.
 </HELP>
-	<OPTION Value="0x2004" Name="Style: Additional Building Styles Marker">
+	<OPTION Value="0x7B6BC069" Name="Style: Additional Building Styles Marker">
     </OPTION>
   </PROPERTY>
   <PROPERTY Name="Building Is Wall-to-Wall" ID="0xaa1dd401" Type="Bool" Default="False" ShowAsHex="Y">
