@@ -249,10 +249,10 @@
 			<property num="0x2A653130" type="Float32" name="Demand Effect:Cs$$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653320" type="Float32" name="Demand Effect:Co$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653330" type="Float32" name="Demand Effect:Co$$$" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654100" type="Float32" name="Demand Effect:I-Ag" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654200" type="Float32" name="Demand Effect:I-D" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654300" type="Float32" name="Demand Effect:I-M" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654400" type="Float32" name="Demand Effect:I-Ht" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654100" type="Float32" name="Demand Effect:IR" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654200" type="Float32" name="Demand Effect:ID" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654300" type="Float32" name="Demand Effect:IM" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654400" type="Float32" name="Demand Effect:IHT" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2a89b677" type="Bool" name="Prop Destroys Lot" desc="Whether or not prop destroys entire lot when it burns down.  Default is true for flammable props."></property>
 			<property num="0x2a9590de" type="Float32" name="Audio:VolumeAttackLimit" desc="Max amount of full volume to change up per second"></property>
 			<property num="0x2aa00fe7" type="Sint64" name="Landfill: Cost for Altitude Change" desc="When zoning, the additional cost per cell for each meter of altitude changed"></property>
