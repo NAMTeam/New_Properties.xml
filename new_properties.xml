@@ -4221,6 +4221,184 @@ Base height above terrain at which the effect will play for a tract that's at de
 Value for displaying monthly cost in the catalog - not simulated
 </HELP>
   </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: R$ Population" ID="0x6b23d800" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum R$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: R$$ Population" ID="0x6b23d801" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum R$$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: R$$$ Population" ID="0x6b23d802" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum R$$$ population for this ordinance to become available.
+</HELP>
+  <PROPERTY Name="Ordinance Availability: Cs$ Population" ID="0x6b23d803" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum Cs$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Cs$$ Population" ID="0x6b23d804" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum Cs$$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Cs$$$ Population" ID="0x6b23d805" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum Cs$$$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Co$$ Population" ID="0x6b23d806" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum Co$$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Co$$$ Population" ID="0x6b23d807" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum Co$$$ population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: IR Population" ID="0x6b23d808" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum IR population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: ID Population" ID="0x6b23d809" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum ID population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: IM Population" ID="0x6b23d80a" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum IM population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: IHT Population" ID="0x6b23d80b" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum IHT population for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Fire Station Count" ID="0x6b23d820" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum number of fire stations for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+    <PROPERTY Name="Ordinance Availability: Hospital Count" ID="0x6b23d821" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum number of hospital buildings for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Jail Count" ID="0x6b23d822" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum number of jails for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Police Station Count" ID="0x6b23d823" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum number of police stations for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: School Count" ID="0x6b23d824" Type="Uint32" ShowAsHex="N">
+    <HELP>
+The minimum number of school buildings for this ordinance to become available.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Availability: Lua Function" ID="0x6b23d830" Type="String" ShowAsHex="N">
+    <HELP>
+The name of a Lua function that checks the conditions for this ordinance to become available. Must have a unique name, take no parameters, and return a Boolean.
+</HELP>
+  </PROPERTY>
+    <PROPERTY Name="Ordinance Monthly Income: R$ Population Factor" ID="0x6b23d900" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the R$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: R$$ Population Factor" ID="0x6b23d901" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the R$$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: R$$$ Population Factor" ID="0x6b23d902" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the R$$$ population.
+</HELP>
+  <PROPERTY Name="Ordinance Monthly Income: Cs$ Population Factor" ID="0x6b23d903" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the Cs$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Cs$$ Population Factor" ID="0x6b23d904" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the Cs$$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Cs$$$ Population Factor" ID="0x6b23d905" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the Cs$$$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Co$$ Population Factor" ID="0x6b23d906" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the Co$$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Co$$$ Population Factor" ID="0x6b23d907" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the Co$$$ population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: IR Population Factor" ID="0x6b23d908" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the IR population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: ID Population Factor" ID="0x6b23d909" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the ID population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: IM Population Factor" ID="0x6b23d90a" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the IM population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: IHT Population Factor" ID="0x6b23d90b" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the IHT population.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Fire Station Factor" ID="0x6b23d920" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the number of fire stations.
+</HELP>
+  </PROPERTY>
+    <PROPERTY Name="Ordinance Monthly Income: Hospital Factor" ID="0x6b23d921" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the number of hospital buildings.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Jail Factor" ID="0x6b23d922" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the number of jails.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Police Station Factor" ID="0x6b23d923" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the number of police stations.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: School Factor" ID="0x6b23d924" Type="Float32" ShowAsHex="N">
+    <HELP>
+Factor applied to the ordinance cost based on the number of school buildings.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Ordinance Monthly Income: Lua Function" ID="0x6b23d930" Type="String">
+    <HELP>
+The name of a Lua function that that calculates the monthly income. Must have a unique name, take the monthly constant income as a parameter, and return the calculated monthly expense/income for the ordinance.
+</HELP>
+  </PROPERTY>
   <PROPERTY Name="Simulation Speed multiplier" ID="0x6b42922c" Type="Float32" Count="4" Default="0.25 1 2 0.25" ShowAsHex="Y">
     <HELP>
 Multiplier for automata speed when sim is in slow, medium, fast, and player-drive mode.  1.0 = default speed
