@@ -784,23 +784,23 @@
 			<property num="0x6b23d823" type="Uint32" name="Ordinance Availability: Police Station Count" desc="The minimum number of police stations for this ordinance to become available."></property>
 			<property num="0x6b23d824" type="Uint32" name="Ordinance Availability: School Count" desc="The minimum number of school buildings for this ordinance to become available."></property>
 			<property num="0x6b23d830" type="String" name="Ordinance Availability: Lua Function" desc="The name of a Lua function that checks the conditions for this ordinance to become available. Must have a unique name, take no parameters, and return a Boolean."></property>
-			<property num="0x6b23d900" type="Float" name="Ordinance Monthly Income: R$ Population Factor" desc="Factor applied to the ordinance cost based on the R$ population."></property>
-			<property num="0x6b23d901" type="Float" name="Ordinance Monthly Income: R$$ Population Factor" desc="Factor applied to the ordinance cost based on the R$$ population."></property>
-			<property num="0x6b23d902" type="Float" name="Ordinance Monthly Income: R$$$ Population Factor" desc="Factor applied to the ordinance cost based on the R$$$ population."></property>
-			<property num="0x6b23d903" type="Float" name="Ordinance Monthly Income: Cs$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$ population."></property>
-			<property num="0x6b23d904" type="Float" name="Ordinance Monthly Income: Cs$$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$$ population."></property>
-			<property num="0x6b23d905" type="Float" name="Ordinance Monthly Income: Cs$$$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$$$ population."></property>
-			<property num="0x6b23d906" type="Float" name="Ordinance Monthly Income: Co$$ Population Factor" desc="Factor applied to the ordinance cost based on the Co$$ population."></property>
-			<property num="0x6b23d907" type="Float" name="Ordinance Monthly Income: Co$$$ Population Factor" desc="Factor applied to the ordinance cost based on the Co$$$ population."></property>
-			<property num="0x6b23d908" type="Float" name="Ordinance Monthly Income: IR Population Factor" desc="Factor applied to the ordinance cost based on the IR population."></property>
-			<property num="0x6b23d909" type="Float" name="Ordinance Monthly Income: ID Population Factor" desc="Factor applied to the ordinance cost based on the ID population."></property>
-			<property num="0x6b23d90a" type="Float" name="Ordinance Monthly Income: IM Population Factor" desc="Factor applied to the ordinance cost based on the IM population."></property>
-			<property num="0x6b23d90b" type="Float" name="Ordinance Monthly Income: IHT Population Factor" desc="Factor applied to the ordinance cost based on the IHT population."></property>
-			<property num="0x6b23d920" type="Float" name="Ordinance Monthly Income: Fire Station Factor" desc="Factor applied to the ordinance cost based on the number of fire stations."></property>
-			<property num="0x6b23d921" type="Float" name="Ordinance Monthly Income: Hospital Factor" desc="Factor applied to the ordinance cost based on the number of hospital buildings."></property>
-			<property num="0x6b23d922" type="Float" name="Ordinance Monthly Income: Jail Factor" desc="Factor applied to the ordinance cost based on the number of jails."></property>
-			<property num="0x6b23d923" type="Float" name="Ordinance Monthly Income: Police Station Factor" desc="Factor applied to the ordinance cost based on the number of police stations."></property>
-			<property num="0x6b23d924" type="Float" name="Ordinance Monthly Income: School Factor" desc="Factor applied to the ordinance cost based on the number of school buildings."></property>
+			<property num="0x6b23d900" type="Float32" name="Ordinance Monthly Income: R$ Population Factor" desc="Factor applied to the ordinance cost based on the R$ population."></property>
+			<property num="0x6b23d901" type="Float32" name="Ordinance Monthly Income: R$$ Population Factor" desc="Factor applied to the ordinance cost based on the R$$ population."></property>
+			<property num="0x6b23d902" type="Float32" name="Ordinance Monthly Income: R$$$ Population Factor" desc="Factor applied to the ordinance cost based on the R$$$ population."></property>
+			<property num="0x6b23d903" type="Float32" name="Ordinance Monthly Income: Cs$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$ population."></property>
+			<property num="0x6b23d904" type="Float32" name="Ordinance Monthly Income: Cs$$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$$ population."></property>
+			<property num="0x6b23d905" type="Float32" name="Ordinance Monthly Income: Cs$$$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$$$ population."></property>
+			<property num="0x6b23d906" type="Float32" name="Ordinance Monthly Income: Co$$ Population Factor" desc="Factor applied to the ordinance cost based on the Co$$ population."></property>
+			<property num="0x6b23d907" type="Float32" name="Ordinance Monthly Income: Co$$$ Population Factor" desc="Factor applied to the ordinance cost based on the Co$$$ population."></property>
+			<property num="0x6b23d908" type="Float32" name="Ordinance Monthly Income: IR Population Factor" desc="Factor applied to the ordinance cost based on the IR population."></property>
+			<property num="0x6b23d909" type="Float32" name="Ordinance Monthly Income: ID Population Factor" desc="Factor applied to the ordinance cost based on the ID population."></property>
+			<property num="0x6b23d90a" type="Float32" name="Ordinance Monthly Income: IM Population Factor" desc="Factor applied to the ordinance cost based on the IM population."></property>
+			<property num="0x6b23d90b" type="Float32" name="Ordinance Monthly Income: IHT Population Factor" desc="Factor applied to the ordinance cost based on the IHT population."></property>
+			<property num="0x6b23d920" type="Float32" name="Ordinance Monthly Income: Fire Station Factor" desc="Factor applied to the ordinance cost based on the number of fire stations."></property>
+			<property num="0x6b23d921" type="Float32" name="Ordinance Monthly Income: Hospital Factor" desc="Factor applied to the ordinance cost based on the number of hospital buildings."></property>
+			<property num="0x6b23d922" type="Float32" name="Ordinance Monthly Income: Jail Factor" desc="Factor applied to the ordinance cost based on the number of jails."></property>
+			<property num="0x6b23d923" type="Float32" name="Ordinance Monthly Income: Police Station Factor" desc="Factor applied to the ordinance cost based on the number of police stations."></property>
+			<property num="0x6b23d924" type="Float32" name="Ordinance Monthly Income: School Factor" desc="Factor applied to the ordinance cost based on the number of school buildings."></property>
 			<property num="0x6b23d930" type="String" name="Ordinance Monthly Income: Lua Function" desc="The name of a Lua function that that calculates the monthly income. Must have a unique name, take the monthly constant income as a parameter, and return the calculated monthly expense/income for the ordinance."></property>
 			<property num="0x6b42922c" type="Float32" name="Simulation Speed multiplier" desc="Is just a visual representation. Multiplier for Automata speed when simulator is in: Turtle: Rhino: Cheetah: UDI mode. First 3 only apply when "Variable Speed Automata" is on."></property>
 			<property num="0x6b588fad" type="Float32" name="SuspensionPeriod" desc="Defaulted deals get suspended for this number of days."></property>
