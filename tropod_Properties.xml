@@ -241,6 +241,9 @@
 			<property num="0x2a511cbc" type="Float32" name="Curve speed multiplier" desc="Multiplied by a vehicle's default speed when it goes around a curve"></property>
 			<property num="0x2a53be13" type="Uint32" name="SFX:Alarm Ambience Sound" desc="GUID of sound. Plays between alarm times."></property>
 			<property num="0x2a62d9f3" type="Uint32" name="Crime Type" desc="Crime Sims only - which crime type this model represents"></property>
+			<property num="0x2A651010" type="Float32" name="Demand Effect:R$" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A651020" type="Float32" name="Demand Effect:R$$" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A651030" type="Float32" name="Demand Effect:R$$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653110" type="Float32" name="Demand Effect:Cs$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653120" type="Float32" name="Demand Effect:Cs$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653130" type="Float32" name="Demand Effect:Cs$$$" desc="This is the % Effect the Ordinance will have when active."></property>

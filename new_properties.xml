@@ -1518,6 +1518,21 @@ Crime sims only - which crime type this model represents
       Factor applied to industrial demand
     </HELP>
   </PROPERTY>
+    <PROPERTY Name="Demand Effect:R$" ID="0x2a651010" Type="Float32" Default="1" ShowAsHex="N">
+    <HELP>
+      This is the % Effect the Ordinance will have on R$ when active
+    </HELP>
+  </PROPERTY>
+  <PROPERTY Name="Demand Effect:R$$" ID="0x2a651020" Type="Float32" Default="1" ShowAsHex="N">
+    <HELP>
+      This is the % Effect the Ordinance will have on R$$ when active
+    </HELP>
+  </PROPERTY>
+  <PROPERTY Name="Demand Effect:R$$$" ID="0x2a651030" Type="Float32" Default="1" ShowAsHex="N">
+    <HELP>
+      This is the % Effect the Ordinance will have on R$$$ when active
+    </HELP>
+  </PROPERTY>
   <PROPERTY Name="Demand Effect:Cs$" ID="0x2a653110" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
       This is the % Effect the Ordinance will have on Cs$ when active
