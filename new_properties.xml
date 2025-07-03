@@ -1510,84 +1510,83 @@ Crime sims only - which crime type this model represents
   </PROPERTY>
   <PROPERTY Name="Commercial Demand Effect" ID="0x2a633000" Type="Float32" Default="1" ShowAsHex="Y">
     <HELP>
-      Factor applied to commercial demand
-    </HELP>
+Factor applied to commercial demand
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Industrial Demand Effect" ID="0x2a634000" Type="Float32" Default="1" ShowAsHex="Y">
     <HELP>
-      Factor applied to industrial demand
-    </HELP>
+Factor applied to industrial demand
+</HELP>
   </PROPERTY>
-  </PROPERTY>
-    <PROPERTY Name="Demand Effect:R$" ID="0x2a651010" Type="Float32" Default="1" ShowAsHex="N">
+  <PROPERTY Name="Demand Effect:R$" ID="0x2a651010" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on R$ when active
-    </HELP>
+ This is the % Effect the Ordinance will have on R$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:R$$" ID="0x2a651020" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on R$$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on R$$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:R$$$" ID="0x2a651030" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on R$$$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on R$$$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:Cs$" ID="0x2a653110" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on Cs$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on Cs$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:Cs$$" ID="0x2a653120" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on Cs$$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on Cs$$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:Cs$$$" ID="0x2a653130" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on Cs$$$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on Cs$$$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:Co$$" ID="0x2a653320" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on Co$$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on Co$$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:Co$$$" ID="0x2a653330" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on Co$$$ when active
-    </HELP>
+This is the % Effect the Ordinance will have on Co$$$ when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:IR" ID="0x2a654100" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on IR when active
-    </HELP>
+This is the % Effect the Ordinance will have on IR when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:ID" ID="0x2a654200" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on ID when active
-    </HELP>
+This is the % Effect the Ordinance will have on ID when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:IM" ID="0x2a654300" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on IM when active
-    </HELP>
+This is the % Effect the Ordinance will have on IM when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Demand Effect:IHT" ID="0x2a654400" Type="Float32" Default="1" ShowAsHex="N">
     <HELP>
-      This is the % Effect the Ordinance will have on IHT when active
-    </HELP>
+This is the % Effect the Ordinance will have on IHT when active
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Prop Destroys Lot" ID="0x2a89b677" Type="Bool" Default="True" ShowAsHex="Y">
     <HELP>
-      Whether or not prop destroys entire lot when it burns down.  Default is true for flammable props.
-    </HELP>
+Whether or not prop destroys entire lot when it burns down.  Default is true for flammable props.
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Audio:VolumeAttackLimit" ID="0x2a9590de" Type="Float32" Default="1" ShowAsHex="Y">
     <HELP>
-      Max amount of full volume to change up per second
-    </HELP>
+Max amount of full volume to change up per second
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Landfill: Cost for Altitude Change" ID="0x2aa00fe7" Type="Sint64" Default="1" ShowAsHex="Y">
     <HELP>
@@ -4237,7 +4236,7 @@ Base height above terrain at which the effect will play for a tract that's at de
 Value for displaying monthly cost in the catalog - not simulated
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Availability: R$ Population" ID="0x6b23d800" Type="Uint32" ShowAsHex="N">
+<PROPERTY Name="Ordinance Availability: R$ Population" ID="0x6b23d800" Type="Uint32" ShowAsHex="N">
     <HELP>
 The minimum R$ population for this ordinance to become available.
 </HELP>
@@ -4251,6 +4250,7 @@ The minimum R$$ population for this ordinance to become available.
     <HELP>
 The minimum R$$$ population for this ordinance to become available.
 </HELP>
+  </PROPERTY>
   <PROPERTY Name="Ordinance Availability: Cs$ Population" ID="0x6b23d803" Type="Uint32" ShowAsHex="N">
     <HELP>
 The minimum Cs$ population for this ordinance to become available.
@@ -4326,7 +4326,7 @@ The minimum number of school buildings for this ordinance to become available.
 The name of a Lua function that checks the conditions for this ordinance to become available. Must have a unique name, take no parameters, and return a Boolean.
 </HELP>
   </PROPERTY>
-    <PROPERTY Name="Ordinance Monthly Income: R$ Population Factor" ID="0x6b23d900" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: R$ Population Factor" ID="0x6b23d900" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the R$ population.
 </HELP>
@@ -4340,6 +4340,7 @@ Factor applied to the ordinance cost based on the R$$ population.
     <HELP>
 Factor applied to the ordinance cost based on the R$$$ population.
 </HELP>
+  </PROPERTY>
   <PROPERTY Name="Ordinance Monthly Income: Cs$ Population Factor" ID="0x6b23d903" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the Cs$ population.
@@ -12432,6 +12433,8 @@ This selection will filter the display to only show Incinerator plug-ins.  To cr
  <PROPERTY ID="0xEA54D285" Eval="0xCA58EDC7"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xEA54D286" Eval="50*int(2+PopulationServed*RecycleFactor/5000.0)"/><!--Budget Item: Cost-->
  <PROPERTY ID="0xAA1DD399" Eval="0x37FFA051"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES>
+</CATEGORY>
 
 <CATEGORY Name="Recycle" ID="0xecb23761" ParentID="0xcc8fbc2d" img="img_recycle.gif">
 <HELP>
