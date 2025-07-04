@@ -9484,6 +9484,8 @@ GUID(s) of department ID for this budget item.
     </OPTION>
     <OPTION Value="0xc921ceea" Name="Roads">
     </OPTION>
+	<OPTION Value="0x9CF71EA3" Name="Gaming Control Board">
+    </OPTION>
   </PROPERTY>
   <PROPERTY Name="Budget Item: Line" ID="0xea54d284" Type="Uint32" Count="-1" ShowAsHex="Y">
     <HELP>
@@ -15357,22 +15359,22 @@ This selection will filter the display to only show Lighthouse plug-ins.  To cre
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Business Deals" ID="0x2d8fbc80" ParentID="0x2d8fbc6c">
+<CATEGORY Name="Specialization: Gambling" ID="0x6e3cc3df" ParentID="0x2d8fbc6c">
 <HELP>
 This selection will filter the display to only show Business Deal plug-ins.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xEA54D283" Value="0x2A5A723F"/>
+ <NEEDED ID="0xEA54D283" Value="0x9CF71EA3"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0x49CAC341" Eval="0"/><!--Plop Cost-->
- <PROPERTY ID="0xEA54D283" Value="0x2A5A723F"/><!--Budget Item:Department-->
- <PROPERTY ID="0xEA54D284" Value="0x00"/><!--Budget Item:Line-->
- <PROPERTY ID="0xEA54D285" Value="0x4A5A495E"/><!--Budget Item:Purpose-->
+ <PROPERTY ID="0xEA54D283" Value="0x9CF71EA3,0x9CF71EA3"/><!--Budget Item:Department-->
+ <PROPERTY ID="0xEA54D284" Value="0x37D17BC0,0x37D17BC0"/><!--Budget Item:Line-->
+ <PROPERTY ID="0xEA54D285" Value="0x4A5A495E,0x87BD3990"/><!--Budget Item:Purpose-->
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Casino" ID="0x2d8fbc81" ParentID="0x2d8fbc80">
+<CATEGORY Name="Casino" ID="0x6ea8495c" ParentID="0x6e3cc3df">
 <HELP>
 This selection will filter the display to only show Casino plug-ins.  To create a Casino plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on any landmark lot.
 </HELP>
@@ -15396,7 +15398,7 @@ This selection will filter the display to only show Casino plug-ins.  To create 
  <PROPERTY ID="0x27812851" Eval="int(1+Volume/100000.0),int(1+Volume/100000.0),int(4+Volume/10000.0),0"/><!--Pollution at center-->
  <PROPERTY ID="0x29244db5" Value="42"/> <!--Flammability-->
  <PROPERTY ID="0x2a499f85" Eval="0xAA8B999E"/> <!--Query Examplar -->
- <PROPERTY ID="0x4a4c132e" Set="0x5F860F06"/> <!--SFX:Activate Sound-->
+ <PROPERTY ID="0x4a4c132e" Set="0xCA55AA1C"/> <!--SFX:Activate Sound-->
  <PROPERTY ID="0x68ee9764" Value="4,5,2,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x8a2602b9" Eval="0x0032"/><!-- Item Order -->
  <PROPERTY ID="0xaa1dd396" Set="0x0000150B,0x00001900,0x00001903,0x00001906,0x00001940"/> <!--OccupantGroups-->
@@ -15406,15 +15408,65 @@ This selection will filter the display to only show Casino plug-ins.  To create 
  <PROPERTY ID="0xca19d7ca" Set="0xCA55AA0C"/> <!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xca5b9305" Eval="-7,440"/><!--Mayor rating effect-->
  <PROPERTY ID="0xca5b9306" Eval="int(2+int(Volume/6000.0)),128"/><!--Crime Effect-->
- <PROPERTY ID="0xEA54D283" Value="0x9CF71EA3,0x9CF71EA3"/><!--Budget Item:Department-->
- <PROPERTY ID="0xEA54D284" Value="0x37D17BC0,0x37D17BC0"/><!--Budget Item:Line-->
- <PROPERTY ID="0xEA54D285" Value="0x4A5A495E,0x87BD3990"/><!--Budget Item:Purpose-->
- <PROPERTY ID="0xea54d286" Eval="(120+10*int(Volume/10000.0))/2),120+10*int(Volume/10000.0)"/> <!--Budget Item: Cost-->
  <PROPERTY ID="0x90222B81" Value="0x9CF71EA3,0x0A5A72D1,0x9CF71EA3,0x0A5A72D1"/><!--Budget: Custom Department Budget Group-->
  <PROPERTY ID="0x4252085F" Value="0x9CF71EA3,0x26350A44,0x030F0A4F,0x9CF71EA3,0x26350A44,0x030F0A4F"/><!--Budget: Custom Department Name Key-->
  <PROPERTY ID="0x9EE1240F" Value="0x37D17BC0,0x00000000,0x37D17BC1,0x00000003"/><!--Budget: Custom Line Item Cost Algorithm-->
  <PROPERTY ID="0x9EE12412" Value="0x000000006EB01C58,0x0000000000000002,0x00000000000003E8,0x00000000000003E8"/><!--Budget Custom Line Item Variable Expense/Income: Tourism-->
- <PROPERTY ID="0xAA1DD399" Eval="0x7C5D244F"/><!--OccupantGroups for SubMenu-->
+ <PROPERTY ID="0xea54d286" Eval="18000+10000*int((LotSizeX*LotSizeY)+Volume/1000000.0),380000+10000*int((LotSizeX*LotSizeY)+Volume/1000000.0)"/> <!--Budget Item: Cost-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x7C5D244F"/> <!--OccupantGroups for SubMenu--> 
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Business Deals" ID="0x2d8fbc80" ParentID="0x2d8fbc6c">
+<HELP>
+This selection will filter the display to only show Business Deal plug-ins.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xEA54D283" Value="0x2A5A723F"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0x49CAC341" Eval="0"/><!--Plop Cost-->
+ <PROPERTY ID="0xEA54D283" Value="0x2A5A723F"/><!--Budget Item:Department-->
+ <PROPERTY ID="0xEA54D284" Value="0x00"/><!--Budget Item:Line-->
+ <PROPERTY ID="0xEA54D285" Value="0x4A5A495E"/><!--Budget Item:Purpose-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Casino" ID="0x2d8fbc81" ParentID="0x2d8fbc80">
+<HELP>
+This selection will filter the display to only show Casino plug-ins.  To create a Casino plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on any landmark lot.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xAA1DD396" Value="0x1940"/>
+</FILTERS>
+<PROPERTIES>
+  <eval name="Jobs1" value="int(1*(1+Volume/1500.0)/16.0)"/>
+ <eval name="Jobs2" value="int(13*(1+Volume/1500.0)/16.0)"/>
+ <eval name="Jobs3" value="int(2*(1+Volume/1500.0)/16.0)"/>
+ <eval name="LandmarkEffectFactor" value="5.0+int(sqrt(Volume)/96.0)"/>
+ <eval name="LandmarkEffectRadius" value="12.0"/>
+ <eval name="ParkEffectFactor" value="-8.0-int(sqrt(Volume)/96.0)"/>
+ <eval name="ParkEffectRadius" value="12.0"/>
+ <eval name="WaterConsumedFactor" value="0.05"/>
+ <eval name="WaterConsumedConstant" value="0.0"/>
+ <eval name="PowerConsumedFactor" value="0.10"/>
+ <eval name="PowerConsumedConstant" value="0.0"/>
+ <PROPERTY ID="0x099AFACD" Eval="10000+500*int(Volume/5000.0)"/> <!--Bulldoze cost-->
+ <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
+ <PROPERTY ID="0x27812851" Eval="int(1+Volume/100000.0),int(1+Volume/100000.0),int(4+Volume/10000.0),0"/><!--Pollution at center-->
+ <PROPERTY ID="0x29244db5" Value="42"/> <!--Flammability-->
+ <PROPERTY ID="0x2a499f85" Eval="0xAA8B999E"/> <!--Query Examplar -->
+ <PROPERTY ID="0x4a4c132e" Set="0xCA55AA1C"/> <!--SFX:Activate Sound-->
+ <PROPERTY ID="0x68ee9764" Value="4,5,2,0"/> <!--Pollution radii-->
+ <PROPERTY ID="0x8a2602b9" Eval="0x0032"/><!-- Item Order -->
+ <PROPERTY ID="0xaa1dd396" Set="0x0000150B,0x00001900,0x00001903,0x00001940"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd397" Set="0xAA4C6598"/> <!--SFX:Query Sound-->
+ <PROPERTY ID="0xaa60e745" Set="-100,0,100,23"/> <!--Goofy Stat Response Curve-->
+ <PROPERTY ID="0xc9b93a56" Set="0xEA5EC59F"/> <!--SFX:Plop Sound-->
+ <PROPERTY ID="0xca19d7ca" Set="0xCA55AA0C"/> <!--SFX:Ambience Good Sound-->
+ <PROPERTY ID="0xca5b9305" Eval="-7,440"/><!--Mayor rating effect-->
+ <PROPERTY ID="0xca5b9306" Eval="int(2+int(Volume/6000.0)),128"/><!--Crime Effect-->
+ <PROPERTY ID="0xea54d286" Eval="120+10*int(Volume/10000.0)"/> <!--Budget Item: Cost-->
 </PROPERTIES>
 </CATEGORY>
 
