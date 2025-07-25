@@ -755,6 +755,14 @@ Starting tax rate for all developer types, indexed by difficulty type
     <HELP>
 Number of planes that can be dispatched from this station.
 </HELP>
+  <PROPERTY Name="Regional Supply Consumed" ID="0x16F4C223" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+Id/amount pairs that specify the resources the building consumes from the regional supply.
+</HELP>
+  <PROPERTY Name="Regional Supply Produced" ID="0x16F4C224" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+Id/amount pairs that specify the resources the building adds to the regional supply.
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Occupant Size" ID="0x27812810" Type="Float32" Count="3" Default="1" ShowAsHex="N">
     <HELP>
