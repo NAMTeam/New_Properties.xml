@@ -128,6 +128,8 @@
 			<property num="0x0c032488" type="Float32" name="Budget:Initial Tax Rate" desc="Starting tax rate for all developer types, indexed by difficulty type"></property>
 			<property num="0x0c0afdd7" type="Sint32" name="Fire Station:Total Plane Dispatches" desc="(number of planes this station can send)"></property>
 			<property num="0x0caaaeb8" type="Float32" name="Customers/Traffic Noise Coefficient" desc="In an area around the lot in question, the traffic on the network tile with the highest morning traffic volume is added to the traffic on the network tile with the highest evening traffic volume, and then multiplied by this coefficient to generate a 0-255 value which is then used as a desirability factor for R and C zones, and shows up in the general query as low, medium, or high under Traffic Noise or Customers"></property>
+			<property num="0x16F4C223" type="Uint32" name="Regional Supply Consumed" desc="Id/amount pairs that specify the resources the building consumes from the regional supply."></property>
+			<property num="0x16F4C224" type="Uint32" name="Regional Supply Produced" desc="Id/amount pairs that specify the resources the building adds to the regional supply."></property>
 			<property num="0x27812810" type="Float32" name="Occupant Size" desc="In meters: X-Width, height, Z-Width"></property>
 			<property num="0x27812820" type="Uint32" name="ResourceKeyType0" desc="Specifies 1 model key for all Z/R"></property>
 			<property num="0x27812821" type="Uint32" name="ResourceKeyType1" desc="Specifies 1 model key for each Z/R"></property>
