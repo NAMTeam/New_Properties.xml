@@ -1025,6 +1025,9 @@
 			<property num="0x8c3caef5" type="Float32" name="Ferry Fare" desc="Income per traveller from a ferry trip"></property>
 			<property num="0x8c3e8185" type="Uint32" name="Travellers per bus" desc="How many travellers it takes to yield a bus automata"></property>
 			<property num="0x8cb3511f" type="Uint32" name="Occupant Types" desc="Types of occupants"></property>
+			<property num="0x9ccfad35" type="Uint32" name="Building Style Exemplar: Style Name Key" desc="Resource key for the building style name that is shown in the UI."></property>
+			<property num="0x9ccfad36" type="Bool" name="Building Style Exemplar: Use Bold Text" desc="Indicates if the check box text should be bold."></property>
+			<property num="0x9ccfad37" type="Uint32" name="Building Style Exemplar: Tool Tip Key" desc="Resource key for the building style check box tool tip."></property>
 			<property num="0xa7607d70" type="Sint32" name="WeeksForCompleteTemperatureSimulation" desc="WeeksForCompleteTemperatureSimulation"></property>
 			<property num="0xa7607d71" type="Sint32" name="WeeksForCompleteMoistureSimulation" desc="WeeksForCompleteMoistureSimulation"></property>
 			<property num="0xa7607d72" type="Sint32" name="SimulationSpreadWritingRadius" desc="SimulationSpreadWritingRadius"></property>
