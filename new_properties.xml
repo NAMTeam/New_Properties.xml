@@ -9862,7 +9862,9 @@ This selection will filter the display to only show Residential Low Wealth plug-
 This selection will filter the display to only show Residential Low Wealth W2W plug-ins.  To create a Residential Low Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x11010,0xB5C00DDE,0xB5C00B05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00011010"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00B05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
@@ -9918,7 +9920,9 @@ This selection will filter the display to only show Residential Medium Wealth pl
 This selection will filter the display to only show Residential Medium Wealth W2W plug-ins.  To create a Residential Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x11020,0xB5C00DDE,0xB5C00B05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00011020"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00B05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
@@ -9974,7 +9978,9 @@ This selection will filter the display to only show Residential High Wealth plug
 This selection will filter the display to only show Residential High Wealth W2W plug-ins.  To create a Residential High Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x11030,0xB5C00DDE,0xB5C00B05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00011030"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00B05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
@@ -10048,7 +10054,9 @@ This selection will filter the display to only show Commercial Service Low Wealt
 This selection will filter the display to only show Commercial Service Low Wealth W2W plug-ins.  To create a Commercial Service Low Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13110,0xB5C00DDE,0xB5C00A05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00013110"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
@@ -10104,7 +10112,9 @@ This selection will filter the display to only show Commercial Service Medium We
 This selection will filter the display to only show Commercial Service Medium Wealth W2W plug-ins.  To create a Commercial Service Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13120,0xB5C00DDE,0xB5C00A05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00013120"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
@@ -10160,7 +10170,9 @@ This selection will filter the display to only show Commercial Service High Weal
 This selection will filter the display to only show Commercial Service High Wealth W2W plug-ins.  To create a Commercial Service High Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13130,0xB5C00DDE,0xB5C00A05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00013130"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
@@ -10233,7 +10245,9 @@ This selection will filter the display to only show Commercial Office Medium Wea
 This selection will filter the display to only show Commercial Office Medium Wealth W2W plug-ins.  To create a Commercial Office Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13320,0xB5C00DDE,0xB5C00A05"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00013320"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0999997)"/>
@@ -10289,7 +10303,9 @@ This selection will filter the display to only show Commercial Office High Wealt
 This selection will filter the display to only show Commercial Office High Wealth W2W plug-ins.  To create a Commercial Office High Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13330,0xB5C00DDE,"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00013330"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
@@ -10362,7 +10378,9 @@ This selection will filter the display to only show Agricultrual plug-ins.  To c
 This selection will filter the display to only show Agricultrual W2W plug-ins.  To create an Agricultural W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x14100,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x14100"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int( 30. +10./3.*Height*3.0)"/>
@@ -10636,7 +10654,9 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3000,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003000"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="flooragePerWorker" value ="60"/>
@@ -10650,7 +10670,9 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3001,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003001"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10664,7 +10686,9 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3002,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003002"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10707,7 +10731,9 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3000,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003000"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10721,7 +10747,9 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3001,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003001"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10735,7 +10763,9 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 This selection will filter the display to only show Manufacturing Industry plug-ins.  To create a Manufacturing Industry plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3002,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003002"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10778,7 +10808,9 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3000,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003000"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10792,7 +10824,9 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3001,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003001"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10806,7 +10840,9 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3002,0xB5C00DDE,0xD02C802E"/>
+ <NEEDED ID="0xaa1dd396" Value="0x00003002"/>
+ <NEEDED ID="0xaa1dd396" Value="0xB5C00DDE"/>
+ <NEEDED ID="0xaa1dd396" Value="0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
