@@ -9862,7 +9862,7 @@ This selection will filter the display to only show Residential Low Wealth plug-
 This selection will filter the display to only show Residential Low Wealth W2W plug-ins.  To create a Residential Low Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x11010"/>
+ <NEEDED ID="0xaa1dd396" Value="0x11010,0xB5C00DDE,0xB5C00B05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
@@ -9918,7 +9918,7 @@ This selection will filter the display to only show Residential Medium Wealth pl
 This selection will filter the display to only show Residential Medium Wealth W2W plug-ins.  To create a Residential Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x11020"/>
+ <NEEDED ID="0xaa1dd396" Value="0x11020,0xB5C00DDE,0xB5C00B05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
@@ -9959,7 +9959,7 @@ This selection will filter the display to only show Residential High Wealth plug
  <eval name="WaterConsumedConstant" value="4.0"/>
  <PROPERTY ID="0x27812832" Value="0x03"/>  <!--Wealth-->
  <PROPERTY ID="0x8cb3511f" Value="0x00001010,0x00001020,0x00001030"/>        <!--Occupant Types-->
- <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003,0xB5C00DDE,0xB5C00B05"/> <!--OccupantGroups-->
+ <PROPERTY ID="0xaa1dd396" Set="0x00001000,0x00011030,0x00002000,0x00002001,0x00002002,0x00002003"/> <!--OccupantGroups-->
  <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0x2C8F8746" Value="0x0c8fbbae"/>  <!--Examplar Category-->
  <PROPERTY ID="0x29244db5" Value="35"/> <!--Flammability-->
@@ -9974,7 +9974,7 @@ This selection will filter the display to only show Residential High Wealth plug
 This selection will filter the display to only show Residential High Wealth W2W plug-ins.  To create a Residential High Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x11030"/>
+ <NEEDED ID="0xaa1dd396" Value="0x11030,0xB5C00DDE,0xB5C00B05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
@@ -10048,7 +10048,7 @@ This selection will filter the display to only show Commercial Service Low Wealt
 This selection will filter the display to only show Commercial Service Low Wealth W2W plug-ins.  To create a Commercial Service Low Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13110"/>
+ <NEEDED ID="0xaa1dd396" Value="0x13110,0xB5C00DDE,0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0)"/>
@@ -10104,7 +10104,7 @@ This selection will filter the display to only show Commercial Service Medium We
 This selection will filter the display to only show Commercial Service Medium Wealth W2W plug-ins.  To create a Commercial Service Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13120"/>
+ <NEEDED ID="0xaa1dd396" Value="0x13120,0xB5C00DDE,0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.099997)"/>
@@ -10160,7 +10160,7 @@ This selection will filter the display to only show Commercial Service High Weal
 This selection will filter the display to only show Commercial Service High Wealth W2W plug-ins.  To create a Commercial Service High Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13130"/>
+ <NEEDED ID="0xaa1dd396" Value="0x13130,0xB5C00DDE,0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
@@ -10233,7 +10233,7 @@ This selection will filter the display to only show Commercial Office Medium Wea
 This selection will filter the display to only show Commercial Office Medium Wealth W2W plug-ins.  To create a Commercial Office Medium Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13320"/>
+ <NEEDED ID="0xaa1dd396" Value="0x13320,0xB5C00DDE,0xB5C00A05"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.0999997)"/>
@@ -10289,7 +10289,7 @@ This selection will filter the display to only show Commercial Office High Wealt
 This selection will filter the display to only show Commercial Office High Wealth W2W plug-ins.  To create a Commercial Office High Wealth W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x13330"/>
+ <NEEDED ID="0xaa1dd396" Value="0x13330,0xB5C00DDE,"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
@@ -10362,7 +10362,7 @@ This selection will filter the display to only show Agricultrual plug-ins.  To c
 This selection will filter the display to only show Agricultrual W2W plug-ins.  To create an Agricultural W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x14100"/>
+ <NEEDED ID="0xaa1dd396" Value="0x14100,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="Worth" value="int( 30. +10./3.*Height*3.0)"/>
@@ -10636,7 +10636,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3000"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3000,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="flooragePerWorker" value ="60"/>
@@ -10650,7 +10650,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3001"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3001,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10664,7 +10664,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
 This selection will filter the display to only show Dirty Industry W2W plug-ins.  To create an Dirty Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3002"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3002,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014200,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10707,7 +10707,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3000"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3000,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10721,7 +10721,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 This selection will filter the display to only show Manufacturing Industry W2W plug-ins.  To create a Manufacturing Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3001"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3001,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10730,12 +10730,12 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="(I-m) Manufacturing Industry Out" ID="0x6c7e983e" ParentID="0xee28b711">
+<CATEGORY Name="(I-m) Manufacturing Industry Out W2W" ID="0x6c7e983e" ParentID="0xee28b711">
 <HELP>
 This selection will filter the display to only show Manufacturing Industry plug-ins.  To create a Manufacturing Industry plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3002"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3002,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014300,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10778,7 +10778,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3000"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3000,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003000,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10792,7 +10792,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3001"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3001,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003001,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
@@ -10806,7 +10806,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
 This selection will filter the display to only show High-Tech Industry W2W plug-ins.  To create a High-Tech Industry W2W plug-in drag a model to this category.
 </HELP>
 <FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x3002"/>
+ <NEEDED ID="0xaa1dd396" Value="0x3002,0xB5C00DDE,0xD02C802E"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014400,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
