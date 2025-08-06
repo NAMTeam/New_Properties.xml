@@ -5477,12 +5477,14 @@ For use with More Building Styles DLL: Allows additional building styles to be i
   <PROPERTY Name="Building Is Wall-to-Wall" ID="0xaa1dd401" Type="Bool" Default="False" ShowAsHex="Y">
     <HELP>
 True if the building is Wall to Wall (W2W) compatible
-</HELP>
+    </HELP>
+  </PROPERTY>
   <PROPERTY Name="Building Styles PIMX Template Marker" ID="0xaa1dd402" Type="Bool" Default="False" ShowAsHex="Y">
     <HELP>
 For use with Additional Building Styles DLL: This is a Boolean property whose absence acts as a marker to let the DLL identify older versions of PIMX. Some of these older versions accidentally used the community style id 0x2004 as a placeholder, while versions with this property can use it as an actual style.
-</HELP>
+    </HELP>
   </PROPERTY>
+  
   <PROPERTY Name="Simolean Cost Per Bridge Tile" ID="0x8a2d49ea" Type="Uint32" Default="0x00000001" ShowAsHex="Y">
     <HELP>
 Cost to create a bridge tile of network using this tool
@@ -5791,6 +5793,21 @@ How many travellers it takes to yield a bus automata
     <HELP>
 Types of occupants
 </HELP>
+  </PROPERTY>
+  <PROPERTY Name="Building Style Exemplar: Style Name Key" ID="0x9ccfad35" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+	Resource key for the building style name that is shown in the UI.
+	</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Building Style Exemplar: Use Bold Text" ID="0x9ccfad36" Type="Bool">
+    <HELP>
+	Indicates if the check box text should be bold.
+	</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Building Style Exemplar: Tool Tip Key" ID="0x9ccfad37" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+	Resource key for the building style check box tool tip.
+	</HELP>
   </PROPERTY>
   <PROPERTY Name="Budget: Custom Department Name Key" ID="0x4252085F" Type="Uint32" ShowAsHex="Y">
     <HELP>
@@ -10344,7 +10361,7 @@ This selection will filter the display to only show Commercial Office High Wealt
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity,0x00003330,CapacityC3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
- <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker--> 
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
