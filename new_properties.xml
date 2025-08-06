@@ -5788,6 +5788,21 @@ How many travellers it takes to yield a bus automata
 Types of occupants
 </HELP>
   </PROPERTY>
+  <PROPERTY Name="Building Style Exemplar: Style Name Key" ID="0x9ccfad35" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+	Resource key for the building style name that is shown in the UI.
+	</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Building Style Exemplar: Use Bold Text" ID="0x9ccfad36" Type="Bool">
+    <HELP>
+	Indicates if the check box text should be bold.
+	</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Building Style Exemplar: Tool Tip Key" ID="0x9ccfad37" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+	Resource key for the building style check box tool tip.
+	</HELP>
+  </PROPERTY>
   <PROPERTY Name="Budget: Custom Department Name Key" ID="0x4252085F" Type="Uint32" ShowAsHex="Y">
     <HELP>
 	Specifies the name key for a custom budget department. The format is a group of 3 Uint32 values, consisting of the department id followed by the group and instance ids of the LTEXT file.
