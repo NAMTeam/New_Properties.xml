@@ -1440,6 +1440,7 @@
 			<property num="0x0062e78a" type="Uint32" name="Exemplar Patch Targets" desc="For use with Submenus DLL: list of Exemplar files this patch applies to. The other properties of this Cohort file are injected into every Exemplar on this list."></property>
 			<property num="0xAA1DD400" type="Uint32" name="Building Styles" desc="For use with Additional Building Styles DLL: When the property is present, the building will use custom and Maxis styles specified in the property and ignore the styles in the Occupant Groups property (0xAA1DD396). When the property is not present, the building will use the custom and Maxis styles specified in the Occupant Groups property (0xAA1DD396)."></property>
 			<property num="0xAA1DD401" type="Bool" name="Building Is W2W" desc="For use with Additional Building Styles DLL: This is a Boolean property, a value of true indicates that the building is W2W. If the value is false or the property is not present, the building will not be considered W2W."></property>
+			<property num="0xAA1DD402" type="Bool" name="Building Styles PIMX Template Marker" desc="For use with Additional Building Styles DLL: This is a Boolean property whose absence acts as a marker to let the DLL identify older versions of PIMX. Some of these older versions accidentally used the community style id 0x2004 as a placeholder, while versions with this property can use it as an actual style."></property>
 		</group>
 	</properties>
 </exemplars>

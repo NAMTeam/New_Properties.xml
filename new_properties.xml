@@ -5478,6 +5478,10 @@ For use with More Building Styles DLL: Allows additional building styles to be i
     <HELP>
 True if the building is Wall to Wall (W2W) compatible
 </HELP>
+  <PROPERTY Name="Building Styles PIMX Template Marker" ID="0xaa1dd402" Type="Bool" Default="False" ShowAsHex="Y">
+    <HELP>
+For use with Additional Building Styles DLL: This is a Boolean property whose absence acts as a marker to let the DLL identify older versions of PIMX. Some of these older versions accidentally used the community style id 0x2004 as a placeholder, while versions with this property can use it as an actual style.
+</HELP>
   </PROPERTY>
   <PROPERTY Name="Simolean Cost Per Bridge Tile" ID="0x8a2d49ea" Type="Uint32" Default="0x00000001" ShowAsHex="Y">
     <HELP>
@@ -9854,6 +9858,7 @@ This selection will filter the display to only show Residential Low Wealth plug-
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity"/> <!--Capacity Satisfied--> 
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -9884,6 +9889,7 @@ This selection will filter the display to only show Residential Low Wealth W2W p
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -9912,6 +9918,7 @@ This selection will filter the display to only show Residential Medium Wealth pl
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -9942,6 +9949,7 @@ This selection will filter the display to only show Residential Medium Wealth W2
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -9970,6 +9978,7 @@ This selection will filter the display to only show Residential High Wealth plug
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2,0x00001030,CapacityR3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10000,6 +10009,7 @@ This selection will filter the display to only show Residential High Wealth W2W 
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00001010,BaseCapacity,0x00001020,CapacityR2,0x00001030,CapacityR3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10046,6 +10056,7 @@ This selection will filter the display to only show Commercial Service Low Wealt
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10076,6 +10087,7 @@ This selection will filter the display to only show Commercial Service Low Wealt
  <PROPERTY ID="0x68EE9764" Value="5,5,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10104,6 +10116,7 @@ This selection will filter the display to only show Commercial Service Medium We
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10134,6 +10147,7 @@ This selection will filter the display to only show Commercial Service Medium We
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10162,6 +10176,7 @@ This selection will filter the display to only show Commercial Service High Weal
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2,0x00003130,CapacityC3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10192,6 +10207,7 @@ This selection will filter the display to only show Commercial Service High Weal
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003110,BaseCapacity,0x00003120,CapacityC2,0x00003130,CapacityC3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10237,6 +10253,7 @@ This selection will filter the display to only show Commercial Office Medium Wea
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10267,6 +10284,7 @@ This selection will filter the display to only show Commercial Office Medium Wea
  <PROPERTY ID="0x68EE9764" Value="5,6,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10295,6 +10313,7 @@ This selection will filter the display to only show Commercial Office High Wealt
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity,0x00003330,CapacityC3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10325,6 +10344,7 @@ This selection will filter the display to only show Commercial Office High Wealt
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00003320,BaseCapacity,0x00003330,CapacityC3"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker--> 
 </PROPERTIES>
 </CATEGORY>
 
@@ -10369,6 +10389,7 @@ This selection will filter the display to only show Agricultrual plug-ins.  To c
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002"/> <!--OccupantGroups-->
  <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
  <PROPERTY ID="0x29B55F73" Value="0x00024100,0x2A6E4309,0x2A6E431D,0xAA6E4328,0x6A6E4332,0xEA6E4721,0xEA6E4722"/> <!--Field lots-->
 </PROPERTIES>
 </CATEGORY>
@@ -10403,6 +10424,7 @@ This selection will filter the display to only show Agricultrual W2W plug-ins.  
  <PROPERTY ID="0xaa1dd396" Value="0x00001002,0x00014100,0x00003002,0xB5C00DDE,0xD02C802E"/> <!--OccupantGroups-->
  <PROPERTY ID="0xaa1dd400" Set="0x7b6bc069"/> <!--Building Styles-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
  <PROPERTY ID="0x29B55F73" Value="0x00024100,0x2A6E4309,0x2A6E431D,0xAA6E4328,0x6A6E4332,0xEA6E4721,0xEA6E4722"/> <!--Field lots-->
 </PROPERTIES>
 </CATEGORY>
@@ -10433,6 +10455,7 @@ This selection will filter the display to only show Dirty Industry plug-ins.  To
  <PROPERTY ID="0x68EE9764" Value="16,20,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004200,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10504,6 +10527,7 @@ This selection will filter the display to only show Manufacturing Industry plug-
  <PROPERTY ID="0x68EE9764" Value="9,13,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004300,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10575,6 +10599,7 @@ This selection will filter the display to only show High-Tech Industry plug-ins.
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004400,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="False"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10646,6 +10671,7 @@ This selection will filter the display to only show Dirty Industry W2W plug-ins.
  <PROPERTY ID="0x68EE9764" Value="16,20,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004200,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10723,6 +10749,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
  <PROPERTY ID="0x68EE9764" Value="9,13,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004300,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -10800,6 +10827,7 @@ This selection will filter the display to only show High-Tech Industry W2W plug-
  <PROPERTY ID="0x68EE9764" Value="6,7,0,0"/> <!--Pollution radii-->
  <PROPERTY ID="0x27812834" Eval="0x00004400,BaseCapacity"/> <!--Capacity Satisfied-->
  <PROPERTY ID="0xaa1dd401" Eval="True"/> <!--Building Is Wall-to-Wall-->
+ <PROPERTY ID="0xaa1dd402" Eval="False"/> <!--Building Styles PIMX Template Marker-->
 </PROPERTIES>
 </CATEGORY>
 
