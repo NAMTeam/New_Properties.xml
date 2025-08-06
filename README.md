@@ -18,4 +18,13 @@ The file must be installed by following precise instructions according to the pr
 
 ### PIM-X
 
-New_Properties.xml should be installed in the PIM-X installation folder `C:\Program Files (x86)\SC4PIM` replacing the original file. 
+New_Properties.xml should be installed in the PIM-X installation folder (generally the installation folder is this)`C:\Program Files (x86)\SC4PIM` replacing the original file. 
+
+### Ilives - Reader (1.5.4)
+
+New_Properties.xml should be installed in the Reader installation folder `C:\Program Files (x86)\ILives\ILives Reader` replacing the original file. 
+
+
+### Ilives - Reader (0.9.3)
+
+This version of Reader does not use New_Properties.xml but tropod_Properties.xml. tropod_Properties.xml should be installed in the Reader installation folder (generally the installation folder is this) `C:\Program Files (x86)\ILives\ilive_reader093` replacing the original file. 
