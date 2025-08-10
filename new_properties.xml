@@ -11940,6 +11940,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Coal" ID="0x4cb33871" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="1"/>
+ <NEEDED ID="0xAA1DD396" Value="0x1946409F"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.0650*Volume/100.)"/>
@@ -11972,6 +11973,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Nuclear Fusion" ID="0x4cb43872" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="2"/>
+ <NEEDED ID="0xAA1DD396" Value="0xB680D7E0"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+1.70*Volume/100.)"/>
@@ -12002,6 +12004,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Natural Gas" ID="0x4cb53873" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="3"/>
+ <NEEDED ID="0xAA1DD396" Value="0x5512235E"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.060*Volume/100.)"/>
@@ -12033,10 +12036,10 @@ This selection will filter the display to only show Power plug-ins.  To create a
 
 <CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
 <FILTERS>
- <NEEDED ID="0x27812853" Value="10"/>
+ <NEEDED ID="0xAA1DD396" Value="0xB075C142"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.010*Volume/100.)"/>
+ <eval name="PowerOutput" value="100*int(1+0.030*Volume/100.)"/>
  <eval name="PCost" value="500*int(3.00*PowerOutput/500.)"/>
  <eval name="MCost" value="50*int(0.130*PowerOutput/50.)"/>
  <eval name="BCost" value="10*int(0.140*PowerOutput/10.)"/>
@@ -12049,23 +12052,24 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="GarbagePollutionFactor" value="1/150."/>
  <eval name="WaterConsumedFactor" value="1/150."/>
  <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000010"/><!--Power Plant Type-->
+ <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
+ <PROPERTY ID="0x6A19F6B5" Eval="4.000000"/><!--Health effect radius-->
+ <PROPERTY ID="0xAA19F6EA" Eval="-10.000000"/><!--Health effect strength-->
  <PROPERTY ID="0x4A4C132E" Set="0x5F860F09"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB075C142"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x14D53C20"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
+ <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
 </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="Nuclear Fission" ID="0x4cb63875" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="5"/>
+ <NEEDED ID="0xAA1DD396" Value="0xA945A10D"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+5.550*Volume**0.8/100.)"/>
@@ -12101,6 +12105,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Oil" ID="0x4cb73876" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="6"/>
+ <NEEDED ID="0xAA1DD396" Value="0xD6B169D9"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.050*Volume/100.)"/>
@@ -12132,7 +12137,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 
 <CATEGORY Name="Biomass" ID="0xc6522034" ParentID="0x4cb23866">
 <FILTERS>
- <NEEDED ID="0x27812853" Value="11"/>
+ <NEEDED ID="0xAA1DD396" Value="0x36CA5093"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.035*Volume/100.)"/>
@@ -12148,7 +12153,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="GarbagePollutionFactor" value="1/350."/>
  <eval name="WaterConsumedFactor" value="1/280."/>
  <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000011"/><!--Power Plant Type-->
+ <PROPERTY ID="0x27812853" Eval="0x00000006"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
  <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
  <PROPERTY ID="0xAA19F6EA" Eval="-20.000000"/><!--Health effect strength-->
@@ -12158,13 +12163,13 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x36CA5093"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xCCD6C93C"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
+ <PROPERTY ID="0x713c8912" Eval="0x9be9788b"/><!--Extended Power Type-->
 </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="Hydroelectric" ID="0x0019f0ed" ParentID="0x4cb23866">
 <FILTERS>
- <NEEDED ID="0x27812853" Value="12"/>
+ <NEEDED ID="0xAA1DD396" Value="0x8765D979"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
@@ -12180,7 +12185,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="GarbagePollutionFactor" value="1/350."/>
  <eval name="WaterConsumedFactor" value="1/280."/>
  <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000012"/><!--Power Plant Type-->
+ <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
  <PROPERTY ID="0x4A4C132E" Set="0x5F860F04"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
@@ -12194,7 +12199,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 
 <CATEGORY Name="Geothermal" ID="0xa8b37eb4" ParentID="0x4cb23866">
 <FILTERS>
- <NEEDED ID="0x27812853" Value="13"/>
+ <NEEDED ID="0xAA1DD396" Value="0x1F221780"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
@@ -12210,7 +12215,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="GarbagePollutionFactor" value="1/350."/>
  <eval name="WaterConsumedFactor" value="1/280."/>
  <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000013"/><!--Power Plant Type-->
+ <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
  <PROPERTY ID="0x4A4C132E" Set="0x5F860F05"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
@@ -12225,6 +12230,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Solar" ID="0x4cb83877" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="7"/>
+ <NEEDED ID="0xAA1DD396" Value="0x7134683C"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.050*Volume/100.)"/>
@@ -12256,6 +12262,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Microwave" ID="0xa6418c2b" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="4"/>
+ <NEEDED ID="0xAA1DD396" Value="0x0CED62DC"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+5.500*Volume/100.)/10"/>
@@ -12287,6 +12294,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 <CATEGORY Name="Wind" ID="0x4cb93879" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="9"/>
+ <NEEDED ID="0xAA1DD396" Value="0xC78E0054"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.500*Volume/100.)"/>
@@ -12319,7 +12327,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 
 <CATEGORY Name="Tidal and Wave" ID="0xe62a390b" ParentID="0x4cb23866">
 <FILTERS>
- <NEEDED ID="0x27812853" Value="14"/>
+ <NEEDED ID="0xAA1DD396" Value="0xF0D606AC"/>
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.500*Volume/100.)"/>
@@ -12336,7 +12344,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <eval name="WaterConsumedFactor" value="0"/>
  <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
  <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812853" Eval="0x00000014"/><!--Power Plant Type-->
+ <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
  <PROPERTY ID="0x29244DB5" Eval="0x0A"/><!--Flammability-->
  <PROPERTY ID="0x4A4C132E" Set="0x5F860F02"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
@@ -12387,6 +12395,7 @@ This selection will filter the display to only show Waste to Energy plug-ins.  T
 </HELP>
 <FILTERS>
  <NEEDED ID="0x27812853" Value="0x00000008"/>
+ <NEEDED ID="0xAA1DD396" Value="0x7A9BFD20"/> 
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.085*Volume/100.)"/>
