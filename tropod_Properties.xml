@@ -128,6 +128,8 @@
 			<property num="0x0c032488" type="Float32" name="Budget:Initial Tax Rate" desc="Starting tax rate for all developer types, indexed by difficulty type"></property>
 			<property num="0x0c0afdd7" type="Sint32" name="Fire Station:Total Plane Dispatches" desc="(number of planes this station can send)"></property>
 			<property num="0x0caaaeb8" type="Float32" name="Customers/Traffic Noise Coefficient" desc="In an area around the lot in question, the traffic on the network tile with the highest morning traffic volume is added to the traffic on the network tile with the highest evening traffic volume, and then multiplied by this coefficient to generate a 0-255 value which is then used as a desirability factor for R and C zones, and shows up in the general query as low, medium, or high under Traffic Noise or Customers"></property>
+			<property num="0x16F4C223" type="Uint32" name="Regional Supply Consumed" desc="Id/amount pairs that specify the resources the building consumes from the regional supply."></property>
+			<property num="0x16F4C224" type="Uint32" name="Regional Supply Produced" desc="Id/amount pairs that specify the resources the building adds to the regional supply."></property>
 			<property num="0x27812810" type="Float32" name="Occupant Size" desc="In meters: X-Width, height, Z-Width"></property>
 			<property num="0x27812820" type="Uint32" name="ResourceKeyType0" desc="Specifies 1 model key for all Z/R"></property>
 			<property num="0x27812821" type="Uint32" name="ResourceKeyType1" desc="Specifies 1 model key for each Z/R"></property>
@@ -241,15 +243,18 @@
 			<property num="0x2a511cbc" type="Float32" name="Curve speed multiplier" desc="Multiplied by a vehicle's default speed when it goes around a curve"></property>
 			<property num="0x2a53be13" type="Uint32" name="SFX:Alarm Ambience Sound" desc="GUID of sound. Plays between alarm times."></property>
 			<property num="0x2a62d9f3" type="Uint32" name="Crime Type" desc="Crime Sims only - which crime type this model represents"></property>
+			<property num="0x2A651010" type="Float32" name="Demand Effect:R$" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A651020" type="Float32" name="Demand Effect:R$$" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A651030" type="Float32" name="Demand Effect:R$$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653110" type="Float32" name="Demand Effect:Cs$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653120" type="Float32" name="Demand Effect:Cs$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653130" type="Float32" name="Demand Effect:Cs$$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653320" type="Float32" name="Demand Effect:Co$$" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2A653330" type="Float32" name="Demand Effect:Co$$$" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654100" type="Float32" name="Demand Effect:I-Ag" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654200" type="Float32" name="Demand Effect:I-D" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654300" type="Float32" name="Demand Effect:I-M" desc="This is the % Effect the Ordinance will have when active."></property>
-			<property num="0x2A654400" type="Float32" name="Demand Effect:I-Ht" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654100" type="Float32" name="Demand Effect:IR" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654200" type="Float32" name="Demand Effect:ID" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654300" type="Float32" name="Demand Effect:IM" desc="This is the % Effect the Ordinance will have when active."></property>
+			<property num="0x2A654400" type="Float32" name="Demand Effect:IHT" desc="This is the % Effect the Ordinance will have when active."></property>
 			<property num="0x2a89b677" type="Bool" name="Prop Destroys Lot" desc="Whether or not prop destroys entire lot when it burns down.  Default is true for flammable props."></property>
 			<property num="0x2a9590de" type="Float32" name="Audio:VolumeAttackLimit" desc="Max amount of full volume to change up per second"></property>
 			<property num="0x2aa00fe7" type="Sint64" name="Landfill: Cost for Altitude Change" desc="When zoning, the additional cost per cell for each meter of altitude changed"></property>
@@ -763,6 +768,42 @@
 			<property num="0x6ab70da7" type="Float32" name="Death's door HQ" desc="If a tract's HQ falls below this number, they're at death's door."></property>
 			<property num="0x6ab71654" type="Float32" name="Death's door effect height" desc="Base height above terrain at which the effect will play for a tract that's at death's door."></property>
 			<property num="0x6ad54804" type="Sint32" name="Catalogue Monthly Cost" desc="Value for displaying monthly cost in the catalogue. Value is not actually simulated, is just a display value"></property>
+			<property num="0x6b23d800" type="Uint32" name="Ordinance Availability: R$ Population" desc="The minimum R$ population for this ordinance to become available."></property>
+			<property num="0x6b23d801" type="Uint32" name="Ordinance Availability: R$$ Population" desc="The minimum R$$ population for this ordinance to become available."></property>
+			<property num="0x6b23d802" type="Uint32" name="Ordinance Availability: R$$$ Population" desc="The minimum R$$$ population for this ordinance to become available."></property>
+			<property num="0x6b23d803" type="Uint32" name="Ordinance Availability: Cs$ Population" desc="The minimum Cs$ population for this ordinance to become available."></property>
+			<property num="0x6b23d804" type="Uint32" name="Ordinance Availability: Cs$$ Population" desc="The minimum Cs$$ population for this ordinance to become available."></property>
+			<property num="0x6b23d805" type="Uint32" name="Ordinance Availability: Cs$$$ Population" desc="The minimum Cs$$$ population for this ordinance to become available."></property>
+			<property num="0x6b23d806" type="Uint32" name="Ordinance Availability: Co$$ Population" desc="The minimum Co$$ population for this ordinance to become available."></property>
+			<property num="0x6b23d807" type="Uint32" name="Ordinance Availability: Co$$$ Population" desc="The minimum Co$$$ population for this ordinance to become available."></property>
+			<property num="0x6b23d808" type="Uint32" name="Ordinance Availability: IR Population" desc="The minimum IR population for this ordinance to become available."></property>
+			<property num="0x6b23d809" type="Uint32" name="Ordinance Availability: ID Population" desc="The minimum ID population for this ordinance to become available."></property>
+			<property num="0x6b23d80a" type="Uint32" name="Ordinance Availability: IM Population" desc="The minimum IM population for this ordinance to become available."></property>
+			<property num="0x6b23d80b" type="Uint32" name="Ordinance Availability: IHT Population" desc="The minimum IHT population for this ordinance to become available."></property>
+			<property num="0x6b23d820" type="Uint32" name="Ordinance Availability: Fire Station Count" desc="The minimum number of fire stations for this ordinance to become available."></property>
+			<property num="0x6b23d821" type="Uint32" name="Ordinance Availability: Hospital Count" desc="The minimum number of hospital buildings for this ordinance to become available."></property>
+			<property num="0x6b23d822" type="Uint32" name="Ordinance Availability: Jail Count" desc="The minimum number of jails for this ordinance to become available."></property>
+			<property num="0x6b23d823" type="Uint32" name="Ordinance Availability: Police Station Count" desc="The minimum number of police stations for this ordinance to become available."></property>
+			<property num="0x6b23d824" type="Uint32" name="Ordinance Availability: School Count" desc="The minimum number of school buildings for this ordinance to become available."></property>
+			<property num="0x6b23d830" type="String" name="Ordinance Availability: Lua Function" desc="The name of a Lua function that checks the conditions for this ordinance to become available. Must have a unique name, take no parameters, and return a Boolean."></property>
+			<property num="0x6b23d900" type="Float32" name="Ordinance Monthly Income: R$ Population Factor" desc="Factor applied to the ordinance cost based on the R$ population."></property>
+			<property num="0x6b23d901" type="Float32" name="Ordinance Monthly Income: R$$ Population Factor" desc="Factor applied to the ordinance cost based on the R$$ population."></property>
+			<property num="0x6b23d902" type="Float32" name="Ordinance Monthly Income: R$$$ Population Factor" desc="Factor applied to the ordinance cost based on the R$$$ population."></property>
+			<property num="0x6b23d903" type="Float32" name="Ordinance Monthly Income: Cs$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$ population."></property>
+			<property num="0x6b23d904" type="Float32" name="Ordinance Monthly Income: Cs$$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$$ population."></property>
+			<property num="0x6b23d905" type="Float32" name="Ordinance Monthly Income: Cs$$$ Population Factor" desc="Factor applied to the ordinance cost based on the Cs$$$ population."></property>
+			<property num="0x6b23d906" type="Float32" name="Ordinance Monthly Income: Co$$ Population Factor" desc="Factor applied to the ordinance cost based on the Co$$ population."></property>
+			<property num="0x6b23d907" type="Float32" name="Ordinance Monthly Income: Co$$$ Population Factor" desc="Factor applied to the ordinance cost based on the Co$$$ population."></property>
+			<property num="0x6b23d908" type="Float32" name="Ordinance Monthly Income: IR Population Factor" desc="Factor applied to the ordinance cost based on the IR population."></property>
+			<property num="0x6b23d909" type="Float32" name="Ordinance Monthly Income: ID Population Factor" desc="Factor applied to the ordinance cost based on the ID population."></property>
+			<property num="0x6b23d90a" type="Float32" name="Ordinance Monthly Income: IM Population Factor" desc="Factor applied to the ordinance cost based on the IM population."></property>
+			<property num="0x6b23d90b" type="Float32" name="Ordinance Monthly Income: IHT Population Factor" desc="Factor applied to the ordinance cost based on the IHT population."></property>
+			<property num="0x6b23d920" type="Float32" name="Ordinance Monthly Income: Fire Station Factor" desc="Factor applied to the ordinance cost based on the number of fire stations."></property>
+			<property num="0x6b23d921" type="Float32" name="Ordinance Monthly Income: Hospital Factor" desc="Factor applied to the ordinance cost based on the number of hospital buildings."></property>
+			<property num="0x6b23d922" type="Float32" name="Ordinance Monthly Income: Jail Factor" desc="Factor applied to the ordinance cost based on the number of jails."></property>
+			<property num="0x6b23d923" type="Float32" name="Ordinance Monthly Income: Police Station Factor" desc="Factor applied to the ordinance cost based on the number of police stations."></property>
+			<property num="0x6b23d924" type="Float32" name="Ordinance Monthly Income: School Factor" desc="Factor applied to the ordinance cost based on the number of school buildings."></property>
+			<property num="0x6b23d930" type="String" name="Ordinance Monthly Income: Lua Function" desc="The name of a Lua function that that calculates the monthly income. Must have a unique name, take the monthly constant income as a parameter, and return the calculated monthly expense/income for the ordinance."></property>
 			<property num="0x6b42922c" type="Float32" name="Simulation Speed multiplier" desc="Is just a visual representation. Multiplier for Automata speed when simulator is in: Turtle: Rhino: Cheetah: UDI mode. First 3 only apply when "Variable Speed Automata" is on."></property>
 			<property num="0x6b588fad" type="Float32" name="SuspensionPeriod" desc="Defaulted deals get suspended for this number of days."></property>
 			<property num="0x6b733233" type="Uint32" name="MiniMap: Water ramp" desc="Colour progression to use for water."></property>
@@ -984,6 +1025,9 @@
 			<property num="0x8c3caef5" type="Float32" name="Ferry Fare" desc="Income per traveller from a ferry trip"></property>
 			<property num="0x8c3e8185" type="Uint32" name="Travellers per bus" desc="How many travellers it takes to yield a bus automata"></property>
 			<property num="0x8cb3511f" type="Uint32" name="Occupant Types" desc="Types of occupants"></property>
+			<property num="0x9ccfad35" type="Uint32" name="Building Style Exemplar: Style Name Key" desc="Resource key for the building style name that is shown in the UI."></property>
+			<property num="0x9ccfad36" type="Bool" name="Building Style Exemplar: Use Bold Text" desc="Indicates if the check box text should be bold."></property>
+			<property num="0x9ccfad37" type="Uint32" name="Building Style Exemplar: Tool Tip Key" desc="Resource key for the building style check box tool tip."></property>
 			<property num="0xa7607d70" type="Sint32" name="WeeksForCompleteTemperatureSimulation" desc="WeeksForCompleteTemperatureSimulation"></property>
 			<property num="0xa7607d71" type="Sint32" name="WeeksForCompleteMoistureSimulation" desc="WeeksForCompleteMoistureSimulation"></property>
 			<property num="0xa7607d72" type="Sint32" name="SimulationSpreadWritingRadius" desc="SimulationSpreadWritingRadius"></property>
@@ -1399,6 +1443,7 @@
 			<property num="0x0062e78a" type="Uint32" name="Exemplar Patch Targets" desc="For use with Submenus DLL: list of Exemplar files this patch applies to. The other properties of this Cohort file are injected into every Exemplar on this list."></property>
 			<property num="0xAA1DD400" type="Uint32" name="Building Styles" desc="For use with Additional Building Styles DLL: When the property is present, the building will use custom and Maxis styles specified in the property and ignore the styles in the Occupant Groups property (0xAA1DD396). When the property is not present, the building will use the custom and Maxis styles specified in the Occupant Groups property (0xAA1DD396)."></property>
 			<property num="0xAA1DD401" type="Bool" name="Building Is W2W" desc="For use with Additional Building Styles DLL: This is a Boolean property, a value of true indicates that the building is W2W. If the value is false or the property is not present, the building will not be considered W2W."></property>
+			<property num="0xAA1DD402" type="Bool" name="Building Styles PIMX Template Marker" desc="For use with Additional Building Styles DLL: This is a Boolean property whose absence acts as a marker to let the DLL identify older versions of PIMX. Some of these older versions accidentally used the community style id 0x2004 as a placeholder, while versions with this property can use it as an actual style."></property>
 		</group>
 	</properties>
 </exemplars>
