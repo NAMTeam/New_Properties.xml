@@ -231,7 +231,7 @@
 			<property num="0x2a0348bb" type="Float32" name="Flora: Cluster max radius" desc="Maximum plane distance for this flora to cluster with others."></property>
 			<property num="0x2a0348bc" type="Float32" name="Flora: Cluster max height" desc="Maximum altitude differential for this flora to cluster with others."></property>
 			<property num="0x2a2d7824" type="Float32" name="Lot Developer: Cost Multiplier vs lot slope" desc="Cost to plop a lot is building + area x this response curve"></property>
-			<property num="0x2a3143d7" type="Uint32" name="CategoryMayorMisc" desc="Controls which menu the tool belongs in. Some tools are attached to the menu that they’re in."></property>
+			<property num="0x2a3143d7" type="Uint32" name="CategoryMayorMisc" desc="Controls which menu the tool belongs in. Some tools are attached to the menu that theyï¿½re in."></property>
 			<property num="0x2a35a25f" type="Float32" name="Audio:ZoomScaleFactor" desc="Scale factor for all zoom levels"></property>
 			<property num="0x2a36e3cb" type="Float32" name="Audio:ListenerRolloffFactor" desc="How fast sounds roll off with distance"></property>
 			<property num="0x2a3fbde1" type="Uint32" name="Audio:ANDFilters" desc="Filter GUIDs that MUST be satisfied"></property>
@@ -530,7 +530,7 @@
 			<property num="0x4a0b47f2" type="Uint32" name="DataView: Legends Colour" desc="Set Colour for legend on Data view"></property>
 			<property num="0x4a0b47f3" type="Uint32" name="DataView: Legends Labels" desc="Controls the Labels for the Dataview maps, each ID usually referencing a text based file"></property>
 			<property num="0x4a0b47f4" type="Uint32" name="DataView: Legends Header" desc="Selects building types for coverage rings and highlights. Relates to the labels above the dataview maps for each map, ID referencing a text based file."></property>
-			<property num="0x4a0b47f5" type="Bool" name="DataView: Show zone map" desc="Controls the RCI zones to be displayed in the 2D Dataview map itself."></property>
+			<property num="0x4a0b47f5" type="Bool" name="DataView: Show zone map" desc="Controls the RCI zonesï¿½to be displayed in the 2D Dataview map itself."></property>
 			<property num="0x4a149631" type="Float32" name="Prop Time of Day" desc="Range of hours on 24-hour clock (0-23) when prop will be at state 0 (visible).  If start and end times are both 0, always visible."></property>
 			<property num="0x4a1f38b5" type="Float32" name="Demand: Neutral Tax Rate vs. Population" desc="What is the highest tax rate you can set before demand suffers?"></property>
 	 		<property num="0x4a1f38b6" type="Float32" name="Demand: Tax Modifier vs. Rate Variance" desc="How much is demand impacted by tax rates above or below neutral?"></property>
@@ -1440,7 +1440,7 @@
 			<property num="0xaa1dd399" type="Uint32" name="Building Submenus" desc="For use with Submenus DLL: the Button IDs of the submenus this building appears in if the DLL is loaded. Requires memo.submenu.dll for full functionality."></property>
 			<property num="0x8a2602ca" type="Unit32" name="Item Submenu Parent ID" desc="For use with Submenus DLL: the button ID that opens the submenu this item belongs to"></property>
 			<property num="0x8a2602cc" type="Uint32" name="Item Button Class" desc="For use with Submenus DLL: classifier that determines the function of this item"></property>
-			<property num="0x0062e78a" type="Uint32" name="Exemplar Patch Targets" desc="For use with Submenus DLL: list of Exemplar files this patch applies to. The other properties of this Cohort file are injected into every Exemplar on this list."></property>
+			<property num="0x0062e78a" type="Uint32" name="Exemplar Patch Targets" desc="For use with sc4-resource-loading-hooks DLL: list of Exemplar files this patch applies to. The other properties of this Cohort file are injected into every Exemplar on this list."></property>
 			<property num="0xAA1DD400" type="Uint32" name="Building Styles" desc="For use with Additional Building Styles DLL: When the property is present, the building will use custom and Maxis styles specified in the property and ignore the styles in the Occupant Groups property (0xAA1DD396). When the property is not present, the building will use the custom and Maxis styles specified in the Occupant Groups property (0xAA1DD396)."></property>
 			<property num="0xAA1DD401" type="Bool" name="Building Is W2W" desc="For use with Additional Building Styles DLL: This is a Boolean property, a value of true indicates that the building is W2W. If the value is false or the property is not present, the building will not be considered W2W."></property>
 			<property num="0xAA1DD402" type="Bool" name="Building Styles PIMX Template Marker" desc="For use with Additional Building Styles DLL: This is a Boolean property whose absence acts as a marker to let the DLL identify older versions of PIMX. Some of these older versions accidentally used the community style id 0x2004 as a placeholder, while versions with this property can use it as an actual style."></property>
