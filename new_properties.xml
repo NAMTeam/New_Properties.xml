@@ -6932,6 +6932,10 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0x5007" Name="Prop: Construction Occupant">
     </OPTION>
+	    <OPTION Value="0x5009" Name="Automata: Big Bus Stop">
+    </OPTION>
+	    <OPTION Value="0x500a" Name="Automata: Big Taxi Stop">
+    </OPTION>
     <OPTION Value="0x00047000" Name="Automata: BMW Cars">
     </OPTION>
     <OPTION Value="0x00047001" Name="Automata: Ford Cars">
@@ -11166,16 +11170,16 @@ This selection will filter the display to only show Museum plug-ins. To create a
  <NEEDED ID="0xaa1dd396" Value="0x1506"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSMuseum,400*int(1+Volume**1.5/50000.))"/>
- <eval name="CatalogC" value="5*int(sqrt(Students)/5.)"/>
+ <eval name="Students" value="max(SCCSMuseum,100*int(1+Volume**1.5/20000.))"/>
+ <eval name="CatalogC" value="7.5*int(sqrt(Students)/5.)"/>
  <eval name="CivicJobs" value="CatalogC"/>
- <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
- <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*2./8.)"/>
- <eval name="Radius" value="40*int(135+0.75*Students**0.4)"/>
- <eval name="MCost" value="50*int(1+0.018*Students**0.9)"/>
- <eval name="PCost" value="50*int(9+0.014*Students**0.9)"/>
- <eval name="BCost" value="10*int(1+0.01*Students**1.1)"/>
+ <eval name="Jobs1" value="5+int(CivicJobs*1./10.)"/>
+ <eval name="Jobs2" value="2+int(CivicJobs*3./9.)"/>
+ <eval name="Jobs3" value="0+int(CivicJobs*2./10.)"/>
+ <eval name="Radius" value="50*int(140+0.75*Students**0.5)"/>
+ <eval name="MCost" value="50*int(1+0.004*Volume**0.9)"/>
+ <eval name="PCost" value="50*int(9+0.0155*Volume**0.9)"/>
+ <eval name="BCost" value="10*int(1+0.0040*Volume**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="QueryForMuseum"/><!--Query exemplar GUID-->
@@ -11210,9 +11214,9 @@ This selection will filter the display to only show Other School plug-ins. To cr
  <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*2./8.)"/>
  <eval name="Radius" value="32.584*int(135+0.75*Students**0.4)"/>
- <eval name="MCost" value="(20.835*int(13+0.035*Students**0.9))/5"/>
- <eval name="PCost" value="48.711*int(20+0.020*Students**1.1)"/>
- <eval name="BCost" value="0.8765*int(15+0.025*Students**1.1)"/>
+ <eval name="MCost" value="7*int(13+0.035*Volume**0.9)"/>
+ <eval name="PCost" value="20*int(20+0.020*Volume**1.1)"/>
+ <eval name="BCost" value="5*int(15+0.025*Volume**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x03"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="0x12121201"/><!--Query exemplar GUID-->
