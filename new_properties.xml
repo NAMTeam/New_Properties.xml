@@ -7930,6 +7930,58 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
     </OPTION>
 	<OPTION Value="0xD013F32D" Name="Miscellaneous Power Utilities">
     </OPTION>
+	<OPTION Value="0xA11C9DB6" Name="Coal Power Plant">
+    </OPTION>
+	<OPTION Value="0xD2430E09" Name="Natural Gas Power Plant">
+    </OPTION>
+	<OPTION Value="0x14D53C20" Name="Electric Generator Power Plant">
+    </OPTION>
+	<OPTION Value="0xE30B61A4" Name="Oil Power Plant">
+    </OPTION>
+	<OPTION Value="0x77A9FEEF" Name="Waste To Energy Power Plant">
+    </OPTION>
+	<OPTION Value="0x67B10537" Name="Nuclear Fusion Power Plant">
+    </OPTION>
+	<OPTION Value="0x50658ACB" Name="Nuclear Fission Power Plant">
+    </OPTION>
+	<OPTION Value="0x61730DA9" Name="Geothermal Power Plant">
+    </OPTION>
+	<OPTION Value="0x0C7A83E6" Name="Solar Power Plant">
+    </OPTION>
+	<OPTION Value="0x44FD9388" Name="Microwave Power Plant">
+    </OPTION>
+	<OPTION Value="0xA99B3326" Name="Wind Power Plant">
+    </OPTION>
+	<OPTION Value="0x60B9298D" Name="Tidal and Wave Power Plant">
+    </OPTION>
+	<OPTION Value="0xD547C3D3" Name="Aquifer Water Source">
+    </OPTION>
+	<OPTION Value="0x7449EC71" Name="Aquifer Water Tower">
+    </OPTION>
+	<OPTION Value="0xE75D823A" Name="Fresh Water Source">
+    </OPTION>
+	<OPTION Value="0x2CBE97D3" Name="Salt Water Source">
+    </OPTION>
+	<OPTION Value="0x231186A6" Name="Treatment Plant">
+    </OPTION>
+	<OPTION Value="0x8E5B2F9C" Name="Sewage Sanitizer Plant">
+    </OPTION>
+	<OPTION Value="0x13D1986E" Name="Miscellaneous Water Utilities">
+    </OPTION>
+	<OPTION Value="0x37FFA051" Name="Incinerator Plant">
+    </OPTION>
+	<OPTION Value="0x93CFB7D6" Name="Recycle Plant">
+    </OPTION>
+	<OPTION Value="0x2FAE9226" Name="Scrubber Plant">
+    </OPTION>
+	<OPTION Value="0x64365D13" Name="Power Storage">
+    </OPTION>
+	<OPTION Value="0xe758ed09" Name="High-Voltage Electrical Substation">
+    </OPTION>
+	<OPTION Value="0x2FAE9226" Name="Medium voltage Electrical Substation">
+    </OPTION>
+	<OPTION Value="0x2FAE9226" Name="Low-Voltage Electrical Substation">
+    </OPTION>
 <HELP>SubMenuROOTCivicPolice</HELP>
 	<OPTION Value="0x65D88585" Name="Small Police">
     </OPTION>
@@ -7976,6 +8028,8 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
 	<OPTION Value="0xBB531946" Name="Embankments and Retaining Walls">
     </OPTION>
 	<OPTION Value="0xF034265C" Name="Fillers">
+    </OPTION>
+	<OPTION Value="0x7C5D244F" Name="Specialization: Gambling">
     </OPTION>
   </PROPERTY>
   <PROPERTY Name="ExtendedPowerType" ID="0x713c8912" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
@@ -12269,7 +12323,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.)"/>
+ <eval name="PCost" value="500*int(2.50*PowerOutput/500."/>
  <eval name="MCost" value="50*int(0.080*PowerOutput/50.)"/>
  <eval name="BCost" value="10*int(0.110*PowerOutput/10.)"/>
  <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
@@ -12892,7 +12946,7 @@ This selection will filter the display to only show Aquifer Water Tower plug-ins
  <PROPERTY ID="0xAA1DD397" Set="0xCA62C919"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xEA1CF220" Value="0.00041667"/><!--Age degradation rate-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001401,0x04D53CEE"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xD547C3D3"/><!--OccupantGroups for SubMenu-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x7449EC71"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
 </CATEGORY>
 
