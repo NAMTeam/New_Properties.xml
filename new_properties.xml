@@ -7836,7 +7836,13 @@ List of groups this occupant belongs to.
     </OPTION>	
 	<OPTION Value="0x0ABF5A84" Name="AMPS: Transformer">
     </OPTION>		
-	<OPTION Value="0xB2718077" Name="AMPS: Power Eye-Candy">
+	<OPTION Value="0x0badb9ac" Name="AMPS: Intermediate Plants">
+    </OPTION>
+	<OPTION Value="0x18e64ea5" Name="AMPS: Base Load Plants">
+    </OPTION>
+	<OPTION Value="0x7283dcd7" Name="AMPS: Peak Plants">
+    </OPTION>
+	<OPTION Value="0xB2718077" Name="AMPS: Power Eye-Candy"> 
     </OPTION>
 	<OPTION Value="0x0C56201B" Name="AGM: Landfill">
     </OPTION>
@@ -7864,6 +7870,28 @@ List of groups this occupant belongs to.
     </OPTION>
 	<OPTION Value="0x280C60E3" Name="AWM: Sewage Sanitizer">
     </OPTION>
+	<OPTION Value="0x38b2414d" Name="Park: Sports Court">
+    </OPTION>
+	<OPTION Value="0x9ba2a232" Name="Park: Plaza with Statue">
+    </OPTION>
+	<OPTION Value="0xb212b998" Name="Park: Open Plaza">
+    </OPTION>
+	<OPTION Value="0xecb66959" Name="Park: Community Garden">
+    </OPTION>
+	<OPTION Value="0x8d415070" Name="Park: Playground">
+    </OPTION>
+	<OPTION Value="0xdae344bd" Name="Park: Park">
+    </OPTION>
+	<OPTION Value="0xeebca738" Name="Park: Neutral Park">
+    </OPTION>
+	<OPTION Value="0x0e2800ec" Name="Park: Beaches">
+    </OPTION>
+	<OPTION Value="0x08bbb542" Name="Park: Canal">
+    </OPTION>
+	<OPTION Value="0x8b444582" Name="Park: Watercrafts">
+    </OPTION>
+    <OPTION Value="0xac4a6915" Name="Park: Canal">
+    </OPTION>	
 	<OPTION Value="0xCA1A100A" Name="Automata: CAN-AM Passenger Ferry Generator">
     </OPTION>
 	<OPTION Value="0xCA1A105A" Name="Automata: CAN-AM Freight Ferry Generator">
@@ -7989,6 +8017,8 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
 	</OPTION>
 	<OPTION Value="0xEB75882C" Name="Plazas">
     </OPTION>
+	<OPTION Value="0x8D93AA33" Name="Community Garden">
+	</OPTION>
 	<OPTION Value="0x1c3780e4" Name="Beaches">
 	</OPTION>
 	<OPTION Value="0xce21dbeb" Name="Sports Grounds">
@@ -7999,10 +8029,12 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
     </OPTION>
 	<OPTION Value="0xF034265C" Name="Fillers">
     </OPTION>
+	<OPTION Value="0xdd5dc0e7" Name="Watercrafts">
+    </OPTION>
   </PROPERTY>
   <PROPERTY Name="ExtendedPowerType" ID="0x713c8912" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
-For use with ExtendedPowerType DLL: Allows a separation of power plants to efect specific counting of the type of power plants
+For use with AMPS Allows a separation of power plants to efect specific counting of the type of power plants
 </HELP>
 <HELP>ExtendedPowerType</HELP>
 	<OPTION Value="0xb0c1d6f9" Name="Coal">
@@ -8035,9 +8067,7 @@ For use with ExtendedPowerType DLL: Allows a separation of power plants to efect
     </OPTION>
 	<OPTION Value="0xf008cfac" Name="Power Storage">
     </OPTION>
-	<OPTION Value="0x535f049c" Name="High-Voltage Transformers">
-    </OPTION>
-	<OPTION Value="0x07376e36" Name="Medium Voltage Transformers">
+	<OPTION Value="0x535f049c" Name="High-Medium Voltage Transformers">
     </OPTION>
 	<OPTION Value="0x867fcec4" Name="Low Voltage Transformers">
     </OPTION>
@@ -11266,29 +11296,6 @@ This selection will filter the display to only show Park plug-ins. To create a p
  <NEEDED ID="0xaa1dd396" Value="0x1006"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0x2A499F85" Eval="QueryForPark"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x2C8F8746" Eval="0x8C8FBC47"/><!--Exemplar Category-->
- <PROPERTY ID="0x88FCD877" Eval="0x00000000"/><!--Building foundation-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPark"/><!-- Item Order -->
- <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD397" Eval="0xCA9B8233"/><!--SFX:Query Sound-->
- <PROPERTY ID="0xC9B93A56" Eval="0xEA5EC59F"/><!--SFX:Default Plop Sound-->
- <PROPERTY ID="0xEA54D283" Eval="0x8A4260A6"/><!--Budget Item: Department-->
- <PROPERTY ID="0xEA54D284" Eval="0x00000000"/><!--Budget Item: Line-->
- <PROPERTY ID="0xEA54D285" Eval="0xCA639989"/><!--Budget Item: Purpose-->
-</PROPERTIES> 
-</CATEGORY>
-
-<CATEGORY Name="With Visible Building" ID="0x8c8fbc50" ParentID="0x8c8fbc47">
-<HELP>
-This selection will filter the display to only show Park plug-ins. To create a plug-in of this type drag a model to Park.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
-</HELP>
-<FILTERS>
- <NOT ID="0x27812810" Value="0x0000"/><!--Occupant Size-->
- <NOT ID="0x27812820" Value="0x0000"/><!--Resource Key Type 0-->
- <NOT ID="0x27812821" Value="0x0000"/><!--Resource Key Type 1-->
-</FILTERS>
-<PROPERTIES>
  <eval name="Worth" value="int(30.+10./3.*CalculatedElevation*3.2)"/>
  <PROPERTY ID="0x099AFACD" Eval="Worth+ParkBulldozeCost"/><!--Bulldoze cost-->
  <PROPERTY ID="0x27812840" Eval="0x00001810,ParkCAPRelief,0x00001820,ParkCAPRelief,0x00001830,ParkCAPRelief"/><!--Demand Satisfied-->
@@ -11302,10 +11309,19 @@ This selection will filter the display to only show Park plug-ins. To create a p
  <PROPERTY ID="0x68EE9764" Eval="ParkAirRadius,ParkWaterRadius,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xC8ED2D84" Eval="ParkWaterConsumed+int(0+BiasedBC*WaterConsumedFactor)"/><!--Water Consumed-->
  <PROPERTY ID="0xEA54D286" Eval="5+ParkMonthlyCost+int(50.+Worth/10.)"/><!--Budget Item: Cost-->
+ <PROPERTY ID="0x2A499F85" Eval="QueryForPark"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x2C8F8746" Eval="0x8C8FBC47"/><!--Exemplar Category-->
+ <PROPERTY ID="0x88FCD877" Eval="0x00000000"/><!--Building foundation-->
+ <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPark"/><!-- Item Order -->
+ <PROPERTY ID="0xAA1DD397" Eval="0xCA9B8233"/><!--SFX:Query Sound-->
+ <PROPERTY ID="0xC9B93A56" Eval="0xEA5EC59F"/><!--SFX:Default Plop Sound-->
+ <PROPERTY ID="0xEA54D283" Eval="0x8A4260A6"/><!--Budget Item: Department-->
+ <PROPERTY ID="0xEA54D284" Eval="0x00000000"/><!--Budget Item: Line-->
+ <PROPERTY ID="0xEA54D285" Eval="0xCA639989"/><!--Budget Item: Purpose-->
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Stadium" ID="0x8c8fbc51" ParentID="0x8c8fbc50">
+<CATEGORY Name="Stadium" ID="0x8c8fbc51" ParentID="0x8c8fbc47">
 <HELP>
 This selection will filter the display to only show Stadium plug-ins. To create a Stadium plug-in of this type drag a model to Stadium.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
@@ -11340,15 +11356,12 @@ This selection will filter the display to only show Stadium plug-ins. To create 
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Sports Court" ID="0x8c8fbc52" ParentID="0x8c8fbc50">
+<CATEGORY Name="Sports Court" ID="0x8c8fbc52" ParentID="0x8c8fbc47">
 <HELP>
 This selection will filter the display to only show Sports Court plug-ins. To create a Sports Court plug-in of this type drag a model to Sports Court.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
 <FILTERS>
- <NOT ID="0x2781284F"/><!--Landmark Effect-->
- <NOT ID="0x87CD6399"/><!--Landmark Effect-->
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NEEDED ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
+ <NEEDED ID="0xAA1DD396" Value="0x38b2414d"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
@@ -11372,17 +11385,17 @@ This selection will filter the display to only show Sports Court plug-ins. To cr
  <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
  <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
  <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0x38b2414d"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xCE21DBEB"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Plaza with Statue" ID="0x8c8fbc53" ParentID="0x8c8fbc50">
+<CATEGORY Name="Plaza with Statue" ID="0x8c8fbc53" ParentID="0x8c8fbc47">
 <HELP>
 This selection will filter the display to only show Plaza with Statue plug-ins. To create a Plaza with Statue plug-in of this type drag a model to Plaza with Statue.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
 <FILTERS>
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NEEDED ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
+ <NEEDED ID="0xAA1DD396" Value="0x9ba2a232"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0x27812832" Eval="0x03"/><!--Wealth-->
@@ -11405,178 +11418,17 @@ This selection will filter the display to only show Plaza with Statue plug-ins. 
  <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
  <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
  <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0x9ba2a232"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xEB75882C"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Playground" ID="0x8c8fbc54" ParentID="0x8c8fbc50">
-<HELP>
-This selection will filter the display to only show Community Garden plug-ins. To create a Community Garden plug-in of this type drag a model to Community Garden.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
-</HELP>
-<FILTERS>
- <NOT ID="0x2781284F"/><!--Landmark Effect-->
- <NOT ID="0x87CD6399"/><!--Landmark Effect-->
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NOT ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
-</FILTERS>
-<PROPERTIES>
- <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
- <eval name="ParkBulldozeCost"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkCAPRelief"        value="750*LotSizeX*LotSizeY"/>
- <eval name="LandmarkEffectConst"  value="0"/>
- <eval name="LandmarkEffectValue"  value="0"/>
- <eval name="LandmarkEffectRadius" value="0"/>
- <eval name="ParkEffectConst"      value="45"/>
- <eval name="ParkEffectValue"      value="15*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkEffectRadius"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkAirPollution"     value="-1*LotSizeX*LotSizeY"/>
- <eval name="ParkWaterPollution"   value="1*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkPlopInitial"      value="50"/>
- <eval name="ParkPlopCost"         value="40*LotSizeX*LotSizeY"/>
- <eval name="ParkAirRadius"        value="2*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkWaterRadius"      value="1*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkWaterConsumed"    value="1*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkMonthlyCost"      value="5*LotSizeX*LotSizeY"/>
- <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
- <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
- <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
- <PROPERTY ID="0xAA1DD399" Eval="0xBF776D40"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES> 
-</CATEGORY>
-
-<CATEGORY Name="Park or Field" ID="0x8c8fbc55" ParentID="0x8c8fbc50">
-<HELP>
-This selection will filter the display to only show Park or Field plug-ins. To create a Park or Field plug-in of this type drag a model to Park or Field.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NOT ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
- <NOT ID="0xAA1DD396" Value="0x150B"/><!--Occupant Group Reward-->
-</FILTERS>
-<PROPERTIES>
- <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
- <eval name="ParkBulldozeCost"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkCAPRelief"        value="500*LotSizeX*LotSizeY"/>
- <eval name="LandmarkEffectConst"  value="10"/>
- <eval name="LandmarkEffectValue"  value="10*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="LandmarkEffectRadius" value="10"/>
- <eval name="ParkEffectConst"      value="35"/>
- <eval name="ParkEffectValue"      value="5*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkEffectRadius"     value="15*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkAirPollution"     value="-1*LotSizeX*LotSizeY"/>
- <eval name="ParkWaterPollution"   value="1*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkPlopInitial"      value="50"/>
- <eval name="ParkPlopCost"         value="40*LotSizeX*LotSizeY"/>
- <eval name="ParkAirRadius"        value="2*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkWaterRadius"      value="1*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkWaterConsumed"    value="5*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkMonthlyCost"      value="5*LotSizeX*LotSizeY"/>
- <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
- <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
- <PROPERTY ID="0xAA1DD399" Eval="0xBF776D40"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES> 
-</CATEGORY>
-
-<CATEGORY Name="Neutral Building" ID="0x8c8fbc59" ParentID="0x8c8fbc50">
-<HELP>
-This selection will filter the display to only show Neutral plug-ins. To create a Neutral plug-in of this type drag a model to Neutral.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
-</HELP>
-<FILTERS>
- <NOT ID="0x27812850"/><!--Park Effect-->
- <NOT ID="0xAA1DD396" Value="0x150B"/><!--Occupant Group Reward-->
-</FILTERS>
-<PROPERTIES>
- <PROPERTY ID="0x27812832" Eval="0x00"/><!--Wealth-->
- <eval name="ParkBulldozeCost"     value="0"/>
- <eval name="ParkCAPRelief"        value="0"/>
- <eval name="LandmarkEffectConst"  value="0"/>
- <eval name="LandmarkEffectValue"  value="0"/>
- <eval name="LandmarkEffectRadius" value="0"/>
- <eval name="ParkEffectConst"      value="0"/>
- <eval name="ParkEffectValue"      value="0"/>
- <eval name="ParkEffectRadius"     value="0"/>
- <eval name="ParkAirPollution"     value="0"/>
- <eval name="ParkWaterPollution"   value="0"/>
- <eval name="ParkPlopInitial"      value="0"/>
- <eval name="ParkPlopCost"         value="0"/>
- <eval name="ParkAirRadius"        value="0"/>
- <eval name="ParkWaterRadius"      value="0"/>
- <eval name="ParkWaterConsumed"    value="0"/>
- <eval name="ParkMonthlyCost"      value="0"/>
- <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
- <PROPERTY ID="0x27812850" Remove="27812850"/><!--Park Effect-->
- <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
- <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
-</PROPERTIES> 
-</CATEGORY>
-
-<CATEGORY Name="With Invisible Building" ID="0x8c8fbc60" ParentID="0x8c8fbc47">
-<HELP>
-This selection will filter the display to only show Park plug-ins. To create a plug-in of this type drag a model to Park.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
-</HELP>
-<FILTERS>
-</FILTERS>
-<PROPERTIES>
- <!--PROPERTY ID="0x27812810" Eval="Width,0x00000000,Depth"/--><!--Occupant Size-->
- <PROPERTY ID="0x27812820" Eval="0x00000000,0x00000000,0x00000000"/><!--Resource Key Type 0-->
- <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
- <PROPERTY ID="0x49BEDA31" Eval="0x00"/><!--MaxFireStage-->
- <PROPERTY ID="0x099AFACD" Eval="ParkBulldozeCost"/><!--Bulldoze Cost-->
- <PROPERTY ID="0x27812840" Eval="0x00001810,ParkCAPRelief,0x00001820,ParkCAPRelief,0x00001830,ParkCAPRelief"/><!--Demand Satisfied-->
- <PROPERTY ID="0x2781284F" Eval="LandmarkEffectConst+LandmarkEffectValue,LandmarkEffectRadius"/><!--Landmark Effect-->
- <PROPERTY ID="0x27812850" Eval="ParkEffectValue,ParkEffectRadius"/><!--Park Effect-->
- <PROPERTY ID="0x27812851" Eval="ParkAirPollution,ParkWaterPollution,0x00000000,0x00000000"/><!--Pollution at center-->
- <PROPERTY ID="0x27812854" Eval="0x00000000"/><!--Power Consumed-->
- <PROPERTY ID="0x49CAC341" Eval="ParkPlopInitial+ParkPlopCost"/><!--Plop Cost-->
- <PROPERTY ID="0x68EE9764" Eval="ParkAirRadius,ParkWaterRadius,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xC8ED2D84" Eval="ParkWaterConsumed"/><!--Water Consumed-->
- <PROPERTY ID="0xEA54D286" Eval="ParkMonthlyCost"/><!--Budget Item: Cost-->
-</PROPERTIES> 
-</CATEGORY>
-
-<CATEGORY Name="Sports Court" ID="0x8c8fbc62" ParentID="0x8c8fbc60">
-<HELP>
-This selection will filter the display to only show Sports Court plug-ins. To create a Sports Court plug-in of this type drag a model to Sports Court.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
-</HELP>
-<FILTERS>
- <NOT ID="0x2781284F"/><!--Landmark Effect-->
- <NOT ID="0x87CD6399"/><!--Landmark Effect-->
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NEEDED ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
-</FILTERS>
-<PROPERTIES>
- <PROPERTY ID="0x27812821" Remove="27812821"/><!--Resource Key Type 1-->
- <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
- <eval name="ParkBulldozeCost"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkCAPRelief"        value="2000*LotSizeX*LotSizeY"/>
- <eval name="LandmarkEffectConst"  value="0"/>
- <eval name="LandmarkEffectValue"  value="0"/>
- <eval name="LandmarkEffectRadius" value="0"/>
- <eval name="ParkEffectConst"      value="25"/>
- <eval name="ParkEffectValue"      value="5*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkEffectRadius"     value="30*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkAirPollution"     value="0"/>
- <eval name="ParkWaterPollution"   value="0"/>
- <eval name="ParkPlopInitial"      value="20"/>
- <eval name="ParkPlopCost"         value="40*LotSizeX*LotSizeY"/>
- <eval name="ParkAirRadius"        value="0"/>
- <eval name="ParkWaterRadius"      value="0"/>
- <eval name="ParkWaterConsumed"    value="0"/>
- <eval name="ParkMonthlyCost"      value="10*LotSizeX*LotSizeY"/>
- <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
- <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
- <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
- <PROPERTY ID="0xAA1DD399" Eval="0xCE21DBEB"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES> 
-</CATEGORY>
-
-<CATEGORY Name="Open Plaza" ID="0x8c8fbc63" ParentID="0x8c8fbc60">
+<CATEGORY Name="Open Plaza" ID="0x8c8fbc63" ParentID="0x8c8fbc47">
 <HELP>
 This selection will filter the display to only show Open Plaza plug-ins. To create a Open Plaza plug-in of this type drag a model to Open Plaza.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
 <FILTERS>
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NEEDED ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
+ <NEEDED ID="0xAA1DD396" Value="0xb212b998"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0x27812821" Remove="27812821"/><!--Resource Key Type 1-->
@@ -11599,19 +11451,17 @@ This selection will filter the display to only show Open Plaza plug-ins. To crea
  <eval name="ParkMonthlyCost"      value="5*LotSizeX*LotSizeY"/>
  <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
  <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0xb212b998"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xEB75882C"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Community Garden" ID="0x8c8fbc64" ParentID="0x8c8fbc60">
+<CATEGORY Name="Community Garden" ID="0x8c8fbc64" ParentID="0x8c8fbc47">
 <HELP>
 This selection will filter the display to only show Playground plug-ins. To create a Playground plug-in of this type drag a model to Playground.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
 <FILTERS>
- <NOT ID="0x2781284F"/><!--Landmark Effect-->
- <NOT ID="0x87CD6399"/><!--Landmark Effect-->
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NOT ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
+ <NEEDED ID="0xAA1DD396" Value="0xecb66959"/>
 </FILTERS>
 <PROPERTIES>
  <PROPERTY ID="0x27812821" Remove="27812821"/><!--Resource Key Type 1-->
@@ -11635,33 +11485,64 @@ This selection will filter the display to only show Playground plug-ins. To crea
  <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
  <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
  <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0xecb66959"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x8D93AA33"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Park" ID="0x8c8fbc65" ParentID="0x8c8fbc60">
+<CATEGORY Name="Playground" ID="0x8c8fbc54" ParentID="0x8c8fbc47">
 <HELP>
-This selection will filter the display to only show Park plug-ins. To create a Park plug-in of this type drag a model to Park.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
+This selection will filter the display to only show Community Garden plug-ins. To create a Community Garden plug-in of this type drag a model to Community Garden.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
 <FILTERS>
- <NEEDED ID="0x27812850"/><!--Park Effect-->
- <NOT ID="0xC8ED2D84" Value="0x00"/><!--Water Consumed-->
- <NOT ID="0xAA1DD396" Value="0x150B"/><!--Occupant Group Reward-->
+ <NEEDED ID="0xAA1DD396" Value="0x8d415070"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0x27812821" Remove="27812821"/><!--Resource Key Type 1-->
  <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
  <eval name="ParkBulldozeCost"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkCAPRelief"        value="250*LotSizeX*LotSizeY"/>
+ <eval name="ParkCAPRelief"        value="750*LotSizeX*LotSizeY"/>
+ <eval name="LandmarkEffectConst"  value="0"/>
+ <eval name="LandmarkEffectValue"  value="0"/>
+ <eval name="LandmarkEffectRadius" value="0"/>
+ <eval name="ParkEffectConst"      value="45"/>
+ <eval name="ParkEffectValue"      value="15*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkEffectRadius"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkAirPollution"     value="-1*LotSizeX*LotSizeY"/>
+ <eval name="ParkWaterPollution"   value="1*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkPlopInitial"      value="50"/>
+ <eval name="ParkPlopCost"         value="40*LotSizeX*LotSizeY"/>
+ <eval name="ParkAirRadius"        value="2*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkWaterRadius"      value="1*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkWaterConsumed"    value="1*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkMonthlyCost"      value="5*LotSizeX*LotSizeY"/>
+ <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
+ <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
+ <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0x8d415070"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD399" Eval="0xBF776D40"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES> 
+</CATEGORY>
+
+<CATEGORY Name="Park" ID="0x8c8fbc55" ParentID="0x8c8fbc47">
+<HELP>
+This selection will filter the display to only show Park or Field plug-ins. To create a Park or Field plug-in of this type drag a model to Park or Field.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xAA1DD396" Value="0xdae344bd"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
+ <eval name="ParkBulldozeCost"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkCAPRelief"        value="500*LotSizeX*LotSizeY"/>
  <eval name="LandmarkEffectConst"  value="10"/>
  <eval name="LandmarkEffectValue"  value="10*int((LotSizeX+LotSizeY)/2.)"/>
  <eval name="LandmarkEffectRadius" value="10"/>
  <eval name="ParkEffectConst"      value="35"/>
- <eval name="ParkEffectValue"      value="15*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkEffectValue"      value="5*int((LotSizeX+LotSizeY)/2.)"/>
  <eval name="ParkEffectRadius"     value="15*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkAirPollution"     value="-2*LotSizeX*LotSizeY"/>
+ <eval name="ParkAirPollution"     value="-1*LotSizeX*LotSizeY"/>
  <eval name="ParkWaterPollution"   value="1*int((LotSizeX+LotSizeY)/2.)"/>
- <eval name="ParkPlopInitial"      value="0"/>
+ <eval name="ParkPlopInitial"      value="50"/>
  <eval name="ParkPlopCost"         value="40*LotSizeX*LotSizeY"/>
  <eval name="ParkAirRadius"        value="2*int((LotSizeX+LotSizeY)/2.)"/>
  <eval name="ParkWaterRadius"      value="1*int((LotSizeX+LotSizeY)/2.)"/>
@@ -11669,20 +11550,51 @@ This selection will filter the display to only show Park plug-ins. To create a P
  <eval name="ParkMonthlyCost"      value="5*LotSizeX*LotSizeY"/>
  <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
  <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0xdae344bd"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xBF776D40"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
 </CATEGORY>
 
-<CATEGORY Name="Neutral Lot" ID="0x8c8fbc69" ParentID="0x8c8fbc60">
+<CATEGORY Name="Beaches" ID="0xbe9f3bbc" ParentID="0x8c8fbc47">
+<HELP>
+This selection will filter the display to only show Park or Field plug-ins. To create a Park or Field plug-in of this type drag a model to Park or Field.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xAA1DD396" Value="0x0e2800ec"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0x27812832" Eval="0x02"/><!--Wealth-->
+ <eval name="ParkBulldozeCost"     value="10*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkCAPRelief"        value="500*LotSizeX*LotSizeY"/>
+ <eval name="LandmarkEffectConst"  value="10"/>
+ <eval name="LandmarkEffectValue"  value="10*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="LandmarkEffectRadius" value="10"/>
+ <eval name="ParkEffectConst"      value="35"/>
+ <eval name="ParkEffectValue"      value="5*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkEffectRadius"     value="15*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkAirPollution"     value="-1*LotSizeX*LotSizeY"/>
+ <eval name="ParkWaterPollution"   value="1*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkPlopInitial"      value="50"/>
+ <eval name="ParkPlopCost"         value="40*LotSizeX*LotSizeY"/>
+ <eval name="ParkAirRadius"        value="2*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkWaterRadius"      value="1*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkWaterConsumed"    value="5*int((LotSizeX+LotSizeY)/2.)"/>
+ <eval name="ParkMonthlyCost"      value="5*LotSizeX*LotSizeY"/>
+ <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
+ <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0x0e2800ec"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x1c3780e4"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES> 
+</CATEGORY>
+
+<CATEGORY Name="Neutral Park" ID="0x8c8fbc59" ParentID="0x8c8fbc47">
 <HELP>
 This selection will filter the display to only show Neutral plug-ins. To create a Neutral plug-in of this type drag a model to Neutral.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
 </HELP>
 <FILTERS>
- <NOT ID="0x27812850"/><!--Park Effect-->
- <NOT ID="0xAA1DD396" Value="0x150B"/><!--Occupant Group Reward-->
+ <NEEDED ID="0xAA1DD396" Value="0xeebca738"/>
 </FILTERS>
 <PROPERTIES>
- <PROPERTY ID="0x27812821" Remove="27812821"/><!--Resource Key Type 1-->
  <PROPERTY ID="0x27812832" Eval="0x00"/><!--Wealth-->
  <eval name="ParkBulldozeCost"     value="0"/>
  <eval name="ParkCAPRelief"        value="0"/>
@@ -11703,7 +11615,42 @@ This selection will filter the display to only show Neutral plug-ins. To create 
  <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
  <PROPERTY ID="0x27812850" Remove="27812850"/><!--Park Effect-->
  <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001006,0xeebca738"/><!--OccupantGroups-->
  <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+</PROPERTIES> 
+</CATEGORY>
+
+<CATEGORY Name="Watercrafts" ID="0x745ed12c" ParentID="0x8c8fbc47">
+<HELP>
+This selection will filter the display to only show Neutral plug-ins. To create a Neutral plug-in of this type drag a model to Neutral.  In the lot editor this plug-in building can be found by choosing and replacing the building on any Park lot.
+</HELP>
+<FILTERS>
+ <NEEDED ID="0xAA1DD396" Value="0xac4a6915"/>
+</FILTERS>
+<PROPERTIES>
+ <PROPERTY ID="0x27812832" Eval="0x00"/><!--Wealth-->
+ <eval name="ParkBulldozeCost"     value="0"/>
+ <eval name="ParkCAPRelief"        value="0"/>
+ <eval name="LandmarkEffectConst"  value="0"/>
+ <eval name="LandmarkEffectValue"  value="0"/>
+ <eval name="LandmarkEffectRadius" value="0"/>
+ <eval name="ParkEffectConst"      value="0"/>
+ <eval name="ParkEffectValue"      value="0"/>
+ <eval name="ParkEffectRadius"     value="0"/>
+ <eval name="ParkAirPollution"     value="0"/>
+ <eval name="ParkWaterPollution"   value="0"/>
+ <eval name="ParkPlopInitial"      value="0"/>
+ <eval name="ParkPlopCost"         value="0"/>
+ <eval name="ParkAirRadius"        value="0"/>
+ <eval name="ParkWaterRadius"      value="0"/>
+ <eval name="ParkWaterConsumed"    value="0"/>
+ <eval name="ParkMonthlyCost"      value="0"/>
+ <PROPERTY ID="0x2781284F" Remove="2781284F"/><!--Landmark Effect-->
+ <PROPERTY ID="0x27812850" Remove="27812850"/><!--Park Effect-->
+ <PROPERTY ID="0x87CD6341" Remove="87CD6341"/><!--Park Effect-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001519,0xac4a6915"/><!--OccupantGroups-->
+ <PROPERTY ID="0x87CD6399" Remove="87CD6399"/><!--Landmark Effect-->
+ <PROPERTY ID="0xAA1DD399" Eval="0xdd5dc0e7"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
 </CATEGORY>
 
@@ -11749,10 +11696,10 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
 <PROPERTIES>
  <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
  <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
- <eval name="MCost" value="100*int(1+0.0075*Patients**0.9)"/>
- <eval name="TCost" value="100*int(1+0.00125*Patients**0.9)"/>
+ <eval name="MCost" value="(100*int(1+0.0075*Patients**0.9))/10"/>
+ <eval name="TCost" value="(100*int(1+0.00125*Patients**0.9))/10"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="10*int(2.5+0.006*Patients**0.9)"/>
+ <eval name="BCost" value="(10*int(2.5+0.006*Patients**0.9))/10"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForClinic"/><!-- Item Order -->
@@ -11794,10 +11741,10 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
 <PROPERTIES>
  <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
  <eval name="Radius" value="80*int(30+0.25*Patients**0.4)"/>
- <eval name="MCost" value="50*int(1+0.0009*Patients**0.9)"/>
- <eval name="TCost" value="50*int(1+0.0015*Patients**0.9)"/>
+ <eval name="MCost" value="(50*int(1+0.0009*Patients**0.9))10"/>
+ <eval name="TCost" value="(50*int(1+0.0015*Patients**0.9))/10"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="25*int(2.5+0.006*Patients**0.9)"/>
+ <eval name="BCost" value="(25*int(2.5+0.006*Patients**0.9))//10"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHospital"/><!-- Item Order -->
@@ -12039,7 +11986,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="16.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x2A4C43BD"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1946409F"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1946409F,0x18e64ea5"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xA11C9DB6"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0xb0c1d6f9"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12052,9 +11999,9 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+1.70*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.00*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.090*PowerOutput/10.))/2"/>
+ <eval name="PCost" value="(500*int(2.00*PowerOutput/500.))/10"/>
+ <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/10"/>
+ <eval name="BCost" value="(10*int(0.090*PowerOutput/10.))/5"/>
  <eval name="CivicJobs" value="int(PowerOutput/1000.)"/>
  <eval name="Jobs1" value="1+int(CivicJobs*10/48.)"/>
  <eval name="Jobs2" value="0+int(CivicJobs*23/48.)"/>
@@ -12072,7 +12019,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x4A4C42D4"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00083333"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB680D7E0"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB680D7E0,0x7283dcd7"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x67B10537"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0xf5daf839"/><!--Extended Power Type--> 
 </PROPERTIES>
@@ -12107,7 +12054,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E,0x7283dcd7"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xD2430E09"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12153,9 +12100,9 @@ This selection will filter the display to only show Power plug-ins.  To create a
 </FILTERS>
 <PROPERTIES>
  <eval name="PowerOutput" value="100*int(1+5.550*Volume**0.8/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(1.250*PowerOutput**0.8/50.))/4"/>
- <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
+ <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/10"/>
+ <eval name="MCost" value="(50*int(1.250*PowerOutput**0.8/50.))/10"/>
+ <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/5"/>
  <eval name="CivicJobs" value="int(PowerOutput/350.)"/>
  <eval name="Jobs1" value="1+int(CivicJobs*20/48.)"/>
  <eval name="Jobs2" value="0+int(CivicJobs*20/48.)"/>
@@ -12174,7 +12121,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
  <PROPERTY ID="0x6A43150F" Eval="0x00000004"/><!--Hard Failure Type-->
  <PROPERTY ID="0xAA19F6EA" Eval="-50.000000"/><!--Health effect strength-->
- <PROPERTY ID="0xAA1DD396" Eval="0x00001004,0x00001400,0x00001403,0x00001928,0xA945A10D"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Eval="0x00001004,0x00001400,0x00001403,0x00001928,0xA945A10D,0x7283dcd7"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA5C04C5" Eval="3200.000000"/><!--Radiation Spew Intensity-->
  <PROPERTY ID="0xAA5C04C8" Eval="15.000000"/><!--Radiation Spew Radius-->
  <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
@@ -12213,7 +12160,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xD6B169D9"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xD6B169D9,0x7283dcd7"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xE30B61A4"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x45dea4f8"/><!--Extended Power Type--> 
 </PROPERTIES>
@@ -12247,7 +12194,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x36CA5093"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x36CA5093,0x18e64ea5"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xCCD6C93C"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x9be9788b"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12279,7 +12226,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x8765D979"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x8765D979,0x18e64ea5"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x34872AFE"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x0a8b2e1c"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12311,7 +12258,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1F221780"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1F221780,0x18e64ea5"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xCDE0316B"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0xa4ffc9da"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12345,7 +12292,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C4406"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x7134683C"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x7134683C,0x0badb9ac"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x0C7A83E6"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0xa934e93e"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12379,7 +12326,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
  <PROPERTY ID="0xCA19D7CA" Set="0x6A4C4406"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x0CED62DC"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x0CED62DC,0x7283dcd7"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x44FD9388"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x03d5c8fd"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12415,7 +12362,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0xC9B93A56" Set="0x4A5EC571"/><!--SFX:Default Plop Sound-->
  <PROPERTY ID="0xCA19D7CA" Set="0x2A4C445C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xC78E0054"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xC78E0054,0x0badb9ac"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0xA99B3326"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x9e43f5c9"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12450,7 +12397,7 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0xC9B93A56" Set="0x4A5EC571"/><!--SFX:Default Plop Sound-->
  <PROPERTY ID="0xCA19D7CA" Set="0x2A4C445C"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xF0D606AC"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xF0D606AC,0x0badb9ac"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD399" Eval="0x60B9298D"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0x951653b7"/><!--Extended Power Type-->
 </PROPERTIES>
@@ -12521,12 +12468,86 @@ This selection will filter the display to only show Waste to Energy plug-ins.  T
  <PROPERTY ID="0x4A4C132E" Set="0x4A4C47B0"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x68EE9764" Eval="20.00000000,19.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForWtoE"/><!-- Item Order -->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x00001402,0xEC9175AA,0x7A9BFD20"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x00001402,0xEC9175AA,0x7A9BFD20,0x18e64ea5"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x4A8B7CD2"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xCA19D7CA" Set="0xAA4C4467"/><!--SFX:Ambience Good Sound-->
  <PROPERTY ID="0xEA1CF220" Eval="0.00052083"/><!--Age degradation rate-->
  <PROPERTY ID="0xAA1DD399" Eval="0x77A9FEEF"/><!--OccupantGroups for SubMenu-->
  <PROPERTY ID="0x713c8912" Eval="0xc291e217"/><!--Extended Power Type-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Transmission Station" ID="0xb98a80c4" ParentID="0x4cb23866">
+<FILTERS>
+ <NEEDED ID="0xAA1DD396" Value="0xB2718077"/> 
+</FILTERS>
+<PROPERTIES>
+ <eval name="PowerOutput" value="0"/>
+ <eval name="PCost" value="10*int(Volume/200.)"/>
+ <eval name="MCost" value="1*int(Volume/2000.)"/>
+ <eval name="BCost" value="5*int(Volume/500.)"/>
+ <eval name="CivicJobs" value="0"/>
+ <eval name="Jobs1" value="0"/>
+ <eval name="Jobs2" value="0"/>
+ <eval name="Jobs3" value="0"/>
+ <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+ <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/2)"/><!--KVA Rating--> 
+ <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+ <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+ <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+ <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+ <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+ <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+ <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+ <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+ <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+ <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+ <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+ <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+ <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+ <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+ <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+ <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD399" Eval="0x04986B76"/><!--OccupantGroups for SubMenu-->
+</PROPERTIES>
+</CATEGORY>
+
+<CATEGORY Name="Distribution Substation" ID="0x4a07c445" ParentID="0x4cb23866">
+<FILTERS>
+ <NEEDED ID="0xAA1DD396" Value="0x215395E9"/> 
+</FILTERS>
+<PROPERTIES>
+ <eval name="PowerOutput" value="0"/>
+ <eval name="PCost" value="10*int(Volume/200.)"/>
+ <eval name="MCost" value="1*int(Volume/2000.)"/>
+ <eval name="BCost" value="5*int(Volume/500.)"/>
+ <eval name="CivicJobs" value="0"/>
+ <eval name="Jobs1" value="0"/>
+ <eval name="Jobs2" value="0"/>
+ <eval name="Jobs3" value="0"/>
+ <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+ <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/45)"/><!--KVA Rating-->  
+ <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+ <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+ <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+ <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+ <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+ <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+ <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+ <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+ <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+ <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+ <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+ <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+ <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+ <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+ <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+ <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077,0x215395E9"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD399" Eval="0xD86B3B3B"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -12862,7 +12883,7 @@ This selection will filter the display to only show Water plug-ins.
  <PROPERTY ID="0xEA54D283" Value="0xAA4014B4"/><!--Budget Item: Department-->
  <PROPERTY ID="0xEA54D284" Value="0x00000000"/><!--Budget Item: Line-->
  <PROPERTY ID="0xEA54D285" Value="0xCA58C9D5"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="50*int(1+0.016*WaterOutput/50.0)"/><!--Budget Item: Cost-->
+ <PROPERTY ID="0xEA54D286" Eval="(50*int(1+0.016*WaterOutput/50.0))/10"/><!--Budget Item: Cost-->
 </PROPERTIES>
 </CATEGORY>
 
@@ -12914,7 +12935,7 @@ This selection will filter the display to only show Aquifer Water Tower plug-ins
  <PROPERTY ID="0xAA1DD397" Set="0xCA62C919"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xEA1CF220" Value="0.00041667"/><!--Age degradation rate-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001401,0x04D53CEE"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xD547C3D3"/><!--OccupantGroups for SubMenu-->
+ <PROPERTY ID="0xAA1DD399" Eval="0xe3af24a0"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
 </CATEGORY>
 
