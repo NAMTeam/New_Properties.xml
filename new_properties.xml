@@ -7888,9 +7888,7 @@ List of groups this occupant belongs to.
     </OPTION>
 	<OPTION Value="0x08bbb542" Name="Park: Canal">
     </OPTION>
-	<OPTION Value="0x8b444582" Name="Park: Watercrafts">
-    </OPTION>
-    <OPTION Value="0xac4a6915" Name="Park: Canal">
+    <OPTION Value="0xac4a6915" Name="Park: Watercrafts">
     </OPTION>	
 	<OPTION Value="0xCA1A100A" Name="Automata: CAN-AM Passenger Ferry Generator">
     </OPTION>
