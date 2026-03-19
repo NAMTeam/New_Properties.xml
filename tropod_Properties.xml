@@ -238,7 +238,7 @@
 			<property num="0x2a3fbde5" type="Uint32" name="Audio:NOTFilters" desc="Filter GUIDs that must NOT be satisfied"></property>
 			<property num="0x2a3ff8cd" type="Uint32" name="Audio:AmbienceExemplarIds" desc="Array of exemplars to load"></property>
 			<property num="0x2a499f85" type="Uint32" name="Query exemplar GUID" desc="GUID for this building's Query exemplar"></property>
-			<property num="0x2A49D7CA" type="UInt32" name="SubmenuKey:Utilities:SanitationMenu" desc="Controls which menu the tool belongs in. Some tools are attached to the menu that they're in.></property>
+			<property num="0x2A49D7CA" type="UInt32" name="SubmenuKey:Utilities:SanitationMenu" desc="Controls which menu the tool belongs in. Some tools are attached to the menu that they're in."></property>
 			<property num="0x2a511893" type="Float32" name="Commute Train Density Curve" desc="Maps city population to a multiplier (0.0-1.0) for commute train density"></property>
 			<property num="0x2a511cbc" type="Float32" name="Curve speed multiplier" desc="Multiplied by a vehicle's default speed when it goes around a curve"></property>
 			<property num="0x2a53be13" type="Uint32" name="SFX:Alarm Ambience Sound" desc="GUID of sound. Plays between alarm times."></property>
