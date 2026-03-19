@@ -57,7 +57,7 @@
 			<property num="0x0929cc65" type="Uint8" name="Medium Wealth EQ" desc="EQ assigned to new Medium Wealth residents"></property>
 			<property num="0x092d909b" type="Float32" name="Health Capacity Effect" desc="Percentage (from 0 to 200%) by which this ordinance affects the capacity of hospitals"></property>
 			<property num="0x096e5653" type="Float32" name="Underground Intersection Height" desc="Default height above trench floor to place intersections"></property>
-			<property num="0x096E7574" type="Unit32" name="Class ID: Watercraft" desc=""></property>
+			<property num="0x096E7574" type="Uint32" name="Class ID: Watercraft" desc=""></property>
 			<property num="0x097f4c4e" type="Uint8" name="Unwatered Terrain Colour" desc="RGBA colour for unwatered terrain cells in pipe view"></property>
 			<property num="0x098b25c8" type="Uint32" name="Max cells between power poles" desc="The maximum number of cells allowed between power poles"></property>
 			<property num="0x098b27d0" type="Float32" name="Minimum power line height" desc="The minimum distance allowed between a power line and the terrain"></property>
@@ -609,8 +609,8 @@
 			<property num="0x4be09ecc" type="Float32" name="Accident Check Period" desc="Period (in seconds) that the traffic sim tests for accidents"></property>
 			<property num="0x4bfc47b0" type="Bool" name="Transit Switch Capacity Effect" desc="If true, this building radiates capacity reduction like intersections do"></property>
 			<property num="0x4bfdd955" type="Float32" name="Audio:AEMSVolumeCurve" desc="AEMS Volume curve"></property>
-			<property num="0x4C1832F5" type="Unit8" name="UDIProp:MarinaBoat6" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
-			<property num="0x4C18336D" type="Unit8" name="UDIProp:MarinaBoat1" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0x4C1832F5" type="Uint8" name="UDIProp:MarinaBoat6" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0x4C18336D" type="Uint8" name="UDIProp:MarinaBoat1" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0x66fbf7a9" type="Float32" name="CloudsHeight" desc="Height that clouds float at"></property>
 			<property num="0x66fbf7aa" type="Float32" name="CloudsFormHeight" desc="Lowest terrain height that clouds form over"></property>
 			<property num="0x66fbf7ab" type="Float32" name="CloudsFadeInHeight" desc="Lowest terrain height that clouds have max opacity"></property>
@@ -746,7 +746,7 @@
 			<property num="0x6a4aeedc" type="Uint32" name="Graph Label keys" desc="References Text based files. Each ID represents a localized string key for the label."></property>
 			<property num="0x6a4aeedf" type="Uint8" name="Graph Data colour" desc="Array of RGB values. 3 integers per Data Source, each representing a line colour."></property>
 			<property num="0x6a4aeee2" type="Float32" name="Graph Data value adjuster" desc="Array of floats, one per data source, controlling the real value of data displayed in the graph. E.g. 1=100%, 0.01=10% of real value."></property>
-			<property num="0x6a4aeee3" type="Unit 32" name="Graph Data series1" desc="Array of ints, one per plot, each representing which series that data should be in."></property>
+			<property num="0x6a4aeee3" type="Uint 32" name="Graph Data series1" desc="Array of ints, one per plot, each representing which series that data should be in."></property>
 			<property num="0x6a4aeee4" type="Uint8" name="Graph Data series fill colour2" desc="Array of RGB triplets, 3 integers per series, each representing a fill colour for a whole series."></property>
 			<property num="0x6a4aeee5" type="Uint8" name="Graph Data series line colour3" desc="Array of RGB triplets, 3 integers per series, each representing a outline colour a whole series."></property>
 			<property num="0x6a4bc8ed" type="Bool" name="VolcanoLavaShouldLavaFlow" desc="To Allow the flow of lava flow"></property>
@@ -810,10 +810,10 @@
 			<property num="0x6b7c5cdd" type="Uint32" name="DataView: Travel Types" desc="List of travel types"></property>
 			<property num="0x6bac0b3e" type="Uint8" name="Path Lookahead Tiles" desc="How many tiles traffic automations should look ahead when determining paths"></property>
 			<property num="0x6c044bb5" type="Uint32" name="SFX:ActiveSound" desc="GUID array of sounds to play (per zoom) when occupant is 'active'"></property>
-			<property num="0x6C1832D1" type="Unit8" name="UDIProp:MarinaBoat8" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>			
-			<property num="0x6C183FFB" type="Unit8" name="UDIProp:MarinaBoat3" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0x6C1832D1" type="Uint8" name="UDIProp:MarinaBoat8" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>			
+			<property num="0x6C183FFB" type="Uint8" name="UDIProp:MarinaBoat3" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0x6c200139" type="Uint32" name="Playerdrive Vehicle Max Count" desc="Desired maximum # of vehicles in the world during player-drive"></property>
-			<property num="0x6c36283c" type="Unit8" name="UDIProp:CruiseShip" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0x6c36283c" type="Uint8" name="UDIProp:CruiseShip" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0x8761abd0" type="Uint32" name="MonthsBetweenCellCoverage" desc="MonthsBetweenCellCoverage"></property>
 			<property num="0x879d12e7" type="Float32" name="MaxSlopeAlongNetwork" desc="Range: [0.0 - 90.0]"></property>
 			<property num="0x87cd6300" type="Uint8" name="Target Zone" desc="The type of zone that is developed"></property>
@@ -1018,10 +1018,10 @@
 			<property num="0x8b58c59e" type="Float32" name="UnsuspensionPeriod" desc="If after suspension period the deal's at default during this number of days it will get killed without being re-suspended."></property>
 			<property num="0x8bbd735e" type="Bool" name="Conditional Automaton" desc="If true, automaton will be ghosted in the earned vehicle catalo view until an advisor condition is satisfied"></property>
 			<property num="0x8bfb1072" type="Uint8" name="UDIProp:RunwayEndNumber" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions. Indicates the location of the end of a runway. Must come in pairs."></property>
-			<property num="0x8C184040" type="Unit8" name="UDIProp:MarinaBoat4" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0x8C184040" type="Uint8" name="UDIProp:MarinaBoat4" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0x8c19c3e9" type="Float32" name="Garbage Transport Versus Landfill Tiles" desc="How much garbage can be delivered to the landfill each month"></property>
 			<property num="0x8c376d4f" type="Float32" name="Audio:AEMSZoomVolumes" desc="Volume for AEMS system at each zoom level"></property>
-			<property num="0x8c392d39" type="Unit8" name="UDIProp:MarinaBoat0" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0x8c392d39" type="Uint8" name="UDIProp:MarinaBoat0" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0x8c3caef5" type="Float32" name="Ferry Fare" desc="Income per traveller from a ferry trip"></property>
 			<property num="0x8c3e8185" type="Uint32" name="Travellers per bus" desc="How many travellers it takes to yield a bus automata"></property>
 			<property num="0x8cb3511f" type="Uint32" name="Occupant Types" desc="Types of occupants"></property>
@@ -1153,8 +1153,8 @@
 			<property num="0xabe1af70" type="Uint32" name="Item Icon(UDI)" desc="References a PNG file for UDI Menu icon. UDI have two of these properties."></property>
 			<property num="0xabe1b5a3" type="Bool" name="BridgeObstruction" desc="This property prevents water automata from crossing under the bridge tile."></property>
 			<property num="0xabe8e6cc" type="Uint32" name="UDI UI Display Control2" desc="Controls/handles the way in which the different Measurement displays [like the Speedometer/Tachometer/etc] is controlled/displayed when UDI vehicles are active &/or moving around. Property is directly tied in with other UDI UI Properties."></property>
-			<property num="0xAC183320" type="Unit8" name="UDIProp:MarinaBoat2" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
-			<property num="0xAC18330C" type="Unit8" name="UDIProp:MarinaBoat5" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0xAC183320" type="Uint8" name="UDIProp:MarinaBoat2" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0xAC18330C" type="Uint8" name="UDIProp:MarinaBoat5" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0xac2bc81c" type="Uint32" name="Shadow Model Key" desc="Model TGI for shadow model"></property>
 			<property num="0xac43826d" type="Uint32" name="Hospital Capacity Chunk Size" desc="How many people are represented by one unit in the coverage map"></property>
 			<property num="0xc7b36ca4" type="Float32" name="MaxTerrainHtIncrease" desc="How much can terrain be raised during network placement [0.0 - 100000.0]"></property>
@@ -1255,7 +1255,7 @@
 			<property num="0xca7138c4" type="Float32" name="Funding percentage to pipe decay/repair" desc="Converts a funding level (percentage) into a decay rate (negative numbers) or repair rate (positive numbers)"></property>
 			<property num="0xca7515cc" type="Uint8" name="PropStartingDate" desc="First value is Simulator MONTH (1-12): Second value is Simulator DAY (1-31): for when props/effects start their interval"></property>
 			<property num="0xca76013b" type="Float32" name="Trip Length to Minutes Display Multiplier" desc="Multiply the trip length map values (0-255, 255 = Max Commute Time) by this value to get a time in minutes for display purposes"></property>
-			<property num="0xca81b8d4" type="Unit8" name="Pattern Size" desc="Min:0x03, Max:0x04"></property>
+			<property num="0xca81b8d4" type="Uint8" name="Pattern Size" desc="Min:0x03, Max:0x04"></property>
 			<property num="0xca821b8c" type="Uint8" name="Zoom Level" desc="Specifies the GO TO Camera Zoom level to use for this disaster"></property>
 			<property num="0xcaa9ab92" type="Bool" name="Hover Query Only" desc="If present, the occupant will respond to hover queries but not to click-queries"></property>
 			<property num="0xcab1ce3a" type="Sint32" name="Subjective Factor Threshold (Min value)" desc="Min value of desirability for subjective factors (Pollution:Garbage:School:Hospital:Crime:Traffic:Triplength)."></property>
@@ -1278,7 +1278,7 @@
 			<property num="0xcc0b0705" type="Sint32" name="Police Station: Total Copter Dispatches" desc="Number of police helicopters this station can send"></property>
 			<property num="0xcc101142" type="Float32" name="Playerdrive Vehicles Per Second" desc="Desired # of vehicles per second that will be generated on roads during player-drive"></property>
 			<property num="0xcc21420d" type="Uint32" name="Auto-load Auxiliary Models" desc="Index (1,2,3,etc.) of auxiliary model to load automatically on Init"></property>
-			<property num="0xCC3A1723" type="Unit8" name="UDIProp:SeaportBoat0" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0xCC3A1723" type="Uint8" name="UDIProp:SeaportBoat0" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0xcc3e4755" type="Uint8" name="FlipsAllowed" desc="Controls what Flipping/Mirroring is allowed for the item. True,False,Both"></property>
 			<property num="0xe82b68eb" type="Uint32" name="PropType" desc="If assigned to an occupant, this property denotes it as a prop. Must use a valid prop ID as a property value. See PropOccupant"></property>
 			<property num="0xe83a081d" type="Bool" name="BuildingModelRotation" desc="If property is present (regardless of value), then the model can be rotated and contains 'full geometry'."></property>
@@ -1431,14 +1431,14 @@
 			<property num="0xebfc5fba" type="Sint32" name="My Sim Sort Order" desc="Relative sort ordering in the catalo"></property>
 			<property num="0xebff69e7" type="Float32" name="Budget: Difficulty Tax Multiplier" desc="Multiplier for tax revenue by difficulty type. Easy:Medium:Hard"></property>
 			<property num="0xec15654a" type="Float32" name="Mayor Limo Money Properties" desc="Cost per second, desirability radius meters, desirability magnitude"></property>
-			<property num="0xEC1832E7" type="Unit8" name="UDIProp:MarinaBoat7" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0xEC1832E7" type="Uint8" name="UDIProp:MarinaBoat7" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0xEC1B2361" type="Uint32" name="UI Status Window" desc="Property is referenced by Instance ID, and points to the User Interface file for the Status Window. The Status Window displays the Control Keys for each of the vehicles"></property>			
 			<property num="0xec214180" type="Uint32" name="Auxiliary Model 3 Key" desc="Type/Group/Instance for additional model"></property>
-			<property num="0xEC39DD14" type="Unit8" name="UDIProp:FerryBoat0" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
+			<property num="0xEC39DD14" type="Uint8" name="UDIProp:FerryBoat0" desc="Property is a key that controls what particular kind of Prop should appear. Some UDIProp Keys are tied in directly with UDI missions"></property>
 			<property num="0xec3bd470" type="Uint8" name="RotationsAllowed" desc="RotationsAllowed. North, South, East, West"></property>
 			<property num="0xec43826b" type="Uint32" name="School Capacity Chunk Size" desc="How many people are represented by one unit in the coverage map"></property>
 			<property num="0xaa1dd399" type="Uint32" name="Building Submenus" desc="For use with Submenus DLL: the Button IDs of the submenus this building appears in if the DLL is loaded. Requires memo.submenu.dll for full functionality."></property>
-			<property num="0x8a2602ca" type="Unit32" name="Item Submenu Parent ID" desc="For use with Submenus DLL: the button ID that opens the submenu this item belongs to"></property>
+			<property num="0x8a2602ca" type="Uint32" name="Item Submenu Parent ID" desc="For use with Submenus DLL: the button ID that opens the submenu this item belongs to"></property>
 			<property num="0x8a2602cc" type="Uint32" name="Item Button Class" desc="For use with Submenus DLL: classifier that determines the function of this item"></property>
 			<property num="0x0062e78a" type="Uint32" name="Exemplar Patch Targets" desc="For use with sc4-resource-loading-hooks DLL: list of Exemplar files this patch applies to. The other properties of this Cohort file are injected into every Exemplar on this list."></property>
 			<property num="0xAA1DD400" type="Uint32" name="Building Styles" desc="For use with Additional Building Styles DLL: When the property is present, the building will use custom and Maxis styles specified in the property and ignore the styles in the Occupant Groups property (0xAA1DD396). When the property is not present, the building will use the custom and Maxis styles specified in the Occupant Groups property (0xAA1DD396)."></property>
