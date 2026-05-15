@@ -766,6 +766,16 @@ Id/amount pairs that specify the resources the building consumes from the region
 Id/amount pairs that specify the resources the building adds to the regional supply.
 </HELP>
   </PROPERTY>
+  <PROPERTY Name="Regional Supply Consumed" ID="0x16F4C223" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+Id/amount pairs that specify the resources the building consumes from the regional supply.
+</HELP>
+  </PROPERTY>
+  <PROPERTY Name="Regional Supply Produced" ID="0x16F4C224" Type="Uint32" ShowAsHex="Y">
+    <HELP>
+Id/amount pairs that specify the resources the building adds to the regional supply.
+</HELP>
+  </PROPERTY>
   <PROPERTY Name="Occupant Size" ID="0x27812810" Type="Float32" Count="3" Default="1" ShowAsHex="N">
     <HELP>
 In meters: Width Height Depth
@@ -6490,7 +6500,7 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0x1518" Name="Building: DeluxeFireStation">
     </OPTION>
-    <OPTION Value="0x1519" Name="Building: WaterTransit ">
+    <OPTION Value="0x1519" Name="Building: WaterTransit">
     </OPTION>
     <OPTION Value="0x151a" Name="Building: LargeHealth">
     </OPTION>
@@ -6908,6 +6918,8 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0x4415" Name="Automata: MetalWhale">
     </OPTION>
+	<OPTION Value="0x5000" Name="Automata: Coal Mine">
+    </OPTION>
     <OPTION Value="0x5001" Name="Prop: Zot">
     </OPTION>
     <OPTION Value="0x5002" Name="Prop: Stoplight">
@@ -6949,6 +6961,8 @@ List of groups this occupant belongs to.
 	<OPTION Value="0x000AF11B" Name="Automata: ADC UPS Postal Truck">
     </OPTION>
 	<OPTION Value="0x000070C6" Name="Automata: JFF Royal Mail Van">
+    </OPTION>
+	<OPTION Value="0x0000a383" Name="Automata: Australian Post Truck">
     </OPTION>
     <OPTION Value="0xB5C00000" Name="CSX: CSX Lots">
     </OPTION>
@@ -7878,8 +7892,10 @@ List of groups this occupant belongs to.
     </OPTION>
 	<OPTION Value="0x08bbb542" Name="Park: Canal">
     </OPTION>
-    <OPTION Value="0xac4a6915" Name="Park: Watercrafts">
-    </OPTION>	
+	<OPTION Value="0x8b444582" Name="Park: Pond and Stream">
+    </OPTION>
+	<OPTION Value="0xac4a6915" Name="Park: Watercrafts">
+    </OPTION>
 	<OPTION Value="0xCA1A100A" Name="Automata: CAN-AM Passenger Ferry Generator">
     </OPTION>
 	<OPTION Value="0xCA1A105A" Name="Automata: CAN-AM Freight Ferry Generator">
@@ -7959,6 +7975,8 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
     </OPTION>
 	<OPTION Value="0x84D42CD6" Name="Waterfront">
     </OPTION>
+	<OPTION Value="0xdd5dc0e7" Name="Boats, Ships and Watercrafts">
+    </OPTION>
 <HELP>SubMenuROOTPowerUtility</HELP>
 	<OPTION Value="0x4B465151" Name="Dirty Energy">
     </OPTION>
@@ -8017,12 +8035,10 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
     </OPTION>
 	<OPTION Value="0xF034265C" Name="Fillers">
     </OPTION>
-	<OPTION Value="0xdd5dc0e7" Name="Watercrafts">
-    </OPTION>
   </PROPERTY>
   <PROPERTY Name="ExtendedPowerType" ID="0x713c8912" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
-For use with AMPS Allows a separation of power plants to efect specific counting of the type of power plants
+For use with ExtendedPowerType (AMPS) DLL: Allows a separation of power plants to effect specific counting of the type of power plants
 </HELP>
 <HELP>ExtendedPowerType</HELP>
 	<OPTION Value="0xb0c1d6f9" Name="Coal">
@@ -11009,16 +11025,16 @@ This selection will filter the display to only show Elementary school plug-ins. 
 </FILTERS>
 <PROPERTIES>
  <eval name="Students" value="max(SCCSElementary,200*int(1+Volume/750.))"/>
- <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/30.)/4)"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*0./4.)"/>
  <eval name="Radius" value="8*int(12.5+3.*Students**0.4)"/>
- <eval name="TCost" value="50*int(1+0.007*Students**0.9)"/>
+ <eval name="TCost" value="12.5*int(1+0.007*Students**0.9)"/>
  <eval name="MCost" value="3.0*TCost"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="PCost" value="50*int(1+0.0062*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.003*Students**1.1)"/>
+ <eval name="PCost" value="6.5*int(1+0.0062*Volume**1.1)"/>
+ <eval name="BCost" value="int(1+0.003*Volume**1.1)"/>
  <PROPERTY ID="0x0A36AFA2" Value="0xCA3C8139"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
@@ -11052,16 +11068,16 @@ This selection will filter the display to only show High School plug-ins. To cre
 </FILTERS>
 <PROPERTIES>
  <eval name="Students" value="max(SCCSHighSchool,200*int(1+Volume/1500.))"/>
- <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/30.)/4)"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*0./4.)"/>
  <eval name="Radius" value="8*int(27.5+2.625*Students**0.4)"/>
- <eval name="TCost" value="50*int(1+0.005*Students**0.9)"/>
+ <eval name="TCost" value="12.5*int(1+0.005*Students**0.9)"/>
  <eval name="MCost" value="6.5*TCost"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="PCost" value="50*int(1+0.014*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.005*Students**1.1)"/>
+ <eval name="PCost" value="6.5*int(1+0.014*Volume**1.1)"/>
+ <eval name="BCost" value="int(1+0.005*Volume**1.1)"/>
  <PROPERTY ID="0x0A36AFA2" Value="0x0A376642"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
@@ -11095,7 +11111,7 @@ This selection will filter the display to only show High School plug-ins. To cre
 </FILTERS>
 <PROPERTIES>
  <eval name="Students" value="max(SCCSPrivate,200*int(1+Volume/1500.))"/>
- <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/30.)/4)"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*0./4.)"/>
@@ -11103,12 +11119,12 @@ This selection will filter the display to only show High School plug-ins. To cre
  <eval name="TCost" value="50*int(1+0.005*Students**0.9)"/>
  <eval name="MCost" value="6.5*TCost"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="PCost" value="50*int(1+0.014*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.005*Students**1.1)"/>
+ <eval name="PCost" value="10*int(1+0.014*Volume**1.1)"/>
+ <eval name="BCost" value="10*int(1+0.005*Volume**1.1)"/>
  <PROPERTY ID="0x0A36AFA2" Value="0x0A376642"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="0xCA8B8564"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x2A499F85" Eval="0x12121205"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x4A4C132E" Set="0x8A8B7DD1"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x4AA60EBC" Eval="Students"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="2.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
@@ -11136,15 +11152,15 @@ This selection will filter the display to only show Library plug-ins. To create 
  <NEEDED ID="0xaa1dd396" Value="0x1505"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSLibrary,20000*int(2+Volume/750.))"/>
- <eval name="CivicJobs" value="int(ceil(Students/3000.))"/>
+ <eval name="Students" value="max(SCCSLibrary,10000*int(2+Volume/750.))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/6000.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./10.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*7./10.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*0./10.)"/>
  <eval name="Radius" value="40*int(1+0.75*Students**0.4)"/>
  <eval name="MCost" value="50*int(5+0.0002*Students**0.9)"/>
- <eval name="PCost" value="50*int(6+0.000025*Students**1.1)"/>
- <eval name="BCost" value="10*int(2+0.000004*Students**1.4)"/>
+ <eval name="PCost" value="50*int(6+0.00025*Volume**1.1)"/>
+ <eval name="BCost" value="10*int(2+0.00004*Volume**1.4)"/>
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="QueryForLibrary"/><!--Query exemplar GUID-->
@@ -11174,14 +11190,14 @@ This selection will filter the display to only show College plug-ins. To create 
 </FILTERS>
 <PROPERTIES>
  <eval name="Students" value="max(SCCSCollege,200*int(40+Volume/750.))"/>
- <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/30.)/4)"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./9.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./9.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*1./9.)"/>
  <eval name="Radius" value="40*int(120+0.75*Students**0.4)"/>
  <eval name="MCost" value="50*int(1+0.007*Students**0.9)"/>
- <eval name="PCost" value="50*int(1+0.0035*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.0015*Students**1.1)"/>
+ <eval name="PCost" value="25*int(1+0.0035*Volume**1.1)"/>
+ <eval name="BCost" value="2.5*int(1+0.0015*Volume**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x28"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="QueryForCollege"/><!--Query exemplar GUID-->
@@ -11227,7 +11243,7 @@ This selection will filter the display to only show Museum plug-ins. To create a
  <PROPERTY ID="0x4AA60EBC" Eval="CatalogC"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForMuseum"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="1.00000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="40.00000000"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001506"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0xEA55BBE7"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,0.00000000,30.00000000,0.30000001,40.00000000,0.30000001,50.00000000,0.30000001,60.00000000,0.75000000,70.00000000,1.50000000,80.00000000,3.00000000"/><!--School Effectiveness vs. Average Age-->
@@ -11248,15 +11264,15 @@ This selection will filter the display to only show Other School plug-ins. To cr
  <NEEDED ID="0xaa1dd396" Value="0x151B"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSOpera,200*int(1+Volume/94.789))"/>
- <eval name="CivicJobs" value="int(ceil(Students/300.))"/>
+ <eval name="Students" value="max(SCCSOpera,200*int(1+Volume/150))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/600.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*2./8.)"/>
  <eval name="Radius" value="32.584*int(135+0.75*Students**0.4)"/>
- <eval name="MCost" value="7*int(13+0.035*Volume**0.9)"/>
- <eval name="PCost" value="20*int(20+0.020*Volume**1.1)"/>
- <eval name="BCost" value="5*int(15+0.025*Volume**1.1)"/>
+ <eval name="MCost" value="2*int(13+0.035*Volume**0.9)"/>
+ <eval name="PCost" value="19.34575*int(20+0.020*Volume**1.1)"/>
+ <eval name="BCost" value="1.25*int(15+0.025*Volume**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x03"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="0x12121201"/><!--Query exemplar GUID-->
@@ -11650,11 +11666,11 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NEEDED ID="0xaa1dd396" Value="0x1507"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="CivicJobs" value="int(ceil(Patients/30.))"/>
+ <eval name="CivicJobs" value="int(ceil(Patients/120.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*1./5.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*3./5.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*1./5.)"/>
- <eval name="PCost" value="(50*int(1+0.028*Patients**0.9))/10"/>
+ <eval name="PCost" value="(20*int(1+0.028*Volume**0.9))"/>
  <PROPERTY ID="0x091B42A2" Eval="Radius"/><!--Hospital Coverage Radius-->
  <PROPERTY ID="0x099AFACD" Eval="BCost"/><!--Bulldoze Cost-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
@@ -11684,10 +11700,10 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
 <PROPERTIES>
  <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
  <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
- <eval name="MCost" value="(100*int(1+0.0075*Patients**0.9))/10"/>
- <eval name="TCost" value="(100*int(1+0.00125*Patients**0.9))/10"/>
+ <eval name="MCost" value="(40*int(1+0.0075*Patients**0.9))"/>
+ <eval name="TCost" value="(40*int(1+0.00125*Patients**0.9))"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="(10*int(2.5+0.006*Patients**0.9))/10"/>
+ <eval name="BCost" value="(6.75*int(2.5+0.006*Volume**0.9))"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForClinic"/><!-- Item Order -->
@@ -11707,10 +11723,10 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
 <PROPERTIES>
  <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
  <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
- <eval name="MCost" value="(100*int(1+0.0075*Patients**0.9))/10"/>
- <eval name="TCost" value="(100*int(1+0.00125*Patients**0.9))/10"/>
+ <eval name="MCost" value="(40*int(1+0.0075*Patients**0.9))"/>
+ <eval name="TCost" value="(40*int(1+0.00125*Patients**0.9))"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="(10*int(2.5+0.006*Patients**0.9))/10"/>
+ <eval name="BCost" value="(10*int(2.5+0.006*Volume**0.9))"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHospital"/><!-- Item Order -->
@@ -11728,16 +11744,19 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
 </FILTERS>
 <PROPERTIES>
  <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
+ <eval name="Jobs1" value="5+int((ceil(Patients/120.))*1./5.)"/>
+ <eval name="Jobs2" value="2+int((ceil(Patients/150.))*3./5.)"/>
+ <eval name="Jobs3" value="0+int((ceil(Patients/140.))*1./5.)"/>
  <eval name="Radius" value="80*int(30+0.25*Patients**0.4)"/>
- <eval name="MCost" value="(50*int(1+0.0009*Patients**0.9))10"/>
- <eval name="TCost" value="(50*int(1+0.0015*Patients**0.9))/10"/>
+ <eval name="MCost" value="(75*int(1+0.0009*Patients**0.9)/1.5)"/>
+ <eval name="TCost" value="(75*int(1+0.0003*Patients**0.9)/2.75)"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="(25*int(2.5+0.006*Patients**0.9))//10"/>
+ <eval name="BCost" value="(20*int(2.5+0.006*Volume**0.9))"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHospital"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE3BD" Value="0.00000000,4.00000000,100.00000000,4.00000000"/><!--Hospital Effectiveness vs. Average Age-->
- <PROPERTY ID="0xAA1DD396" Value="0x00001005,0x00001507,0x0000151C,0x00001917,0x00001928"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Value="0x00001005,0x00001507,0x00001A02,0x00001513,0x00001904,0x0000151A,0x0000151C"/><!--OccupantGroups-->
  <PROPERTY ID="0xC9299659" Value="11.52000046"/><!--Hospital HQ boost-->
  <PROPERTY ID="0xAA1DD399" Eval="0xBC251B69"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
@@ -11750,8 +11769,8 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
 <PROPERTIES>
  <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
  <eval name="Radius" value="11600"/>
- <eval name="MCost" value="10*int(1+0.0009*Patients**0.9)"/>
- <eval name="BCost" value="25*int(2.5+0.006*Patients**0.9)"/>
+ <eval name="MCost" value="3*int(1+0.0009*Patients**0.9)"/>
+ <eval name="BCost" value="50*int(2.5+0.006*Volume**0.9)"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForDisease"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForDisease"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE3BD" Value="0.00000000,3.00000000,100.00000000,3.00000000"/><!--Hospital Effectiveness vs. Average Age-->
@@ -12080,7 +12099,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
 </PROPERTIES>
 </CATEGORY>
-
 <CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0xAA1DD396" Value="0xB075C142"/>
@@ -12113,7 +12131,6 @@ This selection will filter the display to only show Power plug-ins.  To create a
  <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
 </PROPERTIES>
 </CATEGORY>
-
 <CATEGORY Name="Nuclear Fission" ID="0x4cb63875" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="5"/>
@@ -12497,7 +12514,6 @@ This selection will filter the display to only show Waste to Energy plug-ins.  T
  <PROPERTY ID="0x713c8912" Eval="0xc291e217"/><!--Extended Power Type-->
 </PROPERTIES>
 </CATEGORY>
-
 <CATEGORY Name="Transmission Station" ID="0xb98a80c4" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0xAA1DD396" Value="0xB2718077"/> 
@@ -12571,7 +12587,6 @@ This selection will filter the display to only show Waste to Energy plug-ins.  T
  <PROPERTY ID="0xAA1DD399" Eval="0xD86B3B3B"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
 </CATEGORY>
-
 <CATEGORY Name="Auxiliary" ID="0x4cb9387A" ParentID="0x4cb23866">
 <FILTERS>
  <NEEDED ID="0x27812853" Value="10"/>
@@ -15292,7 +15307,7 @@ This selection will filter the display to only show Mayor's House plug-ins.  To 
  <eval name="LandmarkEffectRadius" value="28.0"/>
  <eval name="ParkEffectFactor" value="18.0+int(sqrt(Volume)/16.0)"/>
  <eval name="ParkEffectRadius" value="28.0"/>
- <eval name="WaterConsumedFactor" value="20.0"/>
+ <eval name="WaterConsumedFactor" value="0.20"/>
  <eval name="WaterConsumedConstant" value="0.0"/>
  <eval name="PowerConsumedFactor" value="0.15"/>
  <eval name="PowerConsumedConstant" value="0.0"/>
