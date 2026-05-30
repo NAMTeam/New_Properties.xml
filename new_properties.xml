@@ -7794,59 +7794,61 @@
       </OPTION>
       <OPTION Value="0xB5C32500" Name="BTE: BSC-Mattb325">
       </OPTION>
-      <OPTION Value="0x1946409F" Name="AMPS: Coal">
+      <OPTION Value="0x1946409F" Name="NEON: Coal">
       </OPTION>
-      <OPTION Value="0xD6B169D9" Name="AMPS: Oil">
+      <OPTION Value="0xD6B169D9" Name="NEON: Oil">
       </OPTION>
-      <OPTION Value="0x36CA5093" Name="AMPS: Biomass">
+      <OPTION Value="0x36CA5093" Name="NEON: Biomass">
       </OPTION>
-      <OPTION Value="0x5512235E" Name="AMPS: Natural Gas">
+      <OPTION Value="0x5512235E" Name="NEON: Natural Gas">
       </OPTION>
-      <OPTION Value="0xA945A10D" Name="AMPS: Nuclear Fission">
+      <OPTION Value="0xA945A10D" Name="NEON: Nuclear Fission">
       </OPTION>
-      <OPTION Value="0xB680D7E0" Name="AMPS: Nuclear Fusion">
+      <OPTION Value="0xB680D7E0" Name="NEON: Nuclear Fusion">
       </OPTION>
-      <OPTION Value="0x1F221780" Name="AMPS: Geothermal">
+      <OPTION Value="0x1F221780" Name="NEON: Geothermal">
       </OPTION>
-      <OPTION Value="0x7134683C" Name="AMPS: Solar">
+      <OPTION Value="0x7134683C" Name="NEON: Solar">
       </OPTION>
-      <OPTION Value="0x0CED62DC" Name="AMPS: Microwave">
+      <OPTION Value="0x0CED62DC" Name="NEON: Microwave">
       </OPTION>
-      <OPTION Value="0xF0D606AC" Name="AMPS: Tidal and Wave">
+      <OPTION Value="0xF0D606AC" Name="NEON: Tidal and Wave">
       </OPTION>
-      <OPTION Value="0xEC9175AA" Name="AMPS: Waste To Energy">
+      <OPTION Value="0xEC9175AA" Name="NEON: Waste To Energy">
       </OPTION>
-      <OPTION Value="0x8765D979" Name="AMPS: Hydroelectric">
+      <OPTION Value="0x8765D979" Name="NEON: Hydroelectric">
       </OPTION>
-      <OPTION Value="0xC78E0054" Name="AMPS: Wind">
+      <OPTION Value="0xC78E0054" Name="NEON: Wind">
       </OPTION>
-      <OPTION Value="0xB075C142" Name="AMPS: Generators">
+      <OPTION Value="0xB075C142" Name="NEON: Generators">
       </OPTION>
-      <OPTION Value="0x7AB34F1B" Name="AMPS: Auxiliary">
+      <OPTION Value="0x7AB34F1B" Name="NEON: Auxiliary">
       </OPTION>
-      <OPTION Value="0x861A7248" Name="AMPS: Power Storage">
+      <OPTION Value="0x861A7248" Name="NEON: Power Storage">
       </OPTION>
-      <OPTION Value="0xED378A8E" Name="AMPS: Transmission Station">
+      <OPTION Value="0xED378A8E" Name="NEON: High Voltage Transformers">
       </OPTION>
-      <OPTION Value="0x215395E9" Name="AMPS: Distribution Substation">
+      <OPTION Value="0x215395E9" Name="NEON: Low Voltage Transformers">
       </OPTION>
-      <OPTION Value="0xD45142D1" Name="AMPS: High Voltage Power Line ">
+	  <OPTION Value="0x1b823f5a" Name="NEON: Medium Voltage Transformers">
       </OPTION>
-      <OPTION Value="0x4E1F2B7B" Name="AMPS: Medium Voltage Power Line ">
+      <OPTION Value="0xD45142D1" Name="NEON: High Voltage Power Line ">
       </OPTION>
-      <OPTION Value="0x38730189" Name="AMPS: Low Voltage Power Line ">
+      <OPTION Value="0x4E1F2B7B" Name="NEON: Medium Voltage Power Line ">
       </OPTION>
-      <OPTION Value="0x7292f7FA" Name="AMPS: Power Line">
+      <OPTION Value="0x38730189" Name="NEON: Low Voltage Power Line ">
       </OPTION>
-      <OPTION Value="0x0ABF5A84" Name="AMPS: Transformer">
+      <OPTION Value="0x7292f7FA" Name="NEON: Power Line">
       </OPTION>
-      <OPTION Value="0x0badb9ac" Name="AMPS: Intermediate Plants">
+      <OPTION Value="0x0ABF5A84" Name="NEON: Transformer">
       </OPTION>
-      <OPTION Value="0x18e64ea5" Name="AMPS: Base Load Plants">
+      <OPTION Value="0x0badb9ac" Name="NEON: Intermediate Plants">
       </OPTION>
-      <OPTION Value="0x7283dcd7" Name="AMPS: Peak Plants">
+      <OPTION Value="0x18e64ea5" Name="NEON: Base Load Plants">
       </OPTION>
-      <OPTION Value="0xB2718077" Name="AMPS: Power Eye-Candy">
+      <OPTION Value="0x7283dcd7" Name="NEON: Peak Plants">
+      </OPTION>
+      <OPTION Value="0xB2718077" Name="NEON: Power Eye-Candy">
       </OPTION>
       <OPTION Value="0x0C56201B" Name="AGM: Landfill">
       </OPTION>
@@ -8071,8 +8073,10 @@
       </OPTION>
       <OPTION Value="0xf008cfac" Name="Power Storage">
       </OPTION>
-      <OPTION Value="0x535f049c" Name="High-Medium Voltage Transformers">
+      <OPTION Value="0x535f049c" Name="High Voltage Transformers">
       </OPTION>
+      <OPTION Value="0xEF2C3770" Name="Medium Voltage Transformers">
+      </OPTION>	  
       <OPTION Value="0x867fcec4" Name="Low Voltage Transformers">
       </OPTION>
     </PROPERTY>
@@ -12027,7 +12031,7 @@
         <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
         <PROPERTY ID="0xCA19D7CA" Set="0x4A4C42D4"/><!--SFX:Ambience Good Sound-->
         <PROPERTY ID="0xEA1CF220" Eval="0.00083333"/><!--Age degradation rate-->
-        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB680D7E0,0x7283dcd7"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB680D7E0,0x18e64ea5"/><!--OccupantGroups-->
         <PROPERTY ID="0xAA1DD399" Eval="0x67B10537"/><!--OccupantGroups for SubMenu-->
         <PROPERTY ID="0x713c8912" Eval="0xf5daf839"/><!--Extended Power Type-->
       </PROPERTIES>
@@ -12065,39 +12069,6 @@
         <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E,0x7283dcd7"/><!--OccupantGroups-->
         <PROPERTY ID="0xAA1DD399" Eval="0xD2430E09"/><!--OccupantGroups for SubMenu-->
         <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
-      </PROPERTIES>
-    </CATEGORY>
-
-    <CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
-      <FILTERS>
-        <NEEDED ID="0xAA1DD396" Value="0xB075C142"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="PowerOutput" value="50*int(1+0.030*Volume)"/>
-        <eval name="PCost" value="(500*int(3.00*PowerOutput/500.))/4"/>
-        <eval name="MCost" value="(50*int(0.130*PowerOutput/50.))/4"/>
-        <eval name="BCost" value="(10*int(0.140*PowerOutput/10.))/2"/>
-        <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
-        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
-        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
-        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
-        <eval name="AirPollutionFactor" value="1/50."/>
-        <eval name="WaterPollutionFactor" value="1/45."/>
-        <eval name="GarbagePollutionFactor" value="1/150."/>
-        <eval name="WaterConsumedFactor" value="1/150."/>
-        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
-        <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
-        <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
-        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
-        <PROPERTY ID="0x6A19F6B5" Eval="4.000000"/><!--Health effect radius-->
-        <PROPERTY ID="0xAA19F6EA" Eval="-1.000000"/><!--Health effect strength-->
-        <PROPERTY ID="0x4A4C132E" Set="0x5F860F09"/><!--SFX:Activate Sound-->
-        <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
-        <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
-        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
-        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB075C142"/><!--OccupantGroups-->
-        <PROPERTY ID="0xAA1DD399" Eval="0x14D53C20"/><!--OccupantGroups for SubMenu-->
-        <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
       </PROPERTIES>
     </CATEGORY>
     <CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
@@ -12160,7 +12131,7 @@
         <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
         <PROPERTY ID="0x6A43150F" Eval="0x00000004"/><!--Hard Failure Type-->
         <PROPERTY ID="0xAA19F6EA" Eval="-50.000000"/><!--Health effect strength-->
-        <PROPERTY ID="0xAA1DD396" Eval="0x00001004,0x00001400,0x00001403,0x00001928,0xA945A10D,0x7283dcd7"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD396" Eval="0x00001004,0x00001400,0x00001403,0x00001928,0xA945A10D,0x18e64ea5"/><!--OccupantGroups-->
         <PROPERTY ID="0xAA5C04C5" Eval="3200.000000"/><!--Radiation Spew Intensity-->
         <PROPERTY ID="0xAA5C04C8" Eval="15.000000"/><!--Radiation Spew Radius-->
         <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
@@ -12470,7 +12441,7 @@
         <PROPERTY ID="0xEA1CF220" Eval="0.00055500"/><!--Age degradation rate-->
         <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x861A7248"/><!--OccupantGroups-->
         <PROPERTY ID="0xAA1DD399" Eval="0x64365d13"/><!--OccupantGroups for SubMenu-->
-        <PROPERTY ID="0x713c8912" Eval="0xb13b19a0"/><!--Extended Power Type-->
+        <PROPERTY ID="0x713c8912" Eval="0xf008cfac"/><!--Extended Power Type-->
       </PROPERTIES>
     </CATEGORY>
 
@@ -12515,9 +12486,9 @@
         <PROPERTY ID="0x713c8912" Eval="0xc291e217"/><!--Extended Power Type-->
       </PROPERTIES>
     </CATEGORY>
-    <CATEGORY Name="Transmission Station" ID="0xb98a80c4" ParentID="0x4cb23866">
+    <CATEGORY Name="High Voltage Transformers" ID="0xb98a80c4" ParentID="0x4cb23866">
       <FILTERS>
-        <NEEDED ID="0xAA1DD396" Value="0xB2718077"/>
+        <NEEDED ID="0xAA1DD396" Value="0xED378A8E"/>
       </FILTERS>
       <PROPERTIES>
         <eval name="PowerOutput" value="0"/>
@@ -12547,12 +12518,51 @@
         <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
         <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
         <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
-        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xED378A8E"/><!--OccupantGroups-->
         <PROPERTY ID="0xAA1DD399" Eval="0x04986B76"/><!--OccupantGroups for SubMenu-->
+		<PROPERTY ID="0x713c8912" Eval="0x535f049c"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
+	
+	<CATEGORY Name="Medium Voltage Transformers" ID="0x227dcbff" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x1b823f5a"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="0"/>
+        <eval name="PCost" value="10*int(Volume/200.)"/>
+        <eval name="MCost" value="1*int(Volume/2000.)"/>
+        <eval name="BCost" value="5*int(Volume/500.)"/>
+        <eval name="CivicJobs" value="0"/>
+        <eval name="Jobs1" value="0"/>
+        <eval name="Jobs2" value="0"/>
+        <eval name="Jobs3" value="0"/>
+        <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/2)"/><!--KVA Rating-->
+        <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+        <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+        <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+        <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+        <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+        <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1b823f5a"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x04986B76"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xEF2C3770"/><!--Extended Power Type-->		
       </PROPERTIES>
     </CATEGORY>
 
-    <CATEGORY Name="Distribution Substation" ID="0x4a07c445" ParentID="0x4cb23866">
+    <CATEGORY Name="Low Voltage Transformers" ID="0x4a07c445" ParentID="0x4cb23866">
       <FILTERS>
         <NEEDED ID="0xAA1DD396" Value="0x215395E9"/>
       </FILTERS>
@@ -12584,8 +12594,9 @@
         <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
         <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
         <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
-        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077,0x215395E9"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x215395E9"/><!--OccupantGroups-->
         <PROPERTY ID="0xAA1DD399" Eval="0xD86B3B3B"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x867fcec4"/><!--Extended Power Type-->		
       </PROPERTIES>
     </CATEGORY>
     <CATEGORY Name="Auxiliary" ID="0x4cb9387A" ParentID="0x4cb23866">
