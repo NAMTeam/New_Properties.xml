@@ -11178,7 +11178,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="(I-m) Manufacturing Industry Out W2W" ID="0x6c7e983e" ParentID="0xee28b711">
+<CATEGORY Name="(I-m) Manufacturing Industry Out W2W" ID="0xe5054011" ParentID="0xee28b711">
 <HELP>
 This selection will filter the display to only show Manufacturing Industry plug-ins.  To create a Manufacturing Industry plug-in drag a model to this category.
 </HELP>
@@ -12227,74 +12227,74 @@ This selection will filter the display to only show Jail plug-ins.  To create a 
 </PROPERTIES>
 </CATEGORY>
 
-    <CATEGORY Name="Power" ID="0x4cb23866" ParentID="0xcc8fbc2d" img="img_power.gif">
-      <HELP>
-        This selection will filter the display to only show Power plug-ins.  To create a Power plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on the power plant lots.
-      </HELP>
-      <FILTERS>
-        <NEEDED ID="0xaa1dd396" Value="0x1400"/>
-      </FILTERS>
-      <PROPERTIES>
-        <PROPERTY ID="0x0911E2E7" Eval="0.00,1.00,0.40,1.03,0.50,1.05,0.65,1.15,0.75,1.30,0.85,1.55,0.90,1.85,1.00,3.00"/><!--Age to maintenance cost multiplier response curve-->
-        <PROPERTY ID="0x099AFACD" Eval="max(BCost,5)"/><!--Bulldoze Cost-->
-        <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
-        <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
-        <PROPERTY ID="0x27812851" Eval="int(PowerOutput*AirPollutionFactor),int(PowerOutput*WaterPollutionFactor),int(PowerOutput*GarbagePollutionFactor),0"/><!--pollution at center-->
-        <PROPERTY ID="0x27812852" Eval="PowerOutput"/><!--Power Generated-->
-        <PROPERTY ID="0x2A499F85" Eval="QueryForPower"/><!--Query exemplar GUID-->
-        <PROPERTY ID="0x49beda31" Eval="Test(LessThan(Volume,619), 0x01, Test(LessThan(Volume,3068), 0x02, Test(LessThan(Volume,18869), 0x03, Test(LessThan(Volume,326987), 0x04, 0x05 ))))"/>    <!--MaxFireStage-->
-        <PROPERTY ID="0x49CAC341" Eval="max(PCost,250)"/><!--Plop Cost-->
-        <PROPERTY ID="0x6A43150F" Eval="0x00000003"/><!--Hard Failure Type-->
-        <PROPERTY ID="0x8A1E07EE" Eval="0.00,1.00,0.40,0.95,0.50,0.92,0.60,0.86,0.70,0.77,0.80,0.60,0.90,0.35,1.00,0.00"/><!--Age to output level response curve-->
-        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPower"/><!-- Item Order -->
-        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400"/><!--OccupantGroups-->
-        <PROPERTY ID="0xAA1DD397" Set="0xAA8B7CB7"/><!--SFX:Query Sound-->
-        <PROPERTY ID="0xC8ED2D84" Eval="5*int(PowerOutput*WaterConsumedFactor/5)"/><!--Water Consumed-->
-        <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
-        <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
-        <PROPERTY ID="0xEA1CF221" Eval="0.90000000"/><!--Soft failure threshold-->
-        <PROPERTY ID="0xEA1CF222" Eval="1.00000000"/><!--Hard failure threshold-->
-        <PROPERTY ID="0xEA54D283" Eval="0x8910BC8A"/><!--Budget Item: Department-->
-        <PROPERTY ID="0xEA54D284" Eval="0x00000000"/><!--Budget Item: Line-->
-        <PROPERTY ID="0xEA54D285" Eval="0xCA58E540"/><!--Budget Item: Purpose-->
-        <PROPERTY ID="0xEA54D286" Eval="max(MCost,25)"/><!--Budget Item: Cost-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="Power" ID="0x4cb23866" ParentID="0xcc8fbc2d" img="img_power.gif">
+  <HELP>
+    This selection will filter the display to only show Power plug-ins.  To create a Power plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on the power plant lots.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0xaa1dd396" Value="0x1400"/>
+  </FILTERS>
+  <PROPERTIES>
+    <PROPERTY ID="0x0911E2E7" Eval="0.00,1.00,0.40,1.03,0.50,1.05,0.65,1.15,0.75,1.30,0.85,1.55,0.90,1.85,1.00,3.00"/><!--Age to maintenance cost multiplier response curve-->
+    <PROPERTY ID="0x099AFACD" Eval="max(BCost,5)"/><!--Bulldoze Cost-->
+    <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
+    <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
+    <PROPERTY ID="0x27812851" Eval="int(PowerOutput*AirPollutionFactor),int(PowerOutput*WaterPollutionFactor),int(PowerOutput*GarbagePollutionFactor),0"/><!--pollution at center-->
+    <PROPERTY ID="0x27812852" Eval="PowerOutput"/><!--Power Generated-->
+    <PROPERTY ID="0x2A499F85" Eval="QueryForPower"/><!--Query exemplar GUID-->
+    <PROPERTY ID="0x49beda31" Eval="Test(LessThan(Volume,619), 0x01, Test(LessThan(Volume,3068), 0x02, Test(LessThan(Volume,18869), 0x03, Test(LessThan(Volume,326987), 0x04, 0x05 ))))"/>    <!--MaxFireStage-->
+    <PROPERTY ID="0x49CAC341" Eval="max(PCost,250)"/><!--Plop Cost-->
+    <PROPERTY ID="0x6A43150F" Eval="0x00000003"/><!--Hard Failure Type-->
+    <PROPERTY ID="0x8A1E07EE" Eval="0.00,1.00,0.40,0.95,0.50,0.92,0.60,0.86,0.70,0.77,0.80,0.60,0.90,0.35,1.00,0.00"/><!--Age to output level response curve-->
+    <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPower"/><!-- Item Order -->
+    <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400"/><!--OccupantGroups-->
+    <PROPERTY ID="0xAA1DD397" Set="0xAA8B7CB7"/><!--SFX:Query Sound-->
+    <PROPERTY ID="0xC8ED2D84" Eval="5*int(PowerOutput*WaterConsumedFactor/5)"/><!--Water Consumed-->
+    <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
+    <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
+    <PROPERTY ID="0xEA1CF221" Eval="0.90000000"/><!--Soft failure threshold-->
+    <PROPERTY ID="0xEA1CF222" Eval="1.00000000"/><!--Hard failure threshold-->
+    <PROPERTY ID="0xEA54D283" Eval="0x8910BC8A"/><!--Budget Item: Department-->
+    <PROPERTY ID="0xEA54D284" Eval="0x00000000"/><!--Budget Item: Line-->
+    <PROPERTY ID="0xEA54D285" Eval="0xCA58E540"/><!--Budget Item: Purpose-->
+    <PROPERTY ID="0xEA54D286" Eval="max(MCost,25)"/><!--Budget Item: Cost-->
+  </PROPERTIES>
+</CATEGORY>
 
-    <CATEGORY Name="Coal" ID="0x4cb33871" ParentID="0x4cb23866">
-      <FILTERS>
-        <NEEDED ID="0x27812853" Value="1"/>
-        <NEEDED ID="0xAA1DD396" Value="0x1946409F"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="PowerOutput" value="100*int(1+0.0650*Volume/100.)"/>
-        <eval name="PCost" value="(500*int(1.75*PowerOutput/500.))/4"/>
-        <eval name="MCost" value="(50*int(0.040*PowerOutput/50.))/4"/>
-        <eval name="BCost" value="(10*int(0.070*PowerOutput/10.))/2"/>
-        <eval name="CivicJobs" value="int(PowerOutput/125.)"/>
-        <eval name="Jobs1" value="1+int(CivicJobs*30/48.)"/>
-        <eval name="Jobs2" value="0+int(CivicJobs*16/48.)"/>
-        <eval name="Jobs3" value="0+int(CivicJobs*2/48.)"/>
-        <eval name="AirPollutionFactor" value="1/30."/>
-        <eval name="WaterPollutionFactor" value="1/40."/>
-        <eval name="GarbagePollutionFactor" value="1/240."/>
-        <eval name="WaterConsumedFactor" value="1/120."/>
-        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
-        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/><!--MWH Rating-->
-        <PROPERTY ID="0x0A4C13CB" Set="0x4A4C43E5"/><!--SFX:Ambience Decayed Sound-->
-        <PROPERTY ID="0x27812853" Eval="0x00000001"/><!--Power Plant Type-->
-        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
-        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
-        <PROPERTY ID="0xAA19F6EA" Eval="-150.000000"/><!--Health effect strength-->
-        <PROPERTY ID="0x4A4C132E" Set="0xAA4C4718"/><!--SFX:Activate Sound-->
-        <PROPERTY ID="0x68EE9764" Eval="16.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
-        <PROPERTY ID="0xCA19D7CA" Set="0x2A4C43BD"/><!--SFX:Ambience Good Sound-->
-        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
-        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1946409F,0x18e64ea5"/><!--OccupantGroups-->
-        <PROPERTY ID="0xAA1DD399" Eval="0xA11C9DB6"/><!--OccupantGroups for SubMenu-->
-        <PROPERTY ID="0x713c8912" Eval="0xb0c1d6f9"/><!--Extended Power Type-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="Coal" ID="0x4cb33871" ParentID="0x4cb23866">
+  <FILTERS>
+    <NEEDED ID="0x27812853" Value="1"/>
+    <NEEDED ID="0xAA1DD396" Value="0x1946409F"/>
+    </FILTERS>
+  <PROPERTIES>
+    <eval name="PowerOutput" value="100*int(1+0.0650*Volume/100.)"/>
+    <eval name="PCost" value="(500*int(1.75*PowerOutput/500.))/4"/>
+    <eval name="MCost" value="(50*int(0.040*PowerOutput/50.))/4"/>
+    <eval name="BCost" value="(10*int(0.070*PowerOutput/10.))/2"/>
+    <eval name="CivicJobs" value="int(PowerOutput/125.)"/>
+    <eval name="Jobs1" value="1+int(CivicJobs*30/48.)"/>
+    <eval name="Jobs2" value="0+int(CivicJobs*16/48.)"/>
+    <eval name="Jobs3" value="0+int(CivicJobs*2/48.)"/>
+    <eval name="AirPollutionFactor" value="1/30."/>
+    <eval name="WaterPollutionFactor" value="1/40."/>
+    <eval name="GarbagePollutionFactor" value="1/240."/>
+    <eval name="WaterConsumedFactor" value="1/120."/>
+    <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+    <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/><!--MWH Rating-->
+    <PROPERTY ID="0x0A4C13CB" Set="0x4A4C43E5"/><!--SFX:Ambience Decayed Sound-->
+    <PROPERTY ID="0x27812853" Eval="0x00000001"/><!--Power Plant Type-->
+    <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+    <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+    <PROPERTY ID="0xAA19F6EA" Eval="-150.000000"/><!--Health effect strength-->
+    <PROPERTY ID="0x4A4C132E" Set="0xAA4C4718"/><!--SFX:Activate Sound-->
+    <PROPERTY ID="0x68EE9764" Eval="16.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+    <PROPERTY ID="0xCA19D7CA" Set="0x2A4C43BD"/><!--SFX:Ambience Good Sound-->
+    <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+    <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1946409F,0x18e64ea5"/><!--OccupantGroups-->
+    <PROPERTY ID="0xAA1DD399" Eval="0xA11C9DB6"/><!--OccupantGroups for SubMenu-->
+    <PROPERTY ID="0x713c8912" Eval="0xb0c1d6f9"/><!--Extended Power Type-->
+  </PROPERTIES>
+</CATEGORY>
 
     <CATEGORY Name="Nuclear Fusion" ID="0x4cb43872" ParentID="0x4cb23866">
       <FILTERS>
@@ -13126,75 +13126,75 @@ This selection will filter the display to only show Jail plug-ins.  To create a 
       </PROPERTIES>
     </CATEGORY>
 
-    <CATEGORY Name="50% Reduction" ID="0xecb2376b" ParentID="0xecb23761">
-      <HELP>
-        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-      </HELP>
-      <FILTERS>
-        <NEEDED ID="0x88ED1059" Value="0x32"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="RecycleFactor" value="6.25"/>
-        <PROPERTY ID="0x29244DB5" Eval="0x58"/><!--Flammability-->
-        <PROPERTY ID="0x88ED1059" Eval="0x00000032"/><!--Recycling center percent reduction-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="50% Reduction" ID="0xecb2376b" ParentID="0xecb23761">
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x32"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="6.25"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x58"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x00000032"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
+</CATEGORY>
 
-    <CATEGORY Name="40% Reduction" ID="0xecb2376c" ParentID="0xecb23761">
-      <HELP>
-        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-      </HELP>
-      <FILTERS>
-        <NEEDED ID="0x88ED1059" Value="0x28"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="RecycleFactor" value="4"/>
-        <PROPERTY ID="0x29244DB5" Eval="0x54"/><!--Flammability-->
-        <PROPERTY ID="0x88ED1059" Eval="0x00000028"/><!--Recycling center percent reduction-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="40% Reduction" ID="0xecb2376c" ParentID="0xecb23761">
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+   <NEEDED ID="0x88ED1059" Value="0x28"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="4"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x54"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x00000028"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
+</CATEGORY>
 
-    <CATEGORY Name="30% Reduction" ID="0xecb2376d" ParentID="0xecb23761">
-      <HELP>
-        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-      </HELP>
-      <FILTERS>
-        <NEEDED ID="0x88ED1059" Value="0x1E"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="RecycleFactor" value="2.25"/>
-        <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
-        <PROPERTY ID="0x88ED1059" Eval="0x0000001E"/><!--Recycling center percent reduction-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="30% Reduction" ID="0xecb2376d" ParentID="0xecb23761">
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x1E"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="2.25"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x0000001E"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
+</CATEGORY>
 
-    <CATEGORY Name="20% Reduction" ID="0xecb2376e" ParentID="0xecb23761">
-      <HELP>
-        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-      </HELP>
-      <FILTERS>
-        <NEEDED ID="0x88ED1059" Value="0x14"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="RecycleFactor" value="1"/>
-        <PROPERTY ID="0x29244DB5" Eval="0x4D"/><!--Flammability-->
-        <PROPERTY ID="0x88ED1059" Eval="0x00000014"/><!--Recycling center percent reduction-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="20% Reduction" ID="0xecb2376e" ParentID="0xecb23761">
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x14"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="1"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x4D"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x00000014"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
+</CATEGORY>
 
-    <CATEGORY Name="10% Reduction" ID="0xecb2376f" ParentID="0xecb23761">
-      <HELP>
-        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-      </HELP>
-      <FILTERS>
-        <NEEDED ID="0x88ED1059" Value="0x0A"/>
-      </FILTERS>
-      <PROPERTIES>
-        <eval name="RecycleFactor" value="0.5"/>
-        <PROPERTY ID="0x29244DB5" Eval="0x4A"/><!--Flammability-->
-        <PROPERTY ID="0x88ED1059" Eval="0x0000000A"/><!--Recycling center percent reduction-->
-      </PROPERTIES>
-    </CATEGORY>
+<CATEGORY Name="10% Reduction" ID="0xecb2376f" ParentID="0xecb23761">
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x0A"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="0.5"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x4A"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x0000000A"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
+</CATEGORY>
 
 <CATEGORY Name="Water" ID="0x6c8fbc50" ParentID="0xcc8fbc2d" img="img_water.gif">
 <HELP>
@@ -13460,6 +13460,13 @@ This selection will filter the display to only show Bus Stop plug-ins.  To creat
 </HELP>
 <FILTERS>
  <NEEDED ID="0xaa1dd396" Value="0x1301"/>
+ <NOT ID="0xaa1dd396" Value="0x1302"/>
+ <NOT ID="0xaa1dd396" Value="0x1303"/>
+ <NOT ID="0xaa1dd396" Value="0x1304"/>
+ <NOT ID="0xaa1dd396" Value="0x1305"/>
+ <NOT ID="0xaa1dd396" Value="0x1306"/>
+ <NOT ID="0xaa1dd396" Value="0x1307"/>
+ <NOT ID="0xaa1dd396" Value="0xb5c00dfa"/>
  <NOT ID="0xaa1dd396" Value="0x1508"/>
  <NOT ID="0xaa1dd396" Value="0x1509"/>
 </FILTERS>
@@ -13520,9 +13527,9 @@ This selection will filter the display to only show Subway plug-ins.  To create 
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x231A97D3"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
-<PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Passenger Train Station" ID="0x0c8fbd07" ParentID="0x0c8fbc5e">
@@ -13555,9 +13562,9 @@ This selection will filter the display to only show Passenger Rail Station plug-
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x35380C75"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
-      <PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Freight Train Station" ID="0x6c8fbd13" ParentID="0x0c8fbc5e">
@@ -13594,9 +13601,9 @@ This selection will filter the display to only show Freight Rail Station plug-in
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x3557F0A1"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
-      <PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>											 	   
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>											 	   
 </CATEGORY>
 
 <CATEGORY Name="Railyard without station" ID="0x6c8fbd14" ParentID="0x0c8fbc5e">
@@ -13663,9 +13670,9 @@ This selection will filter the display to only show Elevated Rail Station plug-i
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x00000000"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
-      <PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Monorail Station" ID="0x0cb23934" ParentID="0x0c8fbc5e">
@@ -13700,9 +13707,9 @@ This selection will filter the display to only show Monorail Station plug-ins.  
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x00000000"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
-      <PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Garage" ID="0xacbb8bb5" ParentID="0x0c8fbc5e">
@@ -13736,9 +13743,9 @@ This selection will filter the display to only show Garage plug-ins.  To create 
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x217B6C35"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
-      <PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Toll Booth" ID="0xacb23926" ParentID="0x0c8fbc5e">
@@ -13772,9 +13779,9 @@ This selection will filter the display to only show Toll Booth plug-ins.  To cre
  <PROPERTY ID="0xEA54D284" Value="0x00000006"/><!--Budget Item: Line-->
  <PROPERTY ID="0xEA54D285" Value="0x0C3BF549"/><!--Budget Item: Purpose-->
 </PROPERTIES>
-      <PRESET Name="Standard" Type="Transit">
-        <PROPERTIES/>
-      </PRESET>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Passenger Ferry Terminal" ID="0x6cb2392a" ParentID="0x0c8fbc5e">
@@ -14385,7 +14392,7 @@ This selection will filter the display to only show Landing Strip plug-ins.
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Small Landing Strip" ID="0x0c8fbd21" ParentID="0x0c8fbd20">
+<CATEGORY Name="Small Landing Strip" ID="0x48dd2c20" ParentID="0x0c8fbd20">
 <HELP>
 This selection will filter the display to only show Small Landing Strip plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14412,7 +14419,7 @@ This selection will filter the display to only show Small Landing Strip plug-ins
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Medium Landing Strip" ID="0x0c8fbd22" ParentID="0x0c8fbd20">
+<CATEGORY Name="Medium Landing Strip" ID="0x07d73960" ParentID="0x0c8fbd20">
 <HELP>
 This selection will filter the display to only show Medium Landing Strip plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14438,7 +14445,7 @@ This selection will filter the display to only show Medium Landing Strip plug-in
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Large Landing Strip" ID="0x0c8fbd23" ParentID="0x0c8fbd20">
+<CATEGORY Name="Large Landing Strip" ID="0x4609d1e8" ParentID="0x0c8fbd20">
 <HELP>
 This selection will filter the display to only show Large Landing Strip plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14478,7 +14485,7 @@ This selection will filter the display to only show Municipal Airport plug-ins.
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Airport - Size 1" ID="0x0c8fbd31" ParentID="0x0c8fbd30">
+<CATEGORY Name="Airport - Size 1" ID="0x7ff36953" ParentID="0x0c8fbd30">
 <HELP>
 This selection will filter the display to only show Small Municipal Airport plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -15101,6 +15108,25 @@ This selection will filter the display to only show Runway plug-ins. To create a
  <PROPERTY ID="0xC8ED2D84" Eval="ParkWaterConsumed"/><!--Water Consumed-->
  <PROPERTY ID="0xAA1DD399" Eval="0x00000000"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES> 
+</CATEGORY>
+
+<CATEGORY Name="Network Enabling Dummy" ID="0x06e8a9ac" ParentID="0x0c8fbc5e">
+<HELP>
+This selection is a dummy ID for the Network Enabling Transit Switch Pre-Sets. Do NOT pull and drop any building exemplar here, it is just a dummy placeholder. For Network Enabling lots you will be able set up certain pre-sets for the transit switches and you need to manually set-up Capacity and Transit Switch Entry Cost (TSEC) following the guide.
+</HELP>
+<FILTERS>
+ <NOT ID="0x00000010" Value="0x0000"/><!--Exemplar Type-->
+ <NOT ID="0x00000010" Value="0x0002"/><!--Exemplar Type-->
+</FILTERS>
+<PROPERTIES>
+ <eval name="TSCap" value="0"/>
+ <PROPERTY ID="0xE90E25A1" Value="0x81,0xF0,0x00,0x00,0x82,0xF0,0x00,0x00"/><!--Transit Switch Point-->
+ <PROPERTY ID="0xE90E25A2" Value="0.0"/><!--Transit Switch Entry Cost-->
+ <PROPERTY ID="0xE90E25A3" Eval="TSCap"/><!--Transit Switch Traffic Capacity-->
+</PROPERTIES>
+<PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+</PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Landmark" ID="0x2c8fbc6c" ParentID="0xcc8fbc2d" img="img_land.gif">
@@ -16982,7 +17008,7 @@ This selection will filter the display to only show $ Building as Prop plug-ins.
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="No Wealth" ID="0x1c8fbd65" ParentID="0x0c8fbd25">
+<CATEGORY Name="No Wealth" ID="0x3224b476" ParentID="0x0c8fbd25">
 <HELP>
 This selection will filter the display to only show Other Building as Prop plug-ins.  To create an Other Building as Prop plug-in drag a model to this category. In the lot editor this plug-in Prop can be found by choosing add a prop to a lot.
 </HELP>
@@ -18668,7 +18694,7 @@ This selection will filter the display to only show lots plug-ins.
 </FILTERS>
 </CATEGORY>
 
-<CATEGORY Name="All others" ID="0xC96D2137" ParentID="0x0c85bd24">
+<CATEGORY Name="All others" ID="0xd897c110" ParentID="0x0c85bd24">
 <HELP>
 This selection will filter the display to only show lots plug-ins.
 </HELP>
@@ -18810,7 +18836,7 @@ This selection will filter the display to only show lots plug-ins.
 <STAGEvsDENSITY purpose="CS" wealth="0" ratio="16,28,40.6,53.4,67.3,84.7,107,135,169,214,269,339,427,538" baseTex="0x26353000"/>
 <STAGEvsDENSITY purpose="CS" wealth="1" ratio="8,14,20.3,26.7,33.6,42.4,53.4,67.3,84.7,107,135,169,214,269" baseTex="0x262f3000"/>
 <STAGEvsDENSITY purpose="CS" wealth="2" ratio="4,7,10.2,13.3,16.8,21.2,26.7,33.6,42.4,53.4,67.3,84.7,107,135" baseTex="0x262e3000"/>
-    <STAGEvsDENSITY purpose="IR" wealth="0" ratio="7.5,12.2,19.1,28.9,42.1,59.4,80.9,106,135" baseTex="0x25db0000" />
+<STAGEvsDENSITY purpose="IR" wealth="0" ratio="16,32,60,100,135,169,214,269,328" baseTex="0x25db0000" />
 <STAGEvsDENSITY purpose="ID" wealth="1" ratio="5,8.1,12.7,19.2,28.1,39.6,53.9,70.9,90" baseTex="0x25fb1000"/>
 <STAGEvsDENSITY purpose="IM" wealth="1" ratio="6.3,10.2,15.9,24,35.1,49.5,67.4,88.6,112.5" baseTex="0x25fb1100"/>
 <STAGEvsDENSITY purpose="IHT" wealth="2" ratio="7.5,12.2,19.1,28.9,42.1,59.4,80.9,106,135" baseTex="0x258d1000"/>
