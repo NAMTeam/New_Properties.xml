@@ -30,7 +30,7 @@ We strongly recommend choosing the right version for your modding project. As a 
 
 The file must be installed by following precise instructions according to the program it is to read
 
-### OLD PIM-X
+### OLD PIM-X (Note: The old PIM-X is being phased out. We recommend using the new PIM-X.)
 
 New_Properties.xml should be installed in the PIM-X installation folder (generally the installation folder is this)`C:\Program Files (x86)\SC4PIM` replacing the original file. 
 
