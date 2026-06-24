@@ -21,6 +21,8 @@ The main differences are
 - Public services (Education, Healthcare, Safety) have values that are half those of Maxis, forcing the player to build more civic buildings in line with the BSC Team vision. The New_Properties.xml-patches version has values four times those of the BSC Team and twice those of Maxis.
 - Delay in updating this version with new buildings and patches compared to the New_Properties.xml-patches version
 
+Except for these two differences, the two versions have the same patches, additional buildings, and additional properties created by the DLL Mods
+
 We strongly recommend choosing the right version for your modding project. As a general rule, 
 
 - New_Property.xml -> Recommended for a vanilla or hybrid vanilla experience
