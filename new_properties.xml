@@ -8319,6 +8319,8 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
     </OPTION>
 	<OPTION Value="0xF034265C" Name="Fillers">
     </OPTION>
+	<OPTION Value="0xdd5dc0e7" Name="Watercrafts">
+    </OPTION>
   </PROPERTY>
   <PROPERTY Name="ExtendedPowerType" ID="0x713c8912" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
