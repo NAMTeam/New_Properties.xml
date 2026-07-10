@@ -12,13 +12,33 @@ The file contains all the Occupant Groups that Maxis and BSC Team have developed
 
 Because of the uniqueness of the file, new properties can be generated that the game can read using Mod DLLs and it also allows the identification of the IIDs of the prorpieties that can be used for any LUA codes to be used in the game.
 
+## Differences from the New_Properties.xml-patches version
+
+This version does not include many of the advanced features found in the [New_Properties.xml-patches](https://github.com/UlisseWolf/New_Properties.xml-patches "New_Properties.xml-patches") version, which updates more quickly and is more compatible with CAM, CAM-SPAM, and CAM-Vanilla.
+
+The main differences are
+
+- Public services (Education, Healthcare, Safety) have values that are half those of Maxis, forcing the player to build more civic buildings in line with the BSC Team vision. The New_Properties.xml-patches version has values four times those of the BSC Team and twice those of Maxis.
+- Delay in updating this version with new buildings and patches compared to the New_Properties.xml-patches version
+
+Except for these two differences, the two versions have the same patches, additional buildings, and additional properties created by the DLL Mods
+
+We strongly recommend choosing the right version for your modding project. As a general rule, 
+
+- New_Property.xml -> Recommended for a vanilla or hybrid vanilla experience
+- New_Properties.xml-patches -> Recommended for a CAM experience (CAM, CAM-SPAM, and CAM-Vanilla) or a hybrid experience
+
 ## Installation
 
 The file must be installed by following precise instructions according to the program it is to read
 
-### PIM-X
+### OLD PIM-X (Note: The old PIM-X is being phased out. We recommend using the new PIM-X.)
 
 New_Properties.xml should be installed in the PIM-X installation folder (generally the installation folder is this)`C:\Program Files (x86)\SC4PIM` replacing the original file. 
+
+### NEW PIM-X
+
+New_Properties.xml must be installed in the following folder `%APPDATA%\sc4pimx\`
 
 ### Ilives - Reader (1.5.4)
 

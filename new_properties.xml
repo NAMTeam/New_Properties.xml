@@ -766,16 +766,6 @@ Id/amount pairs that specify the resources the building consumes from the region
 Id/amount pairs that specify the resources the building adds to the regional supply.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Regional Supply Consumed" ID="0x16F4C223" Type="Uint32" ShowAsHex="Y">
-    <HELP>
-Id/amount pairs that specify the resources the building consumes from the regional supply.
-</HELP>
-  </PROPERTY>
-  <PROPERTY Name="Regional Supply Produced" ID="0x16F4C224" Type="Uint32" ShowAsHex="Y">
-    <HELP>
-Id/amount pairs that specify the resources the building adds to the regional supply.
-</HELP>
-  </PROPERTY>
   <PROPERTY Name="Occupant Size" ID="0x27812810" Type="Float32" Count="3" Default="1" ShowAsHex="N">
     <HELP>
 In meters: Width Height Depth
@@ -1395,19 +1385,311 @@ monthly fire probability (in percent 0-100) of random lot fire
 </HELP>
   </PROPERTY>
   <PROPERTY Name="Field Lots" ID="0x29b55f73" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
-    <OPTION Value="0x00024100" Name="Furrows with Sprinkler">
+    <OPTION Value="0x00024100" Name="Maxis: Furrows with Sprinkler">
     </OPTION>
-    <OPTION Value="0x2a6e4309" Name="Furrows with Sprinkler">
+    <OPTION Value="0x2a6e4309" Name="Maxis: Furrows with Sprinkler">
     </OPTION>
-    <OPTION Value="0x2a6e431d" Name="Dirt with Sprinkler">
+    <OPTION Value="0x2a6e431d" Name="Maxis: Dirt with Sprinkler">
     </OPTION>
-    <OPTION Value="0xaa6e4328" Name="Orange Tree Orchards">
+    <OPTION Value="0xaa6e4328" Name="Maxis: Orange Tree Orchards">
     </OPTION>
-    <OPTION Value="0x6a6e4332" Name="Apple Tree Orchards">
+    <OPTION Value="0x6a6e4332" Name="Maxis: Apple Tree Orchards">
     </OPTION>
-    <OPTION Value="0xea6e4721" Name="Dirt Patch">
+    <OPTION Value="0xea6e4721" Name="Maxis: Dirt Patch">
     </OPTION>
-    <OPTION Value="0xea6e4722" Name="Green Patch">
+    <OPTION Value="0xea6e4722" Name="Maxis: Green Patch">
+    </OPTION>
+	<OPTION Value="0x0f10173b" Name="CSX: Wheat">
+    </OPTION>
+	<OPTION Value="0x2f1246ad" Name="CSX: Oranges">
+    </OPTION>
+	<OPTION Value="0x4e17c963" Name="CSX: Sammy's Bananas">
+    </OPTION>
+	<OPTION Value="0x8e17cc08" Name="CSX: Raji's Bananas">
+    </OPTION>
+	<OPTION Value="0xaf12466c" Name="CSX: Apples">
+    </OPTION>
+	<OPTION Value="0xcd3b9faf" Name="CSX: Pink Bradford Pear Tree">
+    </OPTION>
+	<OPTION Value="0xeefc70ec" Name="CSX: Coconuts">
+    </OPTION>
+	<OPTION Value="0xef124096" Name="CSX: Cherries">
+    </OPTION>
+	<OPTION Value="0x0efc6f42" Name="CSX: Maple">
+    </OPTION>
+	<OPTION Value="0x2efc6ebd" Name="CSX: Oak">
+    </OPTION>
+	<OPTION Value="0x8efc6e3e" Name="CSX: Noble Fir">
+    </OPTION>
+	<OPTION Value="0x0efc6b26" Name="CSX: GM Tomatoes">
+    </OPTION>
+	<OPTION Value="0xae17cf51" Name="CSX: GM Victoria's Bananas">
+    </OPTION>
+	<OPTION Value="0xeefc19e5" Name="CSX: GM Mushroom Tunnel">
+    </OPTION>
+	<OPTION Value="0xcf1017ea" Name="CSX: Strawberries">
+    </OPTION>
+	<OPTION Value="0x2efc6b96" Name="CSX: Melons">
+    </OPTION>
+	<OPTION Value="0x2f101885" Name="CSX: Potatoes">
+    </OPTION>
+	<OPTION Value="0x4efc6c08" Name="CSX: Tomatoes">
+    </OPTION>
+	<OPTION Value="0xaefc6c56" Name="CSX: Cabbage">
+    </OPTION>
+	<OPTION Value="0x6d3a3621" Name="CSX: CSX GA Nursery Shrub">
+    </OPTION>
+	<OPTION Value="0x6d3a457e" Name="CSX GA Nursery Pampas">
+    </OPTION>
+	<OPTION Value="0x8d3aa2a9" Name="CSX GA Nursery Flowers - Red">
+    </OPTION>
+	<OPTION Value="0xae17d42b" Name="CSX Farm Field - Christa's Pride">
+    </OPTION>
+	<OPTION Value="0xce17d266" Name="CSX Farm Field - Vera's Pride">
+    </OPTION>
+	<OPTION Value="0x0f02b60c" Name="CSX Vineyard - Late Harvest">
+    </OPTION>
+	<OPTION Value="0x4f02b5c0" Name="CSX Vineyard - Pinotage">
+    </OPTION>
+	<OPTION Value="0x4f02b658" Name="CSX Vineyard - Grand Cru">
+    </OPTION>
+	<OPTION Value="0xef02b702" Name="CSX Vineyard - Mont Blanc">
+    </OPTION>
+	<OPTION Value="0xcf07d4ad" Name="CSX Farm Field - Pinewood">
+    </OPTION>
+	<OPTION Value="0xef07aaf3" Name="CSX Farm Field - Woodland">
+    </OPTION>
+	<OPTION Value="0xef07d372" Name="CSX Farm Field - Brushland">
+    </OPTION>
+	<OPTION Value="0x4f1c9a2a" Name="CSX Farm Field - Wetland">
+    </OPTION>
+	<OPTION Value="0xef2e7351" Name="CSX Farm Field - Fynbos">
+    </OPTION>
+	<OPTION Value="0x2f3761d4" Name="CSX Farm Field - Poppies">
+    </OPTION>
+	<OPTION Value="0x2f376176" Name="CSX Farm Field - Lavender">
+    </OPTION>
+	<OPTION Value="0x10f2118f" Name="CSX Forestry Field - Brushland">
+    </OPTION>
+	<OPTION Value="0xf0f20ee0" Name="CSX Forestry Field - Fynbos">
+    </OPTION>
+	<OPTION Value="0xd0f21780" Name="CSX Forestry Field - Lavender">
+    </OPTION>
+	<OPTION Value="0x50F20BF1" Name="CSX Forestry Field - Poppies">
+    </OPTION>
+	<OPTION Value="0x70f20e39" Name="CSX Forestry Field - Potatoes">
+    </OPTION>
+	<OPTION Value="0x50f20e6d" Name="CSX Forestry Field - Tomatoes">
+    </OPTION>
+	<OPTION Value="0x30f217f5" Name="CSX Forestry Field - Woodland">
+    </OPTION>
+	<OPTION Value="0x30F165E3" Name="CSX Plantation Field - Cottonwood">
+    </OPTION>
+	<OPTION Value="0xB0F164E8" Name="CSX Plantation Field - Douglas Fir">
+    </OPTION>
+	<OPTION Value="0xD0F16398" Name="CSX Plantation Field - Gumtrees">
+    </OPTION>
+	<OPTION Value="0x30F167CA" Name="CSX Plantation Field - Lodgepole Pine">
+    </OPTION>
+	<OPTION Value="0xB0F1688B" Name="CSX Plantation Field - Oak">
+    </OPTION>
+	<OPTION Value="0xB0F16919" Name="CSX Plantation Field - Ponderosa Pine">
+    </OPTION>
+	<OPTION Value="0x5106E3BE" Name="CSX Plantation Field - Spruce Pine">
+    </OPTION>
+	<OPTION Value="0xAD79C821" Name="BLS GA Farm Field - Lime Trees01">
+    </OPTION>
+	<OPTION Value="0x6f057b94" Name="BLS GA Farm Field - Lime Trees02">
+    </OPTION>
+	<OPTION Value="0xAD79E66F" Name="BLS GA Farm Field - Lemon Trees01">
+    </OPTION>
+	<OPTION Value="0x4EFCFB16" Name="BLS GA Farm Field - Lemon Trees02">
+    </OPTION>
+	<OPTION Value="0x8F924D9D" Name="BLS GA Farm Field - Aniseed">
+    </OPTION>
+	<OPTION Value="0xAE196879" Name="BLS GA Farm Field - Bananas">
+    </OPTION>
+	<OPTION Value="0x6E1BD45D" Name="BLS GA Farm Field - Barley">
+    </OPTION>
+	<OPTION Value="0x8DCE3765" Name="BLS GA Farm Field - Cabbages">
+    </OPTION>
+	<OPTION Value="0x8DCE7E3D" Name="BLS GA Farm Field - Chili Peppers">
+    </OPTION>
+	<OPTION Value="0x4DF87DAF" Name="BLS GA Farm Field - Corn">
+    </OPTION>
+	<OPTION Value="0x4E61B2E0" Name="BLS GA Farm Field - Grapes Seasonal">
+    </OPTION>
+	<OPTION Value="0x8DCE4EBD" Name="BLS GA Farm Field - Grapes">
+    </OPTION>
+	<OPTION Value="0xEE587EC0" Name="BLS GA Farm Field - Hay">
+    </OPTION>
+	<OPTION Value="0xAD79E66F" Name="BLS GA Farm Field - Hops">
+    </OPTION>
+	<OPTION Value="0x8DEE18EC" Name="BLS GA Farm Field - Lettuce">
+    </OPTION>
+	<OPTION Value="0x0DC3B733" Name="BLS GA Farm Field - Lavender">
+    </OPTION>
+	<OPTION Value="0x8F924DF0" Name="BLS GA Farm Field - Liquorice">
+    </OPTION>
+	<OPTION Value="0xEDD7F461" Name="BLS GA Farm Field - Pasture">
+    </OPTION>
+	<OPTION Value="0xEF869C6E" Name="BLS GA Farm Field - D66 Day Lilies Lavender">
+    </OPTION>
+	<OPTION Value="0x4EBE953C" Name="BLS GA Farm Field - Pine Trees">
+    </OPTION>
+	<OPTION Value="0x8DCE4577" Name="BLS GA Farm Field - Pineapples">
+    </OPTION>
+	<OPTION Value="0x6E17F4BD" Name="BLS GA Farm Field - Pumpkins">
+    </OPTION>
+	<OPTION Value="0x6DCE3305" Name="BLS GA Farm Field - Soybeans">
+    </OPTION>
+	<OPTION Value="0xCF263C04" Name="BLS GA Farm Field - Chili Peppers">
+    </OPTION>
+	<OPTION Value="0xCF6FB746" Name="BLS GA Farm Field - D66 Wildflower Meadow">
+    </OPTION>
+	<OPTION Value="0xADE2EACF" Name="BLS GA Farm Field - HoneyFlowers01">
+    </OPTION>
+	<OPTION Value="0x8DC73040" Name="BLS GA Farm Field - HoneyFlowers02">
+    </OPTION>
+	<OPTION Value="0xEE2A0390" Name="BLS GA Farm Field - Wheat Seasonal">
+    </OPTION>
+	<OPTION Value="0xAE1CA1A7" Name="BLS GA Farm Field - Sunflowers">
+    </OPTION>
+	<OPTION Value="0xAF1E2C5A" Name="BLS GA Farm Field - Carnations">
+    </OPTION>
+	<OPTION Value="0xEF88174F" Name="BLS GA Farm Field - Lily Mystery">
+    </OPTION>
+	<OPTION Value="0xEF881884" Name="BLS GA Farm Field - Merry Marigolds">
+    </OPTION>
+	<OPTION Value="0x8F869D50" Name="BLS GA Farm Field - D66 Day Lilies Orange">
+    </OPTION>
+	<OPTION Value="0xAF869CE9" Name="BLS GA Farm Field - D66 Day Lilies Firey">
+    </OPTION>
+	<OPTION Value="0x8F869F6F" Name="BLS GA Farm Field - D66 Day Lilies Pink">
+    </OPTION>
+	<OPTION Value="0xAF86A039" Name="BLS GA Farm Field - D66 Day Lilies Purple">
+    </OPTION>
+	<OPTION Value="0x4F869FCD" Name="BLS GA Farm Field - D66 Day Lilies Purple Mixed">
+    </OPTION>
+	<OPTION Value="0x2F86A06A" Name="BLS GA Farm Field - D66 Day Lilies Red">
+    </OPTION>
+	<OPTION Value="0x0F1B7CDC" Name="BLS GA Farm Field - Red Roses">
+    </OPTION>
+	<OPTION Value="0x8F866A8A" Name="BLS GA Farm Field - D66 Day Lilies StarGazer">
+    </OPTION>
+	<OPTION Value="0xEF86A0CB" Name="BLS GA Farm Field - D66 Day Lilies Yellow">
+    </OPTION>
+	<OPTION Value="0x2F86A115" Name="BLS GA Farm Field - D66 Yellow Marigolds">
+    </OPTION>
+	<OPTION Value="0x6F1B7D21" Name="BLS GA Farm Field - Yellow Roses">
+    </OPTION>
+	<OPTION Value="0xAF86A095" Name="BLS GA Farm Field - D66 Day Lilies Yellow Pink Mixed">
+    </OPTION>
+	<OPTION Value="0x0FF57698" Name="BLS GA Farm Field - RPT Agave">
+    </OPTION>
+	<OPTION Value="0xB1F1E3C1" Name="BLS Farm Field - BMD Kiwi Vines">
+    </OPTION>
+	<OPTION Value="0x91EDC1DE" Name="BLS Farm Field - BMD Lavender">
+    </OPTION>
+	<OPTION Value="0xF1F1E4DE" Name="BLS Farm Field - BMD Melons">
+    </OPTION>
+	<OPTION Value="0xD1F1E472" Name="BLS Farm Field - BMD Oranges">
+    </OPTION>
+	<OPTION Value="0xB1F21DD1" Name="BLS Farm Field - BMD Peppers">
+    </OPTION>
+	<OPTION Value="0x31F21E17" Name="BLS Farm Field - BMD Tomatoes">
+    </OPTION>
+	<OPTION Value="0xB1E63427" Name="BLS Farm Field - BMD Olives01">
+    </OPTION>
+	<OPTION Value="0x51EC72A5" Name="BLS Farm Field - BMD Olives02">
+    </OPTION>
+	<OPTION Value="0xD1EC731D" Name="BLS Farm Field - BMD Olives03">
+    </OPTION>
+	<OPTION Value="0xB2914DE4" Name="BLS Farm Field - CAL Hay Baled">
+    </OPTION>
+	<OPTION Value="0x32935D92" Name="BLS Farm Field - CAL Round Hay Bales">
+    </OPTION>
+	<OPTION Value="0x536603BE" Name="BLS Farm Field - Sand with Palm Trees">
+    </OPTION>
+	<OPTION Value="0x3361CB5F" Name="BLS Farm Field - D66 Wildflower Meadow">
+    </OPTION>
+	<OPTION Value="0x1361A878" Name="BLS Farm Field - Forest01">
+    </OPTION>
+	<OPTION Value="0xF361A8B5" Name="BLS Farm Field - Forest02">
+    </OPTION>
+	<OPTION Value="0xB361A913" Name="BLS Farm Field - Forest03">
+    </OPTION>
+	<OPTION Value="0x4f043e6e" Name="SG Farm Field - Seasonal Beans">
+    </OPTION>
+	<OPTION Value="0x4f043e28" Name="SG Farm Field - Seasonal Corn">
+    </OPTION>
+	<OPTION Value="0x0f07d36c" Name="SG Farm Field - Seasonal Flowers">
+    </OPTION>
+	<OPTION Value="0x0f043eb2" Name="SG Farm Field - Seasonal Peanuts">
+    </OPTION>
+	<OPTION Value="0x2f0c2ab5" Name="SG Farm Field - Seasonal Rice">
+    </OPTION>
+	<OPTION Value="0xef07a216" Name="SG Farm Field - Seasonal Tulips">
+    </OPTION>
+	<OPTION Value="0x0f043df9" Name="SG Farm Field - Seasonal Wheat">
+    </OPTION>
+	<OPTION Value="0x0f33bd8b" Name="SG Farm Field - Seasonal Aniseed">
+    </OPTION>
+	<OPTION Value="0x4f33af03" Name="SG Farm Field - Seasonal Cantaloupe">
+    </OPTION>
+	<OPTION Value="0x4f33bf5d" Name="SG Farm Field - Seasonal Cotton">
+    </OPTION>
+	<OPTION Value="0x4f33bd45" Name="SG Farm Field - Seasonal Hop Vines">
+    </OPTION>
+	<OPTION Value="0xef33bdfa" Name="SG Farm Field - Seasonal Liquorice">
+    </OPTION>
+	<OPTION Value="0xcf33afe0" Name="SG Farm Field - Peppers Green">
+    </OPTION>
+	<OPTION Value="0x4f33bbb1" Name="SG Farm Field - Peppers Mixed">
+    </OPTION>
+	<OPTION Value="0x4f33afc6" Name="SG Farm Field - Peppers Red">
+    </OPTION>
+	<OPTION Value="0xcf33bbbe" Name="SG Farm Field - Peppers Yellow">
+    </OPTION>
+	<OPTION Value="0xcf33be20" Name="SG Farm Field - Seasonal Potatoes">
+    </OPTION>
+	<OPTION Value="0xcf33beaf" Name="SG Farm Field - Seasonal Pumpkins">
+    </OPTION>
+	<OPTION Value="0xef33be4b" Name="SG Farm Field - Seasonal Soy Beans">
+    </OPTION>
+	<OPTION Value="0x8f33bf18" Name="SG Farm Field - Seasonal Sugar Cane">
+    </OPTION>
+	<OPTION Value="0x8f33bfaf" Name="SG Farm Field - Seasonal Tobacco">
+    </OPTION>
+	<OPTION Value="0xef33bfce" Name="SG Farm Field - Seasonal Tomatoes">
+    </OPTION>
+	<OPTION Value="0x8f33bfee" Name="SG Farm Field - Wax Beans">
+    </OPTION>
+	<OPTION Value="0xF26D7F6E" Name="SG Farm Field - Fukitol">
+    </OPTION>
+	<OPTION Value="0xF92BBFE9" Name="BLS Farm Field - Pigpen">
+    </OPTION>
+	<OPTION Value="0x50E78750" Name="JFM Farm Field - Green Meadows Crop Random Hay Bales">
+    </OPTION>
+	<OPTION Value="0xD146FB3E" Name="JFM Farm Field - JFM Bananas">
+    </OPTION>
+	<OPTION Value="0x1267C337" Name="JFM Farm Field - JFM Christmas Trees">
+    </OPTION>
+	<OPTION Value="0xFC78ADA4" Name="vrtxt Farm Fields - Pasture Field 1">
+    </OPTION>
+	<OPTION Value="0xFC78ADA9" Name="vrtxt Farm Fields - Pasture Field 2">
+    </OPTION>
+	<OPTION Value="0xFC78ADAE" Name="vrtxt Farm Fields - Pasture Field 3">
+    </OPTION>
+	<OPTION Value="0xFC78ADB4" Name="vrtxt Farm Fields - Pasture Field 4">
+    </OPTION>
+	<OPTION Value="0xFC78ADB9" Name="vrtxt Farm Fields - Pasture Field 5">
+    </OPTION>
+	<OPTION Value="0xFC78ADBE" Name="vrtxt Farm Fields - Pasture Field 6">
+    </OPTION>
+	<OPTION Value="0xFC78ADC4" Name="vrtxt Farm Fields - Pasture Field 7">
+    </OPTION>
+	<OPTION Value="0xFC78ADC9" Name="vrtxt Farm Fields - Pasture Field 8">
     </OPTION>
     <HELP>
 A list of IDs of 1x1 lots that describe a field tile associated with this building (will choose 1 randomly)
@@ -6500,7 +6782,7 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0x1518" Name="Building: DeluxeFireStation">
     </OPTION>
-    <OPTION Value="0x1519" Name="Building: WaterTransit ">
+    <OPTION Value="0x1519" Name="Building: WaterTransit">
     </OPTION>
     <OPTION Value="0x151a" Name="Building: LargeHealth">
     </OPTION>
@@ -6918,6 +7200,8 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0x4415" Name="Automata: MetalWhale">
     </OPTION>
+	<OPTION Value="0x5000" Name="Automata: Coal Mine">
+    </OPTION>
     <OPTION Value="0x5001" Name="Prop: Zot">
     </OPTION>
     <OPTION Value="0x5002" Name="Prop: Stoplight">
@@ -6959,6 +7243,8 @@ List of groups this occupant belongs to.
 	<OPTION Value="0x000AF11B" Name="Automata: ADC UPS Postal Truck">
     </OPTION>
 	<OPTION Value="0x000070C6" Name="Automata: JFF Royal Mail Van">
+    </OPTION>
+	<OPTION Value="0x0000a383" Name="Automata: Australian Post Truck">
     </OPTION>
     <OPTION Value="0xB5C00000" Name="CSX: CSX Lots">
     </OPTION>
@@ -7488,11 +7774,11 @@ List of groups this occupant belongs to.
     </OPTION>
     <OPTION Value="0xB5C00C27" Name="CAM: Farm Stage 7">
     </OPTION>
-	<OPTION Value="0xEB2415AF" Name="CAM: Farm Stage 8">
+	<OPTION Value="0xB5C00C28" Name="CAM: Farm Stage 8">
     </OPTION>
-    <OPTION Value="0x8DA6085B" Name="CAM: Farm Stage 9">
+    <OPTION Value="0xB5C00C29" Name="CAM: Farm Stage 9">
     </OPTION>
-    <OPTION Value="0x75918A3D" Name="CAM: Farm Stage 10">
+    <OPTION Value="0xB5C00C2A" Name="CAM: Farm Stage 10">
     </OPTION>
     <OPTION Value="0xB5C00C30" Name="BTE: Farm - Meat">
     </OPTION>
@@ -7790,59 +8076,61 @@ List of groups this occupant belongs to.
     </OPTION>
 	<OPTION Value="0xB5C32500" Name="BTE: BSC-Mattb325">
     </OPTION>
-	<OPTION Value="0x1946409F" Name="AMPS: Coal">
+	<OPTION Value="0x1946409F" Name="NEON: Coal">
     </OPTION>
-	<OPTION Value="0xD6B169D9" Name="AMPS: Oil">
+    <OPTION Value="0xD6B169D9" Name="NEON: Oil">
     </OPTION>
-	<OPTION Value="0x36CA5093" Name="AMPS: Biomass">
+    <OPTION Value="0x36CA5093" Name="NEON: Biomass">
     </OPTION>
-	<OPTION Value="0x5512235E" Name="AMPS: Natural Gas">
+    <OPTION Value="0x5512235E" Name="NEON: Natural Gas">
     </OPTION>
-	<OPTION Value="0xA945A10D" Name="AMPS: Nuclear Fission">
+    <OPTION Value="0xA945A10D" Name="NEON: Nuclear Fission">
     </OPTION>
-	<OPTION Value="0xB680D7E0" Name="AMPS: Nuclear Fusion">
+    <OPTION Value="0xB680D7E0" Name="NEON: Nuclear Fusion">
     </OPTION>
-	<OPTION Value="0x1F221780" Name="AMPS: Geothermal">
+    <OPTION Value="0x1F221780" Name="NEON: Geothermal">
     </OPTION>
-	<OPTION Value="0x7134683C" Name="AMPS: Solar">
+    <OPTION Value="0x7134683C" Name="NEON: Solar">
     </OPTION>
-	<OPTION Value="0x0CED62DC" Name="AMPS: Microwave">
+    <OPTION Value="0x0CED62DC" Name="NEON: Microwave">
     </OPTION>
-	<OPTION Value="0xF0D606AC" Name="AMPS: Tidal and Wave">
+    <OPTION Value="0xF0D606AC" Name="NEON: Tidal and Wave">
     </OPTION>
-	<OPTION Value="0xEC9175AA" Name="AMPS: Waste To Energy">
+    <OPTION Value="0xEC9175AA" Name="NEON: Waste To Energy">
     </OPTION>
-	<OPTION Value="0x8765D979" Name="AMPS: Hydroelectric">
+    <OPTION Value="0x8765D979" Name="NEON: Hydroelectric">
     </OPTION>
-	<OPTION Value="0xC78E0054" Name="AMPS: Wind">
+    <OPTION Value="0xC78E0054" Name="NEON: Wind">
     </OPTION>
-	<OPTION Value="0xB075C142" Name="AMPS: Generators">
+    <OPTION Value="0xB075C142" Name="NEON: Generators">
     </OPTION>
-	<OPTION Value="0x7AB34F1B" Name="AMPS: Auxiliary">
+    <OPTION Value="0x7AB34F1B" Name="NEON: Auxiliary">
     </OPTION>
-	<OPTION Value="0x861A7248" Name="AMPS: Power Storage">
+    <OPTION Value="0x861A7248" Name="NEON: Power Storage">
     </OPTION>
-	<OPTION Value="0xED378A8E" Name="AMPS: Transmission Station">
+    <OPTION Value="0xED378A8E" Name="NEON: High Voltage Transformers">
     </OPTION>
-	<OPTION Value="0x215395E9" Name="AMPS: Distribution Substation">
+    <OPTION Value="0x215395E9" Name="NEON: Low Voltage Transformers">
     </OPTION>
-	<OPTION Value="0xD45142D1" Name="AMPS: High Voltage Power Line ">
+	<OPTION Value="0x1b823f5a" Name="NEON: Medium Voltage Transformers">
     </OPTION>
-	<OPTION Value="0x4E1F2B7B" Name="AMPS: Medium Voltage Power Line ">
+    <OPTION Value="0xD45142D1" Name="NEON: High Voltage Power Line ">
     </OPTION>
-	<OPTION Value="0x38730189" Name="AMPS: Low Voltage Power Line ">
+    <OPTION Value="0x4E1F2B7B" Name="NEON: Medium Voltage Power Line ">
     </OPTION>
-	<OPTION Value="0x7292f7FA" Name="AMPS: Power Line">
-    </OPTION>	
-	<OPTION Value="0x0ABF5A84" Name="AMPS: Transformer">
-    </OPTION>		
-	<OPTION Value="0x0badb9ac" Name="AMPS: Intermediate Plants">
+    <OPTION Value="0x38730189" Name="NEON: Low Voltage Power Line ">
     </OPTION>
-	<OPTION Value="0x18e64ea5" Name="AMPS: Base Load Plants">
+    <OPTION Value="0x7292f7FA" Name="NEON: Power Line">
     </OPTION>
-	<OPTION Value="0x7283dcd7" Name="AMPS: Peak Plants">
+    <OPTION Value="0x0ABF5A84" Name="NEON: Transformer">
     </OPTION>
-	<OPTION Value="0xB2718077" Name="AMPS: Power Eye-Candy"> 
+    <OPTION Value="0x0badb9ac" Name="NEON: Intermediate Plants">
+    </OPTION>
+    <OPTION Value="0x18e64ea5" Name="NEON: Base Load Plants">
+    </OPTION>
+    <OPTION Value="0x7283dcd7" Name="NEON: Peak Plants">
+    </OPTION>
+    <OPTION Value="0xB2718077" Name="NEON: Power Eye-Candy">
     </OPTION>
 	<OPTION Value="0x0C56201B" Name="AGM: Landfill">
     </OPTION>
@@ -7888,8 +8176,10 @@ List of groups this occupant belongs to.
     </OPTION>
 	<OPTION Value="0x08bbb542" Name="Park: Canal">
     </OPTION>
-    <OPTION Value="0xac4a6915" Name="Park: Watercrafts">
-    </OPTION>	
+	<OPTION Value="0x8b444582" Name="Park: Pond and Stream">
+    </OPTION>
+	<OPTION Value="0xac4a6915" Name="Park: Watercrafts">
+    </OPTION>
 	<OPTION Value="0xCA1A100A" Name="Automata: CAN-AM Passenger Ferry Generator">
     </OPTION>
 	<OPTION Value="0xCA1A105A" Name="Automata: CAN-AM Freight Ferry Generator">
@@ -7969,6 +8259,8 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
     </OPTION>
 	<OPTION Value="0x84D42CD6" Name="Waterfront">
     </OPTION>
+	<OPTION Value="0xdd5dc0e7" Name="Boats, Ships and Watercrafts">
+    </OPTION>
 <HELP>SubMenuROOTPowerUtility</HELP>
 	<OPTION Value="0x4B465151" Name="Dirty Energy">
     </OPTION>
@@ -8032,7 +8324,7 @@ For use with Submenus DLL: the Button IDs of the submenus this building appears 
   </PROPERTY>
   <PROPERTY Name="ExtendedPowerType" ID="0x713c8912" Type="Uint32" Count="-1" Default="0x00000000" ShowAsHex="Y">
     <HELP>
-For use with AMPS Allows a separation of power plants to efect specific counting of the type of power plants
+For use with ExtendedPowerType (AMPS) DLL: Allows a separation of power plants to effect specific counting of the type of power plants
 </HELP>
 <HELP>ExtendedPowerType</HELP>
 	<OPTION Value="0xb0c1d6f9" Name="Coal">
@@ -8065,7 +8357,9 @@ For use with AMPS Allows a separation of power plants to efect specific counting
     </OPTION>
 	<OPTION Value="0xf008cfac" Name="Power Storage">
     </OPTION>
-	<OPTION Value="0x535f049c" Name="High-Medium Voltage Transformers">
+	<OPTION Value="0x535f049c" Name="High Voltage Transformers">
+    </OPTION>
+    <OPTION Value="0xEF2C3770" Name="Medium Voltage Transformers">
     </OPTION>
 	<OPTION Value="0x867fcec4" Name="Low Voltage Transformers">
     </OPTION>
@@ -8145,7 +8439,7 @@ Multiplying Factor to the Response curve so response curve shape preserves
 Type of the graph to be shown (line, bar, etc.)
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Pollution at outer edge of circle" ID="0xaa5832f3" Type="Sint32" Count="4" Default="0" ShowAsHex="Y">
+  <PROPERTY Name="Pollution at outer edge of circle" ID="0xaa5832f3" Type="Sint32" Count="4" Default="0" ShowAsHex="N">
     <HELP>
 Amount of pollution generated by the building, for each type (air, water, garbage, and radiation). This value represents the amount of pollution at the outer edge of the circular area of effect. The default value is zero. This can be negative for buildings that decrease pollution.
 </HELP>
@@ -10876,7 +11170,7 @@ This selection will filter the display to only show Manufacturing Industry W2W p
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="(I-m) Manufacturing Industry Out W2W" ID="0x6c7e983e" ParentID="0xee28b711">
+<CATEGORY Name="(I-m) Manufacturing Industry Out W2W" ID="0xe5054011" ParentID="0xee28b711">
 <HELP>
 This selection will filter the display to only show Manufacturing Industry plug-ins.  To create a Manufacturing Industry plug-in drag a model to this category.
 </HELP>
@@ -11018,7 +11312,7 @@ This selection will filter the display to only show Elementary school plug-ins. 
  <NEEDED ID="0xaa1dd396" Value="0x150F"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSElementary,200*int(1+Volume/750.))"/>
+ <eval name="Students" value="max(SCCSElementary,50*int(1+Volume/750.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
@@ -11027,8 +11321,8 @@ This selection will filter the display to only show Elementary school plug-ins. 
  <eval name="TCost" value="50*int(1+0.007*Students**0.9)"/>
  <eval name="MCost" value="3.0*TCost"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="PCost" value="50*int(1+0.0062*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.003*Students**1.1)"/>
+ <eval name="PCost" value="6.5*int(1+0.0062*Volume**1.1)"/>
+ <eval name="BCost" value="int(1+0.003*Volume**1.1)"/>
  <PROPERTY ID="0x0A36AFA2" Value="0xCA3C8139"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
@@ -11039,7 +11333,7 @@ This selection will filter the display to only show Elementary school plug-ins. 
  <PROPERTY ID="0x6A36AFAB" Value="9.32999992,15.25000000"/><!--SFX:AlarmTime-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForElementary"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="8.50000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="24.00000000"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001503,0x0000150F,0x00001A03"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x4A55BA9D"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,5.00000000,30.00000000,5.00000000,40.00000000,0.50000000,50.00000000,0.00000000,60.00000000,0.00000000,70.00000000,0.00000000,80.00000000,0.00000000"/><!--School Effectiveness vs. Average Age-->
@@ -11061,7 +11355,7 @@ This selection will filter the display to only show High School plug-ins. To cre
  <NEEDED ID="0xaa1dd396" Value="0x1510"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSHighSchool,200*int(1+Volume/1500.))"/>
+ <eval name="Students" value="max(SCCSHighSchool,50*int(1+Volume/1500.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
@@ -11070,8 +11364,8 @@ This selection will filter the display to only show High School plug-ins. To cre
  <eval name="TCost" value="50*int(1+0.005*Students**0.9)"/>
  <eval name="MCost" value="6.5*TCost"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="PCost" value="50*int(1+0.014*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.005*Students**1.1)"/>
+ <eval name="PCost" value="6.5*int(1+0.014*Volume**1.1)"/>
+ <eval name="BCost" value="int(1+0.005*Volume**1.1)"/>
  <PROPERTY ID="0x0A36AFA2" Value="0x0A376642"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
@@ -11082,7 +11376,7 @@ This selection will filter the display to only show High School plug-ins. To cre
  <PROPERTY ID="0x6A36AFAB" Value="9.32999992,15.25000000"/><!--SFX:AlarmTime-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHighSchool"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="8.00000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="24.00000000"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001503,0x00001510,0x00001A03"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x4A55BA9D"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,0.00000000,30.00000000,0.50000000,40.00000000,5.00000000,50.00000000,2.50000000,60.00000000,0.00000000,70.00000000,0.00000000,80.00000000,0.00000000"/><!--School Effectiveness vs. Average Age-->
@@ -11104,7 +11398,7 @@ This selection will filter the display to only show High School plug-ins. To cre
  <NEEDED ID="0xaa1dd396" Value="0x1514"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSPrivate,200*int(1+Volume/1500.))"/>
+ <eval name="Students" value="max(SCCSPrivate,50*int(1+Volume/1500.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./4.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*1./4.)"/>
@@ -11113,19 +11407,19 @@ This selection will filter the display to only show High School plug-ins. To cre
  <eval name="TCost" value="50*int(1+0.005*Students**0.9)"/>
  <eval name="MCost" value="6.5*TCost"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="PCost" value="50*int(1+0.014*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.005*Students**1.1)"/>
+ <eval name="PCost" value="10*int(1+0.014*Volume**1.1)"/>
+ <eval name="BCost" value="10*int(1+0.005*Volume**1.1)"/>
  <PROPERTY ID="0x0A36AFA2" Value="0x0A376642"/><!--SFX:AlarmSoundId-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x20"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="0xCA8B8564"/><!--Query exemplar GUID-->
+ <PROPERTY ID="0x2A499F85" Eval="0x12121205"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x4A4C132E" Set="0x8A8B7DD1"/><!--SFX:Activate Sound-->
  <PROPERTY ID="0x4AA60EBC" Eval="Students"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="2.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x6A36AFAB" Value="9.32999992,15.25000000"/><!--SFX:AlarmTime-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHighSchool"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="8.00000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="30"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001503,0x0000150b,0x00001514,0x00001902,0x00001938"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x4A55BA9D"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,0.00000000,30.00000000,0.50000000,40.00000000,5.00000000,50.00000000,2.50000000,60.00000000,0.00000000,70.00000000,0.00000000,80.00000000,0.00000000"/><!--School Effectiveness vs. Average Age-->
@@ -11146,15 +11440,15 @@ This selection will filter the display to only show Library plug-ins. To create 
  <NEEDED ID="0xaa1dd396" Value="0x1505"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSLibrary,20000*int(2+Volume/750.))"/>
+ <eval name="Students" value="max(SCCSLibrary,5000*int(2+Volume/750.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/3000.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./10.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*7./10.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*0./10.)"/>
  <eval name="Radius" value="40*int(1+0.75*Students**0.4)"/>
  <eval name="MCost" value="50*int(5+0.0002*Students**0.9)"/>
- <eval name="PCost" value="50*int(6+0.000025*Students**1.1)"/>
- <eval name="BCost" value="10*int(2+0.000004*Students**1.4)"/>
+ <eval name="PCost" value="50*int(6+0.00025*Volume**1.1)"/>
+ <eval name="BCost" value="10*int(2+0.00004*Volume**1.4)"/>
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="QueryForLibrary"/><!--Query exemplar GUID-->
@@ -11162,7 +11456,7 @@ This selection will filter the display to only show Library plug-ins. To create 
  <PROPERTY ID="0x4AA60EBC" Eval="Students"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="2.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForLibrary"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="0.10000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="0.30000000"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001505"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x6A4C48B7"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,30.00000000,30.00000000,30.00000000,40.00000000,30.00000000,50.00000000,30.00000000,60.00000000,30.00000000,70.00000000,25.00000000,80.00000000,20.00000000"/><!--School Effectiveness vs. Average Age-->
@@ -11183,15 +11477,15 @@ This selection will filter the display to only show College plug-ins. To create 
  <NEEDED ID="0xaa1dd396" Value="0x1504"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSCollege,200*int(40+Volume/750.))"/>
+ <eval name="Students" value="max(SCCSCollege,50*int(40+Volume/750.))"/>
  <eval name="CivicJobs" value="int(ceil(Students/30.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*3./9.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./9.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*1./9.)"/>
  <eval name="Radius" value="40*int(120+0.75*Students**0.4)"/>
  <eval name="MCost" value="50*int(1+0.007*Students**0.9)"/>
- <eval name="PCost" value="50*int(1+0.0035*Students**1.1)"/>
- <eval name="BCost" value="10*int(1+0.0015*Students**1.1)"/>
+ <eval name="PCost" value="25*int(1+0.0035*Volume**1.1)"/>
+ <eval name="BCost" value="2.5*int(1+0.0015*Volume**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x28"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="QueryForCollege"/><!--Query exemplar GUID-->
@@ -11199,8 +11493,8 @@ This selection will filter the display to only show College plug-ins. To create 
  <PROPERTY ID="0x4AA60EBC" Eval="Students"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="2.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForCollege"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="8.00000000"/><!--School EQ boost-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001504,0x00001a03"/><!--OccupantGroups-->
+ <PROPERTY ID="0xA92AE446" Value="24.00000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001504,0x00001A03"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0x4A55BB8E"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,0.00000000,30.00000000,0.50000000,40.00000000,1.50000000,50.00000000,5.00000000,60.00000000,2.50000000,70.00000000,0.50000000,80.00000000,0.00000000"/><!--School Effectiveness vs. Average Age-->
  <PROPERTY ID="0xE921A936" Value="0.00000000,100.00000000,100.00000000,100.00000000"/><!--School Population vs. Distance-->
@@ -11220,13 +11514,13 @@ This selection will filter the display to only show Museum plug-ins. To create a
  <NEEDED ID="0xaa1dd396" Value="0x1506"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSMuseum,100*int(1+Volume**1.5/20000.))"/>
- <eval name="CatalogC" value="7.5*int(sqrt(Students)/5.)"/>
+ <eval name="Students" value="max(SCCSMuseum,100*int(1+Volume**1.5/50000.))"/>
+ <eval name="CatalogC" value="5*int(sqrt(Students)/5.)"/>
  <eval name="CivicJobs" value="CatalogC"/>
- <eval name="Jobs1" value="5+int(CivicJobs*1./10.)"/>
- <eval name="Jobs2" value="2+int(CivicJobs*3./9.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*2./10.)"/>
- <eval name="Radius" value="50*int(140+0.75*Students**0.5)"/>
+ <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
+ <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
+ <eval name="Jobs3" value="0+int(CivicJobs*2./8.)"/>
+ <eval name="Radius" value="40*int(135+0.75*Students**0.4)"/>
  <eval name="MCost" value="50*int(1+0.004*Volume**0.9)"/>
  <eval name="PCost" value="50*int(9+0.0155*Volume**0.9)"/>
  <eval name="BCost" value="10*int(1+0.0040*Volume**1.1)"/>
@@ -11237,7 +11531,7 @@ This selection will filter the display to only show Museum plug-ins. To create a
  <PROPERTY ID="0x4AA60EBC" Eval="CatalogC"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForMuseum"/><!-- Item Order -->
- <PROPERTY ID="0xA92AE446" Value="1.00000000"/><!--School EQ boost-->
+ <PROPERTY ID="0xA92AE446" Value="40.00000000"/><!--School EQ boost-->
  <PROPERTY ID="0xAA1DD396" Set="0x00001005,0x00001506"/><!--OccupantGroups-->
  <PROPERTY ID="0xAA1DD397" Set="0xEA55BBE7"/><!--SFX:Query Sound-->
  <PROPERTY ID="0xC9299662" Value="20.00000000,0.00000000,30.00000000,0.30000001,40.00000000,0.30000001,50.00000000,0.30000001,60.00000000,0.75000000,70.00000000,1.50000000,80.00000000,3.00000000"/><!--School Effectiveness vs. Average Age-->
@@ -11258,19 +11552,20 @@ This selection will filter the display to only show Other School plug-ins. To cr
  <NEEDED ID="0xaa1dd396" Value="0x151B"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Students" value="max(SCCSOpera,200*int(1+Volume/94.789))"/>
- <eval name="CivicJobs" value="int(ceil(Students/300.))"/>
+ <eval name="Students" value="max(SCCSOpera,50*int(10+Volume/120))"/>
+ <eval name="CivicJobs" value="int(ceil(Students/600.))"/>
  <eval name="Jobs1" value="5+int(CivicJobs*1./8.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*5./8.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*2./8.)"/>
- <eval name="Radius" value="32.584*int(135+0.75*Students**0.4)"/>
- <eval name="MCost" value="7*int(13+0.035*Volume**0.9)"/>
- <eval name="PCost" value="20*int(20+0.020*Volume**1.1)"/>
- <eval name="BCost" value="5*int(15+0.025*Volume**1.1)"/>
+ <eval name="Radius" value="round(32.584*int(135+0.75*Students**0.4))"/>
+ <eval name="MCost" value="2*int(13+0.035*Volume**0.9)"/>
+ <eval name="PCost" value="round(19.29625*int(20+0.020*Volume**1.1))"/>
+ <eval name="BCost" value="1.25*int(15+0.025*Volume**1.1)"/>
  <PROPERTY ID="0x27812832" Value="0x03"/><!--Wealth-->
  <PROPERTY ID="0x29244DB5" Eval="0x23"/><!--Flammability-->
  <PROPERTY ID="0x2A499F85" Eval="0x12121201"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x4A4C132E" Set="0x2A8B7DB4"/><!--SFX:Activate Sound-->
+ <PROPERTY ID="0x4AA60EBC" Eval="Students"/><!--Catalog Capacity-->
  <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForOpera"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE446" Value="2.40000000"/><!--School EQ boost-->
@@ -11664,7 +11959,7 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <eval name="Jobs1" value="5+int(CivicJobs*1./5.)"/>
  <eval name="Jobs2" value="2+int(CivicJobs*3./5.)"/>
  <eval name="Jobs3" value="0+int(CivicJobs*1./5.)"/>
- <eval name="PCost" value="(50*int(1+0.028*Patients**0.9))/10"/>
+ <eval name="PCost" value="(20*int(1+0.028*Volume**0.9))"/>
  <PROPERTY ID="0x091B42A2" Eval="Radius"/><!--Hospital Coverage Radius-->
  <PROPERTY ID="0x099AFACD" Eval="BCost"/><!--Bulldoze Cost-->
  <PROPERTY ID="0x27812832" Value="0x02"/><!--Wealth-->
@@ -11692,12 +11987,12 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NOT ID="0xaa1dd396" Value="0x151C"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
- <eval name="MCost" value="(100*int(1+0.0075*Patients**0.9))/10"/>
- <eval name="TCost" value="(100*int(1+0.00125*Patients**0.9))/10"/>
+ <eval name="Patients" value="(50*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="8*int(1+4.*Patients**0.4)"/>
+ <eval name="MCost" value="100*int(1+0.0075*Patients**0.9)"/>
+ <eval name="TCost" value="100*int(1+0.00125*Patients**0.9)"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="(10*int(2.5+0.006*Patients**0.9))/10"/>
+ <eval name="BCost" value="6.75*int(2.5+0.006*Volume**0.9)"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForClinic"/><!-- Item Order -->
@@ -11715,12 +12010,12 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NOT ID="0xaa1dd396" Value="0x151C"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(200*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="16*int(1+4.*Patients**0.4)"/>
- <eval name="MCost" value="(100*int(1+0.0075*Patients**0.9))/10"/>
- <eval name="TCost" value="(100*int(1+0.00125*Patients**0.9))/10"/>
+ <eval name="Patients" value="(50*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="8*int(1+4.*Patients**0.4)"/>
+ <eval name="MCost" value="(100*int(1+0.0075*Patients**0.9))"/>
+ <eval name="TCost" value="(100*int(1+0.00125*Patients**0.9))"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="(10*int(2.5+0.006*Patients**0.9))/10"/>
+ <eval name="BCost" value="(10*int(2.5+0.006*Volume**0.9))"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHospital"/><!-- Item Order -->
@@ -11737,17 +12032,20 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NEEDED ID="0xea54d283" Value="0xAA538CB3"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="80*int(30+0.25*Patients**0.4)"/>
- <eval name="MCost" value="(50*int(1+0.0009*Patients**0.9))10"/>
- <eval name="TCost" value="(50*int(1+0.0015*Patients**0.9))/10"/>
+ <eval name="Patients" value="(625*round(2+Volume**0.75/37.5))"/>
+ <eval name="Jobs1" value="5+int((ceil(Patients/30.))*1./5.)"/>
+ <eval name="Jobs2" value="2+int((ceil(Patients/37.5.))*3./5.)"/>
+ <eval name="Jobs3" value="0+int((ceil(Patients/35.))*1./5.)"/>
+ <eval name="Radius" value="40*int(30+0.25*Patients**0.4)"/>
+ <eval name="MCost" value="50*int(1+0.0009*Patients**0.9)"/>
+ <eval name="TCost" value="50*int(1+0.0015*Patients**0.9)"/>
  <eval name="CCost" value="TCost+MCost"/>
- <eval name="BCost" value="(25*int(2.5+0.006*Patients**0.9))//10"/>
+ <eval name="BCost" value="(20*int(2.5+0.006*Volume**0.9))"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForHospital"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x6AD54804" Eval="CCost"/><!--Catalog Monthly Cost-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForHospital"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE3BD" Value="0.00000000,4.00000000,100.00000000,4.00000000"/><!--Hospital Effectiveness vs. Average Age-->
- <PROPERTY ID="0xAA1DD396" Value="0x00001005,0x00001507,0x0000151C,0x00001917,0x00001928"/><!--OccupantGroups-->
+ <PROPERTY ID="0xAA1DD396" Value="0x00001005,0x00001507,0x00001A02,0x00001513,0x00001904,0x0000151A,0x0000151C"/><!--OccupantGroups-->
  <PROPERTY ID="0xC9299659" Value="11.52000046"/><!--Hospital HQ boost-->
  <PROPERTY ID="0xAA1DD399" Eval="0xBC251B69"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
@@ -11758,10 +12056,10 @@ This selection will filter the display to only show Hospital plug-ins.  To creat
  <NEEDED ID="0xaa1dd396" Value="0x151C"/>
 </FILTERS>
 <PROPERTIES>
- <eval name="Patients" value="(2500*round(2+Volume**0.75/37.5))"/>
- <eval name="Radius" value="11600"/>
+ <eval name="Patients" value="(625*round(2+Volume**0.75/37.5))"/>
+ <eval name="Radius" value="5800"/>
  <eval name="MCost" value="10*int(1+0.0009*Patients**0.9)"/>
- <eval name="BCost" value="25*int(2.5+0.006*Patients**0.9)"/>
+ <eval name="BCost" value="50*int(2.5+0.006*Volume**0.9)"/>
  <PROPERTY ID="0x2A499F85" Eval="QueryForDisease"/><!--Query exemplar GUID-->
  <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForDisease"/><!-- Item Order -->
  <PROPERTY ID="0xA92AE3BD" Value="0.00000000,3.00000000,100.00000000,3.00000000"/><!--Hospital Effectiveness vs. Average Age-->
@@ -11787,9 +12085,9 @@ This selection will filter the display to only show Fire Station plug-ins.  To c
  <eval name="Jobs1" value="5+int(Volume/1500.)"/>
  <eval name="Jobs2" value="0+int(Volume/3000.)"/>
  <eval name="Jobs3" value="0+int(Volume/25000.)"/>
- <eval name="Radius" value="64*int((160+3.0*sqrt(2.*Volume))/16.0)"/>
- <eval name="CntrSt" value="min(20*int((100+sqrt(2.*Volume))/5.0),255)"/>
- <eval name="ExtrSt" value="min(20*int((50+0.1*sqrt(2.*Volume))/5.0),100)"/>
+ <eval name="Radius" value="16*int((160+3.0*sqrt(2.*Volume))/16.0)"/>
+ <eval name="CntrSt" value="min(5*int((100+sqrt(2.*Volume))/5.0),255)"/>
+ <eval name="ExtrSt" value="min(5*int((50+0.1*sqrt(2.*Volume))/5.0),100)"/>
  <eval name="Dispat" value="int(1+0.01*sqrt(2.*Volume))"/>
  <eval name="MCost" value="10*int(6+0.030*Volume**0.65)"/>
  <eval name="PCost" value="10*int(8+0.065*Volume**0.7)"/>
@@ -11849,12 +12147,12 @@ This selection will filter the display to only show Police Station plug-ins.  To
  <eval name="Jobs1" value="5+int(Volume/500.)"/>
  <eval name="Jobs2" value="2+int(Volume/5000.)"/>
  <eval name="Jobs3" value="0+int(Volume/25000.)"/>
- <eval name="Radius" value="64*int((160+1.5*(2.*Volume)**0.55)/16.0)"/>
+ <eval name="Radius" value="16*int((160+1.5*(2.*Volume)**0.55)/16.0)"/>
  <eval name="CntrSt" value="5*int((100+0.7*(2.*Volume)**0.55)/5.0)"/>
  <eval name="ExtrSt" value="min(5*int(0.1*(2.*Volume)**0.55/5.0),50)"/>
  <eval name="Dispat" value="int(0.025*sqrt(2.*Volume))"/>
  <eval name="DispRa" value="8*int((48+0.25*sqrt(2.*Volume))/8.0)"/>
- <eval name="Inmate" value="40*int(0.2*(2.*Volume)**0.55/10.0)"/>
+ <eval name="Inmate" value="10*int(0.2*(2.*Volume)**0.55/10.0)"/>
  <eval name="MCost" value="10*int(3+0.025*Volume**0.65)"/>
  <eval name="PCost" value="10*int(6+0.006*Volume**0.9)"/>
  <eval name="BCost" value="10*int(1+0.005*Volume**0.65)"/>
@@ -11902,7 +12200,7 @@ This selection will filter the display to only show Jail plug-ins.  To create a 
  <eval name="Jobs1" value="5+int(Volume/1000.)"/>
  <eval name="Jobs2" value="2+int(Volume/5000.)"/>
  <eval name="Jobs3" value="0+int(Volume/25000.)"/>
- <eval name="Inmate" value="40*int((10+0.05*Volume)/10.0)"/>
+ <eval name="Inmate" value="10*int((10+0.05*Volume)/10.0)"/>
  <eval name="MCost" value="10*int(1+0.001*Volume)"/>
  <eval name="PCost" value="50*int(5+0.001*Volume)"/>
  <eval name="BCost" value="10*int(1+0.0005*Volume)"/>
@@ -11922,969 +12220,972 @@ This selection will filter the display to only show Jail plug-ins.  To create a 
 </CATEGORY>
 
 <CATEGORY Name="Power" ID="0x4cb23866" ParentID="0xcc8fbc2d" img="img_power.gif">
-<HELP>
-This selection will filter the display to only show Power plug-ins.  To create a Power plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on the power plant lots.
-</HELP>
-<FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x1400"/>
-</FILTERS>
-<PROPERTIES>
- <PROPERTY ID="0x0911E2E7" Eval="0.00,1.00,0.40,1.03,0.50,1.05,0.65,1.15,0.75,1.30,0.85,1.55,0.90,1.85,1.00,3.00"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0x099AFACD" Eval="max(BCost,5)"/><!--Bulldoze Cost-->
- <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
- <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
- <PROPERTY ID="0x27812851" Eval="int(PowerOutput*AirPollutionFactor),int(PowerOutput*WaterPollutionFactor),int(PowerOutput*GarbagePollutionFactor),0"/><!--pollution at center-->
- <PROPERTY ID="0x27812852" Eval="PowerOutput"/><!--Power Generated-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForPower"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x49beda31" Eval="Test(LessThan(Volume,619), 0x01, Test(LessThan(Volume,3068), 0x02, Test(LessThan(Volume,18869), 0x03, Test(LessThan(Volume,326987), 0x04, 0x05 ))))"/>    <!--MaxFireStage-->
- <PROPERTY ID="0x49CAC341" Eval="max(PCost,250)"/><!--Plop Cost-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000003"/><!--Hard Failure Type-->
- <PROPERTY ID="0x8A1E07EE" Eval="0.00,1.00,0.40,0.95,0.50,0.92,0.60,0.86,0.70,0.77,0.80,0.60,0.90,0.35,1.00,0.00"/><!--Age to output level response curve-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPower"/><!-- Item Order -->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD397" Set="0xAA8B7CB7"/><!--SFX:Query Sound-->
- <PROPERTY ID="0xC8ED2D84" Eval="5*int(PowerOutput*WaterConsumedFactor/5)"/><!--Water Consumed-->
- <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
- <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF221" Eval="0.90000000"/><!--Soft failure threshold-->
- <PROPERTY ID="0xEA1CF222" Eval="1.00000000"/><!--Hard failure threshold-->
- <PROPERTY ID="0xEA54D283" Eval="0x8910BC8A"/><!--Budget Item: Department-->
- <PROPERTY ID="0xEA54D284" Eval="0x00000000"/><!--Budget Item: Line-->
- <PROPERTY ID="0xEA54D285" Eval="0xCA58E540"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="max(MCost,25)"/><!--Budget Item: Cost-->
-</PROPERTIES>
+  <HELP>
+    This selection will filter the display to only show Power plug-ins.  To create a Power plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on the power plant lots.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0xaa1dd396" Value="0x1400"/>
+  </FILTERS>
+  <PROPERTIES>
+    <PROPERTY ID="0x0911E2E7" Eval="0.00,1.00,0.40,1.03,0.50,1.05,0.65,1.15,0.75,1.30,0.85,1.55,0.90,1.85,1.00,3.00"/><!--Age to maintenance cost multiplier response curve-->
+    <PROPERTY ID="0x099AFACD" Eval="max(BCost,5)"/><!--Bulldoze Cost-->
+    <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
+    <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
+    <PROPERTY ID="0x27812851" Eval="int(PowerOutput*AirPollutionFactor),int(PowerOutput*WaterPollutionFactor),int(PowerOutput*GarbagePollutionFactor),0"/><!--pollution at center-->
+    <PROPERTY ID="0x27812852" Eval="PowerOutput"/><!--Power Generated-->
+    <PROPERTY ID="0x2A499F85" Eval="QueryForPower"/><!--Query exemplar GUID-->
+    <PROPERTY ID="0x49beda31" Eval="Test(LessThan(Volume,619), 0x01, Test(LessThan(Volume,3068), 0x02, Test(LessThan(Volume,18869), 0x03, Test(LessThan(Volume,326987), 0x04, 0x05 ))))"/>    <!--MaxFireStage-->
+    <PROPERTY ID="0x49CAC341" Eval="max(PCost,250)"/><!--Plop Cost-->
+    <PROPERTY ID="0x6A43150F" Eval="0x00000003"/><!--Hard Failure Type-->
+    <PROPERTY ID="0x8A1E07EE" Eval="0.00,1.00,0.40,0.95,0.50,0.92,0.60,0.86,0.70,0.77,0.80,0.60,0.90,0.35,1.00,0.00"/><!--Age to output level response curve-->
+    <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPower"/><!-- Item Order -->
+    <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400"/><!--OccupantGroups-->
+    <PROPERTY ID="0xAA1DD397" Set="0xAA8B7CB7"/><!--SFX:Query Sound-->
+    <PROPERTY ID="0xC8ED2D84" Eval="5*int(PowerOutput*WaterConsumedFactor/5)"/><!--Water Consumed-->
+    <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
+    <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
+    <PROPERTY ID="0xEA1CF221" Eval="0.90000000"/><!--Soft failure threshold-->
+    <PROPERTY ID="0xEA1CF222" Eval="1.00000000"/><!--Hard failure threshold-->
+    <PROPERTY ID="0xEA54D283" Eval="0x8910BC8A"/><!--Budget Item: Department-->
+    <PROPERTY ID="0xEA54D284" Eval="0x00000000"/><!--Budget Item: Line-->
+    <PROPERTY ID="0xEA54D285" Eval="0xCA58E540"/><!--Budget Item: Purpose-->
+    <PROPERTY ID="0xEA54D286" Eval="max(MCost,25)"/><!--Budget Item: Cost-->
+  </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="Coal" ID="0x4cb33871" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="1"/>
- <NEEDED ID="0xAA1DD396" Value="0x1946409F"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.0650*Volume/100.)"/>
- <eval name="PCost" value="(500*int(1.75*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.040*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.070*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/125.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*30/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*16/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*2/48.)"/>
- <eval name="AirPollutionFactor" value="1/30."/>
- <eval name="WaterPollutionFactor" value="1/40."/>
- <eval name="GarbagePollutionFactor" value="1/240."/>
- <eval name="WaterConsumedFactor" value="1/120."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/><!--MWH Rating--> 
- <PROPERTY ID="0x0A4C13CB" Set="0x4A4C43E5"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000001"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-150.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0xAA4C4718"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="16.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x2A4C43BD"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1946409F,0x18e64ea5"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xA11C9DB6"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xb0c1d6f9"/><!--Extended Power Type-->
-</PROPERTIES>
+  <FILTERS>
+    <NEEDED ID="0x27812853" Value="1"/>
+    <NEEDED ID="0xAA1DD396" Value="0x1946409F"/>
+    </FILTERS>
+  <PROPERTIES>
+    <eval name="PowerOutput" value="100*int(1+0.0650*Volume/100.)"/>
+    <eval name="PCost" value="(500*int(1.75*PowerOutput/500.))/4"/>
+    <eval name="MCost" value="(50*int(0.040*PowerOutput/50.))/4"/>
+    <eval name="BCost" value="(10*int(0.070*PowerOutput/10.))/2"/>
+    <eval name="CivicJobs" value="int(PowerOutput/125.)"/>
+    <eval name="Jobs1" value="1+int(CivicJobs*30/48.)"/>
+    <eval name="Jobs2" value="0+int(CivicJobs*16/48.)"/>
+    <eval name="Jobs3" value="0+int(CivicJobs*2/48.)"/>
+    <eval name="AirPollutionFactor" value="1/30."/>
+    <eval name="WaterPollutionFactor" value="1/40."/>
+    <eval name="GarbagePollutionFactor" value="1/240."/>
+    <eval name="WaterConsumedFactor" value="1/120."/>
+    <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+    <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/><!--MWH Rating-->
+    <PROPERTY ID="0x0A4C13CB" Set="0x4A4C43E5"/><!--SFX:Ambience Decayed Sound-->
+    <PROPERTY ID="0x27812853" Eval="0x00000001"/><!--Power Plant Type-->
+    <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+    <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+    <PROPERTY ID="0xAA19F6EA" Eval="-150.000000"/><!--Health effect strength-->
+    <PROPERTY ID="0x4A4C132E" Set="0xAA4C4718"/><!--SFX:Activate Sound-->
+    <PROPERTY ID="0x68EE9764" Eval="16.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+    <PROPERTY ID="0xCA19D7CA" Set="0x2A4C43BD"/><!--SFX:Ambience Good Sound-->
+    <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+    <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1946409F,0x18e64ea5"/><!--OccupantGroups-->
+    <PROPERTY ID="0xAA1DD399" Eval="0xA11C9DB6"/><!--OccupantGroups for SubMenu-->
+    <PROPERTY ID="0x713c8912" Eval="0xb0c1d6f9"/><!--Extended Power Type-->
+  </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Nuclear Fusion" ID="0x4cb43872" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="2"/>
- <NEEDED ID="0xAA1DD396" Value="0xB680D7E0"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+1.70*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.00*PowerOutput/500.))/10"/>
- <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/10"/>
- <eval name="BCost" value="(10*int(0.090*PowerOutput/10.))/5"/>
- <eval name="CivicJobs" value="int(PowerOutput/1000.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*10/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*23/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
- <eval name="AirPollutionFactor" value="1/5000."/>
- <eval name="WaterPollutionFactor" value="1/6000."/>
- <eval name="GarbagePollutionFactor" value="1/4500."/>
- <eval name="WaterConsumedFactor" value="1/38."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->  
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x8A890D15"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000002"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x2A4C42B3"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x4A4C42D4"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00083333"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB680D7E0,0x7283dcd7"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x67B10537"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xf5daf839"/><!--Extended Power Type--> 
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Nuclear Fusion" ID="0x4cb43872" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="2"/>
+        <NEEDED ID="0xAA1DD396" Value="0xB680D7E0"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+1.70*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.00*PowerOutput/500.))/10"/>
+        <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/10"/>
+        <eval name="BCost" value="(10*int(0.090*PowerOutput/10.))/5"/>
+        <eval name="CivicJobs" value="int(PowerOutput/1000.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*10/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*23/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="AirPollutionFactor" value="1/5000."/>
+        <eval name="WaterPollutionFactor" value="1/6000."/>
+        <eval name="GarbagePollutionFactor" value="1/4500."/>
+        <eval name="WaterConsumedFactor" value="1/38."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x8A890D15"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000002"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x2A4C42B3"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x4A4C42D4"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00083333"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB680D7E0,0x18e64ea5"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x67B10537"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xf5daf839"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Natural Gas" ID="0x4cb53873" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="3"/>
- <NEEDED ID="0xAA1DD396" Value="0x5512235E"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.060*Volume/100.)"/>
- <eval name="PCost" value="(500*int(3.00*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.130*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.140*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/50."/>
- <eval name="WaterPollutionFactor" value="1/45."/>
- <eval name="GarbagePollutionFactor" value="1/150."/>
- <eval name="WaterConsumedFactor" value="1/150."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0xCA4C4395"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E,0x7283dcd7"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xD2430E09"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Natural Gas" ID="0x4cb53873" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="3"/>
+        <NEEDED ID="0xAA1DD396" Value="0x5512235E"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.060*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(3.00*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.130*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.140*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/50."/>
+        <eval name="WaterPollutionFactor" value="1/45."/>
+        <eval name="GarbagePollutionFactor" value="1/150."/>
+        <eval name="WaterConsumedFactor" value="1/150."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0x4A4C132E" Set="0xCA4C4395"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x5512235E,0x7283dcd7"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xD2430E09"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x5d4ce371"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
+    <CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0xB075C142"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="50*int(1+0.030*Volume)"/>
+        <eval name="PCost" value="500*int(3.00*PowerOutput/500.)"/>
+        <eval name="MCost" value="50*int(0.130*PowerOutput/50.)"/>
+        <eval name="BCost" value="10*int(0.140*PowerOutput/10.)"/>
+        <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/50."/>
+        <eval name="WaterPollutionFactor" value="1/45."/>
+        <eval name="GarbagePollutionFactor" value="1/150."/>
+        <eval name="WaterConsumedFactor" value="1/150."/>
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x6A19F6B5" Eval="4.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-1.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0x4A4C132E" Set="0x5F860F09"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB075C142"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x14D53C20"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
+    <CATEGORY Name="Nuclear Fission" ID="0x4cb63875" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="5"/>
+        <NEEDED ID="0xAA1DD396" Value="0xA945A10D"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+5.550*Volume**0.8/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/10"/>
+        <eval name="MCost" value="(50*int(1.250*PowerOutput**0.8/50.))/10"/>
+        <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/5"/>
+        <eval name="CivicJobs" value="int(PowerOutput/350.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*20/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*20/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*8/48.)"/>
+        <eval name="AirPollutionFactor" value="1/1600."/>
+        <eval name="WaterPollutionFactor" value="1/350."/>
+        <eval name="GarbagePollutionFactor" value="1/1000."/>
+        <eval name="WaterConsumedFactor" value="1/18."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000005"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0xEA4C4755"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="4.00000000,5.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000004"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-50.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0xAA1DD396" Eval="0x00001004,0x00001400,0x00001403,0x00001928,0xA945A10D,0x18e64ea5"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA5C04C5" Eval="3200.000000"/><!--Radiation Spew Intensity-->
+        <PROPERTY ID="0xAA5C04C8" Eval="15.000000"/><!--Radiation Spew Radius-->
+        <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00069444"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x50658ACB"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xd8b65889"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0xB075C142"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="50*int(1+0.030*Volume)"/>
- <eval name="PCost" value="(500*int(3.00*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.130*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.140*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/50."/>
- <eval name="WaterPollutionFactor" value="1/45."/>
- <eval name="GarbagePollutionFactor" value="1/150."/>
- <eval name="WaterConsumedFactor" value="1/150."/>
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="4.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-1.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F09"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB075C142"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x14D53C20"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Oil" ID="0x4cb73876" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="6"/>
+        <NEEDED ID="0xAA1DD396" Value="0xD6B169D9"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.050*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/45."/>
+        <eval name="WaterPollutionFactor" value="1/85."/>
+        <eval name="GarbagePollutionFactor" value="1/350."/>
+        <eval name="WaterConsumedFactor" value="1/280."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000006"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-125.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0x4A4C132E" Set="0xEA4C4790"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xD6B169D9,0x7283dcd7"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xE30B61A4"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x45dea4f8"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Electric Generator" ID="0x0a11419c" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0xB075C142"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="50*int(1+0.030*Volume)"/>
- <eval name="PCost" value="500*int(3.00*PowerOutput/500.)"/>
- <eval name="MCost" value="50*int(0.130*PowerOutput/50.)"/>
- <eval name="BCost" value="10*int(0.140*PowerOutput/10.)"/>
- <eval name="CivicJobs" value="int(PowerOutput/60.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/50."/>
- <eval name="WaterPollutionFactor" value="1/45."/>
- <eval name="GarbagePollutionFactor" value="1/150."/>
- <eval name="WaterConsumedFactor" value="1/150."/>
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="4.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-1.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F09"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB075C142"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x14D53C20"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xea9f7384"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Biomass" ID="0xc6522034" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x36CA5093"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.035*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/45."/>
+        <eval name="WaterPollutionFactor" value="1/85."/>
+        <eval name="GarbagePollutionFactor" value="1/350."/>
+        <eval name="WaterConsumedFactor" value="1/280."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000006"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-20.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0x4A4C132E" Set="0x5F860F08"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x36CA5093,0x18e64ea5"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xCCD6C93C"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x9be9788b"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Nuclear Fission" ID="0x4cb63875" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="5"/>
- <NEEDED ID="0xAA1DD396" Value="0xA945A10D"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+5.550*Volume**0.8/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/10"/>
- <eval name="MCost" value="(50*int(1.250*PowerOutput**0.8/50.))/10"/>
- <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/5"/>
- <eval name="CivicJobs" value="int(PowerOutput/350.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*20/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*20/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*8/48.)"/>
- <eval name="AirPollutionFactor" value="1/1600."/>
- <eval name="WaterPollutionFactor" value="1/350."/>
- <eval name="GarbagePollutionFactor" value="1/1000."/>
- <eval name="WaterConsumedFactor" value="1/18."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000005"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0xEA4C4755"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="4.00000000,5.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000004"/><!--Hard Failure Type-->
- <PROPERTY ID="0xAA19F6EA" Eval="-50.000000"/><!--Health effect strength-->
- <PROPERTY ID="0xAA1DD396" Eval="0x00001004,0x00001400,0x00001403,0x00001928,0xA945A10D,0x7283dcd7"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA5C04C5" Eval="3200.000000"/><!--Radiation Spew Intensity-->
- <PROPERTY ID="0xAA5C04C8" Eval="15.000000"/><!--Radiation Spew Radius-->
- <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00069444"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD399" Eval="0x50658ACB"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xd8b65889"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Hydroelectric" ID="0x0019f0ed" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x8765D979"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/45."/>
+        <eval name="WaterPollutionFactor" value="1/85."/>
+        <eval name="GarbagePollutionFactor" value="1/350."/>
+        <eval name="WaterConsumedFactor" value="1/280."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x5F860F04"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x8765D979,0x18e64ea5"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x34872AFE"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x0a8b2e1c"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Oil" ID="0x4cb73876" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="6"/>
- <NEEDED ID="0xAA1DD396" Value="0xD6B169D9"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.050*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/45."/>
- <eval name="WaterPollutionFactor" value="1/85."/>
- <eval name="GarbagePollutionFactor" value="1/350."/>
- <eval name="WaterConsumedFactor" value="1/280."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000006"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-125.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0xEA4C4790"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xD6B169D9,0x7283dcd7"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xE30B61A4"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x45dea4f8"/><!--Extended Power Type--> 
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Geothermal" ID="0xa8b37eb4" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x1F221780"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/45."/>
+        <eval name="WaterPollutionFactor" value="1/85."/>
+        <eval name="GarbagePollutionFactor" value="1/350."/>
+        <eval name="WaterConsumedFactor" value="1/280."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x5F860F05"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1F221780,0x18e64ea5"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xCDE0316B"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xa4ffc9da"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Biomass" ID="0xc6522034" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0x36CA5093"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.035*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/45."/>
- <eval name="WaterPollutionFactor" value="1/85."/>
- <eval name="GarbagePollutionFactor" value="1/350."/>
- <eval name="WaterConsumedFactor" value="1/280."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x6A890D99"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000006"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-20.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F08"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="12.00000000,12.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x6A4C467C"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x36CA5093,0x18e64ea5"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xCCD6C93C"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x9be9788b"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Solar" ID="0x4cb83877" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="7"/>
+        <NEEDED ID="0xAA1DD396" Value="0x7134683C"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.050*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(6.00*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.250*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="AirPollutionFactor" value="1/1000."/>
+        <eval name="WaterPollutionFactor" value="1/1000."/>
+        <eval name="GarbagePollutionFactor" value="1/450."/>
+        <eval name="WaterConsumedFactor" value="1/1000."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x8A4C4443"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000007"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x0A4C44BF"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="3.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x6A4C4406"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x7134683C,0x0badb9ac"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x0C7A83E6"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xa934e93e"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Hydroelectric" ID="0x0019f0ed" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0x8765D979"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/45."/>
- <eval name="WaterPollutionFactor" value="1/85."/>
- <eval name="GarbagePollutionFactor" value="1/350."/>
- <eval name="WaterConsumedFactor" value="1/280."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F04"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x8765D979,0x18e64ea5"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x34872AFE"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x0a8b2e1c"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Microwave" ID="0xa6418c2b" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="4"/>
+        <NEEDED ID="0xAA1DD396" Value="0x0CED62DC"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+5.500*Volume/100.)/10"/>
+        <eval name="PCost" value="(500*int(6.00*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.250*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="AirPollutionFactor" value="1/1000."/>
+        <eval name="WaterPollutionFactor" value="1/1000."/>
+        <eval name="GarbagePollutionFactor" value="1/450."/>
+        <eval name="WaterConsumedFactor" value="1/1000."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x8A4C4443"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000004"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x5F860F03"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="3.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x6A4C4406"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x0CED62DC,0x7283dcd7"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x44FD9388"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x03d5c8fd"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Geothermal" ID="0xa8b37eb4" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0x1F221780"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.040*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.080*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.110*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/45."/>
- <eval name="WaterPollutionFactor" value="1/85."/>
- <eval name="GarbagePollutionFactor" value="1/350."/>
- <eval name="WaterConsumedFactor" value="1/280."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0xAA4C4370"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000003"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F05"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="14.00000000,14.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0xCA19D7CA" Set="0x69DC1C2E"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1F221780,0x18e64ea5"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xCDE0316B"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xa4ffc9da"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Wind" ID="0x4cb93879" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="9"/>
+        <NEEDED ID="0xAA1DD396" Value="0xC78E0054"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.500*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.250*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.100*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="AirPollutionFactor" value="0"/>
+        <eval name="WaterPollutionFactor" value="0"/>
+        <eval name="GarbagePollutionFactor" value="0"/>
+        <eval name="WaterConsumedFactor" value="0"/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x0A"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x6A4C4490"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xC9B93A56" Set="0x4A5EC571"/><!--SFX:Default Plop Sound-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x2A4C445C"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xC78E0054,0x0badb9ac"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xA99B3326"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x9e43f5c9"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Solar" ID="0x4cb83877" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="7"/>
- <NEEDED ID="0xAA1DD396" Value="0x7134683C"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.050*Volume/100.)"/>
- <eval name="PCost" value="(500*int(6.00*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.250*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
- <eval name="AirPollutionFactor" value="1/1000."/>
- <eval name="WaterPollutionFactor" value="1/1000."/>
- <eval name="GarbagePollutionFactor" value="1/450."/>
- <eval name="WaterConsumedFactor" value="1/1000."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x8A4C4443"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000007"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x0A4C44BF"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="3.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
- <PROPERTY ID="0xCA19D7CA" Set="0x6A4C4406"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x7134683C,0x0badb9ac"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x0C7A83E6"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xa934e93e"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Tidal and Wave" ID="0xe62a390b" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0xF0D606AC"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.500*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.250*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.100*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="AirPollutionFactor" value="0"/>
+        <eval name="WaterPollutionFactor" value="0"/>
+        <eval name="GarbagePollutionFactor" value="0"/>
+        <eval name="WaterConsumedFactor" value="0"/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x0A"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0x5F860F02"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xC9B93A56" Set="0x4A5EC571"/><!--SFX:Default Plop Sound-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x2A4C445C"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xF0D606AC,0x0badb9ac"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x60B9298D"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x951653b7"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Microwave" ID="0xa6418c2b" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="4"/>
- <NEEDED ID="0xAA1DD396" Value="0x0CED62DC"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+5.500*Volume/100.)/10"/>
- <eval name="PCost" value="(500*int(6.00*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.250*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
- <eval name="AirPollutionFactor" value="1/1000."/>
- <eval name="WaterPollutionFactor" value="1/1000."/>
- <eval name="GarbagePollutionFactor" value="1/450."/>
- <eval name="WaterConsumedFactor" value="1/1000."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x8A4C4443"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000004"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x32"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F03"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="3.00000000,3.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
- <PROPERTY ID="0xCA19D7CA" Set="0x6A4C4406"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x0CED62DC,0x7283dcd7"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x44FD9388"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x03d5c8fd"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Power Storage" ID="0x5eb12af6" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x861A7248"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="0"/>
+        <eval name="PCost" value="10*int(Volume/200.)"/>
+        <eval name="MCost" value="1*int(Volume/2000.)"/>
+        <eval name="BCost" value="5*int(Volume/500.)"/>
+        <eval name="CivicJobs" value="0"/>
+        <eval name="Jobs1" value="0"/>
+        <eval name="Jobs2" value="0"/>
+        <eval name="Jobs3" value="0"/>
+        <eval name="WaterConsumedFactor" value="1/18."/>
+        <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+        <PROPERTY ID="0x27812854" Eval="int(1+PopulationServed*6.25/3000.0)"/><!--Power Consumed-->
+        <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0xf008cfac"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x14"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0xEA4C4755"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055500"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x861A7248"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x64365d13"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xf008cfac"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Wind" ID="0x4cb93879" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="9"/>
- <NEEDED ID="0xAA1DD396" Value="0xC78E0054"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.500*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.250*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.100*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
- <eval name="AirPollutionFactor" value="0"/>
- <eval name="WaterPollutionFactor" value="0"/>
- <eval name="GarbagePollutionFactor" value="0"/>
- <eval name="WaterConsumedFactor" value="0"/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x0A"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x6A4C4490"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
- <PROPERTY ID="0xC9B93A56" Set="0x4A5EC571"/><!--SFX:Default Plop Sound-->
- <PROPERTY ID="0xCA19D7CA" Set="0x2A4C445C"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xC78E0054,0x0badb9ac"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xA99B3326"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x9e43f5c9"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Waste To Energy" ID="0xecb23861" ParentID="0x4cb23866">
+      <HELP>
+        This selection will filter the display to only show Waste to Energy plug-ins.  To create a Waste to Energy plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="0x00000008"/>
+        <NEEDED ID="0xAA1DD396" Value="0x7A9BFD20"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.085*Volume/100.)"/>
+        <eval name="PCost" value="(500*int(5.00*PowerOutput/500.))/4"/>
+        <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
+        <eval name="BCost" value="(10*int(0.450*PowerOutput/10.))/2"/>
+        <eval name="CivicJobs" value="int(PowerOutput/100.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
+        <eval name="AirPollutionFactor" value="1/20."/>
+        <eval name="WaterPollutionFactor" value="1/25."/>
+        <eval name="GarbagePollutionFactor" value="0"/>
+        <eval name="WaterConsumedFactor" value="1/5."/>
+        <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating-->
+        <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/>
+        <PROPERTY ID="0x0A4C13CB" Set="0xEA4C448D"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x00000008"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x60"/><!--Flammability-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForWtoE"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x48EBD0B1" Eval="10*PowerOutput"/><!--Waste to energy monthly Capacity-->
+        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-100.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0x4A4C132E" Set="0x4A4C47B0"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="20.00000000,19.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForWtoE"/><!-- Item Order -->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x00001402,0xEC9175AA,0x7A9BFD20,0x18e64ea5"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD397" Set="0x4A8B7CD2"/><!--SFX:Query Sound-->
+        <PROPERTY ID="0xCA19D7CA" Set="0xAA4C4467"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00052083"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x77A9FEEF"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xc291e217"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
+    <CATEGORY Name="High Voltage Transformers" ID="0xb98a80c4" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0xED378A8E"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="0"/>
+        <eval name="PCost" value="10*int(Volume/200.)"/>
+        <eval name="MCost" value="1*int(Volume/2000.)"/>
+        <eval name="BCost" value="5*int(Volume/500.)"/>
+        <eval name="CivicJobs" value="0"/>
+        <eval name="Jobs1" value="0"/>
+        <eval name="Jobs2" value="0"/>
+        <eval name="Jobs3" value="0"/>
+        <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/2)"/><!--KVA Rating-->
+        <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+        <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+        <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+        <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+        <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+        <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xED378A8E"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x04986B76"/><!--OccupantGroups for SubMenu-->
+		<PROPERTY ID="0x713c8912" Eval="0x535f049c"/><!--Extended Power Type-->
+      </PROPERTIES>
+    </CATEGORY>
+	
+	<CATEGORY Name="Medium Voltage Transformers" ID="0x227dcbff" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x1b823f5a"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="0"/>
+        <eval name="PCost" value="10*int(Volume/200.)"/>
+        <eval name="MCost" value="1*int(Volume/2000.)"/>
+        <eval name="BCost" value="5*int(Volume/500.)"/>
+        <eval name="CivicJobs" value="0"/>
+        <eval name="Jobs1" value="0"/>
+        <eval name="Jobs2" value="0"/>
+        <eval name="Jobs3" value="0"/>
+        <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/2)"/><!--KVA Rating-->
+        <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+        <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+        <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+        <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+        <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+        <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x1b823f5a"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x04986B76"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0xEF2C3770"/><!--Extended Power Type-->		
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Tidal and Wave" ID="0xe62a390b" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0xF0D606AC"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.500*Volume/100.)"/>
- <eval name="PCost" value="(500*int(2.50*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.250*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.100*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/150.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*15/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*18/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*15/48.)"/>
- <eval name="AirPollutionFactor" value="0"/>
- <eval name="WaterPollutionFactor" value="0"/>
- <eval name="GarbagePollutionFactor" value="0"/>
- <eval name="WaterConsumedFactor" value="0"/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0x6A4C4478"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812853" Eval="0x00000009"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x0A"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0x5F860F02"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
- <PROPERTY ID="0xC9B93A56" Set="0x4A5EC571"/><!--SFX:Default Plop Sound-->
- <PROPERTY ID="0xCA19D7CA" Set="0x2A4C445C"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00041667"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xF0D606AC,0x0badb9ac"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x60B9298D"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0x951653b7"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Low Voltage Transformers" ID="0x4a07c445" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0xAA1DD396" Value="0x215395E9"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="0"/>
+        <eval name="PCost" value="10*int(Volume/200.)"/>
+        <eval name="MCost" value="1*int(Volume/2000.)"/>
+        <eval name="BCost" value="5*int(Volume/500.)"/>
+        <eval name="CivicJobs" value="0"/>
+        <eval name="Jobs1" value="0"/>
+        <eval name="Jobs2" value="0"/>
+        <eval name="Jobs3" value="0"/>
+        <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/45)"/><!--KVA Rating-->
+        <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+        <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+        <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+        <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+        <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+        <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x215395E9"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xD86B3B3B"/><!--OccupantGroups for SubMenu-->
+        <PROPERTY ID="0x713c8912" Eval="0x867fcec4"/><!--Extended Power Type-->		
+      </PROPERTIES>
+    </CATEGORY>
+    <CATEGORY Name="Auxiliary" ID="0x4cb9387A" ParentID="0x4cb23866">
+      <FILTERS>
+        <NEEDED ID="0x27812853" Value="10"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="100*int(1+0.050*Volume**0.8/100.)"/>
+        <eval name="PCost" value="(500*int(10.0*PowerOutput/500.))/10"/>
+        <eval name="MCost" value="(50*int(1.000*PowerOutput**0.8/50.))/10"/>
+        <eval name="BCost" value="(10*int(0.250*PowerOutput/10.))/10"/>
+        <eval name="CivicJobs" value="int(PowerOutput/30.)"/>
+        <eval name="Jobs1" value="1+int(CivicJobs*20/48.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*20/48.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*8/48.)"/>
+        <eval name="AirPollutionFactor" value="1/1600."/>
+        <eval name="WaterPollutionFactor" value="1/350."/>
+        <eval name="GarbagePollutionFactor" value="1/1000."/>
+        <eval name="WaterConsumedFactor" value="1/18."/>
+        <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812853" Eval="0x0000000A"/><!--Power Plant Type-->
+        <PROPERTY ID="0x29244DB5" Eval="0x14"/><!--Flammability-->
+        <PROPERTY ID="0x4A4C132E" Set="0xEA4C4755"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x68EE9764" Eval="4.00000000,5.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
+        <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055500"/><!--Age degradation rate-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x7AB34F1B"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0xD013F32D"/><!--OccupantGroups for SubMenu-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Power Storage" ID="0x5eb12af6" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0x861A7248"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="0"/>
- <eval name="PCost" value="10*int(Volume/200.)"/>
- <eval name="MCost" value="1*int(Volume/2000.)"/>
- <eval name="BCost" value="5*int(Volume/500.)"/>
- <eval name="CivicJobs" value="0"/>
- <eval name="Jobs1" value="0"/>
- <eval name="Jobs2" value="0"/>
- <eval name="Jobs3" value="0"/>
- <eval name="WaterConsumedFactor" value="1/18."/>
- <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
- <PROPERTY ID="0x27812854" Eval="int(1+PopulationServed*6.25/3000.0)"/><!--Power Consumed-->
- <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0xf008cfac"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x14"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0xEA4C4755"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="0.00000000,0.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
- <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055500"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x861A7248"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x64365d13"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xb13b19a0"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Power Eye-Candy" ID="0x4cb9387E" ParentID="0x4cb23866">
+      <FILTERS>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PowerOutput" value="0"/>
+        <eval name="PCost" value="10*int(Volume/200.)"/>
+        <eval name="MCost" value="1*int(Volume/2000.)"/>
+        <eval name="BCost" value="5*int(Volume/500.)"/>
+        <eval name="CivicJobs" value="0"/>
+        <eval name="Jobs1" value="0"/>
+        <eval name="Jobs2" value="0"/>
+        <eval name="Jobs3" value="0"/>
+        <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
+        <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
+        <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
+        <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
+        <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
+        <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x1CA8FC65"/><!--OccupantGroups for SubMenu-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Waste To Energy" ID="0xecb23861" ParentID="0x4cb23866">
-<HELP>
-This selection will filter the display to only show Waste to Energy plug-ins.  To create a Waste to Energy plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x27812853" Value="0x00000008"/>
- <NEEDED ID="0xAA1DD396" Value="0x7A9BFD20"/> 
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.085*Volume/100.)"/>
- <eval name="PCost" value="(500*int(5.00*PowerOutput/500.))/4"/>
- <eval name="MCost" value="(50*int(0.200*PowerOutput/50.))/4"/>
- <eval name="BCost" value="(10*int(0.450*PowerOutput/10.))/2"/>
- <eval name="CivicJobs" value="int(PowerOutput/100.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*28/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*15/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*5/48.)"/>
- <eval name="AirPollutionFactor" value="1/20."/>
- <eval name="WaterPollutionFactor" value="1/25."/>
- <eval name="GarbagePollutionFactor" value="0"/>
- <eval name="WaterConsumedFactor" value="1/5."/>
- <PROPERTY ID="0xe652e51f" Eval="(PowerOutput/0.8)+(PowerOutput*1.25)"/><!--KVA Rating--> 
- <PROPERTY ID="0x09a44ac9" Eval="PowerOutput"/> 
- <PROPERTY ID="0x0A4C13CB" Set="0xEA4C448D"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x00000008"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x60"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForWtoE"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x48EBD0B1" Eval="10*PowerOutput"/><!--Waste to energy monthly Capacity-->
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-100.000000"/><!--Health effect strength-->
- <PROPERTY ID="0x4A4C132E" Set="0x4A4C47B0"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="20.00000000,19.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForWtoE"/><!-- Item Order -->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x00001402,0xEC9175AA,0x7A9BFD20,0x18e64ea5"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD397" Set="0x4A8B7CD2"/><!--SFX:Query Sound-->
- <PROPERTY ID="0xCA19D7CA" Set="0xAA4C4467"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00052083"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD399" Eval="0x77A9FEEF"/><!--OccupantGroups for SubMenu-->
- <PROPERTY ID="0x713c8912" Eval="0xc291e217"/><!--Extended Power Type-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Incinerator" ID="0x1f909363" ParentID="0xcc8fbc2d">
+      <HELP>
+        This selection will filter the display to only show Incinerator plug-ins.  To create a Incinerator plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0xaa1dd396" Value="0x1402"/>
+        <NEEDED ID="0xaa1dd396" Value="0x56B2F397"/>
+        <NOT ID="0xaa1dd396" Value="0x1401"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PopulationServed" value="500*(4+int(2*Volume/500.0))"/>
+        <eval name="CivicJobs" value="int(PopulationServed/1500.0)"/>
+        <eval name="Jobs1" value="3+int(CivicJobs*95/100.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*4/100.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*1/100.)"/>
+        <eval name="AirPollutionFactor" value="int(1+PopulationServed*6.25/8000.0)"/>
+        <eval name="WaterPollutionFactor" value="int(1+PopulationServed*6.25/6000.0)"/>
+        <PROPERTY ID="0x0911E2E7" Eval="0.00000000,1.00000000,0.50000000,1.02999997,0.64999998,1.10000002,0.75000000,1.20000005,0.89999998,1.50000000,1.00000000,1.75000000,1.10000002,2.20000005"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0x099AFACD" Eval="50*int(2+PopulationServed*6.25/3333.3)"/><!--Bulldoze Cost-->
+        <PROPERTY ID="0x0A4C13CB" Eval="0x8A8CC849"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="AirPollutionFactor,WaterPollutionFactor,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812854" Eval="int(1+PopulationServed*6.25/3000.0)"/><!--Power Consumed-->
+        <PROPERTY ID="0x2A499F85" Eval="0x2A5621EE"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49BEDA31" Eval="0x05"/><!--MaxFireStage-->
+        <PROPERTY ID="0x49CAC341" Eval="500*int(4+PopulationServed*6.25/4000.0)"/><!--Plop Cost-->
+        <PROPERTY ID="0x4A4C132E" Set="0x8A8CC865"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x4AA60EBC" Eval="PopulationServed"/><!--Catalog Capacity-->
+        <PROPERTY ID="0x68EE9764" Eval="20.00000000,19.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x8A1E07EE" Eval="0.00000000,1.00000000,0.50000000,0.94999999,0.64999998,0.89999998,0.75000000,0.80000001,0.89999998,0.55000001,1.00000000,0.30000001,1.10000002,0.00000000"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForRecycle"/><!-- Item Order -->
+        <PROPERTY ID="0xA8EBCF0C" Eval="PopulationServed"/>
+        <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
+        <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001402,0x56B2F397"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD397" Set="0xEA62C936"/><!--SFX:Query Sound-->
+        <PROPERTY ID="0xC8ED2D84" Eval="50*int(1+PopulationServed*6.25/10000.0)"/><!--Water Consumed-->
+        <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x2A62D4EF"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Eval="1.00000000"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Eval="1.10000002"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D283" Eval="0x6A42A8F5"/><!--Budget Item: Department-->
+        <PROPERTY ID="0xEA54D284" Eval="0x0000000A"/><!--Budget Item: Line-->
+        <PROPERTY ID="0xEA54D285" Eval="0xCA58EDC7"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="50*int(2+PopulationServed*6.25/5000.0)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x37FFA051"/><!--OccupantGroups for SubMenu-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Transmission Station" ID="0xb98a80c4" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0xB2718077"/> 
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="0"/>
- <eval name="PCost" value="10*int(Volume/200.)"/>
- <eval name="MCost" value="1*int(Volume/2000.)"/>
- <eval name="BCost" value="5*int(Volume/500.)"/>
- <eval name="CivicJobs" value="0"/>
- <eval name="Jobs1" value="0"/>
- <eval name="Jobs2" value="0"/>
- <eval name="Jobs3" value="0"/>
- <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/2)"/><!--KVA Rating--> 
- <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
- <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
- <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
- <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
- <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
- <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
- <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
- <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
- <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
- <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
- <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x04986B76"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="Recycle" ID="0xecb23761" ParentID="0xcc8fbc2d" img="img_recycle.gif">
+      <HELP>
+        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0xaa1dd396" Value="0x1402"/>
+        <NEEDED ID="0xaa1dd396" Value="0x1404"/>
+        <NOT ID="0xaa1dd396" Value="0x1401"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="PopulationServed" value="500*(4+int(2*Volume/500.0))"/>
+        <eval name="CivicJobs" value="int(PopulationServed/1500.0)"/>
+        <eval name="Jobs1" value="3+int(CivicJobs*95/100.)"/>
+        <eval name="Jobs2" value="0+int(CivicJobs*4/100.)"/>
+        <eval name="Jobs3" value="0+int(CivicJobs*1/100.)"/>
+        <eval name="AirPollutionFactor" value="int(1+PopulationServed*RecycleFactor/8000.0)"/>
+        <eval name="WaterPollutionFactor" value="int(1+PopulationServed*RecycleFactor/6000.0)"/>
+        <PROPERTY ID="0x0911E2E7" Eval="0.00000000,1.00000000,0.50000000,1.02999997,0.64999998,1.10000002,0.75000000,1.20000005,0.89999998,1.50000000,1.00000000,1.75000000,1.10000002,2.20000005"/><!--Age to maintenance cost multiplier response curve-->
+        <PROPERTY ID="0x099AFACD" Eval="50*int(2+PopulationServed*RecycleFactor/3333.3)"/><!--Bulldoze Cost-->
+        <PROPERTY ID="0x0A4C13CB" Eval="0x8A8CC849"/><!--SFX:Ambience Decayed Sound-->
+        <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
+        <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
+        <PROPERTY ID="0x27812851" Eval="AirPollutionFactor,WaterPollutionFactor,0,0"/><!--pollution at center-->
+        <PROPERTY ID="0x27812854" Eval="int(1+PopulationServed*RecycleFactor/3000.0)"/><!--Power Consumed-->
+        <PROPERTY ID="0x2A499F85" Eval="QueryForRecycle"/><!--Query exemplar GUID-->
+        <PROPERTY ID="0x49BEDA31" Eval="0x05"/><!--MaxFireStage-->
+        <PROPERTY ID="0x49CAC341" Eval="500*int(4+PopulationServed*RecycleFactor/4000.0)"/><!--Plop Cost-->
+        <PROPERTY ID="0x4A4C132E" Set="0x8A8CC865"/><!--SFX:Activate Sound-->
+        <PROPERTY ID="0x4AA60EBC" Eval="PopulationServed"/><!--Catalog Capacity-->
+        <PROPERTY ID="0x68ED1736" Eval="PopulationServed"/><!--Recycling center population served-->
+        <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
+        <PROPERTY ID="0x8A1E07EE" Eval="0.00000000,1.00000000,0.50000000,0.94999999,0.64999998,0.89999998,0.75000000,0.80000001,0.89999998,0.55000001,1.00000000,0.30000001,1.10000002,0.00000000"/><!--Age to output level response curve-->
+        <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForRecycle"/><!-- Item Order -->
+        <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001402,0x00001404,0x73788D43"/><!--OccupantGroups-->
+        <PROPERTY ID="0xAA1DD397" Set="0xEA62C936"/><!--SFX:Query Sound-->
+        <PROPERTY ID="0xC8ED2D84" Eval="50*int(1+PopulationServed*RecycleFactor/10000.0)"/><!--Water Consumed-->
+        <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
+        <PROPERTY ID="0xCA19D7CA" Set="0x2A62D4EF"/><!--SFX:Ambience Good Sound-->
+        <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
+        <PROPERTY ID="0xEA1CF221" Eval="1.00000000"/><!--Soft failure threshold-->
+        <PROPERTY ID="0xEA1CF222" Eval="1.10000002"/><!--Hard failure threshold-->
+        <PROPERTY ID="0xEA54D283" Eval="0x6A42A8F5"/><!--Budget Item: Department-->
+        <PROPERTY ID="0xEA54D284" Eval="0x0000000A"/><!--Budget Item: Line-->
+        <PROPERTY ID="0xEA54D285" Eval="0xCA58EDC7"/><!--Budget Item: Purpose-->
+        <PROPERTY ID="0xEA54D286" Eval="50*int(2+PopulationServed*RecycleFactor/5000.0)"/><!--Budget Item: Cost-->
+        <PROPERTY ID="0xAA1DD399" Eval="0x93CFB7D6"/><!--OccupantGroups for SubMenu-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Distribution Substation" ID="0x4a07c445" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0xAA1DD396" Value="0x215395E9"/> 
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="0"/>
- <eval name="PCost" value="10*int(Volume/200.)"/>
- <eval name="MCost" value="1*int(Volume/2000.)"/>
- <eval name="BCost" value="5*int(Volume/500.)"/>
- <eval name="CivicJobs" value="0"/>
- <eval name="Jobs1" value="0"/>
- <eval name="Jobs2" value="0"/>
- <eval name="Jobs3" value="0"/>
- <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0xe652e51f" Eval="1*int(Volume/45)"/><!--KVA Rating-->  
- <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
- <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
- <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
- <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
- <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
- <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
- <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
- <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
- <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
- <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
- <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077,0x215395E9"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xD86B3B3B"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="100% Reduction" ID="0xecb23766" ParentID="0xecb23761">
+      <HELP>
+        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0x88ED1059" Value="0x64"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="RecycleFactor" value="25"/>
+        <PROPERTY ID="0x29244DB5" Eval="0x6E"/><!--Flammability-->
+        <PROPERTY ID="0x88ED1059" Eval="0x00000064"/><!--Recycling center percent reduction-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Auxiliary" ID="0x4cb9387A" ParentID="0x4cb23866">
-<FILTERS>
- <NEEDED ID="0x27812853" Value="10"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="100*int(1+0.050*Volume**0.8/100.)"/>
- <eval name="PCost" value="(500*int(10.0*PowerOutput/500.))/10"/>
- <eval name="MCost" value="(50*int(1.000*PowerOutput**0.8/50.))/10"/>
- <eval name="BCost" value="(10*int(0.250*PowerOutput/10.))/10"/>
- <eval name="CivicJobs" value="int(PowerOutput/30.)"/>
- <eval name="Jobs1" value="1+int(CivicJobs*20/48.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*20/48.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*8/48.)"/>
- <eval name="AirPollutionFactor" value="1/1600."/>
- <eval name="WaterPollutionFactor" value="1/350."/>
- <eval name="GarbagePollutionFactor" value="1/1000."/>
- <eval name="WaterConsumedFactor" value="1/18."/>
- <PROPERTY ID="0x0A4C13CB" Set="0x4A4C444B"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812853" Eval="0x0000000A"/><!--Power Plant Type-->
- <PROPERTY ID="0x29244DB5" Eval="0x14"/><!--Flammability-->
- <PROPERTY ID="0x4A4C132E" Set="0xEA4C4755"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x68EE9764" Eval="4.00000000,5.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x6A43150F" Eval="0x00000000"/><!--Hard Failure Type-->
- <PROPERTY ID="0xCA19D7CA" Set="0xCA4C440F"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055500"/><!--Age degradation rate-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0x7AB34F1B"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0xD013F32D"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="90% Reduction" ID="0xecb23767" ParentID="0xecb23761">
+      <HELP>
+        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0x88ED1059" Value="0x5A"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="RecycleFactor" value="20.25"/>
+        <PROPERTY ID="0x29244DB5" Eval="0x69"/><!--Flammability-->
+        <PROPERTY ID="0x88ED1059" Eval="0x0000005A"/><!--Recycling center percent reduction-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Power Eye-Candy" ID="0x4cb9387E" ParentID="0x4cb23866">
-<FILTERS>
-</FILTERS>
-<PROPERTIES>
- <eval name="PowerOutput" value="0"/>
- <eval name="PCost" value="10*int(Volume/200.)"/>
- <eval name="MCost" value="1*int(Volume/2000.)"/>
- <eval name="BCost" value="5*int(Volume/500.)"/>
- <eval name="CivicJobs" value="0"/>
- <eval name="Jobs1" value="0"/>
- <eval name="Jobs2" value="0"/>
- <eval name="Jobs3" value="0"/>
- <PROPERTY ID="0x0911E2E7" Remove="0911E2E7"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0x27812832" Set="0x00"/><!--Wealth-->
- <PROPERTY ID="0x27812841" Remove="27812841"/><!--Demand Created-->
- <PROPERTY ID="0x27812851" Eval="0,0,0,0"/><!--pollution at center-->
- <PROPERTY ID="0x27812852" Remove="27812852"/><!--Power Generated-->
- <PROPERTY ID="0x29244DB5" Eval="0x00"/><!--Flammability-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForPowerEyeCandy"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x49CAC341" Eval="max(PCost,10)"/><!--Plop Cost-->
- <PROPERTY ID="0x6A43150F" Remove="6A43150F"/><!--Hard Failure Type-->
- <PROPERTY ID="0x8A1E07EE" Remove="8A1E07EE"/><!--Age to output level response curve-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForPowerEyeCandy"/><!-- Item Order -->
- <PROPERTY ID="0xC8ED2D84" Value="0"/><!--Water Consumed-->
- <PROPERTY ID="0xCA19D7CA" Remove="CA19D7CA"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Remove="EA1CF220"/><!--Age degradation rate-->
- <PROPERTY ID="0xEA1CF221" Remove="EA1CF221"/><!--Soft failure threshold-->
- <PROPERTY ID="0xEA1CF222" Remove="EA1CF222"/><!--Hard failure threshold-->
- <PROPERTY ID="0xEA54D285" Eval="0xAA59670C"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="max(MCost,1)"/><!--Budget Item: Cost-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001400,0xB2718077"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD399" Eval="0x1CA8FC65"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="80% Reduction" ID="0xecb23768" ParentID="0xecb23761">
+      <HELP>
+        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0x88ED1059" Value="0x50"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="RecycleFactor" value="16"/>
+        <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
+        <PROPERTY ID="0x88ED1059" Eval="0x00000050"/><!--Recycling center percent reduction-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Incinerator" ID="0x1f909363" ParentID="0xcc8fbc2d">
-<HELP>
-This selection will filter the display to only show Incinerator plug-ins.  To create a Incinerator plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x1402"/>
- <NEEDED ID="0xaa1dd396" Value="0x56B2F397"/>
- <NOT ID="0xaa1dd396" Value="0x1401"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PopulationServed" value="500*(4+int(2*Volume/500.0))"/>
- <eval name="CivicJobs" value="int(PopulationServed/1500.0)"/>
- <eval name="Jobs1" value="3+int(CivicJobs*95/100.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*4/100.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*1/100.)"/>
- <eval name="AirPollutionFactor" value="int(1+PopulationServed*6.25/8000.0)"/>
- <eval name="WaterPollutionFactor" value="int(1+PopulationServed*6.25/6000.0)"/>
- <PROPERTY ID="0x0911E2E7" Eval="0.00000000,1.00000000,0.50000000,1.02999997,0.64999998,1.10000002,0.75000000,1.20000005,0.89999998,1.50000000,1.00000000,1.75000000,1.10000002,2.20000005"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0x099AFACD" Eval="50*int(2+PopulationServed*6.25/3333.3)"/><!--Bulldoze Cost-->
- <PROPERTY ID="0x0A4C13CB" Eval="0x8A8CC849"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
- <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
- <PROPERTY ID="0x27812851" Eval="AirPollutionFactor,WaterPollutionFactor,0,0"/><!--pollution at center-->
- <PROPERTY ID="0x27812854" Eval="int(1+PopulationServed*6.25/3000.0)"/><!--Power Consumed-->
- <PROPERTY ID="0x2A499F85" Eval="0x2A5621EE"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x49BEDA31" Eval="0x05"/><!--MaxFireStage-->
- <PROPERTY ID="0x49CAC341" Eval="500*int(4+PopulationServed*6.25/4000.0)"/><!--Plop Cost-->
- <PROPERTY ID="0x4A4C132E" Set="0x8A8CC865"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x4AA60EBC" Eval="PopulationServed"/><!--Catalog Capacity-->
- <PROPERTY ID="0x68EE9764" Eval="20.00000000,19.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x8A1E07EE" Eval="0.00000000,1.00000000,0.50000000,0.94999999,0.64999998,0.89999998,0.75000000,0.80000001,0.89999998,0.55000001,1.00000000,0.30000001,1.10000002,0.00000000"/><!--Age to output level response curve-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForRecycle"/><!-- Item Order -->
- <PROPERTY ID="0xA8EBCF0C" Eval="PopulationServed"/>
- <PROPERTY ID="0x6A19F6B5" Eval="12.000000"/><!--Health effect radius-->
- <PROPERTY ID="0xAA19F6EA" Eval="-75.000000"/><!--Health effect strength-->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001402,0x56B2F397"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD397" Set="0xEA62C936"/><!--SFX:Query Sound-->
- <PROPERTY ID="0xC8ED2D84" Eval="50*int(1+PopulationServed*6.25/10000.0)"/><!--Water Consumed-->
- <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
- <PROPERTY ID="0xCA19D7CA" Set="0x2A62D4EF"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xEA1CF221" Eval="1.00000000"/><!--Soft failure threshold-->
- <PROPERTY ID="0xEA1CF222" Eval="1.10000002"/><!--Hard failure threshold-->
- <PROPERTY ID="0xEA54D283" Eval="0x6A42A8F5"/><!--Budget Item: Department-->
- <PROPERTY ID="0xEA54D284" Eval="0x0000000A"/><!--Budget Item: Line-->
- <PROPERTY ID="0xEA54D285" Eval="0xCA58EDC7"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="50*int(2+PopulationServed*6.25/5000.0)"/><!--Budget Item: Cost-->
- <PROPERTY ID="0xAA1DD399" Eval="0x37FFA051"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="70% Reduction" ID="0xecb23769" ParentID="0xecb23761">
+      <HELP>
+        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0x88ED1059" Value="0x46"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="RecycleFactor" value="12.25"/>
+        <PROPERTY ID="0x29244DB5" Eval="0x60"/><!--Flammability-->
+        <PROPERTY ID="0x88ED1059" Eval="0x00000046"/><!--Recycling center percent reduction-->
+      </PROPERTIES>
+    </CATEGORY>
 
-<CATEGORY Name="Recycle" ID="0xecb23761" ParentID="0xcc8fbc2d" img="img_recycle.gif">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0xaa1dd396" Value="0x1402"/>
- <NEEDED ID="0xaa1dd396" Value="0x1404"/>
- <NOT ID="0xaa1dd396" Value="0x1401"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="PopulationServed" value="500*(4+int(2*Volume/500.0))"/>
- <eval name="CivicJobs" value="int(PopulationServed/1500.0)"/>
- <eval name="Jobs1" value="3+int(CivicJobs*95/100.)"/>
- <eval name="Jobs2" value="0+int(CivicJobs*4/100.)"/>
- <eval name="Jobs3" value="0+int(CivicJobs*1/100.)"/>
- <eval name="AirPollutionFactor" value="int(1+PopulationServed*RecycleFactor/8000.0)"/>
- <eval name="WaterPollutionFactor" value="int(1+PopulationServed*RecycleFactor/6000.0)"/>
- <PROPERTY ID="0x0911E2E7" Eval="0.00000000,1.00000000,0.50000000,1.02999997,0.64999998,1.10000002,0.75000000,1.20000005,0.89999998,1.50000000,1.00000000,1.75000000,1.10000002,2.20000005"/><!--Age to maintenance cost multiplier response curve-->
- <PROPERTY ID="0x099AFACD" Eval="50*int(2+PopulationServed*RecycleFactor/3333.3)"/><!--Bulldoze Cost-->
- <PROPERTY ID="0x0A4C13CB" Eval="0x8A8CC849"/><!--SFX:Ambience Decayed Sound-->
- <PROPERTY ID="0x27812832" Set="0x02"/><!--Wealth-->
- <PROPERTY ID="0x27812841" Eval="0x00002010,Jobs1,0x00002020,Jobs2,0x00002030,Jobs3,0x00001810,Jobs1,0x00001820,Jobs2,0x00001830,Jobs3"/><!--Demand Created-->
- <PROPERTY ID="0x27812851" Eval="AirPollutionFactor,WaterPollutionFactor,0,0"/><!--pollution at center-->
- <PROPERTY ID="0x27812854" Eval="int(1+PopulationServed*RecycleFactor/3000.0)"/><!--Power Consumed-->
- <PROPERTY ID="0x2A499F85" Eval="QueryForRecycle"/><!--Query exemplar GUID-->
- <PROPERTY ID="0x49BEDA31" Eval="0x05"/><!--MaxFireStage-->
- <PROPERTY ID="0x49CAC341" Eval="500*int(4+PopulationServed*RecycleFactor/4000.0)"/><!--Plop Cost-->
- <PROPERTY ID="0x4A4C132E" Set="0x8A8CC865"/><!--SFX:Activate Sound-->
- <PROPERTY ID="0x4AA60EBC" Eval="PopulationServed"/><!--Catalog Capacity-->
- <PROPERTY ID="0x68ED1736" Eval="PopulationServed"/><!--Recycling center population served-->
- <PROPERTY ID="0x68EE9764" Eval="3.00000000,4.00000000,0.00000000,0.00000000"/><!--Pollution radii-->
- <PROPERTY ID="0x8A1E07EE" Eval="0.00000000,1.00000000,0.50000000,0.94999999,0.64999998,0.89999998,0.75000000,0.80000001,0.89999998,0.55000001,1.00000000,0.30000001,1.10000002,0.00000000"/><!--Age to output level response curve-->
- <PROPERTY ID="0x8A2602B9" Eval="ItemOrderForRecycle"/><!-- Item Order -->
- <PROPERTY ID="0xAA1DD396" Set="0x00001004,0x00001402,0x00001404,0x73788D43"/><!--OccupantGroups-->
- <PROPERTY ID="0xAA1DD397" Set="0xEA62C936"/><!--SFX:Query Sound-->
- <PROPERTY ID="0xC8ED2D84" Eval="50*int(1+PopulationServed*RecycleFactor/10000.0)"/><!--Water Consumed-->
- <PROPERTY ID="0xC9B93A56" Set="0x6A5EC589"/><!--SFX:Default Plop Sound-->
- <PROPERTY ID="0xCA19D7CA" Set="0x2A62D4EF"/><!--SFX:Ambience Good Sound-->
- <PROPERTY ID="0xEA1CF220" Eval="0.00055556"/><!--Age degradation rate-->
- <PROPERTY ID="0xEA1CF221" Eval="1.00000000"/><!--Soft failure threshold-->
- <PROPERTY ID="0xEA1CF222" Eval="1.10000002"/><!--Hard failure threshold-->
- <PROPERTY ID="0xEA54D283" Eval="0x6A42A8F5"/><!--Budget Item: Department-->
- <PROPERTY ID="0xEA54D284" Eval="0x0000000A"/><!--Budget Item: Line-->
- <PROPERTY ID="0xEA54D285" Eval="0xCA58EDC7"/><!--Budget Item: Purpose-->
- <PROPERTY ID="0xEA54D286" Eval="50*int(2+PopulationServed*RecycleFactor/5000.0)"/><!--Budget Item: Cost-->
- <PROPERTY ID="0xAA1DD399" Eval="0x93CFB7D6"/><!--OccupantGroups for SubMenu-->
-</PROPERTIES>
-</CATEGORY>
-
-<CATEGORY Name="100% Reduction" ID="0xecb23766" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x64"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="25"/>
- <PROPERTY ID="0x29244DB5" Eval="0x6E"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x00000064"/><!--Recycling center percent reduction-->
-</PROPERTIES>
-</CATEGORY>
-
-<CATEGORY Name="90% Reduction" ID="0xecb23767" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x5A"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="20.25"/>
- <PROPERTY ID="0x29244DB5" Eval="0x69"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x0000005A"/><!--Recycling center percent reduction-->
-</PROPERTIES>
-</CATEGORY>
-
-<CATEGORY Name="80% Reduction" ID="0xecb23768" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x50"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="16"/>
- <PROPERTY ID="0x29244DB5" Eval="0x64"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x00000050"/><!--Recycling center percent reduction-->
-</PROPERTIES>
-</CATEGORY>
-
-<CATEGORY Name="70% Reduction" ID="0xecb23769" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x46"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="12.25"/>
- <PROPERTY ID="0x29244DB5" Eval="0x60"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x00000046"/><!--Recycling center percent reduction-->
-</PROPERTIES>
-</CATEGORY>
-
-<CATEGORY Name="60% Reduction" ID="0xecb2376a" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x3C"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="9"/>
- <PROPERTY ID="0x29244DB5" Eval="0x5C"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x0000003C"/><!--Recycling center percent reduction-->
-</PROPERTIES>
-</CATEGORY>
+    <CATEGORY Name="60% Reduction" ID="0xecb2376a" ParentID="0xecb23761">
+      <HELP>
+        This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+      </HELP>
+      <FILTERS>
+        <NEEDED ID="0x88ED1059" Value="0x3C"/>
+      </FILTERS>
+      <PROPERTIES>
+        <eval name="RecycleFactor" value="9"/>
+        <PROPERTY ID="0x29244DB5" Eval="0x5C"/><!--Flammability-->
+        <PROPERTY ID="0x88ED1059" Eval="0x0000003C"/><!--Recycling center percent reduction-->
+      </PROPERTIES>
+    </CATEGORY>
 
 <CATEGORY Name="50% Reduction" ID="0xecb2376b" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x32"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="6.25"/>
- <PROPERTY ID="0x29244DB5" Eval="0x58"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x00000032"/><!--Recycling center percent reduction-->
-</PROPERTIES>
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x32"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="6.25"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x58"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x00000032"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="40% Reduction" ID="0xecb2376c" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x28"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="4"/>
- <PROPERTY ID="0x29244DB5" Eval="0x54"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x00000028"/><!--Recycling center percent reduction-->
-</PROPERTIES>
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+   <NEEDED ID="0x88ED1059" Value="0x28"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="4"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x54"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x00000028"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="30% Reduction" ID="0xecb2376d" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x1E"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="2.25"/>
- <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x0000001E"/><!--Recycling center percent reduction-->
-</PROPERTIES>
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x1E"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="2.25"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x50"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x0000001E"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="20% Reduction" ID="0xecb2376e" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x14"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="1"/>
- <PROPERTY ID="0x29244DB5" Eval="0x4D"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x00000014"/><!--Recycling center percent reduction-->
-</PROPERTIES>
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x14"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="1"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x4D"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x00000014"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="10% Reduction" ID="0xecb2376f" ParentID="0xecb23761">
-<HELP>
-This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
-</HELP>
-<FILTERS>
- <NEEDED ID="0x88ED1059" Value="0x0A"/>
-</FILTERS>
-<PROPERTIES>
- <eval name="RecycleFactor" value="0.5"/>
- <PROPERTY ID="0x29244DB5" Eval="0x4A"/><!--Flammability-->
- <PROPERTY ID="0x88ED1059" Eval="0x0000000A"/><!--Recycling center percent reduction-->
-</PROPERTIES>
+  <HELP>
+    This selection will filter the display to only show Recycling plug-ins.  To create a Recycling plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on Up4x4_Waste To Energy.
+  </HELP>
+  <FILTERS>
+    <NEEDED ID="0x88ED1059" Value="0x0A"/>
+  </FILTERS>
+  <PROPERTIES>
+    <eval name="RecycleFactor" value="0.5"/>
+    <PROPERTY ID="0x29244DB5" Eval="0x4A"/><!--Flammability-->
+    <PROPERTY ID="0x88ED1059" Eval="0x0000000A"/><!--Recycling center percent reduction-->
+  </PROPERTIES>
 </CATEGORY>
 
 <CATEGORY Name="Water" ID="0x6c8fbc50" ParentID="0xcc8fbc2d" img="img_water.gif">
@@ -13151,6 +13452,13 @@ This selection will filter the display to only show Bus Stop plug-ins.  To creat
 </HELP>
 <FILTERS>
  <NEEDED ID="0xaa1dd396" Value="0x1301"/>
+ <NOT ID="0xaa1dd396" Value="0x1302"/>
+ <NOT ID="0xaa1dd396" Value="0x1303"/>
+ <NOT ID="0xaa1dd396" Value="0x1304"/>
+ <NOT ID="0xaa1dd396" Value="0x1305"/>
+ <NOT ID="0xaa1dd396" Value="0x1306"/>
+ <NOT ID="0xaa1dd396" Value="0x1307"/>
+ <NOT ID="0xaa1dd396" Value="0xb5c00dfa"/>
  <NOT ID="0xaa1dd396" Value="0x1508"/>
  <NOT ID="0xaa1dd396" Value="0x1509"/>
 </FILTERS>
@@ -13175,6 +13483,9 @@ This selection will filter the display to only show Bus Stop plug-ins.  To creat
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x1FDDE184"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+<PRESET Name="Standard" Type="Transit">
+      <PROPERTIES/>
+ </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Subway Station" ID="0x0c8fbcf9" ParentID="0x0c8fbc5e">
@@ -13208,6 +13519,9 @@ This selection will filter the display to only show Subway plug-ins.  To create 
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x231A97D3"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Passenger Train Station" ID="0x0c8fbd07" ParentID="0x0c8fbc5e">
@@ -13240,6 +13554,9 @@ This selection will filter the display to only show Passenger Rail Station plug-
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x35380C75"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Freight Train Station" ID="0x6c8fbd13" ParentID="0x0c8fbc5e">
@@ -13276,6 +13593,9 @@ This selection will filter the display to only show Freight Rail Station plug-in
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x3557F0A1"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>											 	   
 </CATEGORY>
 
 <CATEGORY Name="Railyard without station" ID="0x6c8fbd14" ParentID="0x0c8fbc5e">
@@ -13342,6 +13662,9 @@ This selection will filter the display to only show Elevated Rail Station plug-i
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x00000000"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Monorail Station" ID="0x0cb23934" ParentID="0x0c8fbc5e">
@@ -13376,6 +13699,9 @@ This selection will filter the display to only show Monorail Station plug-ins.  
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x00000000"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Garage" ID="0xacbb8bb5" ParentID="0x0c8fbc5e">
@@ -13409,6 +13735,9 @@ This selection will filter the display to only show Garage plug-ins.  To create 
  <PROPERTY ID="0xEA54D285" Value="0xCA550301"/><!--Budget Item: Purpose-->
  <PROPERTY ID="0xAA1DD399" Eval="0x217B6C35"/><!--OccupantGroups for SubMenu-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Toll Booth" ID="0xacb23926" ParentID="0x0c8fbc5e">
@@ -13442,6 +13771,9 @@ This selection will filter the display to only show Toll Booth plug-ins.  To cre
  <PROPERTY ID="0xEA54D284" Value="0x00000006"/><!--Budget Item: Line-->
  <PROPERTY ID="0xEA54D285" Value="0x0C3BF549"/><!--Budget Item: Purpose-->
 </PROPERTIES>
+  <PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+  </PRESET>
 </CATEGORY>
 
 <CATEGORY Name="Passenger Ferry Terminal" ID="0x6cb2392a" ParentID="0x0c8fbc5e">
@@ -14052,7 +14384,7 @@ This selection will filter the display to only show Landing Strip plug-ins.
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Small Landing Strip" ID="0x0c8fbd21" ParentID="0x0c8fbd20">
+<CATEGORY Name="Small Landing Strip" ID="0x48dd2c20" ParentID="0x0c8fbd20">
 <HELP>
 This selection will filter the display to only show Small Landing Strip plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14079,7 +14411,7 @@ This selection will filter the display to only show Small Landing Strip plug-ins
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Medium Landing Strip" ID="0x0c8fbd22" ParentID="0x0c8fbd20">
+<CATEGORY Name="Medium Landing Strip" ID="0x07d73960" ParentID="0x0c8fbd20">
 <HELP>
 This selection will filter the display to only show Medium Landing Strip plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14105,7 +14437,7 @@ This selection will filter the display to only show Medium Landing Strip plug-in
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Large Landing Strip" ID="0x0c8fbd23" ParentID="0x0c8fbd20">
+<CATEGORY Name="Large Landing Strip" ID="0x4609d1e8" ParentID="0x0c8fbd20">
 <HELP>
 This selection will filter the display to only show Large Landing Strip plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14145,7 +14477,7 @@ This selection will filter the display to only show Municipal Airport plug-ins.
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="Airport - Size 1" ID="0x0c8fbd31" ParentID="0x0c8fbd30">
+<CATEGORY Name="Airport - Size 1" ID="0x7ff36953" ParentID="0x0c8fbd30">
 <HELP>
 This selection will filter the display to only show Small Municipal Airport plug-ins.  To create an Airport plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on PZ4x16_AirportLandingStrip3.
 </HELP>
@@ -14770,6 +15102,25 @@ This selection will filter the display to only show Runway plug-ins. To create a
 </PROPERTIES> 
 </CATEGORY>
 
+<CATEGORY Name="Network Enabling Dummy" ID="0x06e8a9ac" ParentID="0x0c8fbc5e">
+<HELP>
+This selection is a dummy ID for the Network Enabling Transit Switch Pre-Sets. Do NOT pull and drop any building exemplar here, it is just a dummy placeholder. For Network Enabling lots you will be able set up certain pre-sets for the transit switches and you need to manually set-up Capacity and Transit Switch Entry Cost (TSEC) following the guide.
+</HELP>
+<FILTERS>
+ <NOT ID="0x00000010" Value="0x0000"/><!--Exemplar Type-->
+ <NOT ID="0x00000010" Value="0x0002"/><!--Exemplar Type-->
+</FILTERS>
+<PROPERTIES>
+ <eval name="TSCap" value="0"/>
+ <PROPERTY ID="0xE90E25A1" Value="0x81,0xF0,0x00,0x00,0x82,0xF0,0x00,0x00"/><!--Transit Switch Point-->
+ <PROPERTY ID="0xE90E25A2" Value="0.0"/><!--Transit Switch Entry Cost-->
+ <PROPERTY ID="0xE90E25A3" Eval="TSCap"/><!--Transit Switch Traffic Capacity-->
+</PROPERTIES>
+<PRESET Name="Standard" Type="Transit">
+    <PROPERTIES/>
+</PRESET>
+</CATEGORY>
+
 <CATEGORY Name="Landmark" ID="0x2c8fbc6c" ParentID="0xcc8fbc2d" img="img_land.gif">
 <HELP>
 This selection will filter the display to only show Landmark plug-ins.  To create a Landmark plug-in drag a model to this category. In the lot editor this plug-in building can be found by choosing and replacing the building on any landmark lot.
@@ -15302,7 +15653,7 @@ This selection will filter the display to only show Mayor's House plug-ins.  To 
  <eval name="LandmarkEffectRadius" value="28.0"/>
  <eval name="ParkEffectFactor" value="18.0+int(sqrt(Volume)/16.0)"/>
  <eval name="ParkEffectRadius" value="28.0"/>
- <eval name="WaterConsumedFactor" value="20.0"/>
+ <eval name="WaterConsumedFactor" value="0.20"/>
  <eval name="WaterConsumedConstant" value="0.0"/>
  <eval name="PowerConsumedFactor" value="0.15"/>
  <eval name="PowerConsumedConstant" value="0.0"/>
@@ -16649,7 +17000,7 @@ This selection will filter the display to only show $ Building as Prop plug-ins.
 </PROPERTIES>
 </CATEGORY>
 
-<CATEGORY Name="No Wealth" ID="0x1c8fbd65" ParentID="0x0c8fbd25">
+<CATEGORY Name="No Wealth" ID="0x3224b476" ParentID="0x0c8fbd25">
 <HELP>
 This selection will filter the display to only show Other Building as Prop plug-ins.  To create an Other Building as Prop plug-in drag a model to this category. In the lot editor this plug-in Prop can be found by choosing add a prop to a lot.
 </HELP>
@@ -18335,7 +18686,7 @@ This selection will filter the display to only show lots plug-ins.
 </FILTERS>
 </CATEGORY>
 
-<CATEGORY Name="All others" ID="0xC96D2137" ParentID="0x0c85bd24">
+<CATEGORY Name="All others" ID="0xd897c110" ParentID="0x0c85bd24">
 <HELP>
 This selection will filter the display to only show lots plug-ins.
 </HELP>
@@ -18344,6 +18695,130 @@ This selection will filter the display to only show lots plug-ins.
 </CATEGORY>
 
 </CATEGORIES>
+  <!--
+    Maxis-supplied prop families whose cohort exemplars ship without a readable
+    name. These IDs (range 0xA0000001+) are referenced by props via the
+    Building/prop Family property (0x27812870) but resolve to "0xA000005C" style
+    hex in the UI unless we supply the display name here. The runtime cohort
+    scan still overrides these whenever the user actually has the cohort.
+  -->
+  <FAMILIES>
+    <FAMILY ID="0xA0000001" Name="Res_4x8_backsideyard"/>
+    <FAMILY ID="0xA0000002" Name="Com$$StatueProps"/>
+    <FAMILY ID="0xA0000003" Name="Res_4x8_frontlawn"/>
+    <FAMILY ID="0xA0000005" Name="Res_6x6_backsideyard"/>
+    <FAMILY ID="0xA0000006" Name="CSF14x2_storefront"/>
+    <FAMILY ID="0xA0000007" Name="Res_6x6_frontlawn"/>
+    <FAMILY ID="0xA0000008" Name="Res_6x12_backsideyard"/>
+    <FAMILY ID="0xA000000A" Name="CSF12x2_storefront"/>
+    <FAMILY ID="0xA000000B" Name="CSF16x2_storefront"/>
+    <FAMILY ID="0xA000000C" Name="Flora-Planter4x4Flower"/>
+    <FAMILY ID="0xA000000D" Name="Res_8x8_backsideyard"/>
+    <FAMILY ID="0xA000000F" Name="ResCarClusters"/>
+    <FAMILY ID="0xA0000011" Name="Res_8x8_frontyard"/>
+    <FAMILY ID="0xA0000013" Name="ParkingGarages2story"/>
+    <FAMILY ID="0xA0000014" Name="Res_12x12_backsideyard"/>
+    <FAMILY ID="0xA0000015" Name="Res_12x12_manbacksideyard"/>
+    <FAMILY ID="0xA0000016" Name="CR_12x0x12_Graffiti"/>
+    <FAMILY ID="0xA0000017" Name="Res_8x8_mangarage"/>
+    <FAMILY ID="0xA000001C" Name="CR_8x0x12_Graffiti2"/>
+    <FAMILY ID="0xA000001D" Name="CR_16x0x10_Graffiti"/>
+    <FAMILY ID="0xA000001F" Name="Res_16x16_backsideyard"/>
+    <FAMILY ID="0xA0000021" Name="GAbackcrates"/>
+    <FAMILY ID="0xA0000023" Name="CR_8x0x12_Graffiti1"/>
+    <FAMILY ID="0xA0000026" Name="CSF_6x2_storefront"/>
+    <FAMILY ID="0xA0000027" Name="CSF_8x2_storefront"/>
+    <FAMILY ID="0xA0000028" Name="Street Props"/>
+    <FAMILY ID="0xA0000032" Name="ParkingGarages5story"/>
+    <FAMILY ID="0xA0000038" Name="ResSingleCars"/>
+    <FAMILY ID="0xA0000039" Name="Flora-Planter6x3Flower"/>
+    <FAMILY ID="0xA000003A" Name="Flora-Planter4x4Bush"/>
+    <FAMILY ID="0xA000003C" Name="SpotLight"/>
+    <FAMILY ID="0xA000003D" Name="ComCarClusters"/>
+    <FAMILY ID="0xA000003F" Name="Flora-Planter6x3Bush"/>
+    <FAMILY ID="0xA0000041" Name="CSign_2x4"/>
+    <FAMILY ID="0xA0000042" Name="CSign_11x1"/>
+    <FAMILY ID="0xA0000043" Name="CSign_1x4"/>
+    <FAMILY ID="0xA0000044" Name="CSign_1x2"/>
+    <FAMILY ID="0xA0000045" Name="CBill_12x2"/>
+    <FAMILY ID="0xA0000046" Name="CBill_12x4"/>
+    <FAMILY ID="0xA0000047" Name="Res_6x12_carcontain"/>
+    <FAMILY ID="0xA0000048" Name="ResTrash"/>
+    <FAMILY ID="0xA000004A" Name="Flora-smallshrubs"/>
+    <FAMILY ID="0xA000004B" Name="Flora-Mediumshrubs"/>
+    <FAMILY ID="0xA000004C" Name="Flora-Grasses"/>
+    <FAMILY ID="0xA000004D" Name="Flora-MediumBushes"/>
+    <FAMILY ID="0xA000004E" Name="Flora-Flowers_small"/>
+    <FAMILY ID="0xA000004F" Name="Flora-SmallPottedShrubs"/>
+    <FAMILY ID="0xA0000050" Name="Flora-MediumFulltrees"/>
+    <FAMILY ID="0xA0000051" Name="Flora-LargeFulltrees"/>
+    <FAMILY ID="0xA0000052" Name="Flora-SmallfruitTrees"/>
+    <FAMILY ID="0xA0000054" Name="Flora-RectPlanters"/>
+    <FAMILY ID="0xA0000055" Name="Flora-flowersSquare"/>
+    <FAMILY ID="0xA0000056" Name="Effect-FarmAnimals"/>
+    <FAMILY ID="0xA0000057" Name="Flora-FlowersMed"/>
+    <FAMILY ID="0xA0000058" Name="Phonebooth"/>
+    <FAMILY ID="0xA0000059" Name="Animated_GolfersDrivers"/>
+    <FAMILY ID="0xA000005A" Name="Vending_Machines"/>
+    <FAMILY ID="0xA000005B" Name="Animated_GolfersPutter"/>
+    <FAMILY ID="0xA000005C" Name="Milling_People"/>
+    <FAMILY ID="0xA000005D" Name="R_BoatTrailer"/>
+    <FAMILY ID="0xA000005E" Name="R2x2_Res_backside"/>
+    <FAMILY ID="0xA000005F" Name="Street_Trashcans"/>
+    <FAMILY ID="0xA0000060" Name="Streetlights"/>
+    <FAMILY ID="0xA0000061" Name="FireHydrants"/>
+    <FAMILY ID="0xA0000062" Name="SeaportCargo"/>
+    <FAMILY ID="0xA0000063" Name="Streetlights-diagonal"/>
+    <FAMILY ID="0xA0000064" Name="Industrial_semiTrailers"/>
+    <FAMILY ID="0xA0000065" Name="Person_Child_General"/>
+    <FAMILY ID="0xA0000066" Name="Person_General"/>
+    <FAMILY ID="0xA0000067" Name="Person_Positive"/>
+    <FAMILY ID="0xA0000068" Name="Person_Negative"/>
+    <FAMILY ID="0xA0000069" Name="Person_Adult_General"/>
+    <FAMILY ID="0xA000006A" Name="Balloons"/>
+    <FAMILY ID="0xA000006B" Name="ChairSitting"/>
+    <FAMILY ID="0xA000006C" Name="RWBanners"/>
+    <FAMILY ID="0xA000006D" Name="IWaterTrough"/>
+    <FAMILY ID="0xA000006E" Name="BasketballDribble8-10.5"/>
+    <FAMILY ID="0xA000006F" Name="BasketballGuard8-10.5"/>
+    <FAMILY ID="0xA0000070" Name="BasketballGuard28-10.5"/>
+    <FAMILY ID="0xA0000071" Name="Farm_FieldPickers"/>
+    <FAMILY ID="0xA0000074" Name="Res_Tables"/>
+    <FAMILY ID="0xA0000075" Name="Streetlights-Highwealth"/>
+    <FAMILY ID="0xA0000076" Name="Swimmers"/>
+    <FAMILY ID="0xA0000077" Name="Flora_LargeFullTrees-NoPalm"/>
+    <FAMILY ID="0xA0000078" Name="Flora_MedTrees-NoPalm"/>
+    <FAMILY ID="0xA0000079" Name="DoubleHouseres"/>
+    <FAMILY ID="0xA000007A" Name="Person_Child_Idle"/>
+    <FAMILY ID="0xA000007B" Name="Person_Adult_Idle"/>
+    <FAMILY ID="0xA000007C" Name="Person_General_Idle"/>
+    <FAMILY ID="0xA000007D" Name="Person_Military"/>
+    <FAMILY ID="0xA000007E" Name="Person_Police"/>
+    <FAMILY ID="0xA000007F" Name="Person_Business"/>
+    <FAMILY ID="0xA0000090" Name="Tree_TP"/>
+    <FAMILY ID="0xA0000091" Name="Park_Trees1"/>
+    <FAMILY ID="0xA0000092" Name="Park_Trees2"/>
+    <FAMILY ID="0xA0000093" Name="CriminalSwimmers"/>
+    <FAMILY ID="0xA0000094" Name="CopCars"/>
+    <FAMILY ID="0xA0000095" Name="LawnBunkers"/>
+    <FAMILY ID="0xA0000096" Name="Soccerkidssidelines"/>
+    <FAMILY ID="0xA0000097" Name="BaseballKids"/>
+    <FAMILY ID="0xA0000098" Name="BasketballDribble11-13.5"/>
+    <FAMILY ID="0xA0000099" Name="BasketballGuard11-13.5"/>
+    <FAMILY ID="0xA000009A" Name="BasketballGuard211-13.5"/>
+    <FAMILY ID="0xA000009B" Name="BasketballDribble14-16.5"/>
+    <FAMILY ID="0xA000009C" Name="BasketballGuard14-16.5"/>
+    <FAMILY ID="0xA000009D" Name="BasketballGuard214-16.5"/>
+    <FAMILY ID="0xA000009E" Name="BasketballDribble17-20"/>
+    <FAMILY ID="0xA000009F" Name="BasketballGuard17-20"/>
+    <FAMILY ID="0xA0000100" Name="BasketballGuard217-20"/>
+    <FAMILY ID="0xA0000101" Name="Nightclub"/>
+    <FAMILY ID="0xA0000102" Name="Expensive Carwash"/>
+    <FAMILY ID="0xA0000103" Name="RandomSwitchstands"/>
+    <FAMILY ID="0xA0000104" Name="Treepicking"/>
+    <FAMILY ID="0xA0000105" Name="Highway"/>
+    <FAMILY ID="0xA0000106" Name="Highwaydiag"/>
+  </FAMILIES>
 <LOTCREATION>
 <STAGEvsDENSITY purpose="R" wealth="0" ratio="4.8,6.8,11.0,23.0,50.7,94.7,159,249,354,463,575,692,812,937" baseTex="0x261a0000"/>
 <STAGEvsDENSITY purpose="R" wealth="1" ratio="2.4,3.4,5.5,11.5,28.4,62.8,112,176,250,327,407,489,574,662" baseTex="0x25f40000"/>
@@ -18353,7 +18828,7 @@ This selection will filter the display to only show lots plug-ins.
 <STAGEvsDENSITY purpose="CS" wealth="0" ratio="16,28,40.6,53.4,67.3,84.7,107,135,169,214,269,339,427,538" baseTex="0x26353000"/>
 <STAGEvsDENSITY purpose="CS" wealth="1" ratio="8,14,20.3,26.7,33.6,42.4,53.4,67.3,84.7,107,135,169,214,269" baseTex="0x262f3000"/>
 <STAGEvsDENSITY purpose="CS" wealth="2" ratio="4,7,10.2,13.3,16.8,21.2,26.7,33.6,42.4,53.4,67.3,84.7,107,135" baseTex="0x262e3000"/>
-<STAGEvsDENSITY purpose="IR" wealth="0" ratio="16,32,60,100" baseTex="0x25db0000" />
+<STAGEvsDENSITY purpose="IR" wealth="0" ratio="16,32,60,100,135,169,214,269,328" baseTex="0x25db0000" />
 <STAGEvsDENSITY purpose="ID" wealth="1" ratio="5,8.1,12.7,19.2,28.1,39.6,53.9,70.9,90" baseTex="0x25fb1000"/>
 <STAGEvsDENSITY purpose="IM" wealth="1" ratio="6.3,10.2,15.9,24,35.1,49.5,67.4,88.6,112.5" baseTex="0x25fb1100"/>
 <STAGEvsDENSITY purpose="IHT" wealth="2" ratio="7.5,12.2,19.1,28.9,42.1,59.4,80.9,106,135" baseTex="0x258d1000"/>
@@ -18367,7 +18842,7 @@ This selection will filter the display to only show lots plug-ins.
 <ZONING purpose="CS" value="4" stages="1,2,3" height="25"/>
 <ZONING purpose="CS" value="5" stages="1,2,3,4,5,6" height="100"/>
 <ZONING purpose="CS" value="6" stages="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" height="10000"/>
-<ZONING purpose="IR" value="7" stages="1,2,3,4,5" height="10000"/>
+<ZONING purpose="IR" value="7" stages="1,2,3,4,5,6,7,8,9,10" height="10000"/>
 <ZONING purpose="ID" value="8" stages="1,2,3,4,5" height="10"/>
 <ZONING purpose="ID" value="9" stages="1,2,3,4,5,6,7,8,9,10" height="10000"/>
 <ZONING purpose="IM" value="8" stages="1,2,3,4,5" height="10"/>
